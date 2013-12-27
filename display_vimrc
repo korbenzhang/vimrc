@@ -1,0 +1,83 @@
+set number
+set ruler
+
+
+" line space
+" ========================
+"set linespace=0
+
+" term color
+set t_Co=256
+
+" set color column
+"set cc=80
+
+" Text width
+" ========================
+"set textwidth=78
+autocmd FileType text setlocal textwidth=78
+"set wrapmargin=10
+
+" Status Line
+" ========================
+set laststatus=2
+
+" backspace and cursor keys wrap to previous/next line
+set backspace=indent,eol,start
+set whichwrap+=b,s,h,l,<,>,[,]
+"set whichwrap+=<,>,h,l,[,]
+
+" Line break
+" ========================
+"Do not redraw, when running macros.. lazyredraw
+"set showbreak=...
+set linebreak   " warp line by words
+
+
+"How many tenths of a second to blink
+set mat=2
+
+" display
+set display=lastline
+
+" Cmd
+" ========================
+set cmdheight=1
+
+" show some symble
+" ========================
+if has("ambiwidth")
+    set ambiwidth=double
+endif
+
+" ColorScheme
+" ========================
+"colorscheme molokai
+"colorscheme railscasts
+"colorscheme yaml
+"colorscheme eclipse
+"colorscheme blue
+
+" TabLabel
+" ========================
+highlight LeaderTab guifg=#666666
+"set showtabline=2
+"some stuff to get the mouse going in term
+set guitablabel=%N.%t
+
+" Turn off welcome page
+set shortmess=atI
+
+
+
+"set list
+"set nolist
+
+
+"set lcs=tab:>-,trail:-,nbsp:%
+"set lcs=tab:>-,eol:<,nbsp:%
+"set lcs=extends:>,precedes:<
+"set listchars=tab:▸\ ,trail:-,nbsp:~,eol:¬
+"set listchars=tab:▸\
+
+

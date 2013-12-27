@@ -1,0 +1,264 @@
+" Keymap
+" ========================
+nnoremap <silent> <esc><esc> :noh<cr>
+
+map <leader>ee :MabetleVimrc<cr>
+map <leader>ss :source $HOME/.vim/vimrc<cr>
+
+au! BufWritePost *[\._]vimrc source $HOME/.vim/vimrc
+au! BufWritePost vimrc source $HOME/.vim/vimrc
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+
+" Move lines
+" ========================
+nmap <C-Down> :<C-u>move .+1<CR>
+nmap <C-Up> :<C-u>move .-2<CR>
+imap <C-Down> <C-o>:<C-u>move .+1<CR>
+imap <C-Up> <C-o>:<C-u>move .-2<CR>
+vmap <C-Down> :move '>+1<CR>gv
+vmap <C-Up> :move '<-2<CR>gv
+
+cno $h e ~/
+cno $j e ./e
+cno $th tabnew ~/
+cno $dm %s///g
+
+cmap <C-E>    <End>
+cmap <C-K>    <C-U>
+
+" backward
+map <F2> <C-o>
+
+" Build
+"map <F11> <ESC>:make<CR>
+map <leader>mm <ESC>:make<CR>
+
+"QuickFix
+map <leader>n <esc>:cnext<cr>
+map <leader>p <esc>:cpriv<cr>
+
+
+" ========================
+"imap <C-q> <C-]>
+imap <m-$> <esc>$a
+imap <m-0> <esc>0i
+
+"map 0 ^
+map <F9> :NERDTreeToggle<cr>
+
+map <leader>bd :Bclose<cr>
+map <leader>cd :cd %:p:h<cr>
+map <leader>e :e **/
+map <leader>eh :e ~/<cr>
+map <leader>ev :e ~/.vim/<cr>
+map <leader>eb :e ~/.vim/bundles_vimrc<cr>
+map <leader>sp :sp **/
+map <leader>vsp :vsp **/
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+
+" delete ^M
+map <leader>dm :%s///g<cr>
+
+map <leader>ds :%s/\s\+$//g<cr>
+
+" SVN commond
+map <leader>svn :!svn
+map <leader>sup :!svn up<cr>
+map <leader>sci :!svnci<cr>
+map <leader>sad :!svn add %<cr>
+
+" Go command
+map <leader>goc :!go
+
+" sudo save
+map <leader>sw :w !sudo tee %<cr>
+
+
+" Spell checking
+map <leader>s? z=
+map <leader>sa zg
+map <leader>sn ]s
+"map <leader>sp [s
+
+map <leader>t2 :set shiftwidth=2<cr>
+map <leader>t4 :set shiftwidth=4<cr>
+map <leader>tc :tabclose<cr>
+
+" Table
+"map <leader>t :tabnew<cr>
+map <leader>te :tabedit **/
+map <leader>tm :tabmove
+nmap <C-N> :tabnew<cr>
+
+map <leader>y :YRShow<cr>
+map <leader>. :e .<cr>
+map <leader>w :w!<cr>
+map <leader>q :q!<cr>
+map <leader>s :update<cr>
+
+"map <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" Buffer
+map <leader>b :BufExplorer<cr>
+
+
+" Use space to down
+nmap <space> <C-D>
+
+nmap <silent> <C-f> :call FindInNERDTree()<CR>
+
+"nmap <M-j> mz:m+<cr>`z
+"nmap <M-k> mz:m-2<cr>`z
+"vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+"vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+
+map <leader>sh :shell<cr>
+map <leader>ish <esc>:Shell
+
+nmap <leader>f :find<cr>
+
+nmap <leader>fd :se ff=dos<cr>
+nmap <leader>fu :se ff=unix<cr>
+
+nmap <silent> <F3> :Grep<CR>
+
+"key mapping for window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+"Key mapping for textmate-like indentation
+nmap <M-[> <<
+nmap <M-]> >>
+vmap <M-[> <gv
+vmap <M-]> >gv
+
+"key mapping for vimgrep result navigation
+map <A-o> :copen<CR>
+map <A-q> :cclose<CR>
+map <A-j> :cnext<CR>
+map <A-k> :cprevious<CR>
+
+nmap <C-TAB> :tabNext<CR>
+nmap <C-S-TAB> :tabnext<CR>
+imap <C-TAB> <ESC><ESC>:tabNext<CR>
+imap <C-S-TAB> <ESC><ESC>:tabnext<CR>
+
+
+nmap <leader><TAB> :tabNext<CR>
+nmap <leader><S-TAB> :tabnext<CR>
+imap <leader><TAB> <ESC><ESC>:tabNext<CR>
+imap <leader><S-TAB> <ESC><ESC>:tabnext<CR>
+
+imap <M-1> <Esc>1gt
+nmap <M-1> 1gt
+imap <M-2> <Esc>2gt
+nmap <M-2> 2gt
+imap <M-3> <Esc>3gt
+nmap <M-3> 3gt
+imap <M-4> <Esc>4gt
+nmap <M-4> 4gt
+imap <M-5> <Esc>5gt
+nmap <M-5> 5gt
+imap <M-6> <Esc>6gt
+nmap <M-6> 6gt
+imap <M-7> <Esc>7gt
+nmap <M-7> 7gt
+imap <M-8> <Esc>8gt
+nmap <M-8> 8gt
+imap <M-9> <Esc>9gt
+nmap <M-9> 9gt
+
+
+imap <C-1> <Esc>1gt
+nmap <C-1> 1gt
+imap <C-2> <Esc>2gt
+nmap <C-2> 2gt
+imap <C-3> <Esc>3gt
+nmap <C-3> 3gt
+imap <C-4> <Esc>4gt
+nmap <C-4> 4gt
+imap <C-5> <Esc>5gt
+nmap <C-5> 5gt
+imap <C-6> <Esc>6gt
+nmap <C-6> 6gt
+imap <C-7> <Esc>7gt
+nmap <C-7> 7gt
+imap <C-8> <Esc>8gt
+nmap <C-8> 8gt
+imap <C-9> <Esc>9gt
+nmap <C-9> 9gt
+
+imap <leader>1 <Esc>1gt
+nmap <leader>1 1gt
+imap <leader>2 <Esc>2gt
+nmap <leader>2 2gt
+imap <leader>3 <Esc>3gt
+nmap <leader>3 3gt
+imap <leader>4 <Esc>4gt
+nmap <leader>4 4gt
+imap <leader>5 <Esc>5gt
+nmap <leader>5 5gt
+imap <leader>6 <Esc>6gt
+nmap <leader>6 6gt
+imap <leader>7 <Esc>7gt
+nmap <leader>7 7gt
+imap <leader>8 <Esc>8gt
+nmap <leader>8 8gt
+imap <leader>9 <Esc>9gt
+nmap <leader>9 9gt
+
+nmap <leader>F :tabfirst<cr>
+nmap <leader>L :tablast<cr>
+nmap <leader>N :tabnext<cr>
+nmap <leader>P :tabprevious<cr>
+
+nmap <C-PageUp> <ESC>:tabprevious<cr>
+nmap <C-PageDown> <ESC>:tabnext<cr>
+
+
+" toggle comment
+map <C-/> <leader>c<space>
+
+" Quick Fix
+"nmap <F6> :cn<cr>
+"nmap <F7> :cp<cr>
+
+" jump between from c and h using A plugin.
+"nnoremap <silent> <F12> :A<CR>
+
+
+" Delete line end space
+"nmap <F12> :%s/[ \t\r]\+$//g<CR>
+
+"nnoremap <silent> <F4> :TlistToggle<CR>
+nmap <F8> :TagbarToggle<CR>
+
+map gf :tabnew <cfile><cr>
+
+
+"-------------------------------
+" Windows switch with Ctrl+↑↓←→
+"-------------------------------
+noremap <silent> <C-left> <esc><C-W><left>
+noremap <silent> <C-right> <esc><C-W><right>
+noremap <silent> <C-up> <esc><C-W><up>
+noremap <silent> <C-down> <esc><C-W><down>
+
+
+map <leader>rl <ESC>:.w !bash<CR>
+map <leader>rf <ESC>:! "%"<CR>
+
+
+map <C-F4> :tabclose<cr>
+
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+
+

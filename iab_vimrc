@@ -1,0 +1,17 @@
+
+" ========================
+iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+iab xname Korben Zhang
+iab autor Korben Zhang (korbenzhang@gmail.com)
+
+iab pu public
+iab pr private
+iab fu func
+iab im import
+iab pa package
+iab ma main
+iab fun function
+iab re return
+
+ab teh the
+ab fro for

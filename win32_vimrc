@@ -1,0 +1,5 @@
+" Window Vimrc
+" ======================================
+
+set clipboard+=unnamed
+set shellpipe=\|\ tee

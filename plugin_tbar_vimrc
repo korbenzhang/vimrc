@@ -1,0 +1,53 @@
+"Tagbar
+"====================
+
+"let g:tagbar_ctags_bin = 'C:\Ctags5.8\ctags.exe'
+"let g:tagbar_left = 1
+"let g:tagbar_width = 30
+
+
+"Go support
+"let g:tagbar_type_go = {
+    "\ 'ctagstype': 'go',
+    "\ 'kinds' : [
+        "\'p:package',
+        "\'f:function',
+        "\'v:variables',
+        "\'t:type',
+        "\'c:const'
+    "\]
+"\}
+
+
+"let g:tagbar_sort = 0
+
+
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
+

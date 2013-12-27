@@ -1,0 +1,10 @@
+
+" snipMate            Tab智能补全
+" ========================
+let g:snips_author='Korben Zhang'
+
+" :AuthorInfoDetect   自动添加作者、时间等信息，本质是NERD_commenter && authorinfo的结合
+let g:vimrc_author='Korben Zhang'
+let g:vimrc_email='korbenzhang@gmail.com'
+let g:vimrc_homepage='http://www.mabetle.com'
+

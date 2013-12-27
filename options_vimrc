@@ -1,0 +1,48 @@
+set smartcase
+
+"Bell
+" ========================
+set noerrorbells
+set novisualbell
+
+
+" cmd line
+set showmode
+
+set showcmd "display incomplete command
+
+" Set to auto read when a file is changed from the outside
+set autoread
+set autowrite
+"set autowriteall
+
+"lazyredraw don't redraw while executing macros
+"set lazyredraw
+
+set magic
+
+
+" Wrap
+" ========================
+set wrap
+
+" auto change dir
+" ========================
+"set autochdir
+
+" change windows directory seperitor to linux
+" ========================
+"set shellslash
+
+set wildmenu
+
+set incsearch
+
+set showmatch
+
+" 自动格式化
+"set formatoptions=tcrqn
+
+
+
+

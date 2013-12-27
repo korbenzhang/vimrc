@@ -1,0 +1,5 @@
+
+
+set ofu=syntaxcomplete#Complete
+
+

@@ -1,0 +1,26 @@
+
+if has("win32")
+" windows
+		let $APPS_HOME="d:/apps"
+    let $DEV_HOME="e:/dev"
+    let $GOROOT=$APPS_HOME."/Go1"
+else
+" linux and others
+		let $APPS_HOME=$HOME."/apps"
+    let $DEV_HOME=$HOME."/dev"
+    let $GOROOT=$APPS_HOME."/go"
+endif
+
+" Common
+let $GOPATH			=$DEV_HOME."/gocodes"
+let $LAB				=$DEV_HOME."/devlab/trunk"
+let $TEST_HOME		=$DEV_HOME."/testlab/"
+let $DEMO				=$LAB."/demo"
+let $VIMRC			=$HOME."/.vim"
+
+let $GITHUB			=$DEV_HOME."/GitHub"
+let $KZ_GITHUB	=$GITHUB."/korbenzhang"
+let $MBT_GITHUB	=$GITHUB."/mabetle"
+
+" let $PATH=$GOROOT."/bin:".$PATH
+

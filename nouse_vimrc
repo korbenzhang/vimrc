@@ -1,0 +1,87 @@
+
+"set display=lastline
+
+" ========================
+"highlight LineNr guibg=black guifg=white
+
+hi Tb_Normal guifg=white ctermfg=white
+hi Tb_Changed guifg=green ctermfg=green
+hi Tb_VisibleNormal ctermbg=252 ctermfg=235
+hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
+
+
+" ========================
+if has("gui_running")
+  " Set nice colors
+  " background for normal text is light grey
+  " Text below the last line is darker grey
+  " Cursor is green, Cyan when ":lmap" mappings are active
+  " Constants are not underlined but have a slightly lighter background
+  highlight Normal guibg=grey90
+  highlight Cursor guibg=Green guifg=NONE
+  "hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=NONE guibg=darkgrey guifg=NONE
+  highlight lCursor guibg=Cyan guifg=NONE
+  highlight NonText guibg=grey80
+  highlight Constant gui=NONE guibg=grey95
+  highlight Special gui=NONE guibg=grey95
+
+endif
+" ========================
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+" Also don't do it when the mark is in the first line, that is the default
+" position when opening a file.
+autocmd BufReadPost *
+            \ if line("'\"") > 1 && line("'\"") <= line("$") |
+            \   exe "normal! g`\"" |
+            \ endif
+" Cursor Line
+" ========================
+set cursorline
+"set cursorcolumn
+
+"hi CursorLine   cterm=NONE ctermbg=light ctermfg=white guibg=light guifg=white
+"hi CursorLine   cterm=NONE ctermbg=gray ctermfg=NONE guibg=gray guifg=NONE
+"hi CursorLine   cterm=NONE ctermbg=lightcyan ctermfg=NONE guibg=lightcyan guifg=NONE
+"hi CursorLine   cterm=NONE ctermbg=lightgreen ctermfg=NONE guibg=lightgreen guifg=NONE
+"hi CursorLine   cterm=NONE ctermbg=lightgray ctermfg=NONE guibg=lightgray guifg=NONE
+
+
+autocmd Syntax html,vim inoremap < <lt>><Esc>i| inoremap > <c-r>=ClosePair('>')<CR>
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap ] <c-r>=ClosePair(']')<CR>
+inoremap } <c-r>=CloseBracket()<CR>
+inoremap " <c-r>=QuoteDelim('"')<CR>
+inoremap ' <c-r>=QuoteDelim("'")<CR>
+
+function ClosePair(char)
+ if getline('.')[col('.') - 1] == a:char
+ return "\<Right>"
+ else
+ return a:char
+ endif
+endf
+
+function CloseBracket()
+ if match(getline(line('.') + 1), '\s*}') < 0
+ return "\<CR>}"
+ else
+ return "\<Esc>j0f}a"
+ endif
+endf
+
+function QuoteDelim(char)
+ let line = getline('.')
+ let col = col('.')
+ if line[col - 2] == "\\"
+ "Inserting a quoted quotation mark into the string
+ return a:char
+ elseif line[col - 1] == a:char
+ "Escaping out of the string
+ return "\<Right>"
+ else
+ "Starting a string
+ return a:char.a:char."\<Esc>i"
+ endif
+endf

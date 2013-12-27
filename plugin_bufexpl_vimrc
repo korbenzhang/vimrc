@@ -1,0 +1,4 @@
+
+" bufExplorer
+"=====================
+let g:bufExplorerSortBy = "name"

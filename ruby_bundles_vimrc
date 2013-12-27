@@ -1,0 +1,28 @@
+
+if has("gui_win32")
+	let g:ruby_path=$RUBY_HOME
+endif
+
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
+
+"Bundle 'ruby_imaps'
+"Bundle 'tpope/vim-rake'
+"Bundle 'rails.vim'
+Bundle 'tpope/vim-rails.git'
+"Bundle 'rubycomplete.vim'
+"Bundle 'railstab.vim'
+"Bundle 'vim-rails'
+"Bundle 'vimRubyX'
+"Bundle 'rake.vim'
+"Bundle 'ruby-menu.vim'
+"Bundle 'ruby.vim'
+"Bundle 'vim-ruby/vim-ruby'
+"Bundle 'rsense.vim'
+
+
+"Bundle 'rubycomplete.vim'
+
+Bundle 'ruby-macros.vim'
+

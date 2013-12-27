@@ -1,4 +1,12 @@
-vimrc
-=====
+Vim Configuation
+==================
 
-Vim config setttings. Using vundle
+VIMRC_DIR=""
+
+
+ln -sTf $VIMRC_DIR ~/.vim
+
+cp -f $VIMRC_DIR/_vimrc ~/.vimrc
+
+
+

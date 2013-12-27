@@ -1,0 +1,13 @@
+
+au FileType go map <leader>rr <ESC>:! go run %<CR>
+au FileType js map <leader>rr <ESC>:! node %<CR>
+au FileType ruby map <leader>rr <ESC>:! ruby %<CR>
+au FileType php map <leader>rr <ESC>:! php %<CR>
+au FileType bash map <leader>rr <ESC>:! bash %<CR>
+au FileType sh map <leader>rr <ESC>:! bash %<CR>
+au FileType python map <leader>rr <ESC>:! python %<CR>
+au FileType groovy map <leader>rr <ESC>:! groovy %<CR>
+au FileType scala map <leader>rr <ESC>:! scala %<CR>
+au FileType perl map <leader>rr <ESC>:! perl %<CR>
+au FileType sql map <leader>rr <ESC>:! mysql -uroot -pen98as < %<CR>
+

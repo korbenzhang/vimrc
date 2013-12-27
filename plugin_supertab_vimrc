@@ -1,0 +1,5 @@
+
+" SuperTab
+"=====================
+let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+let g:SuperTabRetainCompletionType=2
