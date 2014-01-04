@@ -52,7 +52,11 @@ endif
 
 " ColorScheme
 " ========================
-"colorscheme molokai
+
+" work fine in GUI
+
+colorscheme molokai
+
 "colorscheme railscasts
 "colorscheme yaml
 "colorscheme eclipse
