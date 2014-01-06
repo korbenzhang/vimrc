@@ -36,5 +36,5 @@ endif
 
 
 if has("gui_gtk2")
-	source $HOME/.vim/full_screen_gtk_vimrc
+	"source $HOME/.vim/full_screen_gtk_vimrc
 endif

@@ -54,8 +54,9 @@ endif
 " ========================
 
 " work fine in GUI
-
-colorscheme molokai
+if has("gui_running")
+	colorscheme molokai
+endif
 
 "colorscheme railscasts
 "colorscheme yaml
