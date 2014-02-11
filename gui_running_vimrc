@@ -9,7 +9,8 @@ if has("gui_win32")
 	"set guifont=Consolas:h11
 
 elseif has("gui_gtk2")
-	set guifont=Monospace\ 16
+	set guifont=Bitstream\ Vera\ Sans\ Mono\ 16
+	"set guifont=Monospace\ 16
 	"set guifont=YaHei\ Consolas\ Hybrid\ 13
 	"set guifont=
 
