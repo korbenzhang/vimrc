@@ -67,7 +67,12 @@ Bundle 'lookupfile'
 "Bundle 'sudo.vim'
 "Bundle 'svn.vim'
 "Bundle 'taglist-plus'
-Bundle 'taglist.vim'
+
+" taglist need install ctags
+if executable('ctags')
+	Bundle 'taglist.vim'
+endif
+
 "Bundle 'textmate16.vim'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'vcscommand.vim'
