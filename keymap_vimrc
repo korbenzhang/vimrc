@@ -97,7 +97,7 @@ nmap <C-N> :tabnew<cr>
 map <leader>y :YRShow<cr>
 map <leader>. :e .<cr>
 map <leader>w :w!<cr>
-map <leader>q :q!<cr>
+map <leader>q :bd<cr>
 map <leader>s :update<cr>
 
 "map <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm

@@ -44,5 +44,7 @@ set showmatch
 "set formatoptions=tcrqn
 
 
+set clipboard+=unnamed
+
 
 
