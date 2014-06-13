@@ -34,8 +34,6 @@ set wrap
 " ========================
 "set shellslash
 
-set wildmenu
-
 set incsearch
 
 set showmatch

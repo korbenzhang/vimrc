@@ -2,6 +2,12 @@
 "=====================
 " F4: Switch on/off TagList
 
+" if not exist ctags, skip.
+if !executable('ctags')
+    finish
+endif
+
+
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Auto_Open = 1
 let Tlist_Auto_Update = 1

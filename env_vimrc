@@ -3,7 +3,7 @@ if has("win32")
 " windows
 		let $APPS_HOME="d:/apps"
     let $DEV_HOME="e:/dev"
-    let $GOROOT=$APPS_HOME."/Go1"
+    let $GOROOT=$APPS_HOME."/Go"
 else
 " linux and others
 		let $APPS_HOME=$HOME."/apps"

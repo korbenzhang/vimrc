@@ -1,3 +1,16 @@
 " swapdir
+
+" if not exist swap dir, create one.
+let swap_dir=expand('$HOME/rundata/vim/')
+
+if !isdirectory(swap_dir)
+    silent !mkdir -p ~/rundata/vim
+endif
+
 set dir=$HOME/rundata/vim/
+
 set noswapfile
+
+
+
+
