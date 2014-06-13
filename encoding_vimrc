@@ -5,7 +5,7 @@ set ffs=unix,dos,mac
 set enc=utf-8
 "set termencoding=utf-8
 
-set ff=unix
+"set ff=unix
 
 " fileencoding
 set fenc=utf-8
