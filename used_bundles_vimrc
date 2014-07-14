@@ -134,3 +134,7 @@ Bundle 'surround.vim'
 "Bundle 'txt.vim'
 Bundle 'Syntastic'
 Bundle 'gdbmgr'
+
+
+"Bundle 'toyamarinyon/vim-swift'
+Bundle 'aespinosa/Swift-vim'
