@@ -36,3 +36,5 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+set switchbuf=useopen
+

@@ -1,7 +1,7 @@
 "Bundle 'AsyncCommand'
 Bundle 'EasyMotion'
 Bundle 'Syntastic'
-Bundle 'Conque-Shell'
+"Bundle 'Conque-Shell'
 "Bundle 'AutoTag'
 "Bundle 'Compile'
 "Bundle 'Conque-Shell'

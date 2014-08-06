@@ -35,6 +35,7 @@ map <F2> <C-o>
 " Build
 "map <F11> <ESC>:make<CR>
 map <leader>mm <ESC>:make<CR>
+map <C-F5> <ESC>:make<CR>
 
 "QuickFix
 map <leader>n <esc>:cnext<cr>

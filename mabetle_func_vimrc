@@ -81,3 +81,18 @@ function! UpdateTagsFile()
     silent !ctags -R --fields=+ianS --extra=+q
 endfunction
 nmap <F12> :call UpdateTagsFile()<CR>
+
+function! RunFile()
+	echo "Run File"
+	if &filetype == "go"
+		echo "Go File"
+		execute ':! go run %'
+		"silent :! go run %
+		return
+	endif
+
+	echo "I donot know how to run this file"
+endfunction
+command! -bar -narg=0 RunFile  call RunFile()
+map <F11> :call RunFile()<CR>
+
