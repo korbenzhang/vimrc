@@ -16,18 +16,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-
-let iCanHazVundle=1
-
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-
-if !filereadable(vundle_readme)
-	echo "Installing Vundle.."
-	echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    let iCanHazVundle=0
-endif
+source $HOME/.vim/init_vundle_vimrc
 
 set rtp+=$HOME/.vim/bundle/vundle/
 call vundle#rc()
@@ -53,6 +42,10 @@ source $HOME/.vim/backup_vimrc
 source $HOME/.vim/swap_vimrc
 source $HOME/.vim/au_vimrc
 source $HOME/.vim/keymap_vimrc
+source $HOME/.vim/keymap_alt_tabwin_vimrc
+source $HOME/.vim/keymap_malt_tabwin_vimrc
+"source $HOME/.vim/keymap_ctrl_tabwin_vimrc
+source $HOME/.vim/keymap_leader_tabwin_vimrc
 source $HOME/.vim/iab_vimrc
 source $HOME/.vim/fold_vimrc
 source $HOME/.vim/mouse_vimrc
