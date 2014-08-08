@@ -8,3 +8,5 @@ let g:vimrc_author='Korben Zhang'
 let g:vimrc_email='korbenzhang@gmail.com'
 let g:vimrc_homepage='http://www.mabetle.com'
 
+ino <tab> <c-r>=TriggerSnippet()<cr>
+snor <tab> <esc>i<right><c-r>=TriggerSnippet()<cr>

@@ -3,3 +3,4 @@
 
 set clipboard+=unnamed
 set shellpipe=\|\ tee
+let g:snippets_dir = "$HOME/.vim/snipmate.vim/snippets/"

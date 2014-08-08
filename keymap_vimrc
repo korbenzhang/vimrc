@@ -176,52 +176,24 @@ nmap <M-8> 8gt
 imap <M-9> <Esc>9gt
 nmap <M-9> 9gt
 
+" go to first tab
+nmap <M-h> <ESC>:tabfirst<cr>
 
-imap <C-1> <Esc>1gt
-nmap <C-1> 1gt
-imap <C-2> <Esc>2gt
-nmap <C-2> 2gt
-imap <C-3> <Esc>3gt
-nmap <C-3> 3gt
-imap <C-4> <Esc>4gt
-nmap <C-4> 4gt
-imap <C-5> <Esc>5gt
-nmap <C-5> 5gt
-imap <C-6> <Esc>6gt
-nmap <C-6> 6gt
-imap <C-7> <Esc>7gt
-nmap <C-7> 7gt
-imap <C-8> <Esc>8gt
-nmap <C-8> 8gt
-imap <C-9> <Esc>9gt
-nmap <C-9> 9gt
+" go to last tab
+nmap <M-e> <ESC>:tablast<cr>
+nmap <M-l> <ESC>:tablast<cr>
 
-imap <leader>1 <Esc>1gt
-nmap <leader>1 1gt
-imap <leader>2 <Esc>2gt
-nmap <leader>2 2gt
-imap <leader>3 <Esc>3gt
-nmap <leader>3 3gt
-imap <leader>4 <Esc>4gt
-nmap <leader>4 4gt
-imap <leader>5 <Esc>5gt
-nmap <leader>5 5gt
-imap <leader>6 <Esc>6gt
-nmap <leader>6 6gt
-imap <leader>7 <Esc>7gt
-nmap <leader>7 7gt
-imap <leader>8 <Esc>8gt
-nmap <leader>8 8gt
-imap <leader>9 <Esc>9gt
-nmap <leader>9 9gt
+" go to previous tab
+nmap <M-u> <ESC>:tabprevious<cr>
+nmap <M-j> <ESC>:tabprevious<cr>
 
-nmap <leader>F :tabfirst<cr>
-nmap <leader>L :tablast<cr>
-nmap <leader>N :tabnext<cr>
-nmap <leader>P :tabprevious<cr>
+" go to next tab
+nmap <M-d> <ESC>:tabnext<cr>
+nmap <M-k> <ESC>:tabnext<cr>
 
-nmap <C-PageUp> <ESC>:tabprevious<cr>
-nmap <C-PageDown> <ESC>:tabnext<cr>
+
+nmap <M-PageUp> <ESC>:tabprevious<cr>
+nmap <M-PageDown> <ESC>:tabnext<cr>
 
 
 " toggle comment
