@@ -1,26 +1,39 @@
+" set env for VIM
 
 if has("win32")
 " windows
-		let $APPS_HOME="d:/apps"
-    let $DEV_HOME="e:/dev"
-    let $GOROOT=$APPS_HOME."/Go"
+	let $APPS_HOME="d:/apps"
+    let $DEV_HOME="d:/dev"
 else
 " linux and others
-		let $APPS_HOME=$HOME."/apps"
+	let $APPS_HOME=$HOME."/apps"
     let $DEV_HOME=$HOME."/dev"
-    let $GOROOT=$APPS_HOME."/go"
 endif
+
+" GOROOT
+let $GOROOT=$APPS_HOME."/go"
+let $OSCHINA=$DEV_HOME."/oschina.net"
 
 " Common
 let $GOPATH			=$DEV_HOME."/gocodes"
-let $LAB				=$DEV_HOME."/devlab/trunk"
+
+let $LAB			=$OSCHINA."betle_lab"
+let $TESTLAB		=$OSCHINA."betle_testlab"
+let $BETLE_GO		=$OSCHINA."betle_go"
+let $BETLE_BIN		=$OSCHINA."betle_bin"
+let $BETLE_WINBIN		=$OSCHINA."betle_winbin"
+
+
 let $TEST_HOME		=$DEV_HOME."/testlab/"
-let $DEMO				=$LAB."/demo"
+
+
 let $VIMRC			=$HOME."/.vim"
 
-let $GITHUB			=$DEV_HOME."/GitHub"
-let $KZ_GITHUB	=$GITHUB."/korbenzhang"
-let $MBT_GITHUB	=$GITHUB."/mabetle"
+let $GITHUB			=$DEV_HOME."/github.com"
+let $KZ_GITHUB		=$GITHUB."/korbenzhang"
+let $MBT_GITHUB		=$GITHUB."/mabetle"
+let $KZ_PAGE		=$GITHUB."/korbenzhang/korbenzhang.github.com"
+let $MBT_PAGE		=$GITHUB."/mabetle/mabetle.github.io"
 
 " let $PATH=$GOROOT."/bin:".$PATH
 
