@@ -1,7 +1,7 @@
 "Tagbar
 "====================
 
-"let g:tagbar_ctags_bin = 'C:\Ctags5.8\ctags.exe'
+"let g:tagbar_ctags_bin = 'ctags.exe'
 "let g:tagbar_left = 1
 "let g:tagbar_width = 30
 
