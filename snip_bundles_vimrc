@@ -1,5 +1,5 @@
-"Bundle 'snipMate'
-Bundle 'msanders/snipmate.vim.git'
+Bundle 'snipMate'
+"Bundle 'msanders/snipmate.vim.git'
 
 "Bundle 'snipmate-snippets'
 "Bundle 'superSnipMate'
