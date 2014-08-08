@@ -17,11 +17,11 @@ let $OSCHINA=$DEV_HOME."/oschina.net"
 " Common
 let $GOPATH			=$DEV_HOME."/gocodes"
 
-let $LAB			=$OSCHINA."betle_lab"
-let $TESTLAB		=$OSCHINA."betle_testlab"
-let $BETLE_GO		=$OSCHINA."betle_go"
-let $BETLE_BIN		=$OSCHINA."betle_bin"
-let $BETLE_WINBIN		=$OSCHINA."betle_winbin"
+let $LAB			=$OSCHINA."/betle_lab"
+let $TESTLAB		=$OSCHINA."/betle_testlab"
+let $BETLE_GO		=$OSCHINA."/betle_go"
+let $BETLE_BIN		=$OSCHINA."/betle_bin"
+let $BETLE_WINBIN		=$OSCHINA."/betle_winbin"
 
 
 let $TEST_HOME		=$DEV_HOME."/testlab/"
