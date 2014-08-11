@@ -1,9 +1,11 @@
 " TagList
 "=====================
 " F4: Switch on/off TagList
+map <F4> <ESC>:TlistToggle<CR>
 
 " if not exist ctags, skip.
 if !executable('ctags')
+	echo "not install ctags"
     finish
 endif
 
