@@ -63,8 +63,8 @@ if has("win32")
 endif
 
 " status line
-
-if has("win") && !has("gui")
+if has("win32") && (!has("gui"))
+	"only for dos
 	source $HOME/.vim/statusline_vimrc
 else
 	Bundle 'Lokaltog/vim-powerline'
