@@ -1,4 +1,4 @@
-" snipMate            Tab智能补全
+" snipMate            智能补全
 " ========================
 let g:snips_author='Korben Zhang'
 
@@ -9,3 +9,5 @@ let g:vimrc_homepage='http://www.mabetle.com'
 
 "ino <tab> <c-r>=TriggerSnippet()<cr>
 "snor <tab> <esc>i<right><c-r>=TriggerSnippet()<cr>
+ino <c-j> <c-r>=TriggerSnippet()<cr>
+snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>

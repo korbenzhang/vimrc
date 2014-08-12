@@ -5,6 +5,7 @@ nnoremap <silent> <esc><esc> :noh<cr>
 map <leader>ee :MabetleVimrc<cr>
 map <leader>ss :source $HOME/.vim/vimrc<cr>
 
+" reload after edit vimrc
 au! BufWritePost *[\._]vimrc source $HOME/.vim/vimrc
 au! BufWritePost vimrc source $HOME/.vim/vimrc
 
@@ -23,15 +24,8 @@ imap <C-Up> <C-o>:<C-u>move .-2<CR>
 vmap <C-Down> :move '>+1<CR>gv
 vmap <C-Up> :move '<-2<CR>gv
 
-cno $h e ~/
-cno $j e ./e
-cno $th tabnew ~/
-cno $dm %s///g
-
-cmap <C-E>    <End>
-cmap <C-K>    <C-U>
-
 " backward
+" like eclipse
 map <F2> <C-o>
 
 " Build
@@ -152,8 +146,8 @@ map <A-k> :cprevious<CR>
 "nmap <C-TAB> :tabNext<CR>
 "imap <C-TAB> <ESC><ESC>:tabNext<CR>
 
-nmap <C-S-TAB> :tabnext<CR>
-imap <C-S-TAB> <ESC><ESC>:tabnext<CR>
+"nmap <C-S-TAB> :tabnext<CR>
+"imap <C-S-TAB> <ESC><ESC>:tabnext<CR>
 
 
 nmap <leader><TAB> :tabNext<CR>
