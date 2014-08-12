@@ -52,13 +52,10 @@ source $HOME/.vim/mouse_vimrc
 source $HOME/.vim/paste_vimrc
 source $HOME/.vim/syntax_vimrc
 source $HOME/.vim/display_vimrc
-source $HOME/.vim/statusline_vimrc
+"source $HOME/.vim/statusline_vimrc
 source $HOME/.vim/plugin_vimrc
-
 source $HOME/.vim/mabetle_func_vimrc
-
 source $HOME/.vim/run_vimrc
-
 source $HOME/.vim/golang_vimrc
 
 
@@ -72,19 +69,38 @@ if has("win32")
     source $HOME/.vim/win32_vimrc
 endif
 
+
+if has("dos32")
+	source $HOME/.vim/dos_vimrc
+endif
+
+
 " mouse behave
 behave mswin
 
 " modify mswin.vim
 source $HOME/.vim/mswin.vim
-
+source $HOME/.vim/highlight_vimrc
 source $HOME/.vim/misc_vimrc
-
 source $HOME/.vim/omnifunc_vimrc
+
+source $HOME/.vim/plugin_acp.vimrc
 source $HOME/.vim/plugin_omni_complete_vimrc
 source $HOME/.vim/plugin_supertab_vimrc
 source $HOME/.vim/plugin_tlist_vimrc
 source $HOME/.vim/plugin_powerline_vimrc
-
+source $HOME/.vim/plugin_closetag_vimrc
+source $HOME/.vim/plugin_snipmate_vimrc
+source $HOME/.vim/plugin_winmanager_vimrc
 "source $HOME/.vim/plugin_rsense_vimrc
-
+"source $HOME/.vim/plugin_vimwiki_vimrc
+"source $HOME/.vim/plugin_tbar_vimrc
+"source $HOME/.vim/plugin_tex_vimrc
+"source $HOME/.vim/plugin_template_load_vimrc
+source $HOME/.vim/plugin_nerdtree_vimrc
+"source $HOME/.vim/plugin_minibufexplore_vimrc
+"source $HOME/.vim/plugin_lookupfile_vimrc
+source $HOME/.vim/plugin_expl_vimrc
+"source $HOME/.vim/plugin_doxygen_vimrc
+"source $HOME/.vim/plugin_bufexpl_vimrc
+"source $HOME/.vim/plugin_async_vimrc

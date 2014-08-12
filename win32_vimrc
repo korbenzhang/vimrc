@@ -1,7 +1,9 @@
 " Window Vimrc
 " ======================================
 
+" share to system clipboard
 set clipboard+=unnamed
+
 set shellpipe=\|\ tee
 
 "let g:snippets_dir = "c:/Users/korbenzhang/.vim/bundle/snipMate/snippets/"

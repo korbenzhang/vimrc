@@ -1,11 +1,7 @@
 "Plugins
 " ========================
 
-"source $HOME/.vim/plugin_vimwiki_vimrc
-source $HOME/.vim/plugin_tbar_vimrc
-"source $HOME/.vim/plugin_winmanager_vimrc
 
 " Grep
 " ========================
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn'
-"let g:snip_set_textmate_cp=1

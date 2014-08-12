@@ -1,4 +1,6 @@
 " swapdir
+" ============
+
 
 " if not exist swap dir, create one.
 let swap_dir=expand('$HOME/rundata/vim/')

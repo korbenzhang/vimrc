@@ -1,4 +1,4 @@
-
+" ia
 " ========================
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 iab xname Korben Zhang
@@ -15,3 +15,4 @@ iab re return
 
 ab teh the
 ab fro for
+

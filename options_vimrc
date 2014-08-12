@@ -44,9 +44,6 @@ set showmatch
 
 "set clipboard+=unnamed
 
-
-set ignorecase
-
 set dictionary+=/usr/share/dict/words
 
 
