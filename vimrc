@@ -55,6 +55,7 @@ source $HOME/.vim/golang_vimrc
 
 " some gui features
 if has("gui_running")
+	Bundle 'Lokaltog/vim-powerline'
 	source $HOME/.vim/gui_running_vimrc
 endif
 
@@ -69,6 +70,9 @@ if has("dos32")
 	source $HOME/.vim/dos_vimrc
 endif
 
+if has("unix")
+	Bundle 'Lokaltog/vim-powerline'
+endif
 
 " mouse behave
 behave mswin

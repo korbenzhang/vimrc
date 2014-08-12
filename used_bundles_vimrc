@@ -1,5 +1,4 @@
 "Bundle 'AsyncCommand'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'EasyMotion'
 "Bundle 'Syntastic'
 "Bundle 'Conque-Shell'
