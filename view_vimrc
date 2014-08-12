@@ -1,5 +1,13 @@
 " view
 " ========================
+
 set viewdir=$HOME/rundata/vim/views/
+
+let view_dir=expand('$HOME/rundata/vim/views')
+
+if !isdirectory(view_dir)
+    silent !mkdir -p ~/rundata/vim/views
+endif
+
 "autocmd BufWinLeave * mkview
 "autocmd BufWinEnter * "silent loadview"
