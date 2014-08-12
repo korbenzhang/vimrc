@@ -62,14 +62,14 @@ if has("win32")
     source $HOME/.vim/win32_vimrc
 endif
 
+" status line
 
-if has("dos32")
-    "for dos status line
+if has("win") && !has("gui")
 	source $HOME/.vim/statusline_vimrc
-	source $HOME/.vim/dos_vimrc
 else
 	Bundle 'Lokaltog/vim-powerline'
 endif
+
 
 " mouse behave
 behave mswin

@@ -1,4 +1,5 @@
 Bundle 'snipMate'
+"Bundle 'Lokaltog/vim-powerline'
 "Bundle 'AsyncCommand'
 "Bundle 'EasyMotion'
 "Bundle 'Syntastic'
