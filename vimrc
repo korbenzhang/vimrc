@@ -48,7 +48,6 @@ source $HOME/.vim/mouse_vimrc
 "source $HOME/.vim/paste_vimrc
 source $HOME/.vim/syntax_vimrc
 source $HOME/.vim/display_vimrc
-"source $HOME/.vim/statusline_vimrc
 "source $HOME/.vim/plugin_vimrc
 source $HOME/.vim/mabetle_func_vimrc
 source $HOME/.vim/run_vimrc
@@ -66,6 +65,7 @@ endif
 
 
 if has("dos32")
+	source $HOME/.vim/statusline_vimrc
 	source $HOME/.vim/dos_vimrc
 endif
 
