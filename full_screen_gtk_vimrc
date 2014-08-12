@@ -1,7 +1,6 @@
 " unix gui
 " ========================
 
-
 " need install wmctrl
 let g:fullscreen = 0
 function! ToggleFullscreen()

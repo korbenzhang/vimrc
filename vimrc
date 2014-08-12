@@ -54,7 +54,6 @@ source $HOME/.vim/golang_vimrc
 
 " some gui features
 if has("gui_running")
-	Bundle 'Lokaltog/vim-powerline'
 	source $HOME/.vim/gui_running_vimrc
 endif
 
@@ -68,9 +67,7 @@ if has("dos32")
     "for dos status line
 	source $HOME/.vim/statusline_vimrc
 	source $HOME/.vim/dos_vimrc
-endif
-
-if has("unix")
+else
 	Bundle 'Lokaltog/vim-powerline'
 endif
 
