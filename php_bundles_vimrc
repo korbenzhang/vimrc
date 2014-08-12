@@ -1,11 +1,7 @@
 " for php dev
 " ===========
 
-
-
 Bundle 'php.vim-for-php5'
 Bundle 'php.vim'
-
-
 
 

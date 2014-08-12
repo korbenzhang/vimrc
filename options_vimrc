@@ -41,9 +41,6 @@ set showmatch
 " 自动格式化
 "set formatoptions=tcrqn
 
-
-"set clipboard+=unnamed
-
 if has("unix")
 	set dictionary+=/usr/share/dict/words
 endif

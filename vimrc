@@ -1,4 +1,3 @@
-"======================
 " vim config file
 " author: Korben Zhang
 "======================
@@ -28,8 +27,7 @@ source $HOME/.vim/tags_vimrc
 "source $HOME/.vim/ruby_bundles_vimrc
 "source $HOME/.vim/snip_bundles_vimrc
 "source $HOME/.vim/ulti_snips_vimrc
-source $HOME/.vim/auto_pair_vimrc
-source $HOME/.vim/complete_vimrc
+"source $HOME/.vim/auto_pair_vimrc
 source $HOME/.vim/options_vimrc
 source $HOME/.vim/encoding_vimrc
 source $HOME/.vim/tab_indent_vimrc
@@ -48,6 +46,7 @@ source $HOME/.vim/mouse_vimrc
 "source $HOME/.vim/paste_vimrc
 source $HOME/.vim/syntax_vimrc
 source $HOME/.vim/display_vimrc
+source $HOME/.vim/complete_vimrc
 "source $HOME/.vim/plugin_vimrc
 source $HOME/.vim/mabetle_func_vimrc
 source $HOME/.vim/run_vimrc
@@ -66,6 +65,7 @@ endif
 
 
 if has("dos32")
+    "for dos status line
 	source $HOME/.vim/statusline_vimrc
 	source $HOME/.vim/dos_vimrc
 endif
@@ -81,17 +81,16 @@ behave mswin
 source $HOME/.vim/mswin.vim
 source $HOME/.vim/highlight_vimrc
 source $HOME/.vim/misc_vimrc
+
 source $HOME/.vim/omnifunc_vimrc
-
-
-source $HOME/.vim/plugin_acp.vimrc
 source $HOME/.vim/plugin_omni_complete_vimrc
-source $HOME/.vim/plugin_snipmate_vimrc
+
 source $HOME/.vim/plugin_supertab_vimrc
 source $HOME/.vim/plugin_tlist_vimrc
 source $HOME/.vim/plugin_powerline_vimrc
 source $HOME/.vim/plugin_closetag_vimrc
 source $HOME/.vim/plugin_winmanager_vimrc
+source $HOME/.vim/plugin_snipmate_vimrc
 "source $HOME/.vim/plugin_rsense_vimrc
 "source $HOME/.vim/plugin_vimwiki_vimrc
 "source $HOME/.vim/plugin_tbar_vimrc

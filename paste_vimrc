@@ -1,4 +1,7 @@
 " Paste
 " ========================
-set paste
+if has("gui_running")
+	"set paste
+endif
+
 "set clipboard+=unnamed " share windows clipboard

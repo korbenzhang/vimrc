@@ -1,5 +1,4 @@
-
-if !has("win32")
+if has("ruby")
 	"Bundle 'Command-T'
 endif
 
