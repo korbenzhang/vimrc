@@ -88,7 +88,7 @@ source $HOME/.vim/plugin_snipmate_vimrc
 "source $HOME/.vim/plugin_tbar_vimrc
 "source $HOME/.vim/plugin_tex_vimrc
 "source $HOME/.vim/plugin_template_load_vimrc
-"source $HOME/.vim/plugin_nerdtree_vimrc
+source $HOME/.vim/plugin_nerdtree_vimrc
 "source $HOME/.vim/plugin_minibufexplore_vimrc
 "source $HOME/.vim/plugin_lookupfile_vimrc
 "source $HOME/.vim/plugin_expl_vimrc
