@@ -17,6 +17,7 @@ if has("win32") && (!has("gui"))
 	set termencoding=cp936
 else
 	set enc=utf-8
+	set termencoding=GBK
 endif
 
 
