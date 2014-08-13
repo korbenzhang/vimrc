@@ -6,9 +6,6 @@ set nocompatible
 
 source $HOME/.vim/env_vimrc
 
-let mapleader = ","
-let g:mapleader = ","
-
 " vundle support
 " ========================
 filetype on
@@ -21,7 +18,6 @@ set rtp+=$HOME/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-"source $HOME/.vim/all_bundles_vimrc
 source $HOME/.vim/used_bundles_vimrc
 source $HOME/.vim/tags_vimrc
 "source $HOME/.vim/ruby_bundles_vimrc
@@ -69,7 +65,6 @@ if has("win32") && (!has("gui"))
 else
 	Bundle 'Lokaltog/vim-powerline'
 endif
-
 
 " mouse behave
 behave mswin

@@ -1,5 +1,9 @@
 " set env for VIM
 
+let mapleader = ","
+let g:mapleader = ","
+
+
 if has("win32")
 " windows
 	let $APPS_HOME="d:/apps"

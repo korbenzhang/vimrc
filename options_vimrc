@@ -1,10 +1,12 @@
+" options
+" ==============
+
 set smartcase
 
 "Bell
 " ========================
 set noerrorbells
 set novisualbell
-
 
 " cmd line
 set showmode
@@ -45,4 +47,6 @@ if has("unix")
 	set dictionary+=/usr/share/dict/words
 endif
 
+" dict in  .vim
+set dictionary+=$HOME/.vim/words
 

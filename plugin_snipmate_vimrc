@@ -1,4 +1,4 @@
-" snipMate            智能补全
+" snipMate   智能补全
 " ========================
 let g:snips_author='Korben Zhang'
 
