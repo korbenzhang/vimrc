@@ -9,7 +9,7 @@ set ruler
 "set linespace=0
 
 " term color
-set t_Co=256
+set t_Co=1024
 
 " set color column
 "set cc=80
