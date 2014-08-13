@@ -1,7 +1,15 @@
+"need ruby
 Bundle 'snipMate'
+"Bundle 'SirVer/ultisnips'
 Bundle 'maven-plugin'
+"Bundle 'honza/vim-snippets'
+"Bundle 'fatih/vim-go'
+"Bundle 'Valloric/YouCompleteMe'
+"need lua
+"Bundle 'Shougo/neocomplete.vim'
 "Bundle 'Lokaltog/vim-powerline'
-Bundle 'AsyncCommand'
+"need vim build with client server
+"Bundle 'AsyncCommand'
 "Bundle 'EasyMotion'
 "Bundle 'Conque-Shell'
 "Bundle 'AutoTag'
@@ -129,8 +137,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'korbenzhang/vim_misc'
 "Bundle 'surround.vim'
 "Bundle 'txt.vim'
-"Bundle 'Syntastic'
-"Bundle 'gdbmgr'
+Bundle 'Syntastic'
+"Bundle 'scrooloose/syntastic'
+
+Bundle 'gdbmgr'
 
 "Bundle 'toyamarinyon/vim-swift'
 "Bundle 'aespinosa/Swift-vim'

@@ -7,6 +7,7 @@ set clipboard+=unnamed
 set shellpipe=\|\ tee
 
 "let g:snippets_dir = "c:/Users/korbenzhang/.vim/bundle/snipMate/snippets/"
+"let g:snippets_dir = "c:/Users/korbenzhang/.vim/bundles/vim-snippets/snippets/"
 let g:snippets_dir = "c:/Users/korbenzhang/.vim/snippets/"
 
 

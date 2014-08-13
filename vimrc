@@ -21,9 +21,6 @@ Bundle 'gmarik/vundle'
 source $HOME/.vim/used_bundles_vimrc
 source $HOME/.vim/tags_vimrc
 "source $HOME/.vim/ruby_bundles_vimrc
-"source $HOME/.vim/snip_bundles_vimrc
-"source $HOME/.vim/ulti_snips_vimrc
-"source $HOME/.vim/auto_pair_vimrc
 source $HOME/.vim/options_vimrc
 source $HOME/.vim/encoding_vimrc
 source $HOME/.vim/tab_indent_vimrc
