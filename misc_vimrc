@@ -1,9 +1,5 @@
 " Filetype detect
 " ========================
-"filetype indent on
-"filetype plugin on
-
-"set ff=unix
 
 " Grep
 " ========================

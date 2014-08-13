@@ -94,4 +94,4 @@ source $HOME/.vim/plugin_nerdtree_vimrc
 "source $HOME/.vim/plugin_expl_vimrc
 "source $HOME/.vim/plugin_doxygen_vimrc
 "source $HOME/.vim/plugin_bufexpl_vimrc
-"source $HOME/.vim/plugin_async_vimrc
+source $HOME/.vim/plugin_async_vimrc
