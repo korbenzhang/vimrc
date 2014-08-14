@@ -3,10 +3,11 @@ if !has("gui_running")
 	finish
 endif
 
-set go=m
+"Gui options egmLt
+set guioptions=eg
 
 if has("gui_win32")
-	set guifont=Monaco:h12
+	set guifont=Monaco:h13
 	"set guifont=Consolas:h11
 
 elseif has("gui_gtk2")

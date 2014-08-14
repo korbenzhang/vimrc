@@ -39,7 +39,6 @@ source $HOME/.vim/keymap_malt_tabwin_vimrc
 "source $HOME/.vim/keymap_ctrl_tabwin_vimrc
 source $HOME/.vim/keymap_leader_tabwin_vimrc
 source $HOME/.vim/iab_vimrc
-source $HOME/.vim/fold_vimrc
 source $HOME/.vim/mouse_vimrc
 source $HOME/.vim/paste_vimrc
 source $HOME/.vim/syntax_vimrc
@@ -90,3 +89,4 @@ source $HOME/.vim/plugin_nerdtree_vimrc
 "source $HOME/.vim/plugin_bufexpl_vimrc
 "source $HOME/.vim/plugin_async_vimrc
 
+source $HOME/.vim/fold_vimrc

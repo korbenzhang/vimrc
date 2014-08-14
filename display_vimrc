@@ -60,7 +60,7 @@ endif
 "colorscheme railscasts
 "colorscheme yaml
 "colorscheme eclipse
-"colorscheme blue
+"colorscheme darkblue
 
 " TabLabel
 " ========================
@@ -76,7 +76,6 @@ set shortmess=atI
 
 "set list
 "set nolist
-
 
 "set lcs=tab:>-,trail:-,nbsp:%
 "set lcs=tab:>-,eol:<,nbsp:%

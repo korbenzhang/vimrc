@@ -2,17 +2,16 @@
 " ========================
 
 "new file type and encoding
-au BufReAd,BufNewFile * set fileformat=unix
-au BufReAd,BufNewFile * set fenc=utf-8
-
+au BufNewFile * set fileformat=unix
+au BufNewFile * set fenc=utf-8
+"au BufReAd,BufNewFile * set fileformat=unix
+"au BufReAd,BufNewFile * set fenc=utf-8
 
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.tml set filetype=html
 au BufRead,BufNewFile *.jspx set filetype=jsp
 au BufRead,BufNewFile *.m set filetype=objc
 au BufRead,BufNewFile *.gradle set filetype=groovy
-
-
 
 
 au FileType text setlocal textwidth=78
