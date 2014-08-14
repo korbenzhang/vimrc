@@ -49,5 +49,6 @@ set showmatch
 "endif
 
 " dict in  .vim
-set dictionary+=$HOME/.vim/words  " ~/.vim/words
+set dictionary+=$HOME/.vim/words		" ~/.vim/words
+set dictionary+=$HOME/.vim/words_mine	" ~/.vim/words_mine
 
