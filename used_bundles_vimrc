@@ -2,7 +2,7 @@ Plugin 'auto_mkdir'
 Plugin 'majutsushi/tagbar'
 Plugin 'ZenCoding.vim'
 "Plugin 'kien/ctrlp.vim'
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'	"syntax check
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'gdbmgr'
@@ -21,9 +21,9 @@ Plugin 'korbenzhang/vim_misc'
 "Plugin 'tyru/open-browser.vim'
 
 " C and C++
-Plugin 'a.vim'
+Plugin 'a.vim' " switch to .h
 
-"Plugin 'Auto-Pairs'
+Plugin 'Auto-Pairs'
 "Plugin 'Lokaltog/vim-powerline'
 "Plugin 'closetag.vim'
 
@@ -44,6 +44,7 @@ Plugin 'CmdlineCompl.vim'
 
 "Plugin 'XML-Completion'
 "Plugin 'ack.vim'
+Plugin 'AutoComplPop'
 "Plugin 'autocomp.vim'
 "need vim build with client server
 "Plugin 'AsyncCommand'

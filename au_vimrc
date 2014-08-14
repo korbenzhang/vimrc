@@ -1,7 +1,10 @@
 " Autocmd
 " ========================
 
-"au BufRead,BufNewFile * set fileformat=unix
+"new file type and encoding
+au BufReAd,BufNewFile * set fileformat=unix
+au BufReAd,BufNewFile * set fenc=utf-8
+
 
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.tml set filetype=html

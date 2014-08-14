@@ -66,10 +66,11 @@ behave mswin
 source $HOME/.vim/mswin.vim
 source $HOME/.vim/highlight_vimrc
 source $HOME/.vim/misc_vimrc
+"source $HOME/.vim/omnifunc_vimrc
 
-source $HOME/.vim/omnifunc_vimrc
+" Plugins settings
+" ====================================================
 source $HOME/.vim/plugin_omni_complete_vimrc
-
 source $HOME/.vim/plugin_supertab_vimrc
 source $HOME/.vim/plugin_tlist_vimrc
 "source $HOME/.vim/plugin_powerline_vimrc
@@ -88,3 +89,4 @@ source $HOME/.vim/plugin_nerdtree_vimrc
 "source $HOME/.vim/plugin_doxygen_vimrc
 "source $HOME/.vim/plugin_bufexpl_vimrc
 "source $HOME/.vim/plugin_async_vimrc
+

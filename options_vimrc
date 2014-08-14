@@ -48,5 +48,5 @@ if has("unix")
 endif
 
 " dict in  .vim
-set dictionary+=$HOME/.vim/words
+set dictionary+=$HOME/.vim/words  " ~/.vim/words
 

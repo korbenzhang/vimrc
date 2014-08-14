@@ -1,4 +1,5 @@
 " display
+" =====================
 
 set number
 set ruler
@@ -54,10 +55,8 @@ endif
 
 " ColorScheme
 " ========================
-
 " work fine in GUI
 "colorscheme molokai
-
 "colorscheme railscasts
 "colorscheme yaml
 "colorscheme eclipse
