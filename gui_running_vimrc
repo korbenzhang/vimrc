@@ -1,4 +1,7 @@
 "set guifont=DejaVu\ Sans\ mono\ 13
+if !has("gui_running")
+	finish
+endif
 
 if has("gui_win32")
 	set guifont=Monaco:h12

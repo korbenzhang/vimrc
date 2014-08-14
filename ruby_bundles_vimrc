@@ -7,22 +7,22 @@ let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
-"Bundle 'ruby_imaps'
-"Bundle 'tpope/vim-rake'
-"Bundle 'rails.vim'
-Bundle 'tpope/vim-rails.git'
-"Bundle 'rubycomplete.vim'
-"Bundle 'railstab.vim'
-"Bundle 'vim-rails'
-"Bundle 'vimRubyX'
-"Bundle 'rake.vim'
-"Bundle 'ruby-menu.vim'
-"Bundle 'ruby.vim'
-"Bundle 'vim-ruby/vim-ruby'
-"Bundle 'rsense.vim'
+"Plugin 'ruby_imaps'
+"Plugin 'tpope/vim-rake'
+"Plugin 'rails.vim'
+Plugin 'tpope/vim-rails.git'
+"Plugin 'rubycomplete.vim'
+"Plugin 'railstab.vim'
+"Plugin 'vim-rails'
+"Plugin 'vimRubyX'
+"Plugin 'rake.vim'
+"Plugin 'ruby-menu.vim'
+"Plugin 'ruby.vim'
+"Plugin 'vim-ruby/vim-ruby'
+"Plugin 'rsense.vim'
 
 
-"Bundle 'rubycomplete.vim'
+"Plugin 'rubycomplete.vim'
 
-Bundle 'ruby-macros.vim'
+Plugin 'ruby-macros.vim'
 

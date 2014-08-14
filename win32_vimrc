@@ -1,6 +1,10 @@
 " Window Vimrc
 " ======================================
 
+if !has("win32")
+	finish
+endif
+
 " share to system clipboard
 set clipboard+=unnamed
 
