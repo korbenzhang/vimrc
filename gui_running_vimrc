@@ -3,6 +3,8 @@ if !has("gui_running")
 	finish
 endif
 
+set go=m
+
 if has("gui_win32")
 	set guifont=Monaco:h12
 	"set guifont=Consolas:h11

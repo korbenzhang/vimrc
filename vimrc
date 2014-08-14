@@ -1,7 +1,6 @@
 " vim config file
 " author: Korben Zhang
 "======================
-
 set nocompatible
 filetype off
 
@@ -42,7 +41,7 @@ source $HOME/.vim/keymap_leader_tabwin_vimrc
 source $HOME/.vim/iab_vimrc
 source $HOME/.vim/fold_vimrc
 source $HOME/.vim/mouse_vimrc
-"source $HOME/.vim/paste_vimrc
+source $HOME/.vim/paste_vimrc
 source $HOME/.vim/syntax_vimrc
 source $HOME/.vim/display_vimrc
 source $HOME/.vim/complete_vimrc
@@ -75,7 +74,7 @@ source $HOME/.vim/plugin_supertab_vimrc
 source $HOME/.vim/plugin_tlist_vimrc
 "source $HOME/.vim/plugin_powerline_vimrc
 source $HOME/.vim/plugin_closetag_vimrc
-source $HOME/.vim/plugin_winmanager_vimrc
+"source $HOME/.vim/plugin_winmanager_vimrc
 source $HOME/.vim/plugin_snipmate_vimrc
 "source $HOME/.vim/plugin_rsense_vimrc
 "source $HOME/.vim/plugin_vimwiki_vimrc
