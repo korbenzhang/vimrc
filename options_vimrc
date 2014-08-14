@@ -43,9 +43,10 @@ set showmatch
 " 自动格式化
 "set formatoptions=tcrqn
 
-if has("unix")
-	set dictionary+=/usr/share/dict/words
-endif
+" I have copy linux /usr/share/dict/words to .vim dir
+"if has("unix")
+	"set dictionary+=/usr/share/dict/words
+"endif
 
 " dict in  .vim
 set dictionary+=$HOME/.vim/words  " ~/.vim/words
