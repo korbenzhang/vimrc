@@ -8,8 +8,3 @@
 " set completeopt as don't show menu and preview
 "set completeopt=menuone
 
-" Popup menu hightLight Group
-highlight Pmenu ctermbg=13 guibg=LightGray
-highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
-highlight PmenuSbar ctermbg=7 guibg=DarkGray
-highlight PmenuThumb guibg=Black
