@@ -1,16 +1,16 @@
 Plugin 'auto_mkdir'
 Plugin 'majutsushi/tagbar'
 Plugin 'ZenCoding.vim'
-"Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim' " find file in dir
 Plugin 'scrooloose/syntastic'	"syntax check
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'gdbmgr'
-"Plugin 'edsono/vim-matchit'
+Plugin 'edsono/vim-matchit'
 Plugin 'elzr/vim-json'
 Plugin 'bling/vim-airline'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'  " git
+Plugin 'tpope/vim-surround'
 Plugin 'plasticboy/vim-markdown'
 "Plugin 'justinmk/vim-sneak'
 Plugin 'korbenzhang/vim_misc'
@@ -22,6 +22,7 @@ Plugin 'korbenzhang/vim_misc'
 
 " C and C++
 Plugin 'a.vim' " switch to .h
+Plugin 'OmniCppComplete'
 
 Plugin 'Auto-Pairs'
 "Plugin 'Lokaltog/vim-powerline'
@@ -39,12 +40,11 @@ Plugin 'SuperTab'
 Plugin 'snipMate'
 "Plugin 'honza/vim-snippets'
 Plugin 'CmdlineCompl.vim'
-"Plugin 'OmniCppComplete'
 "Plugin 'SQLComplete.vim'
 
 "Plugin 'XML-Completion'
 "Plugin 'ack.vim'
-Plugin 'AutoComplPop'
+Plugin 'AutoComplPop' "  AckEnable
 "Plugin 'autocomp.vim'
 "need vim build with client server
 "Plugin 'AsyncCommand'
@@ -59,14 +59,10 @@ Plugin 'AutoComplPop'
 "Plugin 'autofmt'
 "Plugin 'bash-support.vim'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Plugin 'tpope/vim-fugitive'
 "Plugin 'winmanager'
 
-if executable('ctags')
-	Plugin 'taglist.vim'
-else
-	echo "not install ctags"
-endif
+" xml
+Plugin 'xml.vim'
 
 if has("unix")
 	Plugin 'SudoEdit.vim'

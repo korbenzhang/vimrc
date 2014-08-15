@@ -2,28 +2,8 @@
 " author: Korben Zhang
 "======================
 set nocompatible
-filetype off
 
 source $HOME/.vim/env_vimrc
-
-" if not have vundle, get one
-source $HOME/.vim/init_vundle_vimrc
-
-" vundle support
-" ========================
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-source $HOME/.vim/used_bundles_vimrc
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-
-filetype plugin indent on    " required
 
 source $HOME/.vim/tags_vimrc
 source $HOME/.vim/options_vimrc
@@ -71,17 +51,18 @@ source $HOME/.vim/misc_vimrc
 " ====================================================
 source $HOME/.vim/plugin_omni_complete_vimrc
 source $HOME/.vim/plugin_supertab_vimrc
-source $HOME/.vim/plugin_tlist_vimrc
-"source $HOME/.vim/plugin_powerline_vimrc
-source $HOME/.vim/plugin_closetag_vimrc
-"source $HOME/.vim/plugin_winmanager_vimrc
+source $HOME/.vim/plugin_tagbar_vimrc
 source $HOME/.vim/plugin_snipmate_vimrc
+source $HOME/.vim/plugin_nerdtree_vimrc
+source $HOME/.vim/plugin_closetag_vimrc
+
+"source $HOME/.vim/plugin_powerline_vimrc
+"source $HOME/.vim/plugin_winmanager_vimrc
 "source $HOME/.vim/plugin_rsense_vimrc
 "source $HOME/.vim/plugin_vimwiki_vimrc
 "source $HOME/.vim/plugin_tbar_vimrc
 "source $HOME/.vim/plugin_tex_vimrc
 "source $HOME/.vim/plugin_template_load_vimrc
-source $HOME/.vim/plugin_nerdtree_vimrc
 "source $HOME/.vim/plugin_minibufexplore_vimrc
 "source $HOME/.vim/plugin_lookupfile_vimrc
 "source $HOME/.vim/plugin_expl_vimrc
@@ -90,3 +71,6 @@ source $HOME/.vim/plugin_nerdtree_vimrc
 "source $HOME/.vim/plugin_async_vimrc
 
 source $HOME/.vim/fold_vimrc
+
+" if not have vundle, get one
+source $HOME/.vim/init_vundle_vimrc
