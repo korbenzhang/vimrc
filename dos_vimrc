@@ -1,6 +1,10 @@
 " settings in windows dos
 " ======================
+if has("gui_running")
+	finish
+endif
 
-
-
+if !has("win")
+	finish
+endif
 

@@ -31,10 +31,11 @@ set wrap
 " auto change dir
 " ========================
 "set autochdir
+set noautochdir
 
 " change windows directory seperitor to linux
 " ========================
-"set shellslash
+set shellslash
 
 set incsearch
 

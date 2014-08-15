@@ -16,6 +16,7 @@ Plugin 'tpope/vim-surround'					"process tag
 Plugin 'plasticboy/vim-markdown'			"markdown
 "Plugin 'justinmk/vim-sneak'				"move quickly between motion
 Plugin 'korbenzhang/vim_misc'				"korben's vim misc
+Plugin 'korbenzhang/gocode.vim'				"gocode vim
 Plugin 'mhinz/vim-signify'					"git
 "Plugin 'sjl/gundo.vim'						"undo tree
 "Plugin 'tpope/vim-sleuth'					"ajust tab

@@ -33,6 +33,8 @@ source $HOME/.vim/omnifunc_vimrc					"omni
 source $HOME/.vim/gui_running_vimrc					"gui
 source $HOME/.vim/win32_vimrc						"win32
 source $HOME/.vim/mabetle_func_vimrc				"mabetle functions
+source $HOME/.vim/make_func_vimrc					"mabetle functions
+source $HOME/.vim/make_onefile_vimrc				"mabetle functions
 source $HOME/.vim/run_vimrc							"run
 source $HOME/.vim/golang_vimrc						"golang
 
@@ -61,3 +63,10 @@ source $HOME/.vim/pluginrc/autocomplpop_vimrc
 "Vundle support
 " ====================================================
 source $HOME/.vim/init_vundle_vimrc
+
+" some set here directly
+" ====================================================
+set noautochdir
+set nofoldenable
+let g:vim_markdown_folding_disabled=1
+

@@ -13,13 +13,13 @@ set termencoding=utf-8
 
 
 if has("win32") && (!has("gui"))
+	"win dos
 	"set enc=cp936
 	set termencoding=cp936
 else
 	set enc=utf-8
 	set termencoding=GBK
 endif
-
 
 " fileformat
 "set ff=unix
