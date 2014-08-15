@@ -1,10 +1,18 @@
-"Tagbar
-"====================
+" Tagbar
+"=====================
+" F4: Switch on/off TagList
+map <F4> <ESC>:TagbarToggle<CR>
+nmap ,tl <ESC>:TagbarToggle<CR>
+
+" if not exist ctags, skip.
+if !executable('ctags')
+	echo "not install ctags"
+    finish
+endif
 
 "let g:tagbar_ctags_bin = 'ctags.exe'
 "let g:tagbar_left = 1
 "let g:tagbar_width = 30
-
 
 "Go support
 "let g:tagbar_type_go = {
@@ -49,5 +57,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
 
 
