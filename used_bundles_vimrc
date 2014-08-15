@@ -2,7 +2,7 @@
 "===========================================================
 Plugin 'auto_mkdir'
 Plugin 'majutsushi/tagbar'					"better than taglist
-Plugin 'ZenCoding.vim'						"for html
+Plugin 'Emmet.vim'							"Emmet
 Plugin 'kien/ctrlp.vim'						"find file in dir
 Plugin 'scrooloose/syntastic'				"syntax check
 Plugin 'scrooloose/nerdtree'				"explore files
