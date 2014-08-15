@@ -1,70 +1,70 @@
+" Plugins Managed by Vundle
+"===========================================================
 Plugin 'auto_mkdir'
-Plugin 'majutsushi/tagbar'
-Plugin 'ZenCoding.vim'
-Plugin 'kien/ctrlp.vim' " find file in dir
-Plugin 'scrooloose/syntastic'	"syntax check
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-"Plugin 'gdbmgr'
-Plugin 'edsono/vim-matchit'
-Plugin 'elzr/vim-json'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'  " git
-Plugin 'tpope/vim-surround'
-Plugin 'plasticboy/vim-markdown'
-"Plugin 'justinmk/vim-sneak'
-Plugin 'korbenzhang/vim_misc'
-
-"Plugin 'mhinz/vim-signify'
-"Plugin 'sjl/gundo.vim'
-"Plugin 'tpope/vim-sleuth'
+Plugin 'majutsushi/tagbar'					"better than taglist
+Plugin 'ZenCoding.vim'						"for html
+Plugin 'kien/ctrlp.vim'						"find file in dir
+Plugin 'scrooloose/syntastic'				"syntax check
+Plugin 'scrooloose/nerdtree'				"explore files
+Plugin 'scrooloose/nerdcommenter'			"comment
+"Plugin 'gdbmgr'							"debug
+Plugin 'edsono/vim-matchit'					"match tag
+Plugin 'elzr/vim-json'						"json
+Plugin 'bling/vim-airline'					"status line
+Plugin 'tpope/vim-fugitive'					"git
+Plugin 'tpope/vim-surround'					"process tag
+Plugin 'plasticboy/vim-markdown'			"markdown
+"Plugin 'justinmk/vim-sneak'				"move quickly between motion
+Plugin 'korbenzhang/vim_misc'				"korben's vim misc
+Plugin 'mhinz/vim-signify'					"git
+"Plugin 'sjl/gundo.vim'						"undo tree
+"Plugin 'tpope/vim-sleuth'					"ajust tab
 "Plugin 'tyru/open-browser.vim'
-
 " C and C++
-Plugin 'a.vim' " switch to .h
-Plugin 'OmniCppComplete'
+"===========================================================
+Plugin 'a.vim'								"switch to .h
+Plugin 'OmniCppComplete'					"c and cpp complete
 
-Plugin 'Auto-Pairs'
-"Plugin 'Lokaltog/vim-powerline'
-"Plugin 'closetag.vim'
+Plugin 'Auto-Pairs'							"auto close (){}[]
+"Plugin 'Lokaltog/vim-powerline'			"status line
+Plugin 'closetag.vim'						"close html xml tag
 
 " Colorschema
+"===========================================================
 Plugin 'tomasr/molokai'
 Plugin 'flazz/vim-colorschemes'
 
 "Build
-"Plugin 'maven-plugin'
+"===========================================================
+"Plugin 'maven-plugin'						"for maven
 
-" Compl
-Plugin 'SuperTab'
-Plugin 'snipMate'
-"Plugin 'honza/vim-snippets'
-Plugin 'CmdlineCompl.vim'
-"Plugin 'SQLComplete.vim'
-
-"Plugin 'XML-Completion'
-"Plugin 'ack.vim'
-Plugin 'AutoComplPop' "  AckEnable
+" Complete
+" ==========================================================
+Plugin 'SuperTab'							"tab
+Plugin 'snipMate'							"snipmate
+"Plugin 'honza/vim-snippets'				"some snippets
+Plugin 'CmdlineCompl.vim'					"cmd line complete
+Plugin 'AutoComplPop'						"AckEnable
+"Plugin 'SQLComplete.vim'					"sql
+"Plugin 'XML-Completion'					"xml
+"Plugin 'ack.vim'							"perl
 "Plugin 'autocomp.vim'
-"need vim build with client server
 "Plugin 'AsyncCommand'
 "Plugin 'Vim-JDE'
 "Plugin 'Word-Fuzzy-Completion'
 "Plugin 'fatih/vim-go'
 "Plugin 'Valloric/YouCompleteMe'
-"need lua
-"if has("lua")
-	"Plugin 'Shougo/neocomplete.vim'
-"endif
+"Plugin 'Shougo/neocomplete.vim'
 "Plugin 'autofmt'
 "Plugin 'bash-support.vim'
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
 "Plugin 'winmanager'
 
-" xml
-Plugin 'xml.vim'
+Plugin 'xml.vim'							"xml
+Plugin 'DoxyGen-Syntax'						"doxygen
+Plugin 'DoxygenToolkit.vim'					"doxygen
 
 if has("unix")
-	Plugin 'SudoEdit.vim'
+	Plugin 'SudoEdit.vim'					"SudoWrite
 endif
 

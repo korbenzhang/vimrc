@@ -1,7 +1,7 @@
 " Doxygen Plugin
 "=====================
-
 map fg : Dox<cr>
+
 let g:DoxygenToolkit_authorName="Korben Zhang"
 let g:DoxygenToolkit_licenseTag="GPL v2 \<enter>"
 let g:DoxygenToolkit_undocTag="DOXIGEN_SKIP_BLOCK"

@@ -1,0 +1,5 @@
+" AutoComplPop
+" ====================================================
+let g:acp_enableAtStartup = 0
+let g:acp_ignorecaseOption = 1
+let g:acp_completeOption = '.,w,b,k'
