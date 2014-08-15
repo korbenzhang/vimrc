@@ -66,7 +66,7 @@ source $HOME/.vim/init_vundle_vimrc
 
 " some set here directly
 " ====================================================
-set noautochdir
+"set noautochdir
 set nofoldenable
 let g:vim_markdown_folding_disabled=1
 
