@@ -1,4 +1,5 @@
 " backupdir
+" ====================================================
 set nobackup
 
 let backup_dir=expand('$HOME/rundata/vim/')

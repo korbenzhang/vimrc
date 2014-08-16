@@ -2,6 +2,8 @@
 "=====================
 
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+
+"know the last complete type
 let g:SuperTabRetainCompletionType=2
 
 

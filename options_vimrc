@@ -1,5 +1,5 @@
 " options
-" ==============
+" ====================================================
 
 set smartcase
 
@@ -15,7 +15,8 @@ set showcmd "display incomplete command
 
 " Set to auto read when a file is changed from the outside
 set autoread
-set autowrite
+
+"set autowrite
 "set autowriteall
 
 "lazyredraw don't redraw while executing macros

@@ -2,7 +2,7 @@
 "=====================
 " F4: Switch on/off TagList
 map <F4> <ESC>:TagbarToggle<CR>
-nmap ,tl <ESC>:TagbarToggle<CR>
+nmap ,tb <ESC>:TagbarToggle<CR>
 
 " if not exist ctags, skip.
 if !executable('ctags')

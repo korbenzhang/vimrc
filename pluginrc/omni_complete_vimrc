@@ -5,6 +5,3 @@
 
 " :inoremap <expr> <CR> pumvisible() ? "\<c-y>" : "\<c-g>u\<CR>"
 
-" set completeopt as don't show menu and preview
-"set completeopt=menuone
-

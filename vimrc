@@ -3,7 +3,7 @@
 " author: Korben Zhang
 " ====================================================
 set nocompatible
-" ====================================================
+" ----------------------------------------------------
 source $HOME/.vim/env_vimrc							"set vim env
 source $HOME/.vim/options_vimrc						"options
 source $HOME/.vim/encoding_vimrc					"encodings
@@ -39,7 +39,7 @@ source $HOME/.vim/run_vimrc							"run
 source $HOME/.vim/golang_vimrc						"golang
 
 " Plugins settings
-" ====================================================
+" ----------------------------------------------------
 source $HOME/.vim/pluginrc/omni_complete_vimrc
 source $HOME/.vim/pluginrc/supertab_vimrc
 source $HOME/.vim/pluginrc/tagbar_vimrc
@@ -61,11 +61,11 @@ source $HOME/.vim/pluginrc/autocomplpop_vimrc
 "source $HOME/.vim/pluginrc/async_vimrc
 
 "Vundle support
-" ====================================================
+" ----------------------------------------------------
 source $HOME/.vim/init_vundle_vimrc
 
-" some set here directly
-" ====================================================
+" some set or overide here directly
+" ----------------------------------------------------
 "set noautochdir
 set nofoldenable
 let g:vim_markdown_folding_disabled=1
