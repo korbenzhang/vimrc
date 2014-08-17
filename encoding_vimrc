@@ -26,6 +26,11 @@ else
 	"set termencoding=GBK
 endif
 
+" set for msys
+if has("win32unix")
+	set termencoding=GBK
+endif
+
 " fileformat
 "set ff=unix
 
