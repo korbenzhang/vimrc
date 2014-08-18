@@ -3,21 +3,21 @@
 Plugin 'auto_mkdir'
 Plugin 'majutsushi/tagbar'					"better than taglist
 Plugin 'Emmet.vim'							"Emmet
-Plugin 'kien/ctrlp.vim'						"find file in dir
+"Plugin 'kien/ctrlp.vim'						"find file in dir
 Plugin 'scrooloose/syntastic'				"syntax check
 Plugin 'scrooloose/nerdtree'				"explore files
 Plugin 'scrooloose/nerdcommenter'			"comment
 "Plugin 'gdbmgr'							"debug
-Plugin 'edsono/vim-matchit'					"match tag
+"Plugin 'edsono/vim-matchit'					"match tag
 Plugin 'elzr/vim-json'						"json
 Plugin 'bling/vim-airline'					"status line
 Plugin 'tpope/vim-fugitive'					"git
-Plugin 'tpope/vim-surround'					"process tag
+"Plugin 'tpope/vim-surround'					"process tag
 Plugin 'plasticboy/vim-markdown'			"markdown
 "Plugin 'justinmk/vim-sneak'				"move quickly between motion
 Plugin 'korbenzhang/vim_misc'				"korben's vim misc
 Plugin 'korbenzhang/gocode.vim'				"gocode vim
-Plugin 'mhinz/vim-signify'					"git
+"Plugin 'mhinz/vim-signify'					"git
 "Plugin 'sjl/gundo.vim'						"undo tree
 "Plugin 'tpope/vim-sleuth'					"ajust tab
 "Plugin 'tyru/open-browser.vim'
@@ -62,8 +62,8 @@ Plugin 'AutoComplPop'						"AckEnable
 "Plugin 'winmanager'
 
 Plugin 'xml.vim'							"xml
-Plugin 'DoxyGen-Syntax'						"doxygen
-Plugin 'DoxygenToolkit.vim'					"doxygen
+"Plugin 'DoxyGen-Syntax'						"doxygen
+"Plugin 'DoxygenToolkit.vim'					"doxygen
 
 if has("unix")
 	Plugin 'SudoEdit.vim'					"SudoWrite
