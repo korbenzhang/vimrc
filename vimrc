@@ -1,5 +1,5 @@
 " ====================================================
-" vim config file
+" vim config file. vim配置文件
 " author: Korben Zhang
 " ====================================================
 set nocompatible

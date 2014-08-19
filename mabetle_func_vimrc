@@ -96,3 +96,8 @@ endfunction
 command! -bar -narg=0 RunFile  call RunFile()
 map <F11> :call RunFile()<CR>
 
+function! RunCurrentLine()
+	execute ':.w ! sh'
+endfunction
+command! -bar -narg=0 RunCurrentLine  call RunCurrentLine()
+
