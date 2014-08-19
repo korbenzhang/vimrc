@@ -38,8 +38,12 @@ endif
 "set fenc=utf-8
 
 "new file type and encoding
-au BufNew,BufNewFile * set fileformat=unix
-au BufNew,BufNewFile * set fenc=utf-8
+"au BufNew set fileformat=unix
+"au BufNew set fenc=utf-8
+
+au BufNewFile * set fileformat=unix
+au BufNewFile * set fenc=utf-8
+
 "au BufReAd,BufNewFile * set fileformat=unix
 "au BufReAd,BufNewFile * set fenc=utf-8
 
