@@ -63,6 +63,9 @@ source $HOME/.vim/pluginrc/autocomplpop_vimrc
 "Vundle support
 " ----------------------------------------------------
 source $HOME/.vim/init_vundle_vimrc
+source $HOME/.vim/used_bundles_vimrc
+source $HOME/.vim/pluginrc/vim-go_vimrc
+source $HOME/.vim/vundle_end_vimrc
 
 " some set or overide here directly
 " ----------------------------------------------------

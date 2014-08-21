@@ -53,7 +53,6 @@ Plugin 'AutoComplPop'						"AckEnable
 "Plugin 'AsyncCommand'
 "Plugin 'Vim-JDE'
 "Plugin 'Word-Fuzzy-Completion'
-"Plugin 'fatih/vim-go'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'Shougo/neocomplete.vim'
 "Plugin 'autofmt'

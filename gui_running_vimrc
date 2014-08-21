@@ -7,7 +7,7 @@ endif
 set guioptions=eg
 
 if has("gui_win32")
-	set guifont=Monaco:h13
+	set guifont=Monaco:h11
 	"set guifont=Consolas:h11
 
 elseif has("gui_gtk2")
