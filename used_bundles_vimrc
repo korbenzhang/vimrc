@@ -46,6 +46,8 @@ Plugin 'snipMate'							"snipmate
 "Plugin 'honza/vim-snippets'				"some snippets
 Plugin 'CmdlineCompl.vim'					"cmd line complete
 Plugin 'AutoComplPop'						"AckEnable
+Plugin 'echofunc.vim'						"echo func in status line
+
 "Plugin 'SQLComplete.vim'					"sql
 "Plugin 'XML-Completion'					"xml
 "Plugin 'ack.vim'							"perl
