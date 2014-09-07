@@ -82,6 +82,8 @@ function! UpdateTagsFile()
 endfunction
 nmap <F12> :call UpdateTagsFile()<CR>
 
+
+" RunFile
 function! RunFile()
 	echo "Run File"
 	if &filetype == "go"
@@ -94,8 +96,9 @@ function! RunFile()
 	echo "I donot know how to run this file"
 endfunction
 command! -bar -narg=0 RunFile  call RunFile()
-map <F11> :call RunFile()<CR>
 
+
+" RunCurrentLine
 function! RunCurrentLine()
 	execute ':.w ! sh'
 endfunction

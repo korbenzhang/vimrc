@@ -3,6 +3,14 @@
 " author: Korben Zhang
 " ====================================================
 set nocompatible
+
+"Vundle support
+" ----------------------------------------------------
+source $HOME/.vim/init_vundle_vimrc
+source $HOME/.vim/used_bundles_vimrc
+source $HOME/.vim/pluginrc/vim-go_vimrc
+source $HOME/.vim/vundle_end_vimrc
+
 " ----------------------------------------------------
 source $HOME/.vim/env_vimrc							"set vim env
 source $HOME/.vim/options_vimrc						"options
@@ -32,6 +40,7 @@ source $HOME/.vim/complete_vimrc					"complete
 source $HOME/.vim/omnifunc_vimrc					"omni
 source $HOME/.vim/gui_running_vimrc					"gui
 source $HOME/.vim/win32_vimrc						"win32
+source $HOME/.vim/dos_vimrc							"dos
 source $HOME/.vim/mabetle_func_vimrc				"mabetle functions
 source $HOME/.vim/make_func_vimrc					"mabetle functions
 source $HOME/.vim/make_onefile_vimrc				"mabetle functions
@@ -60,12 +69,6 @@ source $HOME/.vim/pluginrc/autocomplpop_vimrc
 "source $HOME/.vim/pluginrc/bufexpl_vimrc
 "source $HOME/.vim/pluginrc/async_vimrc
 
-"Vundle support
-" ----------------------------------------------------
-source $HOME/.vim/init_vundle_vimrc
-source $HOME/.vim/used_bundles_vimrc
-source $HOME/.vim/pluginrc/vim-go_vimrc
-source $HOME/.vim/vundle_end_vimrc
 
 " some set or overide here directly
 " ----------------------------------------------------

@@ -8,3 +8,6 @@ if !has("win")
 	finish
 endif
 
+colorscheme default
+
+
