@@ -57,7 +57,7 @@ endif
 " ========================
 " work fine in GUI
 
-colorscheme molokai
+"colorscheme molokai
 
 "colorscheme railscasts
 "colorscheme yaml
