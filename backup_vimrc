@@ -2,12 +2,11 @@
 " ====================================================
 set nobackup
 
-let backup_dir=expand('$HOME/rundata/vim/')
+let backup_dir=expand('/rundata/vim/')
 
 if !isdirectory(backup_dir)
-    silent !mkdir -p ~/rundata/vim
+    silent !mkdir -p /rundata/vim
 endif
 
-set backupdir=$HOME/rundata/vim/
-
+set backupdir=/rundata/vim/
 
