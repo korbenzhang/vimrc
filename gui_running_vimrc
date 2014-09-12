@@ -4,7 +4,7 @@ if !has("gui_running")
 endif
 
 "Gui options egmLt
-set guioptions=eg
+set guioptions=egm
 
 if has("gui_win32")
 	"set guifont=Monaco:h12

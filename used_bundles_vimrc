@@ -33,7 +33,7 @@ Plugin 'closetag.vim'						"close html xml tag
 " Colorschema
 "===========================================================
 Plugin 'tomasr/molokai'
-Plugin 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
 
 "Build
 "===========================================================
