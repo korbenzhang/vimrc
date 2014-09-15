@@ -152,8 +152,9 @@ map <A-k> :cprevious<CR>
 
 nmap <leader><TAB> :tabNext<CR>
 nmap <leader><S-TAB> :tabnext<CR>
-imap <leader><TAB> <ESC><ESC>:tabNext<CR>
-imap <leader><S-TAB> <ESC><ESC>:tabnext<CR>
+
+map <F7> <ESC>:tabNext<CR>
+map <F8> <ESC>:tabnext<CR>
 
 " toggle comment
 map <C-/> <leader>c<space>
@@ -170,7 +171,7 @@ map <C-/> <leader>c<space>
 "nmap <F12> :%s/[ \t\r]\+$//g<CR>
 
 "nnoremap <silent> <F4> :TlistToggle<CR>
-nmap <F8> :TagbarToggle<CR>
+nmap <F4> :TagbarToggle<CR>
 
 map gf :tabnew <cfile><cr>
 
