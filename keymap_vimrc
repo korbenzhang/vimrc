@@ -105,7 +105,7 @@ map <leader>b :BufExplorer<cr>
 
 
 " Use space to down
-nmap <space> <C-D>
+"nmap <space> <C-D>
 
 nmap <silent> <C-f> :call FindInNERDTree()<CR>
 
