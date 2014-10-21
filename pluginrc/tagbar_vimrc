@@ -14,7 +14,7 @@ endif
 "let g:tagbar_left = 1
 "let g:tagbar_width = 30
 
-"autocmd VimEnter * nested :call tagbar#autoopen(1)
+autocmd VimEnter * nested :call tagbar#autoopen(1)
 
 "Go support
 "let g:tagbar_type_go = {
