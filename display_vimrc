@@ -57,12 +57,11 @@ endif
 " ========================
 " work fine in GUI
 
-"colorscheme molokai
-
-"colorscheme railscasts
-"colorscheme yaml
-"colorscheme eclipse
-"colorscheme darkblue
+if !has("gui_running") && has("win32")
+	"dos
+else
+	colorscheme molokai
+endif
 
 " TabLabel
 " ========================
