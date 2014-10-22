@@ -6,14 +6,11 @@
 let swap_dir=expand('$HOME/rundata/vim/')
 
 if !isdirectory(swap_dir)
-    silent !mkdir -p ~/rundata/vim
+    silent !mkdir -p $HOME/rundata/vim
 endif
 
 " set wrap dir
 set dir=$HOME/rundata/vim/
 
 set noswapfile
-
-
-
 

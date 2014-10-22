@@ -37,7 +37,7 @@ source $HOME/.vim/misc_vimrc						"misc
 source $HOME/.vim/fold_vimrc						"fold
 source $HOME/.vim/tags_vimrc						"tag for go and java
 source $HOME/.vim/complete_vimrc					"complete
-source $HOME/.vim/omnifunc_vimrc					"omni
+"source $HOME/.vim/omnifunc_vimrc					"omni
 source $HOME/.vim/gui_running_vimrc					"gui
 source $HOME/.vim/win32_vimrc						"win32
 source $HOME/.vim/dos_vimrc							"dos

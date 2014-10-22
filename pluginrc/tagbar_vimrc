@@ -12,10 +12,18 @@ endif
 
 "let g:tagbar_ctags_bin = 'ctags.exe'
 "let g:tagbar_left = 1
-"let g:tagbar_width = 30
+let g:tagbar_width = 30
 
-autocmd VimEnter * nested :call tagbar#autoopen(1)
+"let g:tagbar_autopreview = 1
+
+" open Tagbar on vim startup
+"autocmd VimEnter * nested :call tagbar#autoopen(1)
+
+" tab
 autocmd BufEnter * nested :call tagbar#autoopen(0)
+
+" with a support file
+"autocmd VimEnter * nested :call tagbar#autoopen(1)
 
 "Go support
 "let g:tagbar_type_go = {
