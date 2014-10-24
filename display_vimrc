@@ -10,7 +10,7 @@ set ruler
 "set linespace=0
 
 " term color
-set t_Co=1024
+set t_Co=256
 
 " set color column
 "set cc=80
@@ -60,7 +60,7 @@ endif
 if !has("gui_running") && has("win32")
 	"dos
 else
-	colorscheme molokai
+	"colorscheme molokai
 endif
 
 " TabLabel
