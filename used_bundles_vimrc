@@ -1,6 +1,7 @@
 " Plugins Managed by Vundle
 "===========================================================
-Plugin 'auto_mkdir'
+Plugin 'auto_mkdir'							"auto make dir when save file
+Plugin 'TxtBrowser'							"leader g s
 Plugin 'majutsushi/tagbar'					"better than taglist
 Plugin 'Emmet.vim'							"Emmet
 "Plugin 'kien/ctrlp.vim'						"find file in dir

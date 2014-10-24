@@ -1,0 +1,46 @@
+Vim Tips
+=========
+
+
+Delete blank line.
+:g/^\s*$/d
+
+
+CTRL-e: 屏幕向上滚1行
+CTRL-y: 屏幕向下滚1行
+CTRL-u 屏幕向上滚1/2屏
+CTRL-d 屏幕向下滚1/2屏
+CTRL-f 屏幕向上滚1屏
+CTRL-b 屏幕向下滚1屏
+z<Enter> 使当前行位于屏幕最上部
+zz
+使当使当前行位于屏幕正中间
+
+
+[num]CTRL-G: 显示当前文档的信息, num越大, 信息越多.
+g CTRL-G: 字数统计
+
+:undolist 显示撤消的历史记录
+:undo N 撤消N步
+g+ 撤消历史向前走
+g- 撤消历史向后走
+
+zc: 关闭一个Fold
+zo: 打开一个Fold
+zM: 关闭所有的Fold
+zR: 打开所有的Fold
+
+
+vimdiff
+
+#vimdiff  FILE_LEFT  FILE_RIGHT: 在vim外启动vimdiff比较两个文件
+# vim -d  FILE_LEFT  FILE_RIGHT: 在vim外启动vimdiff比较两个文件
+:vertical diffsplit FILE_RIGHT 在vim里启动vimdiff
+:set noscrollbind 不希望两侧的光标同步移动
+]c 跳转到下一个差异点:
+[c 跳转到上一个差异点:
+dp (diffput):把当前的文件合并到另一个文件
+do (diffget) 把另一个文件的差异点合并到本文件, 之所以不用dg, 是因dg已经被另一个命令占用了)
+:diffupdate 手工来刷新比较结果:
+:set diffopt=context:3 修改缺省的上下文行数, 可以这样设置:
+
