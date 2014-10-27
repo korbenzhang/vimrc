@@ -11,7 +11,7 @@ Plugin 'scrooloose/nerdcommenter'			"comment
 "Plugin 'gdbmgr'							"debug
 "Plugin 'edsono/vim-matchit'					"match tag
 Plugin 'elzr/vim-json'						"json
-"Plugin 'bling/vim-airline'					"status line
+Plugin 'bling/vim-airline'					"status line
 Plugin 'tpope/vim-fugitive'					"git
 "Plugin 'tpope/vim-surround'					"process tag
 Plugin 'plasticboy/vim-markdown'			"markdown
