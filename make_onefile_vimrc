@@ -2,10 +2,10 @@
 "=========================================================
 "map <F5> :call Do_OneFileMake()<CR>
 
+let g:iswindows=0
+
 if(has("win32") || has("win95") || has("win64") || has("win16"))
     let g:iswindows=1
-else
-    let g:iswindows=0
 endif
 
 function! Do_OneFileMake()

@@ -1,11 +1,9 @@
 " settings in windows dos
 " ======================
-if has("gui_running")
-	finish
-endif
-
-if !has("win32")
+if has("gui_running") || (!has("win32"))
 	finish
 endif
 
 "colorscheme default
+
+

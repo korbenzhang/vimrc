@@ -10,24 +10,9 @@ au FileType go setl makeprg=go\ build
 "au BufWritePost *.go :make
 
 " Run
-"au FileType go map <F5> <ESC>:Shell go run %<CR>
 au FileType go map <F5> <ESC>:!go run %<CR>
-
 au FileType go map <F6> <ESC>:!go test<CR>
-"au FileType go map <F6> <ESC>:Shell go test<CR>
-
-
 au FileType go map <leader>rr <ESC>:! go run %<CR>
 au FileType go map <leader>tt <ESC>:! go test<CR>
 au FileType go map <leader>tf <ESC>:! go test %<CR>
-
-"au FileType go map <leader>rr <ESC>:Shell go run %<CR>
-"au FileType go map <leader>tt <ESC>:Shell go test<CR>
-"au FileType go map <leader>tf <ESC>:Shell go test %<CR>
-
-"au FileType go map <leader>go <ESC>:Shell go <CR>
-au FileType go map <leader>got <ESC>:Shell go test<CR>
-au FileType go map <leader>gob <ESC>:Shell go build<CR>
-au FileType go map <leader>gor <ESC>:Shell go run %<CR>
-au FileType go map <leader>goi <ESC>:Shell go install<CR>
 

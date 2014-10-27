@@ -2,18 +2,18 @@
 " ============
 
 " if not exist swap dir, create one.
-let swap_dir=expand('$HOME/rundata/vim/')
+let swap_dir=expand('$HOME/rundata/vim/swap/')
 
 if !isdirectory(swap_dir)
 	if has("win32")
-		silent exec "!mkdir ".$HOME."\\rundata\\vim"
+		silent exec "!mkdir ".$HOME."\\rundata\\vim\\swap"
 	else
-		silent !mkdir $HOME/rundata/vim
+		silent !mkdir $HOME/rundata/vim/swap
 	endif
 endif
 
 " set wrap dir
-set dir=$HOME/rundata/vim/
+set dir=$HOME/rundata/vim/swap
 
-set noswapfile
+set swapfile
 
