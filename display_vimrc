@@ -8,9 +8,6 @@ set ruler
 " ========================
 "set linespace=0
 
-" term color
-set t_Co=256
-
 " set color column
 "set cc=80
 

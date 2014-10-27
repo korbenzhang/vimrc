@@ -20,7 +20,7 @@ let g:tagbar_width = 30
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 
 " tab
-autocmd BufEnter * nested :call tagbar#autoopen(0)
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 " with a support file
 "autocmd VimEnter * nested :call tagbar#autoopen(1)

@@ -6,12 +6,14 @@ function! MabetleVimrc()
     execute ':tabedit $HOME/.vim/vimrc'
 endfunction
 command! -bar -narg=0 MabetleVimrc  call MabetleVimrc()
+command! -bar -narg=0 EditVimrc  call MabetleVimrc()
 
 "  line end blank
 function! MabetleLineEndBlankDelete()
 	execute ':%s/\s\+$//g'
 endfunction
 command! -bar -narg=0 MabetleLineEndBlankDelete  call MabetleLineEndBlankDelete()
+command! -bar -narg=0 DeleteLineEndBlank  call MabetleLineEndBlankDelete()
 
 " edit hosts
 function! MabetleHosts()
@@ -22,23 +24,26 @@ function! MabetleHosts()
 	endif
 endfunction
 command! -bar -narg=0 MabetleHosts  call MabetleHosts()
+command! -bar -narg=0 EditHosts  call MabetleHosts()
 
 " Sudo save.
 function! MabetleSudoSave()
 	execute ':w !sudo tee %'
 endfunction
 command! -bar -narg=0 MabetleSudoSave  call MabetleSudoSave()
+command! -bar -narg=0 SudoSave  call MabetleSudoSave()
 
 "  Delete Windows ^M
 function! MabetleWindowsLineEndDelete()
 	execute ':%s///g'
 endfunction
 command! -bar -narg=0 MabetleWindowsLineEndDelete  call MabetleWindowsLineEndDelete()
+command! -bar -narg=0 DeleteWindowsLineEnd  call MabetleWindowsLineEndDelete()
 
 
-"Automatically remove trailing spaces when saving a file.
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
+" Automatically remove trailing spaces when saving a file.
+" Not recommend do this, should give user choice what to do.
+"autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 "Remove indenting on empty line
 "F2处理行尾的空格以及文件尾部的多余空行
@@ -103,4 +108,18 @@ function! RunCurrentLine()
 	execute ':.w ! sh'
 endfunction
 command! -bar -narg=0 RunCurrentLine  call RunCurrentLine()
+command! -bar -narg=0 RCL  call RunCurrentLine()
+
+" InstallCtags
+func! InstallCtags()
+	if executable('ctags')
+		echo "There already has ctags in path. skip install."
+		return
+	endif
+
+	if has("unix") && (!has("win32unix"))
+		silent! sudo apt-get install ctags
+	endif
+endfunction
+command! -bar -narg=0 InstallCtags  call InstallCtags()
 

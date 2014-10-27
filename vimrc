@@ -20,6 +20,7 @@ source $HOME/.vim/tab_indent_vimrc					"tab indent length
 source $HOME/.vim/paste_vimrc						"paste
 source $HOME/.vim/syntax_vimrc						"syntax
 source $HOME/.vim/display_vimrc						"display
+source $HOME/.vim/term_vimrc						"term
 source $HOME/.vim/backup_vimrc						"backup
 source $HOME/.vim/swap_vimrc						"swap
 source $HOME/.vim/au_vimrc							"auto filetype
