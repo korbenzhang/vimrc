@@ -11,7 +11,7 @@ cp -f ~/.vim/_vimrc ~/.vimrc
 
 ```
 
-after that, startup vim and run :PluginInstall
+after that, startup vim and run `:PluginInstall`
 
 It works fine in linux.
 
