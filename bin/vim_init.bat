@@ -3,7 +3,6 @@ echo "init vim ..."
 echo "mkdir backup dir"
 mkdir %HOME%\rundata\vim
 
-
 echo "make swap dir"
 mkdir %HOME%\rundata\vim
 

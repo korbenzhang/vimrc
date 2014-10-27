@@ -5,7 +5,11 @@
 let swap_dir=expand('$HOME/rundata/vim/')
 
 if !isdirectory(swap_dir)
-	silent !mkdir $HOME/rundata/vim
+	if has("win32")
+		silent exec "!mkdir ".$HOME."\\rundata\\vim"
+	else
+		silent !mkdir $HOME/rundata/vim
+	endif
 endif
 
 " set wrap dir
