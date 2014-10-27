@@ -15,8 +15,8 @@ command! -bar -narg=0 MabetleLineEndBlankDelete  call MabetleLineEndBlankDelete(
 
 " edit hosts
 function! MabetleHosts()
-	if has("win32")
-		execute ':tabedit C:\Windows\System32\drivers\etc\hosts'
+	if has("win32") || has("win32unix")
+		execute ':tabedit C:/Windows/System32/drivers/etc/hosts'
 	else
 		execute ':tabedit /etc/hosts'
 	endif
