@@ -4,10 +4,10 @@ Vim Conf
 Usage
 -----
 
-```
-git clone https://github.com/korbenzhang/vimrc.git ~/.vim
+```bash
+	git clone https://github.com/korbenzhang/vimrc.git ~/.vim
 
-cp -f ~/.vim/_vimrc ~/.vimrc
+	cp -f ~/.vim/_vimrc ~/.vimrc
 
 ```
 
