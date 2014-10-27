@@ -96,13 +96,10 @@ map <leader>y :YRShow<cr>
 map <leader>. :e .<cr>
 map <leader>w :w!<cr>
 map <leader>q :bd<cr>
+map <C-q> <ESC>:q<cr>
 map <leader>s :update<cr>
 
 "map <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-
-" Buffer
-map <leader>b :BufExplorer<cr>
-
 
 " Use space to down
 "nmap <space> <C-D>
@@ -177,7 +174,7 @@ map gf :tabnew <cfile><cr>
 
 
 "-------------------------------
-" Windows switch with Ctrl+↑↓←→
+" Windows switch with Ctrl+鈫戔啌鈫愨啋
 "-------------------------------
 noremap <silent> <C-left> <esc><C-W><left>
 noremap <silent> <C-right> <esc><C-W><right>
