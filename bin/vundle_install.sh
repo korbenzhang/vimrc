@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "Install Vundle"
+echo ""
 
 rm -frv $HOME/.vim/bundle/Vundle.vim
 
