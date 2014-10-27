@@ -1,19 +1,20 @@
-"set guifont=DejaVu\ Sans\ mono\ 13
+" gui running settings.
+" ======================
+
 if !has("gui_running")
 	finish
 endif
 
 "Gui options egmLt
-set guioptions=egm
+"set guioptions=egm
+set go-=T
+set go-=r
 
 if has("gui_win32")
 	"set guifont=Monaco:h11
-	set guifont=Consolas:h11
+	set guifont=Consolas:h13
 elseif has("gui_gtk2")
 	set guifont=Bitstream\ Vera\ Sans\ Mono\ 13
-	"set guifont=Monospace\ 16
-	"set guifont=YaHei\ Consolas\ Hybrid\ 13
-	"set guifont=WenQuanYi_Bitmap_Song\ 13
 	"set guifont=Monaco\ 13
 	"set guifontwide=WenQuanYi_Bitmap_Song\ 13
 elseif has("gui_macvim")
@@ -21,17 +22,15 @@ elseif has("gui_macvim")
 	set guifont=Monaco:h13
 end
 
-set go-=T
-set go-=r
 "set cursorline
 "noremap <M-Space> :simalt ~<CR>
 "inoremap <M-Space> <C-O>:simalt ~<CR>
 "cnoremap <M-Space> <C-C>:simalt ~<CR>
 
+" maximize windows when startup
 if has("gui_win32")
 	au GUIEnter * simalt ~x
 endif
-
 
 if has("gui_gtk2")
 	"need wmctl
