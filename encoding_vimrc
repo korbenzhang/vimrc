@@ -9,4 +9,10 @@ set ffs=unix,dos,mac
 au BufNewFile * set fileformat=unix
 au BufNewFile * set fenc=utf-8
 
+" msys
+if has("win32unix")
+	set enc=cp936
+endif
+
+
 let &termencoding=&encoding
