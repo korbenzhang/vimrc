@@ -39,14 +39,10 @@ source $HOME/.vim/display_vimrc
 source $HOME/.vim/complete_vimrc
 
 " some gui features
-if has("gui_running")
-	source $HOME/.vim/gui_running_vimrc
-endif
+source $HOME/.vim/gui_running_vimrc
 
 " some windows features
-if has("win32")
-    source $HOME/.vim/win32_vimrc
-endif
+source $HOME/.vim/win32_vimrc
 
 source $HOME/.vim/highlight_vimrc
 source $HOME/.vim/omnifunc_vimrc
