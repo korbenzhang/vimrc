@@ -1,12 +1,16 @@
-Vim Configuation
+Vim Conf
 ==================
 
-VIMRC_DIR=""
+Usage
+-----
 
+git clone https://github.com/korbenzhang/vimrc.git ~/.vim
 
-ln -sTf $VIMRC_DIR ~/.vim
+cp -f ~/.vim/_vimrc ~/.vimrc
 
-cp -f $VIMRC_DIR/_vimrc ~/.vimrc
+after that, startup vim and run :PluginInstall
+
+It works fine in linux.
 
 
 
