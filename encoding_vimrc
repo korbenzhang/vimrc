@@ -14,5 +14,5 @@ if has("win32unix")
 	set enc=cp936
 endif
 
+"let &termencoding=&encoding
 
-let &termencoding=&encoding
