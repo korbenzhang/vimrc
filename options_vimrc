@@ -52,3 +52,4 @@ set dictionary+=$HOME/.vim/words_mine	" ~/.vim/words_mine
 
 "set shell=sh
 
+set timeoutlen=200
