@@ -119,3 +119,18 @@ func! InstallCtags()
 endfunction
 command! -bar -narg=0 InstallCtags  call InstallCtags()
 
+" GBKTerm
+func! GBKTerm()
+	set termencoding=GBK
+endfunction
+command! -bar -narg=0 GBKTerm  call GBKTerm()
+
+
+" UTFTerm
+func! UTFTerm()
+	set termencoding=utf-8
+endfunction
+command! -bar -narg=0 UTFTerm  call UTFTerm()
+
+
+

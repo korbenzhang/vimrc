@@ -31,8 +31,8 @@ set wrap
 
 " auto change dir
 " ========================
-"set autochdir
-set noautochdir
+set autochdir
+"set noautochdir
 
 " change windows directory seperitor to linux
 " ========================
@@ -44,11 +44,6 @@ set showmatch
 
 " 自动格式化
 "set formatoptions=tcrqn
-
-" I have copy linux /usr/share/dict/words to .vim dir
-"if has("unix")
-	"set dictionary+=/usr/share/dict/words
-"endif
 
 " dict in  .vim
 set dictionary+=$HOME/.vim/words		" ~/.vim/words
