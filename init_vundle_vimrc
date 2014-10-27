@@ -1,6 +1,7 @@
 " init vundle
-" if no vundle, git clone it
+" ===========================
 
+" if no vundle, git clone it
 let iCanHazVundle=1
 
 let vundle_readme=expand('$HOME/.vim/bundle/Vundle.vim/README.md')
@@ -8,8 +9,8 @@ let vundle_readme=expand('$HOME/.vim/bundle/Vundle.vim/README.md')
 if !filereadable(vundle_readme)
 	echo "Installing Vundle.."
 	echo ""
-    silent !cd $HOME && mkdir .vim/bundle
-    silent !cd $HOME/.vim/bundle && git clone https://github.com/gmarik/Vundle.vim.git
+    silent !mkdir $HOME/.vim/bundle
+    silent !git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
     let iCanHazVundle=0
 endif
 
