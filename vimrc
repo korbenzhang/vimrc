@@ -14,8 +14,8 @@ source $HOME/.vim/vundle_end_vimrc
 " ----------------------------------------------------
 source $HOME/.vim/env_vimrc							"set vim env
 source $HOME/.vim/options_vimrc						"options
-"source $HOME/.vim/encoding_vimrc					"encodings
-source $HOME/.vim/encoding2_vimrc					"encodings
+source $HOME/.vim/encoding_vimrc					"new encodings
+"source $HOME/.vim/encoding2_vimrc					"encodings
 source $HOME/.vim/tab_indent_vimrc					"tab indent length
 source $HOME/.vim/paste_vimrc						"paste
 source $HOME/.vim/syntax_vimrc						"syntax

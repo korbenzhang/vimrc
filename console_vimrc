@@ -1,6 +1,18 @@
+" console
+" ===============
+
 set ch=2
-set nosm
-set nosmd
-set noru
+" show match
+set sm
+
+" show mode
+set smd
+
+" ruler
+set ru
+
+" tty scole
 set tsl=0
+
+" show mess
 set shm=filnxtToO

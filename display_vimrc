@@ -4,7 +4,6 @@
 set number
 set ruler
 
-
 " line space
 " ========================
 "set linespace=0
@@ -72,8 +71,6 @@ set guitablabel=%N.%t
 
 " Turn off welcome page
 set shortmess=atI
-
-
 
 "set list
 "set nolist
