@@ -5,11 +5,16 @@
 let iCanHazVundle=1
 
 let vundle_readme=expand('$HOME/.vim/bundle/Vundle.vim/README.md')
+let bundle_dir=expand('$HOME/.vim/bundle/')
 
 if !filereadable(vundle_readme)
 	echo "Installing Vundle.."
 	echo ""
-    silent !mkdir $HOME/.vim/bundle
+	
+	if !isdirectory(bundle_dir)
+		silent !mkdir $HOME/.vim/bundle
+	endif
+
     silent !git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
     let iCanHazVundle=0
 endif
