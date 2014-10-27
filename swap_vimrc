@@ -1,13 +1,11 @@
 " swapdir
 " ============
 
-
 " if not exist swap dir, create one.
 let swap_dir=expand('$HOME/rundata/vim/')
 
 if !isdirectory(swap_dir)
-    "silent !mkdir -p $HOME/rundata/vim
-    silent !mkdir $HOME/rundata/vim
+	silent !mkdir $HOME/rundata/vim
 endif
 
 " set wrap dir

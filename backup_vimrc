@@ -5,7 +5,7 @@ set nobackup
 let backup_dir=expand('$HOME/rundata/vim/')
 
 if !isdirectory(backup_dir)
-    silent !mkdir $HOME/rundata/vim
+	silent !mkdir $HOME/rundata/vim
 endif
 
 set backupdir=$HOME/rundata/vim/
