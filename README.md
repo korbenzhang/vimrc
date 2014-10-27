@@ -6,6 +6,7 @@ Usage
 
 ``
 git clone https://github.com/korbenzhang/vimrc.git ~/.vim
+
 cp -f ~/.vim/_vimrc ~/.vimrc
 ``
 
