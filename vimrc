@@ -25,7 +25,7 @@ source $HOME/.vim/backup_vimrc						"backup
 source $HOME/.vim/swap_vimrc						"swap
 source $HOME/.vim/au_vimrc							"auto filetype
 source $HOME/.vim/keymap_vimrc						"keys
-source $HOME/.vim/arrowkey_vimrc					"arrow key map
+"source $HOME/.vim/arrowkey_vimrc					"arrow key map
 source $HOME/.vim/keycmap_vimrc						"keys for cmap
 source $HOME/.vim/keymap_alt_tabwin_vimrc			"keys for alt
 source $HOME/.vim/keymap_malt_tabwin_vimrc			"keys for meta
