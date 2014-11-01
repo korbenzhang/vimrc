@@ -13,7 +13,12 @@ function! ToggleFullscreen()
     endif
     call system("wmctrl -ir " . v:windowid . " -b " . mod . ",fullscreen")
 endfunction
+command! -bar -narg=0 ToggleFullscreen  call ToggleFullscreen()
 
 map <silent> <F11> :call ToggleFullscreen()<CR>
 
-au GuiEnter * call ToggleFullscreen()
+" Enter fullsecreen when GUI start.
+"au GuiEnter * call ToggleFullscreen()
+
+
+
