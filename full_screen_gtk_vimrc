@@ -1,5 +1,9 @@
-" unix gui
+" linux gtk gui
 " ========================
+
+if !(has("gui_running") && has("gui_gtk2"))
+	finish
+endif
 
 " need install wmctrl
 let g:fullscreen = 0
