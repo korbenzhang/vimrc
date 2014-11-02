@@ -33,9 +33,14 @@ if has("gui_win32")
 endif
 
 if has("gui_gtk2")
+	
 	"need wmctl
 	"if !executable('wmctrl')
 		"sudo apt-get install wmctrl
 	"endif
-	"source $HOME/.vim/full_screen_gtk_vimrc
+	
+	if executable('wmctrl') && has("gui_running")
+		source $HOME/.vim/full_screen_gtk_vimrc
+	endif
+
 endif
