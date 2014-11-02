@@ -26,12 +26,12 @@ vmap <C-Up> :move '<-2<CR>gv
 
 " backward
 " like eclipse
-map <F2> <C-o>
+"map <F2> <C-o>
 
 " Build
 "map <F11> <ESC>:make<CR>
 map <leader>mm <ESC>:make<CR>
-map <C-F5> <ESC>:make<CR>
+"map <C-F5> <ESC>:make<CR>
 
 "QuickFix
 map <leader>n <esc>:cnext<cr>
@@ -90,13 +90,13 @@ map <leader>tc :tabclose<cr>
 "map <leader>t :tabnew<cr>
 map <leader>te :tabedit **/
 map <leader>tm :tabmove
-nmap <C-N> :tabnew<cr>
+"nmap <C-N> :tabnew<cr>
 
 map <leader>y :YRShow<cr>
 map <leader>. :e .<cr>
 map <leader>w :w!<cr>
 map <leader>q :bd<cr>
-map <C-q> <ESC>:q<cr>
+"map <C-q> <ESC>:q<cr>
 map <leader>s :update<cr>
 
 "map <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
@@ -123,16 +123,16 @@ nmap <leader>fu :se ff=unix<cr>
 nmap <silent> <F3> :Grep<CR>
 
 "key mapping for window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+"map <C-h> <C-w>h
+"map <C-j> <C-w>j
+"map <C-k> <C-w>k
+"map <C-l> <C-w>l
 
 "Key mapping for textmate-like indentation
-nmap <M-[> <<
-nmap <M-]> >>
-vmap <M-[> <gv
-vmap <M-]> >gv
+"nmap <M-[> <<
+"nmap <M-]> >>
+"vmap <M-[> <gv
+"vmap <M-]> >gv
 
 "key mapping for vimgrep result navigation
 map <A-o> :copen<CR>
@@ -150,11 +150,11 @@ map <A-k> :cprevious<CR>
 nmap <leader><TAB> :tabNext<CR>
 nmap <leader><S-TAB> :tabnext<CR>
 
-map <F7> <ESC>:tabNext<CR>
-map <F8> <ESC>:tabnext<CR>
+"map <F7> <ESC>:tabNext<CR>
+"map <F8> <ESC>:tabnext<CR>
 
 " toggle comment
-map <C-/> <leader>c<space>
+"map <C-/> <leader>c<space>
 
 " Quick Fix
 "nmap <F6> :cn<cr>
@@ -186,9 +186,8 @@ map <leader>rl <ESC>:.w !bash<CR>
 map <leader>rf <ESC>:! "%"<CR>
 
 
-map <C-F4> :tabclose<cr>
-
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
+"map <C-F4> :tabclose<cr>
+"map <S-Insert> <MiddleMouse>
+"map! <S-Insert> <MiddleMouse>
 
 
