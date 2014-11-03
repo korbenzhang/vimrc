@@ -132,5 +132,7 @@ func! UTFTerm()
 endfunction
 command! -bar -narg=0 UTFTerm  call UTFTerm()
 
-
-
+func! Molokai()
+	colorscheme molokai
+endfunction
+command! -bar -narg=0 Molokai  call Molokai()
