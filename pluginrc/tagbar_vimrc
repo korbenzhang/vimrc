@@ -4,9 +4,17 @@
 " if not exist ctags, skip.
 if !executable('ctags')
 	echo "not install ctags"
+	echo "sudo apt-get install ctags"
+	echo ""
     finish
 endif
 
+if !executable('gotags')
+	echo "not install gotags"
+	echo "go get github.com/jstemmer/gotags"
+	echo ""
+	finish
+endif
 
 Plugin 'majutsushi/tagbar'					"better than taglist
 
