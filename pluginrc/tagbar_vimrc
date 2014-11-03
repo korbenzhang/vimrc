@@ -1,14 +1,20 @@
 " Tagbar
 "=====================
-" F4: Switch on/off TagList
-map <F4> <ESC>:TagbarToggle<CR>
-nmap ,tb <ESC>:TagbarToggle<CR>
 
 " if not exist ctags, skip.
 if !executable('ctags')
 	echo "not install ctags"
     finish
 endif
+
+
+Plugin 'majutsushi/tagbar'					"better than taglist
+
+" F4: Switch on/off TagList
+"nmap <F4> :TagbarToggle<CR>
+map <F4> <ESC>:TagbarToggle<CR>
+nmap ,tb <ESC>:TagbarToggle<CR>
+
 
 "let g:tagbar_ctags_bin = 'ctags.exe'
 "let g:tagbar_left = 1

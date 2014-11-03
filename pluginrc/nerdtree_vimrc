@@ -1,5 +1,9 @@
 " NerdTree
 "=====================
+Plugin 'scrooloose/nerdtree'				"explore files
+
+map <F9> :NERDTreeToggle<cr>
+
 "open a NERDTree automatically when vim starts up
 "autocmd vimenter * NERDTree
 

@@ -1,5 +1,8 @@
 " explore
 " ========================
+Plugin 'explorer'
+
+
 let g:explDetailedHelp=0
 let g:explHideFiles='^\.,.*\.class$,.*\.swp$,.*\.pyc$,.*\.swo$,\.DS_Store$'
 let g:explSplitBelow=1

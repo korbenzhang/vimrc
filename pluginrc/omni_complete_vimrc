@@ -1,7 +1,0 @@
-" OmniComplete
-"=====================
-" set Ctrl+j in insert mode, like VS.Net
-"imap <C-j> <C-X><C-O>
-
-" :inoremap <expr> <CR> pumvisible() ? "\<c-y>" : "\<c-g>u\<CR>"
-

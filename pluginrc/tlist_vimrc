@@ -1,8 +1,5 @@
 " TagList
 "=====================
-" F4: Switch on/off TagList
-map <F4> <ESC>:TlistToggle<CR>
-nmap ,tl <ESC>:TlistToggle<CR>
 
 " if not exist ctags, skip.
 if !executable('ctags')
@@ -10,6 +7,12 @@ if !executable('ctags')
     finish
 endif
 
+Plugin 'taglist.vim'
+
+" F4: Switch on/off TagList
+"nnoremap <silent> <F4> :TlistToggle<CR>
+map <F4> <ESC>:TlistToggle<CR>
+nmap ,tl <ESC>:TlistToggle<CR>
 
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Auto_Open = 0

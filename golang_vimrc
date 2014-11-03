@@ -16,3 +16,5 @@ au FileType go map <leader>rr <ESC>:! go run %<CR>
 au FileType go map <leader>tt <ESC>:! go test<CR>
 au FileType go map <leader>tf <ESC>:! go test %<CR>
 
+" Go command
+map <leader>goc :!go

@@ -11,10 +11,6 @@ set ruler
 " set color column
 "set cc=80
 
-" Text width
-" ========================
-"set textwidth=78
-autocmd FileType text setlocal textwidth=78
 "set wrapmargin=10
 
 " Status Line

@@ -1,7 +1,7 @@
 "Format the statusline
 " ========================
 
-if !(has("win32") && (!has("gui")))
+if !(has("win32") && (!has("gui_running")))
 	"only for dos
 	finish
 endif

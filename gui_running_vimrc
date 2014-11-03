@@ -10,6 +10,7 @@ endif
 set go-=T
 set go-=r
 
+" Set GUI Font
 if has("gui_win32")
 	"set guifont=Monaco:h11
 	set guifont=Consolas:h13
@@ -32,15 +33,6 @@ if has("gui_win32")
 	au GUIEnter * simalt ~x
 endif
 
-if has("gui_gtk2")
-	
-	"need wmctl
-	"if !executable('wmctrl')
-		"sudo apt-get install wmctrl
-	"endif
-	
-	if executable('wmctrl') && has("gui_running")
-		source $HOME/.vim/full_screen_gtk_vimrc
-	endif
+" GTK F11 maximum windows
+source $HOME/.vim/full_screen_gtk_vimrc
 
-endif

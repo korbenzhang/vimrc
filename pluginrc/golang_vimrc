@@ -1,0 +1,11 @@
+" golang 
+" ========================================
+
+" vim-go 
+Plugin 'fatih/vim-go'
+
+let g:go_disable_autoinstall = 1
+
+Plugin 'korbenzhang/gocode.vim'				"gocode vim
+
+

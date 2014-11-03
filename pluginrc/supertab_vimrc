@@ -1,5 +1,8 @@
 " SuperTab
 "=====================
+Plugin 'SuperTab'							"tab
+
+
 
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 

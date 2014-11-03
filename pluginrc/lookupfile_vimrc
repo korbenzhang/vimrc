@@ -1,6 +1,8 @@
-"""""""""""""""""""""""""""""" 
 " 设置lookupfile插件 
-"""""""""""""""""""""""""""""" 
+" ========================================================================
+Plugin 'lookupfile'
+
+
 let g:LookupFile_MinPatLength = 2               "最少输入2个字符才开始查找 
 let g:LookupFile_PreserveLastPattern = 0        "不保存上次查找的字符串 
 let g:LookupFile_PreservePatternHistory = 1     "保存查找历史 

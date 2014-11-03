@@ -1,5 +1,7 @@
 " OmniCppComplete
 "=====================
+Plugin 'OmniCppComplete'					"c and cpp complete
+
 " set Ctrl+j in insert mode, like VS.Net
 "imap <C-j> <C-X><C-O>
 

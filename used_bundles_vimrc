@@ -2,78 +2,24 @@
 "===========================================================
 Plugin 'auto_mkdir'							"auto make dir when save file
 Plugin 'TxtBrowser'							"leader g s
-Plugin 'majutsushi/tagbar'					"better than taglist
 Plugin 'Emmet.vim'							"Emmet
-"Plugin 'kien/ctrlp.vim'						"find file in dir
+"Plugin 'kien/ctrlp.vim'					"find file in dir
 Plugin 'scrooloose/syntastic'				"syntax check
-Plugin 'scrooloose/nerdtree'				"explore files
-Plugin 'scrooloose/nerdcommenter'			"comment
 "Plugin 'gdbmgr'							"debug
-"Plugin 'edsono/vim-matchit'					"match tag
-Plugin 'elzr/vim-json'						"json
-
-if has("win32") && (!has("gui_running"))
-	"dos
-
-else
-	"others
-	Plugin 'bling/vim-airline'					"status line
-endif
-
-Plugin 'tpope/vim-fugitive'					"git
-"Plugin 'tpope/vim-surround'					"process tag
-Plugin 'plasticboy/vim-markdown'			"markdown
+"Plugin 'edsono/vim-matchit'				"match tag
+"Plugin 'tpope/vim-surround'				"process tag
 "Plugin 'justinmk/vim-sneak'				"move quickly between motion
 Plugin 'korbenzhang/vim_misc'				"korben's vim misc
-Plugin 'korbenzhang/gocode.vim'				"gocode vim
-"Plugin 'mhinz/vim-signify'					"git
 "Plugin 'sjl/gundo.vim'						"undo tree
 "Plugin 'tpope/vim-sleuth'					"ajust tab
-"Plugin 'tyru/open-browser.vim'
-" C and C++
-"===========================================================
+"Plugin 'tyru/open-browser.vim'				"open browser
 Plugin 'a.vim'								"switch to .h
-Plugin 'OmniCppComplete'					"c and cpp complete
-
 Plugin 'Auto-Pairs'							"auto close (){}[]
-"Plugin 'Lokaltog/vim-powerline'			"status line
 Plugin 'closetag.vim'						"close html xml tag
-
-" Colorschema
-"===========================================================
-Plugin 'tomasr/molokai'
-"Plugin 'flazz/vim-colorschemes'
-
-"Build
-"===========================================================
-"Plugin 'maven-plugin'						"for maven
-
-" Complete
-" ==========================================================
-Plugin 'SuperTab'							"tab
-Plugin 'snipMate'							"snipmate
-"Plugin 'honza/vim-snippets'				"some snippets
-Plugin 'CmdlineCompl.vim'					"cmd line complete
-Plugin 'AutoComplPop'						"AckEnable
-Plugin 'echofunc.vim'						"echo func in status line
-
-"Plugin 'SQLComplete.vim'					"sql
-"Plugin 'XML-Completion'					"xml
 "Plugin 'ack.vim'							"perl
-"Plugin 'autocomp.vim'
-"Plugin 'AsyncCommand'
-"Plugin 'Vim-JDE'
-"Plugin 'Word-Fuzzy-Completion'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'Shougo/neocomplete.vim'
-"Plugin 'autofmt'
-"Plugin 'bash-support.vim'
+"Plugin 'autofmt'							"auto format
+"Plugin 'bash-support.vim'					"bash 
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
-"Plugin 'winmanager'
-
-Plugin 'xml.vim'							"xml
-"Plugin 'DoxyGen-Syntax'						"doxygen
-"Plugin 'DoxygenToolkit.vim'					"doxygen
 
 if has("unix")
 	Plugin 'SudoEdit.vim'					"SudoWrite

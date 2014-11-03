@@ -1,5 +1,9 @@
 " snipMate   智能补全
 " ========================
+Plugin 'snipMate'							"snipmate
+"Plugin 'honza/vim-snippets'				"some snippets
+
+
 let g:snips_author='Korben Zhang'
 
 " :AuthorInfoDetect   自动添加作者、时间等信息，本质是NERD_commenter && authorinfo的结合

@@ -1,5 +1,8 @@
 " Doxygen Plugin
 "=====================
+Plugin 'DoxyGen-Syntax'						"doxygen
+Plugin 'DoxygenToolkit.vim'					"doxygen
+
 map fg : Dox<cr>
 
 let g:DoxygenToolkit_authorName="Korben Zhang"
