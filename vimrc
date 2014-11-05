@@ -7,10 +7,10 @@ set nocompatible
 "Vundle support
 " ----------------------------------------------------
 source $HOME/.vim/init_vundle_vimrc
-source $HOME/.vim/used_bundles_vimrc
 
 " Plugins and settings
 " ----------------------------------------------------
+source $HOME/.vim/pluginrc/plugins_vimrc
 source $HOME/.vim/pluginrc/golang_vimrc
 source $HOME/.vim/pluginrc/compl_vimrc
 source $HOME/.vim/pluginrc/supertab_vimrc

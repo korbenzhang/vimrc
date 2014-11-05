@@ -6,9 +6,9 @@ if !(has("gui_running") && has("gui_gtk2"))
 endif
 
 if !executable('wmctrl') 
-	echo "need install wmctrl"
-	echo "sudo apt-get install wmctrl"
-	echo ""
+	"echo "need install wmctrl"
+	"echo "sudo apt-get install wmctrl"
+	"echo ""
 	finish
 endif
 
