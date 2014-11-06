@@ -1,4 +1,0 @@
-if has("ruby")
-	"Bundle 'Command-T'
-endif
-

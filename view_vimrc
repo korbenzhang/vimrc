@@ -6,7 +6,11 @@ set viewdir=$HOME/rundata/vim/views/
 let view_dir=expand('$HOME/rundata/vim/views')
 
 if !isdirectory(view_dir)
-    silent !mkdir -p ~/rundata/vim/views
+	if has("win32")
+		silent exec "!mkdir ".$HOME."\\rundata\\vim\\views"
+	else
+		silent !mkdir -p ~/rundata/vim/views
+	endif
 endif
 
 "autocmd BufWinLeave * mkview
