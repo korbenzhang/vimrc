@@ -38,6 +38,11 @@ source $HOME/.vim/pluginrc/xml_vimrc
 "source $HOME/.vim/pluginrc/bufexpl_vimrc
 "source $HOME/.vim/pluginrc/async_vimrc
 
+" experimental
+if filereadable(expand('$HOME/.vim/expr_vimrc'))
+	source $HOME/.vim/expr_vimrc
+endif
+
 source $HOME/.vim/vundle_end_vimrc
 
 " Options and Settings
@@ -52,6 +57,7 @@ source $HOME/.vim/display_vimrc						"display
 source $HOME/.vim/term_vimrc						"term
 source $HOME/.vim/backup_vimrc						"backup
 source $HOME/.vim/swap_vimrc						"swap
+source $HOME/.vim/view_vimrc						"swap
 source $HOME/.vim/au_vimrc							"auto filetype
 source $HOME/.vim/keymap_vimrc						"keys
 source $HOME/.vim/iab_vimrc							"abb set

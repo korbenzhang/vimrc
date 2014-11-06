@@ -8,3 +8,12 @@
 # Dirs
 bundle/
 .netrwhist
+#view/
+
+# ignore expr_vimrc
+# can udpate this file freely, donot warry about disturb git repo.
+expr_*
+
+
+
+

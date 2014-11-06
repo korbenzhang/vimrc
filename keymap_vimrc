@@ -20,6 +20,9 @@ source $HOME/.vim/keycmap_vimrc						"keys for cmap
 nmap <silent> <esc><esc> :noh<cr>
 " Don't use Ex mode, use Q for formatting
 map  Q gq
+
+nmap <SPACE> <C-F>
+
 nmap <leader>sr :silent !
 nmap <leader>r :!
 map  <leader>bd :Bclose<cr>
