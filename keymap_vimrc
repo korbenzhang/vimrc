@@ -21,6 +21,9 @@ nmap <silent> <esc><esc> :noh<cr>
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
+map j gj
+map k gk
+
 nmap <SPACE> <C-F>
 
 nmap <leader>sr :silent !

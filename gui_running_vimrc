@@ -36,3 +36,6 @@ endif
 " GTK F11 maximum windows
 source $HOME/.vim/full_screen_gtk_vimrc
 
+" WinGUI fullscreen
+source $HOME/.vim/full_screen_win32_vimrc
+
