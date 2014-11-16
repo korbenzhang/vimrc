@@ -17,6 +17,7 @@ if !executable('gotags')
 endif
 
 Plugin 'majutsushi/tagbar'					"better than taglist
+"Plugin 'Tagbar'					"better than taglist
 
 " F4: Switch on/off TagList
 "nmap <F4> :TagbarToggle<CR>
