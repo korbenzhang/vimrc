@@ -136,3 +136,19 @@ func! Molokai()
 	colorscheme molokai
 endfunction
 command! -bar -narg=0 Molokai  call Molokai()
+
+" UpdateGoCodesTags
+func! UpdateGoCodesTags()
+    if !executable('ctags')
+		echo "Cannt find ctags."
+		echo ""
+    else
+		silent exec "cd ".$GOCODE."/src/ && ctags -R ." 
+    endif
+endfunction
+command! -bar -narg=0 UpdateGoCodesTags  call UpdateGoCodesTags()
+
+
+
+
+    
