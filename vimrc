@@ -78,3 +78,10 @@ source $HOME/.vim/make_onefile_vimrc				"mabetle functions
 source $HOME/.vim/run_vimrc							"run
 source $HOME/.vim/golang_vimrc						"golang
 source $HOME/.vim/misc_vimrc						"misc
+
+" experimental for override vim settings.
+if filereadable(expand('$HOME/.vim/expr_override_vimrc'))
+	source $HOME/.vim/expr_override_vimrc
+endif
+
+
