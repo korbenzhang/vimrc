@@ -1,0 +1,39 @@
+" experimental
+
+Plugin 'kien/ctrlp.vim'					"find file in dir
+Plugin 'gdbmgr'							"debug
+Plugin 'edsono/vim-matchit'				"match tag
+Plugin 'tpope/vim-surround'				"process tag
+Plugin 'justinmk/vim-sneak'				"move quickly between motion
+Plugin 'sjl/gundo.vim'						"undo tree
+Plugin 'tpope/vim-sleuth'					"ajust tab
+Plugin 'tyru/open-browser.vim'				"open browser
+Plugin 'Lookup'
+"Plugin 'ack.vim'							"perl
+"Plugin 'autofmt'							"auto format
+"Plugin 'bash-support.vim'					"bash 
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
+"Plugin 'Command-T'
+Plugin 'Railscasts-Theme-GUIand256color'
+Plugin 'DarkZen-Color-Scheme'
+Plugin 'Pleasant-colorscheme'
+Plugin 'textmate16'
+Plugin 'Conque-Shell'
+Plugin 'CmdlineCompl'
+Plugin 'FindEverything'
+
+
+"source $HOME/.vim/pluginrc/closetag_vimrc
+"source $HOME/.vim/pluginrc/powerline_vimrc
+source $HOME/.vim/pluginrc/winmanager_vimrc
+"source $HOME/.vim/pluginrc/rsense_vimrc
+"source $HOME/.vim/pluginrc/vimwiki_vimrc
+"source $HOME/.vim/pluginrc/tex_vimrc
+"source $HOME/.vim/pluginrc/template_load_vimrc
+"source $HOME/.vim/pluginrc/minibufexplore_vimrc
+"source $HOME/.vim/pluginrc/lookupfile_vimrc
+"source $HOME/.vim/pluginrc/expl_vimrc
+"source $HOME/.vim/pluginrc/doxygen_vimrc
+"source $HOME/.vim/pluginrc/bufexpl_vimrc
+"source $HOME/.vim/pluginrc/async_vimrc
+
