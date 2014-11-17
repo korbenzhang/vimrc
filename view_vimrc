@@ -7,7 +7,7 @@ let view_dir=expand('$HOME/rundata/vim/views')
 
 if !isdirectory(view_dir)
 	if has("win32")
-		silent exec "!mkdir ".$HOME."\\rundata\\vim\\views"
+		silent exec "!md ".$HOME."\\rundata\\vim\\views"
 	else
 		silent !mkdir -p ~/rundata/vim/views
 	endif

@@ -6,7 +6,7 @@ let backup_dir=expand('$HOME/rundata/vim/bak/')
 
 if !isdirectory(backup_dir)
 	if has("win32")
-		silent exec "!mkdir ".$HOME."\\rundata\\vim\\bak"
+		silent exec "!md ".$HOME."\\rundata\\vim\\bak"
 	else
 		silent !mkdir $HOME/rundata/vim/bak
 	endif

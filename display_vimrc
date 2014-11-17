@@ -52,7 +52,7 @@ endif
 if !has("gui_running") && has("win32")
 	"dos
 else
-	colorscheme molokai
+	"colorscheme molokai
 endif
 
 " TabLabel

@@ -6,7 +6,7 @@ let swap_dir=expand('$HOME/rundata/vim/swap/')
 
 if !isdirectory(swap_dir)
 	if has("win32")
-		silent exec "!mkdir ".$HOME."\\rundata\\vim\\swap"
+		silent exec "!md ".$HOME."\\rundata\\vim\\swap"
 	else
 		silent !mkdir $HOME/rundata/vim/swap
 	endif

@@ -24,19 +24,6 @@ source $HOME/.vim/pluginrc/comment_vimrc
 source $HOME/.vim/pluginrc/git_vimrc
 source $HOME/.vim/pluginrc/markdown_vimrc
 source $HOME/.vim/pluginrc/xml_vimrc
-"source $HOME/.vim/pluginrc/closetag_vimrc
-"source $HOME/.vim/pluginrc/powerline_vimrc
-"source $HOME/.vim/pluginrc/winmanager_vimrc
-"source $HOME/.vim/pluginrc/rsense_vimrc
-"source $HOME/.vim/pluginrc/vimwiki_vimrc
-"source $HOME/.vim/pluginrc/tex_vimrc
-"source $HOME/.vim/pluginrc/template_load_vimrc
-"source $HOME/.vim/pluginrc/minibufexplore_vimrc
-"source $HOME/.vim/pluginrc/lookupfile_vimrc
-"source $HOME/.vim/pluginrc/expl_vimrc
-"source $HOME/.vim/pluginrc/doxygen_vimrc
-"source $HOME/.vim/pluginrc/bufexpl_vimrc
-"source $HOME/.vim/pluginrc/async_vimrc
 
 " experimental
 if filereadable(expand('$HOME/.vim/expr_vimrc'))
@@ -62,13 +49,11 @@ source $HOME/.vim/au_vimrc							"auto filetype
 source $HOME/.vim/keymap_vimrc						"keys
 source $HOME/.vim/iab_vimrc							"abb set
 source $HOME/.vim/mouse_vimrc						"mouse
-"source $HOME/.vim/statusline_vimrc					"statusline
 source $HOME/.vim/mswin.vim							"mswin
 source $HOME/.vim/highlight_vimrc					"highlight
 source $HOME/.vim/fold_vimrc						"fold
 source $HOME/.vim/tags_vimrc						"tag for go and java
 source $HOME/.vim/complete_vimrc					"complete
-"source $HOME/.vim/omnifunc_vimrc					"omni
 source $HOME/.vim/gui_running_vimrc					"gui
 source $HOME/.vim/win32_vimrc						"win32
 source $HOME/.vim/dos_vimrc							"dos
