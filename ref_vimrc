@@ -11,7 +11,7 @@ Plugin 'tyru/open-browser.vim'				"open browser
 Plugin 'Lookup'
 "Plugin 'ack.vim'							"perl
 "Plugin 'autofmt'							"auto format
-"Plugin 'bash-support.vim'					"bash 
+"Plugin 'bash-support.vim'					"bash
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
 "Plugin 'Command-T'
 Plugin 'Railscasts-Theme-GUIand256color'
@@ -37,3 +37,6 @@ source $HOME/.vim/pluginrc/winmanager_vimrc
 "source $HOME/.vim/pluginrc/bufexpl_vimrc
 "source $HOME/.vim/pluginrc/async_vimrc
 
+"highlight line end blank
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/

@@ -37,7 +37,6 @@ source $HOME/.vim/vundle_end_vimrc
 source $HOME/.vim/env_vimrc							"set vim env
 source $HOME/.vim/options_vimrc						"options
 source $HOME/.vim/encoding_vimrc					"new encodings
-source $HOME/.vim/tab_indent_vimrc					"tab indent length
 source $HOME/.vim/paste_vimrc						"paste
 source $HOME/.vim/syntax_vimrc						"syntax
 source $HOME/.vim/display_vimrc						"display
@@ -45,7 +44,6 @@ source $HOME/.vim/term_vimrc						"term
 source $HOME/.vim/backup_vimrc						"backup
 source $HOME/.vim/swap_vimrc						"swap
 source $HOME/.vim/view_vimrc						"swap
-source $HOME/.vim/au_vimrc							"auto filetype
 source $HOME/.vim/keymap_vimrc						"keys
 source $HOME/.vim/iab_vimrc							"abb set
 source $HOME/.vim/mouse_vimrc						"mouse
@@ -63,6 +61,8 @@ source $HOME/.vim/make_onefile_vimrc				"mabetle functions
 source $HOME/.vim/run_vimrc							"run
 source $HOME/.vim/golang_vimrc						"golang
 source $HOME/.vim/misc_vimrc						"misc
+source $HOME/.vim/au_vimrc							"auto filetype
+source $HOME/.vim/tab_indent_vimrc					"tab indent length
 
 " experimental for override vim settings.
 if filereadable(expand('$HOME/.vim/expr_override_vimrc'))

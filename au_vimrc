@@ -1,20 +1,19 @@
 " Autocmd
 " ========================
 
-
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.tml set filetype=html
 au BufRead,BufNewFile *.jspx set filetype=jsp
 au BufRead,BufNewFile *.m set filetype=objc
 au BufRead,BufNewFile *.gradle set filetype=groovy
 
-
 au FileType text setlocal textwidth=78
 au FileType text setlocal wrapmargin=78
 
 " delete end line space
 " ========================
-"au BufWrite * execute ":s/\s*$//"
+"au BufWritePre * execute ":s/\s*$//"
+"au BufWritePre * execute ':%s/\s\+$//g'
 
 "au BufRead,BufNewFile *.rb,*.erb,*.rhtml set shiftwidth=2
 "au BufRead,BufNewFile *.rb,*.erb,*.rhtml set softtabstop=2
