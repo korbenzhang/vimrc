@@ -1,0 +1,8 @@
+" essentail vimrc
+set nocompatible
+filetype plugin indent on    " required
+syntax enable
+syntax on
+
+set showmode
+
