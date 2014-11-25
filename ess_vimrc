@@ -4,5 +4,11 @@ filetype plugin indent on    " required
 syntax enable
 syntax on
 
-set showmode
+set laststatus=2
+set nobackup
+set noswapfile
+
+if has("gui_running")
+	source $HOME/.vim/gui_running_vimrc
+endif
 
