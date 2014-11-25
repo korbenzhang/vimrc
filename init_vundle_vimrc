@@ -1,34 +1,5 @@
 " init vundle
 " ===========================
-
-" if no vundle, git clone it
-let iCanHazVundle=1
-
-let vundle_readme=expand('$HOME/.vim/bundle/Vundle.vim/README.md')
-let bundle_dir=expand('$HOME/.vim/bundle/')
-
-if !filereadable(vundle_readme)
-	echo "Installing Vundle.."
-	echo ""
-	
-	if !isdirectory(bundle_dir)
-		if has("win32")
-			silent exec "!mkdir ".$HOME."\\.vim\\bundle"
-		else
-			silent !mkdir $HOME/.vim/bundle
-		endif
-	endif
-
-	if has("win32")
-		silent exec "!git clone https://github.com/gmarik/Vundle.vim.git ".$HOME."\\.vim\\bundle\\Vundle.vim"
-	else
-		silent !git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-	endif
-    let iCanHazVundle=0
-endif
-
-" vundle support
-" ========================
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
