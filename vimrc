@@ -6,6 +6,7 @@ set nocompatible
 
 "Vundle support
 " ----------------------------------------------------
+source $HOME/.vim/vundle_install_vimrc
 source $HOME/.vim/init_vundle_vimrc
 
 " Plugins and settings
