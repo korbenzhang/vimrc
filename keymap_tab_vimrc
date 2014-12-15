@@ -6,7 +6,7 @@ map <leader>te :tabedit **/
 map <leader>tm :tabmove
 map <leader>tn :tabnew<cr>
 
-nmap <C-N> :tabnew<cr>
+"nmap <C-N> :tabnew<cr>
 
 "key mapping for window navigation
 "map <C-h> <C-w>h
