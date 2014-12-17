@@ -16,14 +16,13 @@ if !executable('gotags')
 	finish
 endif
 
-Plugin 'majutsushi/tagbar'					"better than taglist
-"Plugin 'Tagbar'					"better than taglist
+Plugin 'majutsushi/tagbar'		"better than taglist
+"Plugin 'Tagbar'			"better than taglist
 
 " F4: Switch on/off TagList
 "nmap <F4> :TagbarToggle<CR>
 map <F4> <ESC>:TagbarToggle<CR>
 nmap ,tb <ESC>:TagbarToggle<CR>
-
 
 "let g:tagbar_ctags_bin = 'ctags.exe'
 "let g:tagbar_left = 1
@@ -32,29 +31,29 @@ let g:tagbar_width = 30
 "let g:tagbar_autopreview = 1
 
 " open Tagbar on vim startup
+"autocmd VimEnter * nested :TagbarOpen
+
+" open it only if you're opening Vim with a supported file/files
+" ---------------------------------------------------------------------------
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
 
-" tab
+" opening Tagbar also if you open a supported file in an already running
+" ---------------------------------------------------------------------------
+"autocmd FileType * nested :call tagbar#autoopen(0)
+
+
+"If you use multiple tabs and want Tagbar to also open in the current tab when
+"you switch to an already loaded, supported buffer:
+" ---------------------------------------------------------------------------
 "autocmd BufEnter * nested :call tagbar#autoopen(0)
 
-" with a support file
-"autocmd VimEnter * nested :call tagbar#autoopen(1)
-
-"Go support
-"let g:tagbar_type_go = {
-    "\ 'ctagstype': 'go',
-    "\ 'kinds' : [
-        "\'p:package',
-        "\'f:function',
-        "\'v:variables',
-        "\'t:type',
-        "\'c:const'
-    "\]
-"\}
-
+"And if you want to open Tagbar only for specific filetypes, not for all of the
+"supported ones:
+" ---------------------------------------------------------------------------
+"autocmd FileType c,cpp,go,java nested :TagbarOpen
+"autocmd FileType c,cpp,go,java nested :call tagbar#autoopen(0)
 
 "let g:tagbar_sort = 0
-
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',

@@ -2,6 +2,7 @@
 " ========================
 Plugin 'explorer'
 
+"Plugin 'korbenzhang/gocode.vim'				"gocode vim
 
 let g:explDetailedHelp=0
 let g:explHideFiles='^\.,.*\.class$,.*\.swp$,.*\.pyc$,.*\.swo$,\.DS_Store$'
