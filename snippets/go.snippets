@@ -132,6 +132,12 @@ snippet fum
 		${5}
 	}
 	${0}
+# function init
+snippet fui
+	func init(){
+		${1}
+	}
+	${0}
 # log printf
 snippet lf
 	log.Printf("%${1:s}", ${2:var})
@@ -155,10 +161,13 @@ snippet nw
 	new(${0:type})
 # package
 snippet pa
-	package
+	package ${1:name}
+
+	${0}
 # package main
 snippet pm
 	package main
+
 	${0}
 # panic
 snippet pn
@@ -197,8 +206,9 @@ snippet st
 # type
 snippet tys
 	type ${1:name} struct{
-		${0}
+		${2}
 	}
+	${0}
 # switch
 snippet sw
 	switch ${1:var} {
@@ -217,7 +227,7 @@ snippet t
 # goroutine named function
 snippet g
 	go ${1:funcName}(${0})
-# goroutine anonymous function 
+# goroutine anonymous function
 snippet ga
 	go func(${1} ${2:type}) {
 		${3:/* code */}
