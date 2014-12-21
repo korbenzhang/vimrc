@@ -8,10 +8,10 @@ let g:mapleader = ","
 if has("win32")
 " windows
 	let $APPS_HOME="d:/apps"
-	if isdirectory(expand("d:/dev"))
-		let $DEV_HOME="d:/dev"
+	if isdirectory(expand("d:/devlab"))
+		let $DEV_HOME="d:/devlab"
 	else
-		let $DEV_HOME="e:/dev"
+		let $DEV_HOME="e:/devlab"
 	endif
 else
 " linux and others
