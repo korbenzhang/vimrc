@@ -16,7 +16,7 @@ if has("win32")
 else
 " linux and others
 	let $APPS_HOME="/apps"
-    let $DEV_HOME="/dev_home"
+    let $DEV_HOME="/devlab"
 endif
 
 " GOROOT
