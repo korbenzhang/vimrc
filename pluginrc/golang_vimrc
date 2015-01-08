@@ -2,7 +2,7 @@
 " ========================================
 
 " vim-go
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 
 let g:go_disable_autoinstall = 1
 

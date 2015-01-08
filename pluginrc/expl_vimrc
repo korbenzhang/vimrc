@@ -1,6 +1,7 @@
 " explore
 " ========================
 Plugin 'explorer'
+Plugin 'othree/xml.vim'
 
 "Plugin 'korbenzhang/gocode.vim'				"gocode vim
 

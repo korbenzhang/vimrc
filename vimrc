@@ -14,11 +14,11 @@ source $HOME/.vim/init_vundle_vimrc
 source $HOME/.vim/pluginrc/plugins_vimrc
 source $HOME/.vim/pluginrc/golang_vimrc
 source $HOME/.vim/pluginrc/compl_vimrc
+source $HOME/.vim/pluginrc/autocomplpop_vimrc
 source $HOME/.vim/pluginrc/supertab_vimrc
 source $HOME/.vim/pluginrc/tagbar_vimrc
 source $HOME/.vim/pluginrc/snipmate_vimrc
 source $HOME/.vim/pluginrc/nerdtree_vimrc
-source $HOME/.vim/pluginrc/autocomplpop_vimrc
 source $HOME/.vim/pluginrc/colorscheme_vimrc
 source $HOME/.vim/pluginrc/statusline_vimrc
 source $HOME/.vim/pluginrc/comment_vimrc

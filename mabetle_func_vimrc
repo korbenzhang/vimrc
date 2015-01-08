@@ -143,12 +143,13 @@ func! UpdateGoCodesTags()
 		echo "Cannt find ctags."
 		echo ""
     else
-		silent exec "cd ".$GOCODE."/src/ && ctags -R ." 
+		silent exec "cd ".$GOCODE."/src/ && ctags -R ."
     endif
 endfunction
 command! -bar -narg=0 UpdateGoCodesTags  call UpdateGoCodesTags()
 
+func! NoBell()
+	set vb t_vb=
+endfunction
+command! -bar -narg=0 NoBell  call NoBell()
 
-
-
-    

@@ -45,9 +45,6 @@ set showmatch
 " 自动格式化
 "set formatoptions=tcrqn
 
-" dict in  .vim
-set dictionary+=$HOME/.vim/words		" ~/.vim/words
-set dictionary+=$HOME/.vim/words_mine	" ~/.vim/words_mine
 
 
 "set shell=sh
