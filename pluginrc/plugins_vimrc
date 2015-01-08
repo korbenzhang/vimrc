@@ -1,8 +1,8 @@
 " Plugins Managed by Vundle
 "===========================================================
 Plugin 'auto_mkdir'							"auto make dir when save file
-"Plugin 'TxtBrowser'							"leader g s
 Plugin 'Emmet.vim'							"Emmet
+"Plugin 'TxtBrowser'							"leader g s
 "Plugin 'kien/ctrlp.vim'					"find file in dir
 "Plugin 'scrooloose/syntastic'				"syntax check
 "Plugin 'gdbmgr'							"debug

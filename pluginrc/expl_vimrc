@@ -2,7 +2,9 @@
 " ========================
 Plugin 'explorer'
 Plugin 'othree/xml.vim'
+Plugin 'scrooloose/syntastic'				"syntax check
 
+"Plugin 'fatih/vim-go'
 "Plugin 'korbenzhang/gocode.vim'				"gocode vim
 
 let g:explDetailedHelp=0

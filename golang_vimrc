@@ -5,7 +5,7 @@
 au BufRead,BufNewFile *.go set filetype=go
 
 "au FileType go setl makeprg=go\ build\ -v\ -x\ -o\ /rundata/go.out
-au FileType go setl makeprg=go\ build\ -o\ /rundata/go.out
+"au FileType go setl makeprg=go\ build\ -o\ /rundata/go.out
 
 "au BufWrite *.go :! go fmt %
 "au BufWritePost *.go :make
