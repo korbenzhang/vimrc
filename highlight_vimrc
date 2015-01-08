@@ -11,5 +11,3 @@ highlight PmenuSel ctermbg=7 ctermfg=1 guibg=DarkBlue guifg=White
 highlight PmenuSbar ctermbg=7 ctermfg=0 guibg=DarkGray guifg=Black
 highlight PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 
-" TabLine
-hi        TabLineSel ctermfg=1 ctermbg=4         

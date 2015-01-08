@@ -45,8 +45,6 @@ set showmatch
 " 自动格式化
 "set formatoptions=tcrqn
 
-
-
 "set shell=sh
 
 "set timeoutlen=200

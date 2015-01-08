@@ -41,6 +41,7 @@ source $HOME/.vim/encoding_vimrc					"new encodings
 source $HOME/.vim/paste_vimrc						"paste
 source $HOME/.vim/syntax_vimrc						"syntax
 source $HOME/.vim/display_vimrc						"display
+source $HOME/.vim/tabline_vimrc					"tabline
 source $HOME/.vim/term_vimrc						"term
 source $HOME/.vim/backup_vimrc						"backup
 source $HOME/.vim/swap_vimrc						"swap

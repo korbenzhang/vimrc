@@ -55,13 +55,6 @@ else
 	"colorscheme molokai
 endif
 
-" TabLabel
-" ========================
-highlight LeaderTab guifg=#666666
-"set showtabline=2
-"some stuff to get the mouse going in term
-set guitablabel=%N.%t
-
 " Turn off welcome page
 set shortmess=atI
 

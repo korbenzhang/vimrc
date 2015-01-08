@@ -15,8 +15,6 @@ au FileType text setlocal wrapmargin=78
 "au BufWritePre * execute ":s/\s*$//"
 "au BufWritePre * execute ':%s/\s\+$//g'
 
-"au BufRead,BufNewFile *.rb,*.erb,*.rhtml set shiftwidth=2
-"au BufRead,BufNewFile *.rb,*.erb,*.rhtml set softtabstop=2
 
 autocmd FileType xml,html vmap <C-o> <ESC>'<i
 autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o
