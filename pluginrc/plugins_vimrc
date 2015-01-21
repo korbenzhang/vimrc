@@ -4,12 +4,17 @@ Plugin 'auto_mkdir'							"auto make dir when save file
 Plugin 'Emmet.vim'							"Emmet
 "Plugin 'TxtBrowser'							"leader g s
 "Plugin 'kien/ctrlp.vim'					"find file in dir
-"Plugin 'scrooloose/syntastic'				"syntax check
-"Plugin 'gdbmgr'							"debug
+Plugin 'scrooloose/syntastic'				"syntax check
+
+if has("unix")
+	" need linux
+	Plugin 'gdbmgr'								"debug
+endif
+
 "Plugin 'edsono/vim-matchit'				"match tag
 "Plugin 'tpope/vim-surround'				"process tag
 "Plugin 'justinmk/vim-sneak'				"move quickly between motion
-Plugin 'korbenzhang/vim_misc'				"korben's vim misc
+"Plugin 'korbenzhang/vim_misc'				"korben's vim misc
 "Plugin 'sjl/gundo.vim'						"undo tree
 "Plugin 'tpope/vim-sleuth'					"ajust tab
 "Plugin 'tyru/open-browser.vim'				"open browser
