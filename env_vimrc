@@ -25,6 +25,7 @@ let $OSCHINA=$DEV_HOME."/oschina.net"
 
 " Common
 let $GOPATH			=$DEV_HOME."/gocodes"
+let $GOCODES		=$DEV_HOME."/gocodes"
 
 let $LAB			=$OSCHINA."/betle_lab"
 let $TESTLAB		=$OSCHINA."/betle_testlab"

@@ -139,11 +139,12 @@ command! -bar -narg=0 Molokai  call Molokai()
 
 " UpdateGoCodesTags
 func! UpdateGoCodesTags()
-    if !executable('ctags')
-		echo "Cannt find ctags."
+    if !executable('gotags')
+		echo "Can't find gotags."
 		echo ""
-    else
-		silent exec "cd ".$GOCODE."/src/ && ctags -R ."
+	else
+		silent exec "!gotags -R -file=/apps/go/src/tags  /apps/go/src/."
+		silent exec "!gotags -R -file=/devlab/gocodes/src/tags /devlab/gocodes/src/."
     endif
 endfunction
 command! -bar -narg=0 UpdateGoCodesTags  call UpdateGoCodesTags()
