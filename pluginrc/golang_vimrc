@@ -9,5 +9,10 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'fatih/vim-go'
 "Plugin 'Blackrush/vim-gocode'
 "Plugin 'dgryski/vim-godef'
+
+" config vim-go
 let g:go_disable_autoinstall = 1
 
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
