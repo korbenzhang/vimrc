@@ -1,2 +1,5 @@
 
+"Plugin 'Shougo/neocomplcache'
+" donot konw what is the differences between neocomplcache and neocomplete.
 Plugin 'Shougo/neocomplete.vim'
+
