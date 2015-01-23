@@ -65,6 +65,7 @@ source $HOME/.vim/complete_vimrc					"complete
 source $HOME/.vim/gui_running_vimrc					"gui
 source $HOME/.vim/win32_vimrc						"win32
 source $HOME/.vim/dos_vimrc							"dos
+source $HOME/.vim/mintty_vimrc						"mintty
 source $HOME/.vim/mabetle_func_vimrc				"mabetle functions
 source $HOME/.vim/make_func_vimrc					"mabetle functions
 source $HOME/.vim/make_onefile_vimrc				"mabetle functions
