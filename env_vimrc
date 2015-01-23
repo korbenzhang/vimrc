@@ -29,7 +29,7 @@ let $GOCODES		=$DEV_HOME."/gocodes"
 
 let $LAB			=$OSCHINA."/betle_lab"
 let $TESTLAB		=$OSCHINA."/betle_testlab"
-let $BETLE_GO		=$OSCHINA."/betle_go"
+let $BETLE_GO		=$GOCODES."/src/mabetle"
 let $BETLE_BIN		=$OSCHINA."/betle_bin"
 let $BETLE_WINBIN		=$OSCHINA."/betle_winbin"
 
