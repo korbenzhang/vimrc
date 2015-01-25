@@ -22,10 +22,11 @@ source $HOME/.vim/pluginrc/supertab_vimrc
 source $HOME/.vim/pluginrc/tagbar_vimrc
 if version > 702 && has("lua")
 	"source $HOME/.vim/pluginrc/neosnippet_vimrc
-	source $HOME/.vim/pluginrc/utlisnips_vimrc
+	"source $HOME/.vim/pluginrc/utlisnips_vimrc
 else
-	source $HOME/.vim/pluginrc/snipmate_vimrc
+	"source $HOME/.vim/pluginrc/snipmate_vimrc
 endif
+source $HOME/.vim/pluginrc/snipmate_vimrc
 source $HOME/.vim/pluginrc/nerdtree_vimrc
 source $HOME/.vim/pluginrc/colorscheme_vimrc
 source $HOME/.vim/pluginrc/statusline_vimrc
