@@ -1,6 +1,6 @@
 
 highlight Cursor ctermfg=white ctermbg=black
-highlight iCursor ctermfg=white ctermbg=steelblue
+highlight iCursor ctermfg=white ctermbg=blue
 
 
 " change cursor color.
