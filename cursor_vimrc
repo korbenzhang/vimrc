@@ -1,3 +1,6 @@
+" change cusor shape for insert mode.
+" Happy with mintty.
+"
 
 highlight Cursor ctermfg=white ctermbg=black
 highlight iCursor ctermfg=white ctermbg=blue
