@@ -6,79 +6,81 @@ set nocompatible
 
 "Vundle support
 " ----------------------------------------------------
-source $HOME/.vim/vundle_install_vimrc
-source $HOME/.vim/init_vundle_vimrc
+source ~/.vim/vundle_install_vimrc
+source ~/.vim/init_vundle_vimrc
 
 " Plugins and settings
 " ----------------------------------------------------
-source $HOME/.vim/pluginrc/plugins_vimrc
-source $HOME/.vim/pluginrc/golang_vimrc
-source $HOME/.vim/pluginrc/compl_vimrc
-if version > 702 && has("lua")
-	source $HOME/.vim/pluginrc/neocomplete_vimrc
-endif
-source $HOME/.vim/pluginrc/autocomplpop_vimrc
-source $HOME/.vim/pluginrc/supertab_vimrc
-source $HOME/.vim/pluginrc/tagbar_vimrc
-if version > 702 && has("lua")
-	"source $HOME/.vim/pluginrc/neosnippet_vimrc
-	"source $HOME/.vim/pluginrc/utlisnips_vimrc
-else
-	"source $HOME/.vim/pluginrc/snipmate_vimrc
-endif
-source $HOME/.vim/pluginrc/snipmate_vimrc
-source $HOME/.vim/pluginrc/nerdtree_vimrc
-source $HOME/.vim/pluginrc/colorscheme_vimrc
-source $HOME/.vim/pluginrc/statusline_vimrc
-source $HOME/.vim/pluginrc/comment_vimrc
-source $HOME/.vim/pluginrc/git_vimrc
-source $HOME/.vim/pluginrc/markdown_vimrc
-source $HOME/.vim/pluginrc/xml_vimrc
+source ~/.vim/pluginrc/plugins_vimrc
+source ~/.vim/pluginrc/golang_vimrc
+
+source ~/.vim/pluginrc/compl_vimrc
+source ~/.vim/pluginrc/autocomplpop_vimrc
+"source ~/.vim/pluginrc/neocomplete_vimrc
+
+source ~/.vim/pluginrc/supertab_vimrc
+source ~/.vim/pluginrc/tagbar_vimrc
+
+"source ~/.vim/pluginrc/neosnippet_vimrc
+source ~/.vim/pluginrc/utlisnips_vimrc
+"source ~/.vim/pluginrc/snipmate_vimrc
+"source ~/.vim/pluginrc/snipmate_old_vimrc
+
+source ~/.vim/pluginrc/nerdtree_vimrc
+source ~/.vim/pluginrc/colorscheme_vimrc
+source ~/.vim/pluginrc/statusline_vimrc
+source ~/.vim/pluginrc/comment_vimrc
+source ~/.vim/pluginrc/git_vimrc
+source ~/.vim/pluginrc/markdown_vimrc
+source ~/.vim/pluginrc/xml_vimrc
 
 " experimental
-if filereadable(expand('$HOME/.vim/expr_vimrc'))
-	source $HOME/.vim/expr_vimrc
+if filereadable(expand('~/.vim/expr_vimrc'))
+	source ~/.vim/expr_vimrc
 endif
 
-source $HOME/.vim/vundle_end_vimrc
+source ~/.vim/vundle_end_vimrc
 
 " Options and Settings
 " ----------------------------------------------------
-source $HOME/.vim/env_vimrc							"set vim env
-source $HOME/.vim/options_vimrc						"options
-source $HOME/.vim/encoding_vimrc					"new encodings
-source $HOME/.vim/paste_vimrc						"paste
-source $HOME/.vim/syntax_vimrc						"syntax
-source $HOME/.vim/display_vimrc						"display
-source $HOME/.vim/tabline_vimrc						"tabline
-source $HOME/.vim/term_vimrc						"term
-source $HOME/.vim/backup_vimrc						"backup
-source $HOME/.vim/swap_vimrc						"swap
-source $HOME/.vim/view_vimrc						"swap
-source $HOME/.vim/keymap_vimrc						"keys
-source $HOME/.vim/iab_vimrc							"abb set
-source $HOME/.vim/mouse_vimrc						"mouse
-source $HOME/.vim/mswin.vim							"mswin
-source $HOME/.vim/highlight_vimrc					"highlight
-source $HOME/.vim/fold_vimrc						"fold
-source $HOME/.vim/tags_vimrc						"tag for go and java
-source $HOME/.vim/complete_vimrc					"complete
-source $HOME/.vim/gui_running_vimrc					"gui
-source $HOME/.vim/win32_vimrc						"win32
-source $HOME/.vim/dos_vimrc							"dos
-source $HOME/.vim/mintty_vimrc						"mintty
-source $HOME/.vim/mabetle_func_vimrc				"mabetle functions
-source $HOME/.vim/make_func_vimrc					"mabetle functions
-source $HOME/.vim/make_onefile_vimrc				"mabetle functions
-source $HOME/.vim/run_vimrc							"run
-source $HOME/.vim/golang_vimrc						"golang
-source $HOME/.vim/misc_vimrc						"misc
-source $HOME/.vim/au_vimrc							"auto filetype
-source $HOME/.vim/tab_indent_vimrc					"tab indent length
+source ~/.vim/env_vimrc							"set vim env
+source ~/.vim/options_vimrc						"options
+source ~/.vim/encoding_vimrc					"new encodings
+source ~/.vim/paste_vimrc						"paste
+
+source ~/.vim/syntax_vimrc						"syntax
+source ~/.vim/display_vimrc						"display
+source ~/.vim/highlight_vimrc					"highlight
+source ~/.vim/tabline_vimrc						"tabline
+source ~/.vim/term_vimrc						"term
+
+source ~/.vim/backup_vimrc						"backup
+source ~/.vim/swap_vimrc						"swap
+source ~/.vim/view_vimrc						"swap
+
+source ~/.vim/keymap_vimrc						"keys
+source ~/.vim/iab_vimrc							"abb set
+source ~/.vim/mouse_vimrc						"mouse
+source ~/.vim/mswin.vim							"mswin
+source ~/.vim/fold_vimrc						"fold
+source ~/.vim/tags_vimrc						"tag for go and java
+source ~/.vim/complete_vimrc					"complete
+source ~/.vim/gui_running_vimrc					"gui
+source ~/.vim/win32_vimrc						"win32
+source ~/.vim/dos_vimrc							"dos
+source ~/.vim/mintty_vimrc						"mintty
+source ~/.vim/mabetle_func_vimrc				"mabetle functions
+source ~/.vim/make_func_vimrc					"mabetle functions
+source ~/.vim/make_onefile_vimrc				"mabetle functions
+source ~/.vim/run_vimrc							"run
+source ~/.vim/golang_vimrc						"golang
+source ~/.vim/misc_vimrc						"misc
+source ~/.vim/au_vimrc							"auto filetype
+source ~/.vim/tab_indent_vimrc					"tab indent length
 
 " experimental for override vim settings.
-if filereadable(expand('$HOME/.vim/expr_override_vimrc'))
-	source $HOME/.vim/expr_override_vimrc
+if filereadable(expand('~/.vim/expr_override_vimrc'))
+	source ~/.vim/expr_override_vimrc
 endif
 
 

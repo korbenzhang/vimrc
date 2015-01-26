@@ -7,7 +7,3 @@ endif
 
 set shellpipe=\|\ tee
 
-"let g:snippets_dir = expand('$HOME/.vim/bundle/snipMate/snippets/')
-"let g:snippets_dir = "$HOME/.vim/bundles/vim-snippets/snippets/"
-let g:snippets_dir = expand('$HOME/.vim/snippets/')
-

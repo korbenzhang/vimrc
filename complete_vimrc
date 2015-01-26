@@ -27,7 +27,7 @@ set wildignore=*.o,*.obj,*~			"stuff to ignore when tab completing
 ""list:longest" 如果有多于一个补全，列出所有的匹配并先用最长的子串补全。
 
 " dict in  .vim
-set dictionary+=$HOME/.vim/words		" ~/.vim/words
+"set dictionary+=$HOME/.vim/words		" ~/.vim/words
 "set dictionary+=$HOME/.vim/words_upcase	" ~/.vim/words_upcase
 "set dictionary+=$HOME/.vim/words_mine	" ~/.vim/words_mine
 
