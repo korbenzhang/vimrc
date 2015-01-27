@@ -1,6 +1,9 @@
 " change cusor shape for insert mode.
 " Happy with mintty.
-"
+
+if has("win32")
+	finish
+endif
 
 highlight Cursor ctermfg=white ctermbg=black
 highlight iCursor ctermfg=white ctermbg=blue

@@ -77,7 +77,7 @@ source ~/.vim/golang_vimrc						"golang
 source ~/.vim/misc_vimrc						"misc
 source ~/.vim/au_vimrc							"auto filetype
 source ~/.vim/tab_indent_vimrc					"tab indent length
-source ~/.vim/cursor_vimrc						"change cursor when in insert mode.
+"source ~/.vim/cursor_vimrc						"change cursor when in insert mode.
 
 " experimental for override vim settings.
 if filereadable(expand('~/.vim/expr_override_vimrc'))
