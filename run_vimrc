@@ -12,9 +12,7 @@ au FileType groovy map <leader>rr <ESC>:! groovy %<CR>
 au FileType scala map <leader>rr <ESC>:! scala %<CR>
 au FileType perl map <leader>rr <ESC>:! perl %<CR>
 au FileType sql map <leader>rr <ESC>:! mysql -uroot -p < %<CR>
-
-
-
+au FileType dosbatch map <leader>rr <ESC>:!%<CR>
 
 au FileType go map <F5> <ESC>:! go run %<CR>
 au FileType js map <F5> <ESC>:! node %<CR>
@@ -27,9 +25,6 @@ au FileType groovy map <F5> <ESC>:! groovy %<CR>
 au FileType scala map <F5> <ESC>:! scala %<CR>
 au FileType perl map <F5> <ESC>:! perl %<CR>
 au FileType sql map <F5> <ESC>:! mysql -uroot -p < %<CR>
-
-
-
-
+au FileType dosbatch map <F5> <ESC>:!%<CR>
 
 
