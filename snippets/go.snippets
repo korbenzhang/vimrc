@@ -3,7 +3,7 @@
 snippet imt
 	import (
 		"testing"
-		"mabetle/mgo/mtest"
+		"mabetle/mc/mtest"
 	)
 
 	${0}
@@ -11,7 +11,7 @@ snippet imt
 snippet fnt
 	func Test${1:XXX}(t *testing.T){
 		mtest.RegTest(t)
-		mtest.Assert${2:Equal}(${3},${4})
+		mtest.Assert${2:Equal}(${3:true},${4:true})
 	}
 
 	${0}
