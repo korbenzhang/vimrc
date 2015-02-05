@@ -5,10 +5,6 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
-" old one.
-"Plugin 'snipMate'							"snipmate
-"Plugin 'honza/vim-snippets'				"some snippets
-
 let g:snips_author='Korben Zhang'
 
 "ino <tab> <c-r>=TriggerSnippet()<cr>

@@ -23,6 +23,7 @@ source ~/.vim/pluginrc/tagbar_vimrc
 
 "source ~/.vim/pluginrc/neosnippet_vimrc
 source ~/.vim/pluginrc/utlisnips_vimrc
+"source ~/.vim/pluginrc/ycm_vimrc
 "source ~/.vim/pluginrc/snipmate_vimrc
 "source ~/.vim/pluginrc/snipmate_old_vimrc
 
