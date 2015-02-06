@@ -12,7 +12,7 @@ highlight iCursor ctermfg=white ctermbg=blue
 " change cursor shape.
 if &term =~ '^xterm'
   " solid underscore
-  let &t_SI .= "\<Esc>[4 q"
+  let &t_SI .= "\<Esc>[5 q"
   " solid block
   let &t_EI .= "\<Esc>[2 q"
   " 1 or 0 -> blinking block

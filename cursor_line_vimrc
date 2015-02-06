@@ -1,0 +1,5 @@
+
+set cursorline
+
+highlight CursorLine cterm=NONE ctermbg=LightGray ctermfg=NONE guibg=LightGray guifg=NONE
+
