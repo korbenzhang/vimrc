@@ -55,12 +55,22 @@ function! MabetleGuiTabLabel()
 	return label . bufname(bufnrlist[tabpagewinnr(v:lnum) - 1])
 endfunction
 
+function! ShortTableLabel()
+	let buflist	 = tabpagebuflist(v:lnum)
+	let label    = bufname(buflist[tabpagewinnr(v:lnum)]-1)
+	let filename = fnamemodify(label,':t')
+	return filename
+endfunction
+
+
 "some stuff to get the mouse going in term
 set guitablabel=%N.%t
 "set guitablabel=%N.%f
 "set guitablabel=%{MabetleGuiTabLabel()}
 
 "set tabline=%!MabetleTabLine()
+"set tabline=%!ShortTableLabel()
+
 " TabLabel
 " ========================
 highlight LeaderTab guifg=#666666

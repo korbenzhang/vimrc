@@ -9,6 +9,7 @@ endif
 "set guioptions=egm
 set go-=T
 set go-=r
+set go-=L
 
 " Set GUI Font
 if has("gui_win32")
