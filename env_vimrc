@@ -47,3 +47,29 @@ let $MBT_PAGE		=$GITHUB."/mabetle/mabetle.github.io"
 
 " let $PATH=$GOROOT."/bin:".$PATH
 
+
+function! IsInDos()
+	return has("win32") && !has("gui_running")
+endfunction
+
+function! IsInWinGui()
+	return has("win32") && has("gui_running")
+endfunction
+
+function! IsInUnixGui()
+	return has("unix") && has("gui_running")
+endfunction
+
+function! IsInUnixConsole()
+	return has("unix") && !has("gui_running")
+endfunction
+
+" cygwin
+function! IsInWinUnix()
+	return has("win32unix")
+endfunction
+
+function! IsInXterm()
+	return $TERM == "xterm"
+endfunction
+

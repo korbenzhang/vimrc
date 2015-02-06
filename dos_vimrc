@@ -1,6 +1,6 @@
 " settings in windows dos
 " ======================
-if has("gui_running") || (!has("win32"))
+if !IsInDos()
 	finish
 endif
 

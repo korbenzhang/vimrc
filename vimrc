@@ -4,6 +4,8 @@
 " ====================================================
 set nocompatible
 
+source ~/.vim/env_vimrc							"set vim env
+
 "Vundle support
 " ----------------------------------------------------
 source ~/.vim/vundle_install_vimrc
@@ -44,14 +46,14 @@ source ~/.vim/vundle_end_vimrc
 
 " Options and Settings
 " ----------------------------------------------------
-source ~/.vim/env_vimrc							"set vim env
 source ~/.vim/options_vimrc						"options
 source ~/.vim/encoding_vimrc					"new encodings
 source ~/.vim/paste_vimrc						"paste
 
 source ~/.vim/syntax_vimrc						"syntax
 source ~/.vim/display_vimrc						"display
-source ~/.vim/highlight_vimrc					"highlight
+source ~/.vim/highlight_vimrc    				"highlight
+source ~/.vim/cursor_line_vimrc					"cursor line
 source ~/.vim/tabline_vimrc						"tabline
 source ~/.vim/term_vimrc						"term
 
@@ -78,7 +80,6 @@ source ~/.vim/golang_vimrc						"golang
 source ~/.vim/misc_vimrc						"misc
 source ~/.vim/au_vimrc							"auto filetype
 source ~/.vim/tab_indent_vimrc					"tab indent length
-source ~/.vim/cursor_line_vimrc					"cursor line
 "source ~/.vim/cursor_vimrc						"change cursor when in insert mode.
 
 " experimental for override vim settings.
