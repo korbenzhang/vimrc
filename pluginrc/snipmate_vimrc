@@ -1,6 +1,5 @@
 " snipMate   智能补全
 " ========================
-"https://github.com/garbas/vim-snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'

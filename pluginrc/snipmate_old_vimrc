@@ -3,7 +3,6 @@
 Plugin 'snipMate'							"snipmate
 "Plugin 'honza/vim-snippets'				"some snippets
 
-let g:snips_author='Korben Zhang'
 
 "ino <tab> <c-r>=TriggerSnippet()<cr>
 "snor <tab> <esc>i<right><c-r>=TriggerSnippet()<cr>
