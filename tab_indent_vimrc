@@ -7,17 +7,9 @@ set shiftwidth=4
 set softtabstop=4
 set smartindent shiftwidth=4
 
-"Indent
-" ========================
+" Indent
+" ====================================================
 set ai          " auto indent
 set si          " smart indent
 set cindent     " c program indent
 
-" tab show
-" ========================
-"set list " we do what to show tabs, to ensure we get them out of my files
-"set listchars=tab:>-,trail:- " show tabs and trailing
-set listchars=tab:>-,trail:-,nbsp:% " show tabs and trailing
-"set lcs=tab:>-,eol:<,nbsp:%
-"set lcs=extends:>,precedes:<
-"set listchars=tab:\|\ ,trail:.,extends:>,precedes:<

@@ -8,7 +8,7 @@ Plugin 'scrooloose/syntastic'				"syntax check
 
 if has("unix")
 	" need linux
-	Plugin 'gdbmgr'								"debug
+	"Plugin 'gdbmgr'								"debug
 endif
 
 "Plugin 'edsono/vim-matchit'				"match tag

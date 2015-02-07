@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -z ~/.vim/bundle ]; then
+	mkdir ~/.vim/bundle/
+fi
+
 cd ~/.vim/bundle
 
 git clone https://github.com/tomtom/tlib_vim.git

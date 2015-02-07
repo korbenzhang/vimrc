@@ -7,8 +7,8 @@ au BufRead,BufNewFile *.jspx set filetype=jsp
 au BufRead,BufNewFile *.m set filetype=objc
 au BufRead,BufNewFile *.gradle set filetype=groovy
 
-au FileType text setlocal textwidth=78
-au FileType text setlocal wrapmargin=78
+"au FileType text setlocal textwidth=78
+"au FileType text setlocal wrapmargin=78
 
 " delete end line space
 " ========================
@@ -16,7 +16,7 @@ au FileType text setlocal wrapmargin=78
 "au BufWritePre * execute ':%s/\s\+$//g'
 
 
-autocmd FileType xml,html vmap <C-o> <ESC>'<i
-autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o
+"autocmd FileType xml,html vmap <C-o> <ESC>'<i
+"autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o
 
 

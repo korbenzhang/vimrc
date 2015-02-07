@@ -1,8 +1,7 @@
 " abb
 " ========================
-iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
-iab xname Korben Zhang
-iab author Korben Zhang (korbenzhang@gmail.com)
+iab dt <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+iab kz Korben Zhang (korbenzhang@gmail.com)
 
 iab pu public
 iab pr private

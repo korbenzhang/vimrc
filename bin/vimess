@@ -1,1 +1,5 @@
-vim -u $HOME/.vim/ess_vimrc
+#!/bin/bash
+
+# start a minimal vim environment.
+
+vim -u ~/.vim/ess_vimrc

@@ -1,17 +1,18 @@
 " options
-" ====================================================
+" ----------------------------------------------------
 
 set smartcase
 
 "Bell
-" ========================
 set noerrorbells
 set novisualbell
 
-" cmd line
+" show mode in last line. 
+" vim default is on.
 set showmode
 
-set showcmd "display incomplete command
+" display incomplete command
+set showcmd 
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -19,23 +20,22 @@ set autoread
 "set autowrite
 "set autowriteall
 
-"lazyredraw don't redraw while executing macros
+" lazyredraw don't redraw while executing macros
 "set lazyredraw
 
+" Changes the special characters that can be used in search patterns.
+" default is on.
 set magic
 
 
 " Wrap
-" ========================
 set wrap
 
 " auto change dir
-" ========================
 set autochdir
 "set noautochdir
 
 " change windows directory seperitor to linux
-" ========================
 set shellslash
 
 set incsearch

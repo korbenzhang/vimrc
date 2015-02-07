@@ -1,11 +1,9 @@
 " display
 " =====================
 
-set number
+"set number
 set ruler
 
-" line space
-" ========================
 "set linespace=0
 
 " set color column
@@ -14,7 +12,8 @@ set ruler
 "set wrapmargin=10
 
 " Status Line
-" ========================
+" 0 for none.
+" 2 always.
 set laststatus=2
 
 " backspace and cursor keys wrap to previous/next line
@@ -23,11 +22,11 @@ set whichwrap+=b,s,h,l,<,>,[,]
 "set whichwrap+=<,>,h,l,[,]
 
 " Line break
-" ========================
 "Do not redraw, when running macros.. lazyredraw
 "set showbreak=...
-set linebreak   " warp line by words
 
+" warp line by words
+set linebreak   
 
 "How many tenths of a second to blink
 set mat=2
@@ -36,28 +35,18 @@ set mat=2
 set display=lastline
 
 " Cmd
-" ========================
-set cmdheight=1
+"set cmdheight=1
 
 " show some symble
-" ========================
 if has("ambiwidth")
     set ambiwidth=double
-endif
-
-" ColorScheme
-" ========================
-" work fine in GUI
-
-if !has("gui_running") && has("win32")
-	"dos
-else
-	"colorscheme molokai
 endif
 
 " Turn off welcome page
 set shortmess=atI
 
+
+" list toggle.
 "set list
 "set nolist
 
