@@ -1,7 +1,7 @@
 " display
 " =====================
 
-"set number
+set number
 set ruler
 
 "set linespace=0
@@ -32,10 +32,12 @@ set linebreak
 set mat=2
 
 " display
+" lastline / uhex
 set display=lastline
 
-" Cmd
-"set cmdheight=1
+" cmd height
+" default is 1
+set cmdheight=1
 
 " show some symble
 if has("ambiwidth")
@@ -47,8 +49,9 @@ set shortmess=atI
 
 
 " list toggle.
+" default is off
 "set list
-"set nolist
+set nolist
 
 "set lcs=tab:>-,trail:-,nbsp:%
 "set lcs=tab:>-,eol:<,nbsp:%

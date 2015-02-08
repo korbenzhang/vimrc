@@ -7,10 +7,11 @@ set fencs=ucs-bom,utf-8,gb18030,cp936,GBK
 " file formates
 set ffs=unix,dos,mac
 
+" New File encoding
 au BufNewFile * set fileformat=unix
 au BufNewFile * set fenc=utf-8
 
-" msys
+" cygwin
 if has("win32unix")
 	source $HOME/.vim/encoding_utf8_vimrc
 endif

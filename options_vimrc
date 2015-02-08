@@ -38,13 +38,18 @@ set autochdir
 " change windows directory seperitor to linux
 set shellslash
 
-set incsearch
-
-set showmatch
-
 " 自动格式化
 "set formatoptions=tcrqn
 
 "set shell=sh
 
 "set timeoutlen=200
+
+" Search
+set hlsearch
+set incsearch
+set showmatch
+set ignorecase
+
+" TabLine
+set guitablabel=%N.%t

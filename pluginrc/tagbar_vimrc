@@ -8,7 +8,6 @@ Plugin 'majutsushi/tagbar'		"better than taglist
 "nmap <F4> :TagbarToggle<CR>
 map <F4> <ESC>:TagbarToggle<CR>
 
-"let g:tagbar_ctags_bin = 'ctags.exe'
 let g:tagbar_left = 1
 let g:tagbar_width = 25
 

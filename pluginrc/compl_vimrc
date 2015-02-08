@@ -5,8 +5,6 @@ Plugin 'CmdlineCompl.vim'					"cmd line complete
 "Plugin 'XML-Completion'					"xml
 "Plugin 'Word-Fuzzy-Completion'
 "Plugin 'autocomp.vim'
-"https://github.com/Valloric/YouCompleteMe
-"Plugin 'Valloric/YouCompleteMe'
 
 " set Ctrl+j in insert mode, like VS.Net
 "imap <C-j> <C-X><C-O>

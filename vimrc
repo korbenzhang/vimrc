@@ -32,7 +32,7 @@ source ~/.vim/pluginrc/utlisnips_vimrc
 "source ~/.vim/pluginrc/snipmate_old_vimrc
 
 source ~/.vim/pluginrc/nerdtree_vimrc
-"source ~/.vim/pluginrc/colorscheme_vimrc
+source ~/.vim/pluginrc/colorscheme_vimrc
 source ~/.vim/pluginrc/statusline_vimrc
 source ~/.vim/pluginrc/comment_vimrc
 "source ~/.vim/pluginrc/git_vimrc
@@ -55,8 +55,8 @@ source ~/.vim/encoding_vimrc					"new encodings
 source ~/.vim/syntax_vimrc						"syntax
 source ~/.vim/display_vimrc						"display
 source ~/.vim/highlight_vimrc    				"highlight
-"source ~/.vim/cursor_line_vimrc					"cursor line
-"source ~/.vim/tabline_vimrc						"tabline
+"source ~/.vim/cursor_line_vimrc				"cursor line
+"source ~/.vim/tabline_vimrc					"tabline
 source ~/.vim/term_vimrc						"term
 
 source ~/.vim/backup_vimrc						"backup
@@ -70,9 +70,16 @@ source ~/.vim/mswin.vim							"mswin
 source ~/.vim/fold_vimrc						"fold
 source ~/.vim/tags_vimrc						"tag for go and java
 source ~/.vim/complete_vimrc					"complete
-source ~/.vim/gui_running_vimrc					"gui
-source ~/.vim/win32_vimrc						"win32
-"source ~/.vim/dos_vimrc							"dos
+if has("gui_running")
+	source ~/.vim/gui_running_vimrc				"gui
+endif
+if has("win32")
+	source ~/.vim/win32_vimrc					"win32
+endif
+if IsInDos()
+	"source ~/.vim/dos_vimrc					"dos
+endif
+
 "source ~/.vim/mintty_vimrc						"mintty
 source ~/.vim/mabetle_func_vimrc				"mabetle functions
 "source ~/.vim/make_func_vimrc					"mabetle functions

@@ -73,9 +73,5 @@ set guitablabel=%N.%t
 
 " TabLabel
 " ========================
-highlight LeaderTab guifg=#666666
 "set showtabline=2
-
-" TabLine highlight
-hi        TabLineSel ctermfg=1 ctermbg=4         
 
