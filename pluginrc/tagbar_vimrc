@@ -9,10 +9,11 @@ Plugin 'majutsushi/tagbar'		"better than taglist
 map <F4> <ESC>:TagbarToggle<CR>
 
 "let g:tagbar_ctags_bin = 'ctags.exe'
-"let g:tagbar_left = 1
-let g:tagbar_width = 30
+let g:tagbar_left = 1
+let g:tagbar_width = 25
 
-let g:tagbar_autopreview = 1
+" open a preview window.
+"let g:tagbar_autopreview = 1
 
 " close tagbar when enter one tag.
 "let g:tagbar_autoclose = 1
@@ -36,7 +37,7 @@ endif
 "If you use multiple tabs and want Tagbar to also open in the current tab when
 "you switch to an already loaded, supported buffer:
 " ---------------------------------------------------------------------------
-autocmd BufEnter * nested :call tagbar#autoopen(0)
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
 "autocmd BufEnter c,cpp,go,java nested :call tagbar#autoopen(0)
 
 "And if you want to open Tagbar only for specific filetypes, not for all of the
