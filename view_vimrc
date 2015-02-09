@@ -1,17 +1,10 @@
 " view
 " ========================
+let $view_dir=expand('~/rundata/vim/views')
 
-set viewdir=$HOME/rundata/vim/views/
+call InitDir($view_dir)
 
-let view_dir=expand('$HOME/rundata/vim/views')
-
-if !isdirectory(view_dir)
-	if has("win32")
-		silent exec "!md ".$HOME."\\rundata\\vim\\views"
-	else
-		silent !mkdir -p ~/rundata/vim/views
-	endif
-endif
+set viewdir=$view_dir
 
 "autocmd BufWinLeave * mkview
 "autocmd BufWinEnter * "silent loadview"

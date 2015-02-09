@@ -2,15 +2,9 @@
 " ====================================================
 set backup
 
-let backup_dir=expand('$HOME/rundata/vim/bak/')
+let $backup_dir=expand('~/rundata/vim/bak/')
 
-if !isdirectory(backup_dir)
-	if has("win32")
-		silent exec "!md ".$HOME."\\rundata\\vim\\bak"
-	else
-		silent !mkdir -p $HOME/rundata/vim/bak
-	endif
-endif
+call InitDir($backup_dir)
 
-set backupdir=$HOME/rundata/vim/bak
+set backupdir=$backup_dir
 
