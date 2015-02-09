@@ -1,7 +1,7 @@
 " display
 " =====================
 
-set number
+"set number
 set ruler
 
 "set linespace=0
