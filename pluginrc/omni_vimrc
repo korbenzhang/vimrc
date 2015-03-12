@@ -7,16 +7,10 @@ Plugin 'OmniTags'
 " set Ctrl+j in insert mode, like VS.Net
 "imap <C-j> <C-X><C-O>
 
-
 " :inoremap <expr> <CR> pumvisible() ? "\<c-y>" : "\<c-g>u\<CR>"
 
 " set completeopt as don't show menu and preview
 "set completeopt=menuone
-" Popup menu hightLight Group
-highlight Pmenu ctermbg=13 guibg=LightGray
-highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
-highlight PmenuSbar ctermbg=7 guibg=DarkGray
-highlight PmenuThumb guibg=Black
 
 " use global scope search
 let OmniCpp_GlobalScopeSearch = 1
@@ -54,5 +48,4 @@ let OmniCpp_MayCompleteScope = 0
 
 " When 'completeopt' does not contain "longest", Vim automatically select the first entry of the popup menu. You can change this behaviour with the OmniCpp_SelectFirstItem option.
 let OmniCpp_SelectFirstItem = 0
-
 

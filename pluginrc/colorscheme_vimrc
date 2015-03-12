@@ -1,5 +1,5 @@
 " Colorschemes
 "===========================================================
-"Plugin 'tomasr/molokai'
+Plugin 'tomasr/molokai'
 "Plugin 'molokai'
 "Plugin 'flazz/vim-colorschemes'
