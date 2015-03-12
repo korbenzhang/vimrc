@@ -46,3 +46,7 @@ function! InitDir(dir)
 	setl shellslash
 endfunction
 
+function! IsHasPython()
+	return has("python") || has("python3")
+endfunction
+

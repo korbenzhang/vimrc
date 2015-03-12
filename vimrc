@@ -26,10 +26,13 @@ source ~/.vim/pluginrc/supertab_vimrc
 source ~/.vim/pluginrc/tagbar_vimrc
 
 "source ~/.vim/pluginrc/neosnippet_vimrc
-source ~/.vim/pluginrc/utlisnips_vimrc
+if IsHasPython()
+	source ~/.vim/pluginrc/utlisnips_vimrc
+else
+	"source ~/.vim/pluginrc/snipmate_vimrc
+	source ~/.vim/pluginrc/snipmate_old_vimrc
+endif
 "source ~/.vim/pluginrc/ycm_vimrc
-"source ~/.vim/pluginrc/snipmate_vimrc
-"source ~/.vim/pluginrc/snipmate_old_vimrc
 
 source ~/.vim/pluginrc/nerdtree_vimrc
 source ~/.vim/pluginrc/colorscheme_vimrc

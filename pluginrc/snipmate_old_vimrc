@@ -1,8 +1,6 @@
 " snipMate   智能补全
 " ========================
 Plugin 'snipMate'							"snipmate
-"Plugin 'honza/vim-snippets'				"some snippets
-
 
 "ino <tab> <c-r>=TriggerSnippet()<cr>
 "snor <tab> <esc>i<right><c-r>=TriggerSnippet()<cr>
