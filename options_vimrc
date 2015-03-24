@@ -51,5 +51,6 @@ set incsearch
 set showmatch
 set ignorecase
 
-" TabLine
-set guitablabel=%N.%t
+" reserved complete words case.
+set infercase
+
