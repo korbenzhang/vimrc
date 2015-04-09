@@ -18,7 +18,7 @@ source ~/.vim/init_vundle_vimrc
 source ~/.vim/pluginrc/plugins_vimrc
 source ~/.vim/pluginrc/golang_vimrc
 
-source ~/.vim/pluginrc/compl_vimrc
+"source ~/.vim/pluginrc/compl_vimrc
 source ~/.vim/pluginrc/autocomplpop_vimrc
 "source ~/.vim/pluginrc/neocomplete_vimrc
 
@@ -35,8 +35,8 @@ endif
 "source ~/.vim/pluginrc/ycm_vimrc
 
 source ~/.vim/pluginrc/nerdtree_vimrc
-source ~/.vim/pluginrc/colorscheme_vimrc
-source ~/.vim/pluginrc/statusline_vimrc
+"source ~/.vim/pluginrc/colorscheme_vimrc
+"source ~/.vim/pluginrc/statusline_vimrc
 source ~/.vim/pluginrc/comment_vimrc
 "source ~/.vim/pluginrc/git_vimrc
 "source ~/.vim/pluginrc/markdown_vimrc
