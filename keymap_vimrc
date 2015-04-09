@@ -27,15 +27,8 @@ map  Q gq
 "nmap <SPACE> <C-F>
 
 nmap <leader>sr :silent !
-nmap <leader>r :!
 map  <leader>bd :Bclose<cr>
 map  <leader>cd :cd %:p:h<cr>
-map  <leader>e :e
-map  <leader>eh :e ~/<cr>
-map  <leader>ev :e ~/.vim/<cr>
-map  <leader>eb :e ~/.vim/bundles_vimrc<cr>
-map  <leader>sp :sp
-map  <leader>vsp :vsp
 map  <leader>n :cn<cr>
 map  <leader>p :cp<cr>
 " delete ^M
@@ -48,7 +41,6 @@ map  <leader>w :w!<cr>
 map  <leader>q :bd<cr>
 map  <leader>s :update<cr>
 map  <leader>sh :shell<cr>
-map  <leader>ish <esc>:Shell
 nmap <leader>f :find<cr>
 " run line
 map  <leader>rl <ESC>:.w !bash<CR>
