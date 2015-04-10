@@ -5,7 +5,7 @@
 
 " Project HOME
 
-au FileType go setl tag=tags,./tags,$DEV_HOME/gocodes/src/tags,$GOROOT/src/tags,$GOROOT/src/mabetle/tags
+au FileType go setl tag=tags,./tags,$GOCODES/src/tags,$GOROOT/src/tags
 
 au FileType java setl tag=tags,./tags,$JAVA_HOME/src/tags
 

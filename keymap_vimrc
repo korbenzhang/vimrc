@@ -6,7 +6,7 @@ source $HOME/.vim/keymap_spell_vimrc
 source $HOME/.vim/keymap_tab_vimrc
 source $HOME/.vim/keymap_windows_vimrc
 source $HOME/.vim/keymap_quickfix_vimrc
-source $HOME/.vim/keymap_grep_vimrc
+"source $HOME/.vim/keymap_grep_vimrc
 source $HOME/.vim/keymap_make_vimrc
 
 source $HOME/.vim/keymap_alt_tabwin_vimrc			"keys for alt
