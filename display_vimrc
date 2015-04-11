@@ -11,7 +11,7 @@ set ruler
 
 "set wrapmargin=10
 
-" Status Line
+" Status Line, vim default is 1
 " 0 for none
 " 1 for more than one windows
 " 2 always
