@@ -60,3 +60,7 @@ set nolist
 "set listchars=tab:▸\
 
 "set background=dark
+
+" For all text files set 'textwidth' to 78 characters.
+autocmd FileType text setlocal textwidth=78
+
