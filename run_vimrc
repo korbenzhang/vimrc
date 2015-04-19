@@ -3,6 +3,7 @@
 
 au FileType go map <leader>rr <ESC>:! go run %<CR>
 au FileType js map <leader>rr <ESC>:! node %<CR>
+au FileType javascript map <leader>rr <ESC>:! node %<CR>
 au FileType ruby map <leader>rr <ESC>:! ruby %<CR>
 au FileType php map <leader>rr <ESC>:! php %<CR>
 au FileType bash map <leader>rr <ESC>:! bash %<CR>
@@ -16,6 +17,7 @@ au FileType dosbatch map <leader>rr <ESC>:!%<CR>
 
 au FileType go map <F5> <ESC>:! go run %<CR>
 au FileType js map <F5> <ESC>:! node %<CR>
+au FileType javascript map <F5> <ESC>:! node %<CR>
 au FileType ruby map <F5> <ESC>:! ruby %<CR>
 au FileType php map <F5> <ESC>:! php %<CR>
 au FileType bash map <F5> <ESC>:! bash %<CR>
