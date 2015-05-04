@@ -5,6 +5,10 @@ function! IsInDos()
 	return has("win32") && !has("gui_running")
 endfunction
 
+function! IsInWin()
+	return has("win32") || has("win64")
+endfunction
+
 function! IsInWinGui()
 	return has("win32") && has("gui_running")
 endfunction

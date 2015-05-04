@@ -28,7 +28,10 @@ source ~/.vim/pluginrc/tagbar_vimrc
 "source ~/.vim/pluginrc/neosnippet_vimrc
 if IsHasPython()
 	" YCM need install and compile first.
-	source ~/.vim/pluginrc/ycm_vimrc
+	if !IsInWin()
+		" only work in linux.
+		source ~/.vim/pluginrc/ycm_vimrc
+	endif
 	source ~/.vim/pluginrc/utlisnips_vimrc
 else
 	"source ~/.vim/pluginrc/snipmate_vimrc
