@@ -37,3 +37,5 @@ if has("win32")
 	"let g:snippets_dir = "$HOME/.vim/bundles/vim-snippets/snippets/"
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
+
+Plugin 'Thesaurus'
