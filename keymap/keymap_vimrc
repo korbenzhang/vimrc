@@ -15,7 +15,7 @@ source ~/.vim/keymap/keymap_malt_tabwin_vimrc			"keys for meta
 source ~/.vim/keymap/keymap_ctrl_tabwin_vimrc			"keys for ctrl
 source ~/.vim/keymap/keymap_leader_tabwin_vimrc		    "keys for leader
 
-"source ~/.vim/arrowkey_vimrc							"arrow key map
+"source ~/.vim/keymap/keymap_arrowkey_vimrc				"arrow key map
 source ~/.vim/keymap/keycmap_vimrc						"keys for cmap
 
 nmap <silent> <esc><esc> :noh<cr>
