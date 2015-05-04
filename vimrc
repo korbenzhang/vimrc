@@ -43,8 +43,8 @@ source ~/.vim/pluginrc/comment_vimrc
 source ~/.vim/pluginrc/xml_vimrc
 
 " experimental
-if filereadable(expand('~/.vim/expr_vimrc'))
-	source ~/.vim/expr_vimrc
+if filereadable(expand('~/.vim/extra/extra_plugins_vimrc'))
+	source ~/.vim/extra/extra_plugins_vimrc
 endif
 
 source ~/.vim/vundle_end_vimrc
@@ -95,8 +95,8 @@ source ~/.vim/tab_indent_vimrc					"tab indent length
 "source ~/.vim/cursor_vimrc						"change cursor when in insert mode.
 
 " experimental for override vim settings.
-if filereadable(expand('~/.vim/expr_override_vimrc'))
-	source ~/.vim/expr_override_vimrc
+if filereadable(expand('~/.vim/extra/extra_vimrc'))
+	source ~/.vim/extra/extra_vimrc
 endif
 
 

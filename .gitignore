@@ -9,6 +9,7 @@
 bundle/
 .netrwhist
 view/
+extra/
 
 # ignore expr_vimrc
 # can udpate this file freely, donot warry about disturb git repo.
