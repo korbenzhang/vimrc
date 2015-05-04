@@ -1,7 +1,7 @@
 " some keys define in tty vim
 
-map <Right> gl
-map <UP> gk
+"map <Right> gl
+"map <UP> gk
 
 nmap <silent> <UP> gk
 

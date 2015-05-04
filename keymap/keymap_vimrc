@@ -1,6 +1,7 @@
 " Keymap
 " ========================
 source ~/.vim/keymap/keymap_vimrc_vimrc
+source ~/.vim/keymap/key_define_vimrc
 source ~/.vim/keymap/keymap_moveline_vimrc
 source ~/.vim/keymap/keymap_spell_vimrc
 source ~/.vim/keymap/keymap_tab_vimrc
@@ -15,7 +16,7 @@ source ~/.vim/keymap/keymap_ctrl_tabwin_vimrc			"keys for ctrl
 source ~/.vim/keymap/keymap_leader_tabwin_vimrc		    "keys for leader
 
 "source ~/.vim/arrowkey_vimrc							"arrow key map
-source ~/.vim/keycmap_vimrc								"keys for cmap
+source ~/.vim/keymap/keycmap_vimrc						"keys for cmap
 
 nmap <silent> <esc><esc> :noh<cr>
 " Don't use Ex mode, use Q for formatting
