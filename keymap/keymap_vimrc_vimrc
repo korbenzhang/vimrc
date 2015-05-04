@@ -1,4 +1,4 @@
-
+" keys for vimrc, quick load and edit vimrc file.
 map <leader>ee :MabetleVimrc<cr>
 map <leader>ss :source $HOME/.vim/vimrc<cr>
 

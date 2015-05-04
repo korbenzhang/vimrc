@@ -1,7 +1,7 @@
 " Keymap
 " ========================
 source ~/.vim/keymap/keymap_vimrc_vimrc
-source ~/.vim/keymap/key_define_vimrc
+"source ~/.vim/keymap/key_define_vimrc
 source ~/.vim/keymap/keymap_moveline_vimrc
 source ~/.vim/keymap/keymap_spell_vimrc
 source ~/.vim/keymap/keymap_tab_vimrc
@@ -10,40 +10,16 @@ source ~/.vim/keymap/keymap_quickfix_vimrc
 "source ~/.vim/keymap/keymap_grep_vimrc
 source ~/.vim/keymap/keymap_make_vimrc
 
-source ~/.vim/keymap/keymap_alt_tabwin_vimrc			"keys for alt
-source ~/.vim/keymap/keymap_malt_tabwin_vimrc			"keys for meta
-source ~/.vim/keymap/keymap_ctrl_tabwin_vimrc			"keys for ctrl
-source ~/.vim/keymap/keymap_leader_tabwin_vimrc		    "keys for leader
+" tabwin key map
+source ~/.vim/keymap/keymap_alt_tabwin_vimrc			"alt for tabwin
+source ~/.vim/keymap/keymap_malt_tabwin_vimrc			"meta for tabwin
+source ~/.vim/keymap/keymap_ctrl_tabwin_vimrc			"ctrl for tabwin
+source ~/.vim/keymap/keymap_leader_tabwin_vimrc		    "leadear for tabwin
+
+source ~/.vim/keymap/keymap_leader_vimrc				"keys for leader
 
 "source ~/.vim/keymap/keymap_arrowkey_vimrc				"arrow key map
 source ~/.vim/keymap/keycmap_vimrc						"keys for cmap
 
-nmap <silent> <esc><esc> :noh<cr>
-" Don't use Ex mode, use Q for formatting
-map  Q gq
+source ~/.vim/keymap/keymap_misc_vimrc					"misc
 
-"map j gj
-"map k gk
-
-"nmap <SPACE> <C-F>
-
-nmap <leader>sr :silent !
-map  <leader>bd :Bclose<cr>
-map  <leader>cd :cd %:p:h<cr>
-map  <leader>n :cn<cr>
-map  <leader>p :cp<cr>
-" delete ^M
-map  <leader>dm :%s///g<cr>
-map  <leader>ds :%s/\s\+$//g<cr>
-" sudo save
-map  <leader>sw :w !sudo tee %<cr>
-map  <leader>. :e .<cr>
-map  <leader>w :w!<cr>
-map  <leader>q :bd<cr>
-map  <leader>s :update<cr>
-map  <leader>sh :shell<cr>
-nmap <leader>f :find<cr>
-" run line
-map  <leader>rl <ESC>:.w !bash<CR>
-" run file
-map  <leader>rf <ESC>:! "%"<CR>

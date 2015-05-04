@@ -1,7 +1,15 @@
-
 " need python
+
+if !IsHasPython()
+	finish
+endif
+
 Plugin 'Valloric/YouCompleteMe'
 
-let g:ycm_key_list_select_completion = ['', '']
-let g:ycm_key_list_previous_completion = ['', '']
-"let g:ycm_key_invoke_completion = '<C-.>'
+"let g:ycm_key_list_select_completion = ['', '']
+"let g:ycm_key_list_previous_completion = ['', '']
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" should disable input methods shortcut C-Space key.
+"let g:ycm_key_invoke_completion = '<C-Space>'
+let g:ycm_key_invoke_completion = '<RETURN>'

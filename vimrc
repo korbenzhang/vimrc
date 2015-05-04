@@ -19,20 +19,21 @@ source ~/.vim/pluginrc/plugins_vimrc
 source ~/.vim/pluginrc/golang_vimrc
 
 "source ~/.vim/pluginrc/compl_vimrc
-source ~/.vim/pluginrc/autocomplpop_vimrc
+"source ~/.vim/pluginrc/autocomplpop_vimrc
 "source ~/.vim/pluginrc/neocomplete_vimrc
 
-source ~/.vim/pluginrc/supertab_vimrc
+"source ~/.vim/pluginrc/supertab_vimrc
 source ~/.vim/pluginrc/tagbar_vimrc
 
 "source ~/.vim/pluginrc/neosnippet_vimrc
 if IsHasPython()
+	" YCM need install and compile first.
+	source ~/.vim/pluginrc/ycm_vimrc
 	source ~/.vim/pluginrc/utlisnips_vimrc
 else
 	"source ~/.vim/pluginrc/snipmate_vimrc
 	source ~/.vim/pluginrc/snipmate_old_vimrc
 endif
-"source ~/.vim/pluginrc/ycm_vimrc
 
 source ~/.vim/pluginrc/nerdtree_vimrc
 "source ~/.vim/pluginrc/colorscheme_vimrc
