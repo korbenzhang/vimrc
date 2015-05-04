@@ -66,7 +66,7 @@ source ~/.vim/backup_vimrc						"backup
 source ~/.vim/swap_vimrc						"swap
 source ~/.vim/view_vimrc						"swap
 
-source ~/.vim/keymap_vimrc						"keys
+source ~/.vim/keymap/keymap_vimrc				"keys
 source ~/.vim/iab_vimrc							"abb set
 source ~/.vim/mouse_vimrc						"mouse
 source ~/.vim/mswin.vim							"mswin
