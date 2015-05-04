@@ -1,11 +1,9 @@
 " Complete
 " ========================
 
-" menu menuone longest preview
-"-------------------------------
-" default is menu priview
-"-------------------------------
-set completeopt=longest,menu
+" menu menuone longest preview, default is menu priview
+"set completeopt=longest,menu
+set completeopt=menu,preview
 
 "set wildmode=full					"make cmdline tab completion similar to bash
 "set wildmode=longest				"make cmdline tab completion similar to bash

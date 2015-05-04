@@ -22,7 +22,7 @@ source ~/.vim/pluginrc/golang_vimrc
 "source ~/.vim/pluginrc/autocomplpop_vimrc
 "source ~/.vim/pluginrc/neocomplete_vimrc
 
-"source ~/.vim/pluginrc/supertab_vimrc
+source ~/.vim/pluginrc/supertab_vimrc
 source ~/.vim/pluginrc/tagbar_vimrc
 
 "source ~/.vim/pluginrc/neosnippet_vimrc
