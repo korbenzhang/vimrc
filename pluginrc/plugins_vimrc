@@ -6,6 +6,8 @@ Plugin 'Emmet.vim'							"Emmet
 "Plugin 'kien/ctrlp.vim'					"find file in dir
 Plugin 'scrooloose/syntastic'				"syntax check
 
+Plugin 'EasyMotion'
+
 if has("unix")
 	" need linux
 	"Plugin 'gdbmgr'								"debug
@@ -19,8 +21,9 @@ endif
 "Plugin 'tpope/vim-sleuth'					"ajust tab
 "Plugin 'tyru/open-browser.vim'				"open browser
 "Plugin 'a.vim'								"switch to .h
-Plugin 'Auto-Pairs'							"auto close (){}[]
-Plugin 'closetag.vim'						"close html xml tag
+Plugin 'delimitMate.vim'
+"Plugin 'Auto-Pairs'							"auto close (){}[]
+"Plugin 'closetag.vim'						"close html xml tag
 "Plugin 'ack.vim'							"perl
 "Plugin 'autofmt'							"auto format
 "Plugin 'bash-support.vim'					"bash
@@ -38,4 +41,5 @@ if has("win32")
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
 
-Plugin 'Thesaurus'
+"Plugin 'Thesaurus'
+Plugin 'beloglazov/vim-online-thesaurus'
