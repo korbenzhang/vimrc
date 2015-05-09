@@ -8,4 +8,3 @@ else
 	Plugin 'bling/vim-airline'					"status line
 endif
 
-Plugin 'echofunc.vim'						"echo func in status line

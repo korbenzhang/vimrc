@@ -28,6 +28,7 @@ Plugin 'delimitMate.vim'
 "Plugin 'autofmt'							"auto format
 "Plugin 'bash-support.vim'					"bash
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
+Plugin 'echofunc.vim'						"echo func
 
 if has("unix")
 	Plugin 'SudoEdit.vim'					"SudoWrite

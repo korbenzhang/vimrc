@@ -57,7 +57,7 @@ source ~/.vim/vundle_end_vimrc
 " ----------------------------------------------------
 source ~/.vim/options_vimrc						"options
 source ~/.vim/encoding_vimrc					"new encodings
-"source ~/.vim/paste_vimrc						"paste
+source ~/.vim/paste_vimrc						"paste
 
 source ~/.vim/syntax_vimrc						"syntax
 source ~/.vim/display_vimrc						"display
@@ -103,4 +103,6 @@ if filereadable(expand('~/.vim/extra/extra_vimrc'))
 	source ~/.vim/extra/extra_vimrc
 endif
 
-
+" GOTO
+" ~/.vim/extra/extra_plugins_vimrc
+" ~/.vim/extra/extra_vimrc
