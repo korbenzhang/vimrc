@@ -22,7 +22,7 @@ endif
 "Plugin 'tyru/open-browser.vim'				"open browser
 "Plugin 'a.vim'								"switch to .h
 Plugin 'delimitMate.vim'
-"Plugin 'Auto-Pairs'							"auto close (){}[]
+Plugin 'Auto-Pairs'							"auto close (){}[]
 "Plugin 'closetag.vim'						"close html xml tag
 "Plugin 'ack.vim'							"perl
 "Plugin 'autofmt'							"auto format
