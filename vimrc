@@ -19,18 +19,20 @@ source ~/.vim/pluginrc/plugins_vimrc
 source ~/.vim/pluginrc/golang_vimrc
 
 "source ~/.vim/pluginrc/compl_vimrc
-"source ~/.vim/pluginrc/autocomplpop_vimrc
 "source ~/.vim/pluginrc/neocomplete_vimrc
 
-source ~/.vim/pluginrc/supertab_vimrc
 source ~/.vim/pluginrc/tagbar_vimrc
 
 "source ~/.vim/pluginrc/neosnippet_vimrc
 if IsHasPython()
 	" YCM need install and compile first.
 	if !IsInWin()
-		" only work in linux.
+		" Not work for Windows.
 		source ~/.vim/pluginrc/ycm_vimrc
+	else
+		" In Windows.
+		source ~/.vim/pluginrc/supertab_vimrc
+		source ~/.vim/pluginrc/autocomplpop_vimrc
 	endif
 	source ~/.vim/pluginrc/utlisnips_vimrc
 else
