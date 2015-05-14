@@ -13,12 +13,13 @@ set go-=L
 
 " Set GUI Font
 if has("gui_win32")
-	"set guifont=Monaco:h11
+	"set guifont=Monaco:h13
 	set guifont=Consolas:h13
 elseif has("gui_gtk2")
-	set guifont=Bitstream\ Vera\ Sans\ Mono\ 13
+	"set guifont=Bitstream\ Vera\ Sans\ Mono\ 13
+	set guifont=Droid\ Sans\ Mono\ 13
+	"set guifont=Deja\ Vu\ Sans\ Mono\ 13
 	"set guifont=Monaco\ 13
-	"set guifontwide=WenQuanYi_Bitmap_Song\ 13
 elseif has("gui_macvim")
 	"I have no Mac, so i donot know it can work properly or not.
 	set guifont=Monaco:h13
