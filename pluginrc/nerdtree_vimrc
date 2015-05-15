@@ -17,4 +17,5 @@ let NERDTreeChDirMode=1
 
 let NERDTreeDirArrows=0
 
-
+" Default is 1
+"let NERDTreeHighlightCursorline = 0
