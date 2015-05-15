@@ -9,7 +9,8 @@ hi PmenuSbar ctermbg=7 ctermfg=0 guibg=DarkGray guifg=Black
 hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 
 " CursorLine
-hi CursorLine cterm=NONE ctermbg=LightGray ctermfg=NONE guibg=LightGray guifg=NONE
+" fg NONE so can keep syntax color.
+hi CursorLine cterm=NONE ctermbg=LightBlue ctermfg=NONE guibg=LightGray guifg=NONE
 
 " TabLine
 hi TabLineSel ctermfg=1 ctermbg=4
