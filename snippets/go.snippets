@@ -27,6 +27,9 @@ snippet pm
 	package main
 
 	${0}
+# prl
+snippet prl
+	fmt.Println("${1}")
 # type
 snippet tys
 	type ${1:name} struct{
@@ -39,3 +42,29 @@ snippet tyi
 		${2}
 	}
 	${0}
+snippet logi
+	logger.Info("${1}")
+snippet loge
+	logger.Error("${1}")
+snippet logw
+	logger.Warn("${1}")
+snippet logd
+	logger.Debug("${1}")
+snippet logt
+	logger.Trace("${1}")
+snippet logif
+	logger.Infof("%s${1}",${2:var})
+snippet logef
+	logger.Errorf("%s${1}",${2:var})
+snippet logdf
+	logger.Debugf("%s${1}",${2:var})
+snippet logwf
+	logger.Warnf("%s${1}",${2:var})
+snippet logtf
+	logger.Tracef("%s${1}",${2:var})
+snippet ice
+	if logger.CheckError(${1:err}){
+		${2}
+	}
+snippet ce
+	logger.CheckError(${1:err})
