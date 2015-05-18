@@ -7,6 +7,9 @@ snippet imt
 	)
 
 	${0}
+# import mlog.
+snippet ilog
+	"mabetle/mcore/mlog"
 # test func
 snippet fnt
 	func Test${1:XXX}(t *testing.T){
@@ -42,6 +45,7 @@ snippet tyi
 		${2}
 	}
 	${0}
+# log methods.
 snippet logi
 	logger.Info("${1}")
 snippet loge
@@ -53,18 +57,22 @@ snippet logd
 snippet logt
 	logger.Trace("${1}")
 snippet logif
-	logger.Infof("%s${1}",${2:var})
+	logger.Infof("%s${1}",${2})
 snippet logef
-	logger.Errorf("%s${1}",${2:var})
+	logger.Errorf("%s${1}",${2})
 snippet logdf
-	logger.Debugf("%s${1}",${2:var})
+	logger.Debugf("%s${1}",${2})
 snippet logwf
-	logger.Warnf("%s${1}",${2:var})
+	logger.Warnf("%s${1}",${2})
 snippet logtf
-	logger.Tracef("%s${1}",${2:var})
+	logger.Tracef("%s${1}",${2})
+# check error.
 snippet ice
 	if logger.CheckError(${1:err}){
 		${2}
 	}
 snippet ce
 	logger.CheckError(${1:err})
+# define log
+snippet log
+	logger = mlog.GetLogger("mabetle/${1}")
