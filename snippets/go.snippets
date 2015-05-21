@@ -10,6 +10,11 @@ snippet imt
 # import mlog.
 snippet ilog
 	"mabetle/mcore/mlog"
+# import mlog
+snippet imlog
+	import(
+		"mabetle/mcore/mlog"
+	)
 # test func
 snippet fnt
 	func Test${1:XXX}(t *testing.T){
@@ -73,6 +78,25 @@ snippet ice
 	}
 snippet ce
 	logger.CheckError(${1:err})
-# define log
+# define logger
 snippet log
 	logger = mlog.GetLogger("mabetle/${1}")
+# var logger
+snippet vlog
+	var(
+		logger = mlog.GetLogger("mabetle/${1}")
+	)
+# revel func
+snippet rfn
+	func (c ${1})${2}()revel.Result{
+		${3}
+		return c.Render()
+	}
+# import revel
+snippet imr
+	import(
+		"github.com/revel/revel"
+	)
+# import revel line
+snippet imrl
+	"github.com/revel/revel"

@@ -2,6 +2,7 @@
 " ========================
 source ~/.vim/keymap/keymap_vimrc_vimrc
 "source ~/.vim/keymap/key_define_vimrc
+source ~/.vim/keymap/keymap_arrow_vimrc
 source ~/.vim/keymap/keymap_moveline_vimrc
 source ~/.vim/keymap/keymap_spell_vimrc
 source ~/.vim/keymap/keymap_tab_vimrc
