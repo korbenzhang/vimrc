@@ -1,8 +1,21 @@
-" insert mode alt key functions.
 " options: no yes menu
+" =====================================
 set winaltkeys=no
 
-"cusor
+" alt shortcut
+" -------------------------------------
+
+" GoTo file
+map <A-f> gf
+
+" GoTo declare
+map <A-d> gd
+
+
+" insert mode alt key functions.
+" -------------------------------------
+
+"cursor
 imap <A-h> <Left>
 imap <A-j> <Down>
 imap <A-k> <Up>
@@ -45,7 +58,7 @@ imap <A-w> <Esc>ebdei
 " insert last delete word
 imap <A-W> <C-R>w
 
-" delte words between ''
-imap <A-s> <Esc>di"i
+" delete words between ''
+imap <A-m> <Esc>di"i
 
 
