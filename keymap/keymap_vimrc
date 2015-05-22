@@ -20,7 +20,7 @@ source ~/.vim/keymap/keymap_leader_tabwin_vimrc		    "leadear for tabwin
 
 source ~/.vim/keymap/keymap_leader_vimrc				"keys for leader
 
-"source ~/.vim/keymap/keymap_arrowkey_vimrc				"arrow key map
+source ~/.vim/keymap/keymap_arrowkey_vimrc				"disable arrow key
 source ~/.vim/keymap/keycmap_vimrc						"keys for cmap
 
 source ~/.vim/keymap/keymap_misc_vimrc					"misc
