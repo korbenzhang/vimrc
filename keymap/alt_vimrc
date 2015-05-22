@@ -1,0 +1,27 @@
+" insert mode alt key functions.
+" options: no yes menu
+set winaltkeys=no
+
+"cusor
+imap <A-h> <Left>
+imap <A-j> <Down>
+imap <A-k> <Up>
+imap <A-l> <Right>
+
+"error 
+map <A-n> :cnext<CR>
+imap <A-n> <Esc><A-n>i
+
+map <A-p> :cprevious<CR>
+imap <A-p> <Esc><A-p>i
+
+" open new line
+imap <A-o> <Esc>o
+
+" yank current line
+imap <A-c> <Esc>Ya
+
+" paste to curret line
+imap <A-v> <Esc>pi
+
+

@@ -19,21 +19,21 @@ nmap <A-9> 9gt
 
 
 " go to first tab
-nmap <A-h> <ESC>:tabfirst<cr>
+"nmap <A-h> <ESC>:tabfirst<cr>
 nmap <A-HOME> <ESC>:tabfirst<cr>
 
 " go to last tab
-nmap <A-e> <ESC>:tablast<cr>
+"nmap <A-e> <ESC>:tablast<cr>
 nmap <A-END> <ESC>:tablast<cr>
-nmap <A-l> <ESC>:tablast<cr>
+"nmap <A-l> <ESC>:tablast<cr>
 
 " go to previous tab
 nmap <A-u> <ESC>:tabprevious<cr>
 nmap <A-PageUp> <ESC>:tabprevious<cr>
-nmap <A-j> <ESC>:tabprevious<cr>
+"nmap <A-j> <ESC>:tabprevious<cr>
 
 " go to next tab
 nmap <A-d> <ESC>:tabnext<cr>
-nmap <A-k> <ESC>:tabnext<cr>
 nmap <A-PageDown> <ESC>:tabnext<cr>
+"nmap <A-k> <ESC>:tabnext<cr>
 
