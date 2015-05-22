@@ -1,6 +1,7 @@
 " Keymap
 " ========================
 source ~/.vim/keymap/keymap_vimrc_vimrc
+source ~/.vim/keymap/keymap_fn_vimrc
 "source ~/.vim/keymap/key_define_vimrc
 source ~/.vim/keymap/keymap_arrow_vimrc
 source ~/.vim/keymap/keymap_moveline_vimrc

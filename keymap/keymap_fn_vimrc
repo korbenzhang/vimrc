@@ -1,0 +1,7 @@
+" map for F1 ... F12
+
+" Save
+map <F2>  <esc>:w<cr>
+
+" Close
+map <F3> <esc>:q<cr>
