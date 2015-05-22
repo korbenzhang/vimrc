@@ -1,3 +1,5 @@
+" meta key for tabwin
+
 imap <M-1> <Esc>1gt
 nmap <M-1> 1gt
 imap <M-2> <Esc>2gt
@@ -36,4 +38,3 @@ nmap <M-j> <ESC>:tabprevious<cr>
 nmap <M-d> <ESC>:tabnext<cr>
 nmap <M-k> <ESC>:tabnext<cr>
 nmap <M-PageDown> <ESC>:tabnext<cr>
-

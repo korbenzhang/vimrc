@@ -1,4 +1,3 @@
-
 " Windows switch with Ctrl+
 "-------------------------------
 noremap <silent> <C-left> <esc><C-W><left>

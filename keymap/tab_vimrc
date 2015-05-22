@@ -1,5 +1,5 @@
-
 " Tab Window
+
 "map <leader>t :tabnew<cr>
 map <leader>tc :tabclose<cr>
 map <leader>te :tabedit **/
@@ -23,7 +23,6 @@ nmap <leader><TAB> :tabNext<CR>
 nmap <leader><S-TAB> :tabnext<CR>
 "map <F7> <ESC>:tabNext<CR>
 "map <F8> <ESC>:tabnext<CR>
-
 
 map gf :tabnew <cfile><cr>
 "map <C-F4> :tabclose<cr>

@@ -1,3 +1,4 @@
+" alt key for tab window
 imap <A-1> <Esc>1gt
 nmap <A-1> 1gt
 imap <A-2> <Esc>2gt
@@ -28,12 +29,11 @@ nmap <A-END> <ESC>:tablast<cr>
 "nmap <A-l> <ESC>:tablast<cr>
 
 " go to previous tab
-nmap <A-u> <ESC>:tabprevious<cr>
+" nmap <A-u> <ESC>:tabprevious<cr>
 nmap <A-PageUp> <ESC>:tabprevious<cr>
 "nmap <A-j> <ESC>:tabprevious<cr>
 
 " go to next tab
-nmap <A-d> <ESC>:tabnext<cr>
+" nmap <A-d> <ESC>:tabnext<cr>
 nmap <A-PageDown> <ESC>:tabnext<cr>
 "nmap <A-k> <ESC>:tabnext<cr>
-

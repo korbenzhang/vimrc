@@ -24,4 +24,19 @@ imap <A-c> <Esc>Ya
 " paste to curret line
 imap <A-v> <Esc>pi
 
+" delete current line
+imap <A-r> <Esc>ddO
+
+" delete to end of line
+imap <A-u> <Esc>wd$i
+
+" delete word in cursor
+imap <A-w> <Esc>ebdei
+
+" insert last delete word
+imap <A-W> <C-R>w
+
+" delte words between ''
+imap <A-s> <Esc>di"i
+
 

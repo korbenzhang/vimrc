@@ -1,4 +1,3 @@
-
 " Spell checking
 map <leader>s? z=
 map <leader>sa zg
