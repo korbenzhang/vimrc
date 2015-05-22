@@ -1,7 +1,10 @@
 " map for F1 ... F12
 
 " Save
-map <F2>  <esc>:w<cr>
+map <F2> :w<cr>
+imap <F2> <ESC><F2>
 
 " Close
-map <F3> <esc>:q<cr>
+map <F3> :q<cr>
+imap <F3> <ESC><F3>
+

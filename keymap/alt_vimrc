@@ -8,7 +8,16 @@ imap <A-j> <Down>
 imap <A-k> <Up>
 imap <A-l> <Right>
 
-"error 
+" close
+map <A-q> :q<cr>
+imap <A-q> <ESC><A-q>
+
+" save
+map <A-s> :w<cr>
+imap <A-s> <ESC><A-s>
+
+
+"error
 map <A-n> :cnext<CR>
 imap <A-n> <Esc><A-n>i
 
