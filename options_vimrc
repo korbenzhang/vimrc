@@ -54,3 +54,6 @@ set ignorecase
 " reserved complete words case.
 set infercase
 
+
+set isfname+={,}
+
