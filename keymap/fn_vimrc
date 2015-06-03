@@ -2,10 +2,10 @@
 
 " Update
 " where file is changed do write.
-map <F2> :up<cr>
+nmap <F2> :up<cr>
 imap <F2> <ESC><F2>
 
 " Close
-map <F3> :q<cr>
+nmap <F3> :q<cr>
 imap <F3> <ESC><F3>
 
