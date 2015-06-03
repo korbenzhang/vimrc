@@ -10,12 +10,3 @@ au BufRead,BufNewFile *.go set filetype=go
 "au BufWrite *.go :! go fmt %
 "au BufWritePost *.go :make
 
-" Run
-au FileType go map <F5> <ESC>:!go run %<CR>
-au FileType go map <F6> <ESC>:!go test<CR>
-au FileType go map <leader>rr <ESC>:! go run %<CR>
-au FileType go map <leader>tt <ESC>:! go test<CR>
-au FileType go map <leader>tf <ESC>:! go test %<CR>
-
-" Go command
-map <leader>goc :!go

@@ -72,7 +72,7 @@ source ~/.vim/backup_vimrc						"backup
 source ~/.vim/swap_vimrc						"swap
 source ~/.vim/view_vimrc						"swap
 
-source ~/.vim/keymap/all_vimrc				"keys
+source ~/.vim/keymap/all_vimrc					"keys
 source ~/.vim/iab_vimrc							"abb set
 source ~/.vim/mouse_vimrc						"mouse
 source ~/.vim/mswin.vim							"mswin
@@ -80,7 +80,7 @@ source ~/.vim/fold_vimrc						"fold
 source ~/.vim/tags_vimrc						"tag for go and java
 source ~/.vim/complete_vimrc					"complete
 if has("gui_running")
-	source ~/.vim/gui/gui_running_vimrc				"gui
+	source ~/.vim/gui/gui_running_vimrc			"gui
 endif
 if has("win32")
 	source ~/.vim/win32_vimrc					"win32
