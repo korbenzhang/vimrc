@@ -4,17 +4,19 @@
 " F6 bind to test
 " =================
 
-au FileType js map <F5> <ESC>:! node %<CR>
-au FileType javascript map <F5> <ESC>:! node %<CR>
-au FileType ruby map <F5> <ESC>:! ruby %<CR>
-au FileType php map <F5> <ESC>:! php %<CR>
-au FileType bash map <buffer> <F5> <ESC>:! bash %<CR>
-au FileType sh map <buffer> <F5> <ESC>:! bash %<CR>
-au FileType python map <F5> <ESC>:! python %<CR>
-au FileType groovy map <F5> <ESC>:! groovy %<CR>
-au FileType scala map <F5> <ESC>:! scala %<CR>
-au FileType perl map <F5> <ESC>:! perl %<CR>
-au FileType sql map <F5> <ESC>:! mysql -uroot -p < %<CR>
-au FileType dosbatch map <F5> <ESC>:!%<CR>
+imap <F5> <ESC><F5>
+
+au FileType js nmap <F5> :up<CR>:! node %<CR>
+au FileType javascript nmap <F5> :up<CR>:! node %<CR>
+au FileType ruby nmap <F5> :up<CR>:! ruby %<CR>
+au FileType php nmap <F5> :up<CR>:! php %<CR>
+au FileType bash nmap <buffer> <F5> :up<CR>:! bash %<CR>
+au FileType sh nmap <buffer> <F5> :up<CR>:! bash %<CR>
+au FileType python nmap <F5> :up<CR>:! python %<CR>
+au FileType groovy nmap <F5> :up<CR>:! groovy %<CR>
+au FileType scala nmap <F5> :up<CR>:! scala %<CR>
+au FileType perl nmap <F5> :up<CR>:! perl %<CR>
+au FileType sql nmap <F5> :up<CR>:! mysql -uroot -p < %<CR>
+au FileType dosbatch nmap <F5> :up<CR>:!%<CR>
 
 

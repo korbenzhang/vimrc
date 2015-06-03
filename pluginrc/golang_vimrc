@@ -22,12 +22,12 @@ let g:go_highlight_structs = 1
 "au FileType go nmap <buffer> <F5> :GoRun %<CR>
 "au FileType go imap <buffer> <F5> <ESC>:GoRun %<CR>
 
-au FileType go nmap <buffer> <F5> :!go run %<CR>
-au FileType go imap <buffer> <F5> <ESC>:!go run %<CR>
+au FileType go nmap <buffer> <F5> :up<cr>:!go run %<CR>
+au FileType go imap <buffer> <F5> <ESC><F5>
 
 au FileType go nmap <buffer> <S-F5> :GoBuild <CR>
-au FileType go imap <buffer> <S-F5> <ESC>:GoBuild <CR>
+au FileType go imap <buffer> <S-F5> <ESC><S-F5>
 
 au FileType go nmap <buffer> <F6> :GoTest<CR>
-au FileType go imap <buffer> <F6> <ESC>:GoTest<CR>
+au FileType go imap <buffer> <F6> <ESC><F6>
 

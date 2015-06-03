@@ -1,7 +1,8 @@
 " map for F1 ... F12
 
-" Save
-map <F2> :w<cr>
+" Update
+" where file is changed do write.
+map <F2> :up<cr>
 imap <F2> <ESC><F2>
 
 " Close
