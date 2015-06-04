@@ -79,12 +79,15 @@ source ~/.vim/mswin.vim							"mswin
 source ~/.vim/fold_vimrc						"fold
 source ~/.vim/tags_vimrc						"tag for go and java
 source ~/.vim/complete_vimrc					"complete
+
 if has("gui_running")
 	source ~/.vim/gui/gui_running_vimrc			"gui
 endif
+
 if has("win32")
 	source ~/.vim/win32_vimrc					"win32
 endif
+
 if IsInDos()
 	"source ~/.vim/dos_vimrc					"dos
 endif

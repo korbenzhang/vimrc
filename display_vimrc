@@ -2,7 +2,7 @@
 " =====================
 
 "set number
-set ruler
+"set ruler
 
 "set linespace=0
 
@@ -15,7 +15,7 @@ set ruler
 " 0 for none
 " 1 for more than one windows
 " 2 always
-set laststatus=2
+"set laststatus=2
 
 " backspace and cursor keys wrap to previous/next line
 set backspace=indent,eol,start
@@ -27,7 +27,7 @@ set whichwrap+=b,s,h,l,<,>,[,]
 "set showbreak=...
 
 " warp line by words
-set linebreak   
+set linebreak
 
 "How many tenths of a second to blink
 set mat=2
@@ -38,7 +38,7 @@ set display=lastline
 
 " cmd height
 " default is 1
-set cmdheight=1
+"set cmdheight=1
 
 " show some symble
 if has("ambiwidth")
@@ -46,19 +46,15 @@ if has("ambiwidth")
 endif
 
 " Turn off welcome page
-set shortmess=atI
-
+"set shortmess=atI
+set shortmess=aI
 
 " list toggle.
 " default is off
 "set list
-set nolist
 
-"set lcs=tab:>-,trail:-,nbsp:%
-"set lcs=tab:>-,eol:<,nbsp:%
-"set lcs=extends:>,precedes:<
-"set listchars=tab:▸\ ,trail:-,nbsp:~,eol:¬
-"set listchars=tab:▸\
+set lcs=tab:>-,trail:-,nbsp:%,eol:¬,extends:>,precedes:<
+"set lcs=tab:▸\ ,trail:-,nbsp:~,eol:¬
 
 "set background=dark
 
