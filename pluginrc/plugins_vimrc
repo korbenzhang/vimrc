@@ -36,11 +36,13 @@ endif
 
 Plugin 'honza/vim-snippets'
 
-if has("win32")
+if IsInWin()
 	"let g:snippets_dir = expand('$HOME/.vim/bundle/snipMate/snippets/')
 	"let g:snippets_dir = "$HOME/.vim/bundles/vim-snippets/snippets/"
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
 
-"Plugin 'Thesaurus'
-Plugin 'beloglazov/vim-online-thesaurus'
+if !IsInWin()
+	"Plugin 'Thesaurus'
+	"Plugin 'beloglazov/vim-online-thesaurus'
+endif
