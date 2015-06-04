@@ -1,14 +1,7 @@
 " tags
 " ==========
+set tag=tags,./tags
 
-"au FileType go setl tag=tags,./tags,$DEV_HOME/gocodes/src/tags,$GOROOT/src/tags
-
-" Project HOME
-let $PD=expand("$PD")
-
-set tag=tags,./tags,$PD/tags
-	
-au FileType go setl tag=tags,./tags,$GOCODES/src/tags,$GOROOT/src/tags,$PD/tags
-
-au FileType java setl tag=tags,./tags,$JAVA_HOME/src/tags,$PD/tags
+au FileType go setl tag=tags,./tags,$GOCODES/src/tags,$GOROOT/src/tags
+au FileType java setl tag=tags,./tags,$JAVA_HOME/src/tags
 

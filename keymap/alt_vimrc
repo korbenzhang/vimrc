@@ -26,7 +26,7 @@ map <A-q> :q<cr>
 imap <A-q> <ESC><A-q>
 
 " save
-map <A-s> :w<cr>
+map <A-s> :up<cr>
 imap <A-s> <ESC><A-s>
 
 

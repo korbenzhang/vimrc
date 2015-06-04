@@ -49,8 +49,8 @@ source ~/.vim/pluginrc/comment_vimrc
 source ~/.vim/pluginrc/xml_vimrc
 
 " extra
-if filereadable(expand('~/.vim/extra/extra_plugins_vimrc'))
-	source ~/.vim/extra/extra_plugins_vimrc
+if filereadable(expand('~/.vim/extra/plugins_vimrc'))
+	source ~/.vim/extra/plugins_vimrc
 endif
 
 source ~/.vim/vundle_end_vimrc
@@ -79,12 +79,15 @@ source ~/.vim/mswin.vim							"mswin
 source ~/.vim/fold_vimrc						"fold
 source ~/.vim/tags_vimrc						"tag for go and java
 source ~/.vim/complete_vimrc					"complete
+
 if has("gui_running")
 	source ~/.vim/gui/gui_running_vimrc			"gui
 endif
+
 if has("win32")
 	source ~/.vim/win32_vimrc					"win32
 endif
+
 if IsInDos()
 	"source ~/.vim/dos_vimrc					"dos
 endif
@@ -102,10 +105,10 @@ source ~/.vim/esc_alt_vimrc						"esc alt
 "source ~/.vim/cursor_vimrc						"change cursor when in insert mode.
 
 " extra for override vim settings.
-if filereadable(expand('~/.vim/extra/extra_vimrc'))
-	source ~/.vim/extra/extra_vimrc
+if filereadable(expand('~/.vim/extra/conf_vimrc'))
+	source ~/.vim/extra/conf_vimrc
 endif
 
 " GOTO
-" ~/.vim/extra/extra_plugins_vimrc
-" ~/.vim/extra/extra_vimrc
+" ~/.vim/extra/plugins_vimrc
+" ~/.vim/extra/conf_vimrc
