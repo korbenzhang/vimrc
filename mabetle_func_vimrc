@@ -149,6 +149,7 @@ func! UpdateGoCodesTags()
 endfunction
 command! -bar -narg=0 UpdateGoCodesTags  call UpdateGoCodesTags()
 
+" NoBell
 func! NoBell()
 	set vb t_vb=
 endfunction

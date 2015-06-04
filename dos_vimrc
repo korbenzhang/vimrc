@@ -4,6 +4,3 @@ if !IsInDos()
 	finish
 endif
 
-"colorscheme default
-
-

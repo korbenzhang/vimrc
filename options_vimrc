@@ -7,12 +7,12 @@ set smartcase
 set noerrorbells
 set novisualbell
 
-" show mode in last line. 
+" show mode in last line.
 " vim default is on.
 set showmode
 
 " display incomplete command
-set showcmd 
+set showcmd
 
 " Set to auto read when a file is changed from the outside
 set autoread

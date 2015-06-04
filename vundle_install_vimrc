@@ -1,19 +1,21 @@
 " if no vundle, git clone it
+" --------------------------------------
+
 let iCanHazVundle=1
 let vundle_readme=expand('$HOME/.vim/bundle/Vundle.vim/README.md')
 
 if !filereadable(vundle_readme)
 	setl noshellslash
 	echo "Installing Vundle.."
-	
+
 	" init bundle_dir
 	let bundle_dir=expand('$HOME/.vim/bundle/')
 	call InitDir(bundle_dir)
-	
+
 	echo ""
 
 	silent exec "!git clone https://github.com/gmarik/Vundle.vim.git ".bundle_dir."Vundle.vim"
-	
+
 	let iCanHazVundle=0
 	setl shellslash
 endif

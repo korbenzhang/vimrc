@@ -1,9 +1,16 @@
 " Complete
-"=====================
-Plugin 'CmdlineCompl.vim'					"cmd line complete
-"Plugin 'SQLComplete.vim'					"sql
-"Plugin 'XML-Completion'					"xml
+" =====================
+" cmd line complete
+Plugin 'CmdlineCompl.vim'
+
+" sql
+"Plugin 'SQLComplete.vim'
+
+" xml
+"Plugin 'XML-Completion'
+
 "Plugin 'Word-Fuzzy-Completion'
+
 "Plugin 'autocomp.vim'
 
 " set Ctrl+j in insert mode, like VS.Net

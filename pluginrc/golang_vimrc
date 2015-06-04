@@ -2,13 +2,10 @@
 " ========================================
 
 " repo for nsf/gocode
-"Plugin 'korbenzhang/gocode.vim'				"gocode vim
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " vim-go
 Plugin 'fatih/vim-go'
-"Plugin 'Blackrush/vim-gocode'
-"Plugin 'dgryski/vim-godef'
 
 " config vim-go
 let g:go_disable_autoinstall = 1
@@ -18,6 +15,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
 "Key map
+"-------------------------------------
 "au FileType go nmap <leader>r <Plug>(go-run)
 "au FileType go nmap <buffer> <F5> :GoRun %<CR>
 "au FileType go imap <buffer> <F5> <ESC>:GoRun %<CR>

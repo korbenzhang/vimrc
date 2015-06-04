@@ -1,6 +1,6 @@
-
-"Plugin 'Shougo/neocomplcache'
 " donot konw what is the differences between neocomplcache and neocomplete.
+" --------------------------------
+"Plugin 'Shougo/neocomplcache'
 Plugin 'Shougo/neocomplete.vim'
 
 "let g:neocomplete#enable_at_startup = 1

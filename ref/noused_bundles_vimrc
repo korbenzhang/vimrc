@@ -1,3 +1,22 @@
+"Plugin 'Auto-Pairs'							"auto close (){}[]
+"Plugin 'closetag.vim'						"close html xml tag
+"Plugin 'ack.vim'							"perl
+"Plugin 'autofmt'							"auto format
+"Plugin 'bash-support.vim'					"bash
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
+if has("unix")
+	" need linux
+	"Plugin 'gdbmgr'								"debug
+endif
+
+"Plugin 'edsono/vim-matchit'				"match tag
+"Plugin 'tpope/vim-surround'				"process tag
+"Plugin 'justinmk/vim-sneak'				"move quickly between motion
+"Plugin 'korbenzhang/vim_misc'				"korben's vim misc
+"Plugin 'sjl/gundo.vim'						"undo tree
+"Plugin 'tpope/vim-sleuth'					"ajust tab
+"Plugin 'tyru/open-browser.vim'				"open browser
+"Plugin 'a.vim'								"switch to .h
 Plugin 'AsyncCommand'
 Plugin 'Auto-Pairs'
 Plugin 'AutoTag'

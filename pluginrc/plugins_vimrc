@@ -1,48 +1,31 @@
 " Plugins Managed by Vundle
-"===========================================================
-Plugin 'auto_mkdir'							"auto make dir when save file
-Plugin 'Emmet.vim'							"Emmet
-"Plugin 'TxtBrowser'							"leader g s
-"Plugin 'kien/ctrlp.vim'					"find file in dir
-Plugin 'scrooloose/syntastic'				"syntax check
+"=================================================
+
+"auto make dir when save file
+Plugin 'auto_mkdir'
+
+"Emmet
+Plugin 'Emmet.vim'
+
+"syntax check
+Plugin 'scrooloose/syntastic'
 
 Plugin 'EasyMotion'
 
-if has("unix")
-	" need linux
-	"Plugin 'gdbmgr'								"debug
-endif
-
-"Plugin 'edsono/vim-matchit'				"match tag
-"Plugin 'tpope/vim-surround'				"process tag
-"Plugin 'justinmk/vim-sneak'				"move quickly between motion
-"Plugin 'korbenzhang/vim_misc'				"korben's vim misc
-"Plugin 'sjl/gundo.vim'						"undo tree
-"Plugin 'tpope/vim-sleuth'					"ajust tab
-"Plugin 'tyru/open-browser.vim'				"open browser
-"Plugin 'a.vim'								"switch to .h
 Plugin 'delimitMate.vim'
-"Plugin 'Auto-Pairs'							"auto close (){}[]
-"Plugin 'closetag.vim'						"close html xml tag
-"Plugin 'ack.vim'							"perl
-"Plugin 'autofmt'							"auto format
-"Plugin 'bash-support.vim'					"bash
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
-Plugin 'echofunc.vim'						"echo func
 
+"echo func
+Plugin 'echofunc.vim'
+
+"SudoWrite
 if has("unix")
-	Plugin 'SudoEdit.vim'					"SudoWrite
+	Plugin 'SudoEdit.vim'
 endif
 
+" collections about snippets.
 Plugin 'honza/vim-snippets'
 
 if IsInWin()
-	"let g:snippets_dir = expand('$HOME/.vim/bundle/snipMate/snippets/')
-	"let g:snippets_dir = "$HOME/.vim/bundles/vim-snippets/snippets/"
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
 
-if !IsInWin()
-	"Plugin 'Thesaurus'
-	"Plugin 'beloglazov/vim-online-thesaurus'
-endif

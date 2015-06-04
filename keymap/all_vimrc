@@ -1,5 +1,6 @@
 " Keymap
 " ========================
+
 source ~/.vim/keymap/vimrc_vimrc		" edit and source .vimrc
 source ~/.vim/keymap/fn_vimrc			" F1 .. F12
 source ~/.vim/keymap/alt_vimrc			" F1 .. F12

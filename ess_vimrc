@@ -12,3 +12,11 @@ if has("gui_running")
 	source ~/.vim/gui/gui_running_vimrc
 endif
 
+" extra for override vim settings.
+if filereadable(expand('~/.vim/extra/conf_vimrc'))
+	source ~/.vim/extra/conf_vimrc
+endif
+
+" GOTO
+" ~/.vim/extra/plugins_vimrc
+" ~/.vim/extra/conf_vimrc

@@ -11,12 +11,8 @@ au BufRead,BufNewFile *.gradle set filetype=groovy
 "au FileType text setlocal wrapmargin=78
 
 " delete end line space
-" ========================
+" ----------------------
 "au BufWritePre * execute ":s/\s*$//"
 "au BufWritePre * execute ':%s/\s\+$//g'
-
-
-"autocmd FileType xml,html vmap <C-o> <ESC>'<i
-"autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o
 
 
