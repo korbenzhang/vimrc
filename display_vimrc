@@ -2,7 +2,8 @@
 " =====================
 
 "set number
-"set ruler
+set ruler
+"set rulerformat=%20(%2*%<%f%=\ %m%r\ %3l\ %c\ %p%%%)
 
 "set linespace=0
 
@@ -23,7 +24,6 @@ set whichwrap+=b,s,h,l,<,>,[,]
 "set whichwrap+=<,>,h,l,[,]
 
 " Line break
-"Do not redraw, when running macros.. lazyredraw
 "set showbreak=...
 
 " warp line by words
@@ -34,7 +34,7 @@ set mat=2
 
 " display
 " lastline / uhex
-set display=lastline
+"set display=lastline
 
 " cmd height
 " default is 1
@@ -51,10 +51,11 @@ set shortmess=aI
 
 " list toggle.
 " default is off
-"set list
+set list
 
-set lcs=tab:>-,trail:-,nbsp:%,eol:¬,extends:>,precedes:<
-"set lcs=tab:▸\ ,trail:-,nbsp:~,eol:¬
+" lcs default is eol:$
+"set lcs=tab:\ \ ,trail:-,nbsp:~,eol:¬,extends:>,precedes:<
+set lcs=tab:\ \ ,trail:-,nbsp:~,eol:\ ,extends:>,precedes:<
 
 "set background=dark
 
