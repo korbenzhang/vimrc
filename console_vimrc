@@ -1,18 +1,14 @@
 " console
 " ===============
 
-set ch=2
 " show match
 set sm
 
 " show mode
 set smd
 
-" ruler
-set ru
-
 " tty scole
-set tsl=0
+"set tsl=0
 
-" show mess
+" shortmess
 set shm=filnxtToO
