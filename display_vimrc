@@ -46,8 +46,9 @@ if has("ambiwidth")
 endif
 
 " Turn off welcome page
+" default "filnxtToO"
 "set shortmess=atI
-set shortmess=aI
+set shortmess+=I
 
 " list toggle.
 " default is off
