@@ -2,7 +2,9 @@
 " ========================================
 
 " repo for nsf/gocode
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+"Plugin 'nsf/gocode', {'rtp': 'vim/'}
+
+Plugin 'Blackrush/vim-gocode'
 
 " vim-go
 Plugin 'fatih/vim-go'
