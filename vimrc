@@ -22,25 +22,36 @@ source ~/.vim/pluginrc/plugins_vimrc
 source ~/.vim/pluginrc/golang_vimrc
 
 "source ~/.vim/pluginrc/compl_vimrc
-"source ~/.vim/pluginrc/neocomplete_vimrc
 
 source ~/.vim/pluginrc/tagbar_vimrc
 
-"source ~/.vim/pluginrc/neosnippet_vimrc
+" Snippets, utlisnips / neosnippet / snipmate
 if IsHasPython()
-	" YCM need install and compile first.
-	if !IsInWin()
-		" Not work for Windows.
-		source ~/.vim/pluginrc/ycm_vimrc
-	else
-		" In Windows.
-		source ~/.vim/pluginrc/supertab_vimrc
-		source ~/.vim/pluginrc/autocomplpop_vimrc
-	endif
 	source ~/.vim/pluginrc/utlisnips_vimrc
+	"source ~/.vim/pluginrc/neosnippet_vimrc
 else
 	"source ~/.vim/pluginrc/snipmate_vimrc
 	source ~/.vim/pluginrc/snipmate_old_vimrc
+endif
+
+" Complete, YCM / neocomplete /
+" YCM nedd python, YCM not work properly in Windows
+" NeoComplete need lua
+let g:vimrc#completer="unknown"
+if IsHasPython() && !IsInWin()
+	" YCM need install and compile first.
+	" Not work for Windows.
+	source ~/.vim/pluginrc/ycm_vimrc
+	let g:vimrc#completer="YCM"
+elseif IsHasLua()
+	" No Python
+	" neocomplete need lua
+	source ~/.vim/pluginrc/neocomplete_vimrc
+	let g:vimrc#completer="neocomplete"
+else
+	" No Python and Lua
+	"source ~/.vim/pluginrc/supertab_vimrc
+	"source ~/.vim/pluginrc/autocomplpop_vimrc
 endif
 
 source ~/.vim/pluginrc/nerdtree_vimrc

@@ -10,8 +10,10 @@ Plugin 'Emmet.vim'
 "syntax check
 Plugin 'scrooloose/syntastic'
 
+" EasyMotion
 Plugin 'EasyMotion'
 
+" pair ( " ' etc.
 Plugin 'delimitMate.vim'
 
 "echo func

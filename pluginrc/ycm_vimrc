@@ -1,5 +1,5 @@
 " You Complete Me
-" need python
+" YCM need python
 " =================================
 
 if !IsHasPython()
@@ -7,6 +7,9 @@ if !IsHasPython()
 endif
 
 Plugin 'Valloric/YouCompleteMe'
+
+" run syntastic's checkers for c, cpp, objc, and objcpp
+let g:ycm_show_diagnostics_ui = 0
 
 "let g:ycm_key_list_select_completion = ['', '']
 "let g:ycm_key_list_previous_completion = ['', '']

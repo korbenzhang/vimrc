@@ -50,7 +50,17 @@ function! InitDir(dir)
 	setl shellslash
 endfunction
 
+" IsHasPython
 function! IsHasPython()
 	return has("python") || has("python3")
 endfunction
 
+" IsHasLua
+function! IsHasLua()
+	return has("lua")
+endfunction
+
+" IsHasRuby
+function! IsHasRuby()
+	return has("ruby")
+endfunction
