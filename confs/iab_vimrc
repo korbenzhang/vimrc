@@ -1,7 +1,6 @@
 " abb
 " ========================
 iab dt <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
-iab kz Korben Zhang (korbenzhang@gmail.com)
 
 iab pu public
 iab pr private

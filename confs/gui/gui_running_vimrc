@@ -52,10 +52,10 @@ if has("gui_win32")
 endif
 
 " GTK F11 maximum windows
-source $HOME/.vim/gui/full_screen_gtk_vimrc
+source $HOME/.vim/confs/gui/full_screen_gtk_vimrc
 
 " WinGUI fullscreen
-source $HOME/.vim/gui/full_screen_win32_vimrc
+source $HOME/.vim/confs/gui/full_screen_win32_vimrc
 
 " TabLine
 set guitablabel=%N.%t
