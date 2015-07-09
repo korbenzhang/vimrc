@@ -6,6 +6,9 @@ nmap <F2> :up<cr>
 imap <F2> <ESC><F2>
 
 " Close
-nmap <F3> :q<cr>
+nmap <F3> :close<cr>
 imap <F3> <ESC><F3>
+
+nmap <M-F3> :q!<cr>
+imap <M-F3> <ESC><F3>
 
