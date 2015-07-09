@@ -57,3 +57,8 @@ set infercase
 
 set isfname+={,}
 
+" always show tabline
+set showtabline=2
+
+" always show statusline
+set laststatus=2
