@@ -7,15 +7,15 @@ set nocompatible
 let mapleader = ","
 let g:mapleader = ","
 
-source ~/.vim/env_vimrc
-source ~/.vim/env_funcs_vimrc
+source ~/.vim/confs/env_vimrc
+source ~/.vim/confs/env_funcs_vimrc
 
 " install some vim depends.
-"source ~/.vim/install_vimrc
+"source ~/.vim/confs/install_vimrc
 
 " Vundle support
-source ~/.vim/vundle_install_vimrc
-source ~/.vim/init_vundle_vimrc
+source ~/.vim/confs/vundle_install_vimrc
+source ~/.vim/confs/init_vundle_vimrc
 
 " Plugins and settings
 source ~/.vim/pluginrc/plugins_vimrc
@@ -67,55 +67,55 @@ if filereadable(expand('~/.vim_extra/plugins_vimrc'))
 	source ~/.vim_extra/plugins_vimrc
 endif
 
-source ~/.vim/vundle_end_vimrc
+source ~/.vim/confs/vundle_end_vimrc
 
 " Options and Settings
-source ~/.vim/options_vimrc				"options
-source ~/.vim/encoding_vimrc			"new encodings
-source ~/.vim/paste_vimrc				"paste
+source ~/.vim/confs/options_vimrc				"options
+source ~/.vim/confs/encoding_vimrc			"new encodings
+source ~/.vim/confs/paste_vimrc				"paste
 
-source ~/.vim/syntax_vimrc				"syntax
-source ~/.vim/display_vimrc				"display
-source ~/.vim/highlight_vimrc    		"highlight
-"source ~/.vim/cursor_line_vimrc		"cursor line
-"source ~/.vim/tabline_vimrc			"tabline
-source ~/.vim/term_vimrc				"term
+source ~/.vim/confs/syntax_vimrc				"syntax
+source ~/.vim/confs/display_vimrc				"display
+source ~/.vim/confs/highlight_vimrc    		"highlight
+"source ~/.vim/confs/cursor_line_vimrc		"cursor line
+"source ~/.vim/confs/tabline_vimrc			"tabline
+source ~/.vim/confs/term_vimrc				"term
 
-source ~/.vim/backup_vimrc				"backup
-source ~/.vim/swap_vimrc				"swap
-source ~/.vim/view_vimrc				"swap
+source ~/.vim/confs/backup_vimrc				"backup
+source ~/.vim/confs/swap_vimrc				"swap
+source ~/.vim/confs/view_vimrc				"swap
 
 source ~/.vim/keymap/all_vimrc			"keys
-source ~/.vim/iab_vimrc					"abb set
-source ~/.vim/mouse_vimrc				"mouse
-source ~/.vim/mswin.vim					"mswin
-source ~/.vim/fold_vimrc				"fold
-source ~/.vim/tags_vimrc				"tag for go and java
-source ~/.vim/complete_vimrc			"complete
+source ~/.vim/confs/iab_vimrc					"abb set
+source ~/.vim/confs/mouse_vimrc				"mouse
+source ~/.vim/confs/mswin.vim					"mswin
+source ~/.vim/confs/fold_vimrc				"fold
+source ~/.vim/confs/tags_vimrc				"tag for go and java
+source ~/.vim/confs/complete_vimrc			"complete
 
 if has("gui_running")
-	source ~/.vim/gui/gui_running_vimrc	"gui
+	source ~/.vim/confs/gui/gui_running_vimrc	"gui
 endif
 
 if has("win32")
-	source ~/.vim/win32_vimrc			"win32
+	source ~/.vim/confs/win32_vimrc			"win32
 endif
 
 if IsInDos()
-	"source ~/.vim/dos_vimrc			"dos
+	"source ~/.vim/confs/dos_vimrc			"dos
 endif
 
-"source ~/.vim/mintty_vimrc				"mintty
-source ~/.vim/mabetle_func_vimrc		"mabetle functions
-"source ~/.vim/make_func_vimrc			"make func
-"source ~/.vim/make_onefile_vimrc		"make one file
-source ~/.vim/run_vimrc					"run
-source ~/.vim/golang_vimrc				"golang
-source ~/.vim/misc_vimrc				"misc
-source ~/.vim/au_vimrc					"auto filetype
-source ~/.vim/tab_indent_vimrc			"tab indent length
-source ~/.vim/esc_alt_vimrc				"esc alt
-"source ~/.vim/cursor_vimrc				"cursor in insert mode
+"source ~/.vim/confs/mintty_vimrc				"mintty
+source ~/.vim/confs/mabetle_func_vimrc		"mabetle functions
+"source ~/.vim/confs/make_func_vimrc			"make func
+"source ~/.vim/confs/make_onefile_vimrc		"make one file
+source ~/.vim/confs/run_vimrc					"run
+source ~/.vim/confs/golang_vimrc				"golang
+source ~/.vim/confs/misc_vimrc				"misc
+source ~/.vim/confs/au_vimrc					"auto filetype
+source ~/.vim/confs/tab_indent_vimrc			"tab indent length
+source ~/.vim/confs/esc_alt_vimrc				"esc alt
+"source ~/.vim/confs/cursor_vimrc				"cursor in insert mode
 
 " Extra for override vim settings.
 if filereadable(expand('~/.vim_extra/conf_vimrc'))
@@ -125,6 +125,7 @@ endif
 " GOTO
 " ~/.vim_extra/plugins_vimrc
 " ~/.vim_extra/conf_vimrc
+
 " ~/.vim/example_extra/plugins_vimrc
 " ~/.vim/example_extra/conf_vimrc
 

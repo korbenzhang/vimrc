@@ -13,40 +13,37 @@ filetype on
 filetype plugin on
 filetype indent on
 
-source $HOME/.vim/init_vundle_vimrc
+source ~/.vim/confs/init_vundle_vimrc
 
-set rtp+=$HOME/.vim/bundle/vundle/
+set rtp+=~/.vim/confs/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-source $HOME/.vim/used_bundles_simple_vimrc
+source ~/.vim/confs/used_bundles_simple_vimrc
 
-source $HOME/.vim/options_vimrc
-source $HOME/.vim/encoding_vimrc
-source $HOME/.vim/tab_indent_vimrc
-source $HOME/.vim/backup_vimrc
-source $HOME/.vim/swap_vimrc
-source $HOME/.vim/au_vimrc
-source $HOME/.vim/keymap_vimrc
-source $HOME/.vim/keycmap_vimrc
-source $HOME/.vim/keymap_alt_tabwin_vimrc
-source $HOME/.vim/keymap_malt_tabwin_vimrc
-source $HOME/.vim/keymap_leader_tabwin_vimrc
-source $HOME/.vim/iab_vimrc
-"source $HOME/.vim/paste_vimrc
-source $HOME/.vim/syntax_vimrc
-source $HOME/.vim/display_vimrc
-source $HOME/.vim/complete_vimrc
+source ~/.vim/confs/options_vimrc
+source ~/.vim/confs/encoding_vimrc
+source ~/.vim/confs/tab_indent_vimrc
+source ~/.vim/confs/backup_vimrc
+source ~/.vim/confs/swap_vimrc
+source ~/.vim/confs/au_vimrc
+source ~/.vim/keymap/all_vimrc
+source ~/.vim/confs/iab_vimrc
+"source ~/.vim/confs/paste_vimrc
+source ~/.vim/confs/syntax_vimrc
+source ~/.vim/confs/display_vimrc
+source ~/.vim/confs/complete_vimrc
 
 " some gui features
-source $HOME/.vim/gui_running_vimrc
+source ~/.vim/confs/gui_running_vimrc
 
 " some windows features
-source $HOME/.vim/win32_vimrc
+source ~/.vim/confs/win32_vimrc
 
-source $HOME/.vim/highlight_vimrc
-source $HOME/.vim/omnifunc_vimrc
-source $HOME/.vim/plugin_omni_complete_vimrc
-source $HOME/.vim/plugin_tlist_vimrc
-source $HOME/.vim/plugin_snipmate_vimrc
-source $HOME/.vim/plugin_nerdtree_vimrc
+source ~/.vim/confs/highlight_vimrc
+source ~/.vim/confs/omnifunc_vimrc
+
+source ~/.vim/pluginrc/omni_complete_vimrc
+source ~/.vim/pluginrc/tlist_vimrc
+source ~/.vim/pluginrc/snipmate_vimrc
+source ~/.vim/pluginrc/nerdtree_vimrc

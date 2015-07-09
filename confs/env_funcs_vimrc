@@ -64,3 +64,15 @@ endfunction
 function! IsHasRuby()
 	return has("ruby")
 endfunction
+
+function! ShowEnv()
+	echo "Is Has Lua   :".IsHasLua()
+	echo "Is Has Ruby  :".IsHasRuby()
+	echo "Is Has Python:".IsHasPython()
+
+	echo "Complete     :".g:vimrc#completer
+endfunction
+
+command! -bar -narg=0 ShowEnv  call ShowEnv()
+
+
