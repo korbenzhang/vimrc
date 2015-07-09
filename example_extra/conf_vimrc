@@ -1,0 +1,23 @@
+
+"source ~/.vim/cursor_vimrc						"change cursor when in insert mode.
+
+"set timeoutlen=200
+
+"set nobackup
+
+"colo molokai
+
+set nu
+
+"au FileType go setl makeprg=go\ install
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
+"
+
+if has("gui_running") && has("gui_win32")
+	set guifont=Monaco:h11
+endif
+
+set laststatus=0
+
+set nonu
+set noru
