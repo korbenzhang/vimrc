@@ -17,7 +17,8 @@ set whichwrap+=b,s,h,l,<,>,[,]
 
 set shortmess+=I
 
-set completeopt=menu,preview
+"set completeopt=menu,preview
+
 set wildmenu
 set wildmode=list:longest
 
@@ -26,17 +27,17 @@ set wrap
 
 behave mswin
 
-source ~/.vim/encoding_vimrc
+source ~/.vim/confs/encoding_vimrc
 
 if has("gui_running")
-	source ~/.vim/gui/gui_running_vimrc
+	source ~/.vim/confs/gui/gui_running_vimrc
 endif
 
 " extra for override vim settings.
-if filereadable(expand('~/.vim/extra/conf_vimrc'))
-	source ~/.vim/extra/conf_vimrc
+if filereadable(expand('~/.vim_extra/conf_vimrc'))
+	source ~/.vim_extra/conf_vimrc
 endif
 
 " GOTO
-" ~/.vim/extra/plugins_vimrc
-" ~/.vim/extra/conf_vimrc
+" ~/.vim_extra/plugins_vimrc
+" ~/.vim_extra/conf_vimrc
