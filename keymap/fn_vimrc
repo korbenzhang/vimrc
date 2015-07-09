@@ -9,6 +9,7 @@ imap <F2> <ESC><F2>
 nmap <F3> :close<cr>
 imap <F3> <ESC><F3>
 
-nmap <M-F3> :q!<cr>
+" close give up modify
+nmap <M-F3> :close!<cr>
 imap <M-F3> <ESC><F3>
 
