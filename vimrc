@@ -63,8 +63,8 @@ source ~/.vim/pluginrc/comment_vimrc
 source ~/.vim/pluginrc/xml_vimrc
 
 " Extra Plugins
-if filereadable(expand('~/.vim/extra/plugins_vimrc'))
-	source ~/.vim/extra/plugins_vimrc
+if filereadable(expand('~/.vim_extra/plugins_vimrc'))
+	source ~/.vim_extra/plugins_vimrc
 endif
 
 source ~/.vim/vundle_end_vimrc
@@ -118,10 +118,13 @@ source ~/.vim/esc_alt_vimrc				"esc alt
 "source ~/.vim/cursor_vimrc				"cursor in insert mode
 
 " Extra for override vim settings.
-if filereadable(expand('~/.vim/extra/conf_vimrc'))
-	source ~/.vim/extra/conf_vimrc
+if filereadable(expand('~/.vim_extra/conf_vimrc'))
+	source ~/.vim_extra/conf_vimrc
 endif
 
 " GOTO
-" ~/.vim/extra/plugins_vimrc
-" ~/.vim/extra/conf_vimrc
+" ~/.vim_extra/plugins_vimrc
+" ~/.vim_extra/conf_vimrc
+" ~/.vim/example_extra/plugins_vimrc
+" ~/.vim/example_extra/conf_vimrc
+
