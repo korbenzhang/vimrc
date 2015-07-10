@@ -18,3 +18,11 @@ endif
 "set laststatus=0
 "set nonu
 "set noru
+
+
+highlight StatusLine guifg=SlateBlue guibg=Yellow
+highlight StatusLineNC guifg=Gray guibg=White
+
+let mapleader="<Space>"
+let g:mapleader="<Space>"
+

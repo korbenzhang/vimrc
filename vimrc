@@ -39,11 +39,11 @@ endif
 " GOTO
 " ~/.vim/pluginrc/plugins_vimrc
 " ~/.vim/confs/confs_vimrc
+" ~/.vim/confs/complete_vimrc
 " ~/.vim/keymap/all_vimrc
 " ~/.vim/pluginrc/golang_vimrc
-" ~/.vim_extra/plugins_vimrc
-" ~/.vim_extra/conf_vimrc
-"
+" ~/.vim/pluginrc/compl_vimrc
 " ~/.vim/misc/vim_extra/plugins_vimrc
 " ~/.vim/misc/vim_extra/conf_vimrc
-
+" ~/.vim_extra/plugins_vimrc
+" ~/.vim_extra/conf_vimrc
