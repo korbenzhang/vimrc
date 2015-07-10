@@ -40,7 +40,7 @@ elseif has("gui_gtk2")
 elseif has("gui_macvim")
 	"I have no Mac, so i donot know it can work properly or not.
 	set guifont=Monaco:h13
-end
+endif
 
 "noremap <M-Space> :simalt ~<CR>
 "inoremap <M-Space> <C-O>:simalt ~<CR>

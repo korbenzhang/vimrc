@@ -79,11 +79,10 @@ function! CleanupBuffer(keep)
     exec "normal " . lnum . "G"
 endfunction
 
-"F12生成/更新tags文件
-function! UpdateTagsFile()
+function! UpdateTagFile()
     silent !ctags -R --fields=+ianS --extra=+q
 endfunction
-nmap <F12> :call UpdateTagsFile()<CR>
+command! -bar -narg=0 UpdateTagFile  call UpdateTagFile()
 
 " RunFile
 function! RunFile()

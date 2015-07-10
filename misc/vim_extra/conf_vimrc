@@ -1,28 +1,21 @@
-
-"source ~/.vim/confs/cursor_vimrc						"change cursor when in insert mode.
+" Custom Vim Config
+" =============================================
+"source ~/.vim/confs/cursor_vimrc 	"change cursor when in insert mode.
 
 "set timeoutlen=200
 
-"set nobackup
-
 "colo molokai
 
-"au FileType go setl makeprg=go\ install
-"autocmd BufEnter * nested :call tagbar#autoopen(0)
-"
-
 if has("gui_running") && has("gui_win32")
-	set guifont=Monaco:h11
+	set guifont=Monaco:h13
 endif
 
-"set laststatus=0
-"set nonu
-"set noru
-
+set laststatus=2
+set showtabline=2
 
 highlight StatusLine guifg=SlateBlue guibg=Yellow
 highlight StatusLineNC guifg=Gray guibg=White
 
-let mapleader="<Space>"
-let g:mapleader="<Space>"
+"let mapleader="<Space>"
+"let g:mapleader="<Space>"
 

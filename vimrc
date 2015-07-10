@@ -6,7 +6,10 @@ set nocompatible
 let mapleader = ","
 let g:mapleader = ","
 
-source ~/.vim/confs/env_vimrc
+if filereadable(expand('~/.vim_extra/env.vim'))
+	source ~/.vim_extra/env.vim
+endif
+
 source ~/.vim/confs/env_funcs_vimrc
 
 " install some vim depends.

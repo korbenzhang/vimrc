@@ -1,15 +1,31 @@
 " map for F1 ... F12
 
-" Update
+" F2 Save buffer
 " where file is changed do write.
 nmap <F2> :up<cr>
 imap <F2> <ESC><F2>
 
-" Close
-nmap <F3> :close<cr>
+" F3 Goto File
+" in nerdtree means open file.
+map <F3> gf
 imap <F3> <ESC><F3>
 
-" close give up modify
-nmap <M-F3> :close!<cr>
-imap <M-F3> <ESC><F3>
 
+" F4 Close
+nmap <F4> :close<cr>
+imap <F4> <ESC><F4>
+
+" close give up modify
+nmap <M-F4> :close!<cr>
+imap <M-F4> <ESC><F4>
+
+" F5 Run / Buil / Compile
+
+" F6 Test
+
+" F7
+" F8
+" F9 NerdTreeToggle
+" F10 Menu
+" F11 Fullscreen
+" F12 TagbarToggle

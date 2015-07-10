@@ -1,8 +1,9 @@
 " extra plugins
 " ================
-"source ~/.vim/pluginrc/ycm_vimrc
 Plugin 'kien/ctrlp.vim'
 Plugin 'tomasr/molokai'
 "source ~/.vim/pluginrc/statusline_vimrc
+
+
 Plugin 'tpope/vim-dispatch'
 let g:go_dispatch_enabled = 1

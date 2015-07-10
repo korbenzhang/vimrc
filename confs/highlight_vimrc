@@ -17,5 +17,5 @@ hi TabLineSel ctermfg=1 ctermbg=4
 hi LeaderTab guifg=#666666
 
 "highlight line end blank
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+"highlight WhitespaceEOL ctermbg=red guibg=red
+"match WhitespaceEOL /\s\+$/
