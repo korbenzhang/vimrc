@@ -1,4 +1,4 @@
-" essentail vimrc
+" ess vimrc
 set nocompatible
 
 let mapleader = ","
@@ -39,5 +39,4 @@ if filereadable(expand('~/.vim_extra/conf_vimrc'))
 endif
 
 " GOTO
-" ~/.vim_extra/plugins_vimrc
 " ~/.vim_extra/conf_vimrc

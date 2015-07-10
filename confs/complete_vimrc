@@ -1,7 +1,8 @@
 " Complete
 " ========================
 
-" menu menuone longest preview, default is menu priview
+" default is menu priview
+" menu menuone longest preview
 set completeopt=longest,menu
 "set completeopt=menu,preview
 
@@ -19,6 +20,6 @@ set wildignore=*.o,*.obj,*~			"stuff to ignore when tab completing
 set wildmode=list:longest		"make cmdline tab completion similar to bash
 
 " dict in  .vim
-set dictionary+=~/.vim/dict/words		" ~/.vim/words
-set dictionary+=~/.vim/dict/words_mine	" ~/.vim/words_mine
+set dictionary+=~/.vim/dict/words		" ~/.vim/dict/words
+
 
