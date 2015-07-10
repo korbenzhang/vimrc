@@ -4,8 +4,8 @@
 " default is off
 "set number
 
-" default is on
-"set ruler
+" default is off
+set ruler
 "set rulerformat=%20(%2*%<%f%=\ %m%r\ %3l\ %c\ %p%%%)
 
 "set linespace=0

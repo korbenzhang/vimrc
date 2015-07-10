@@ -37,9 +37,13 @@ if filereadable(expand('~/.vim_extra/conf_vimrc'))
 endif
 
 " GOTO
+" ~/.vim/pluginrc/plugins_vimrc
+" ~/.vim/confs/confs_vimrc
+" ~/.vim/keymap/all_vimrc
+"
 " ~/.vim_extra/plugins_vimrc
 " ~/.vim_extra/conf_vimrc
-
+"
 " ~/.vim/misc/vim_extra/plugins_vimrc
 " ~/.vim/misc/vim_extra/conf_vimrc
 

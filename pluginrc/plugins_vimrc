@@ -33,7 +33,7 @@ endif
 
 source ~/.vim/pluginrc/golang_vimrc
 
-"source ~/.vim/pluginrc/compl_vimrc
+source ~/.vim/pluginrc/compl_vimrc
 
 source ~/.vim/pluginrc/tagbar_vimrc
 

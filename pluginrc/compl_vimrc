@@ -1,7 +1,11 @@
 " Complete
 " =====================
 " cmd line complete
-Plugin 'CmdlineCompl.vim'
+"Plugin 'CmdlineCompl.vim'
+
+"Plugin 'CmdlineComplete'
+"cmap <c-y> <Plug>CmdlineCompleteBackward
+"cmap <c-e> <Plug>CmdlineCompleteForward
 
 " sql
 "Plugin 'SQLComplete.vim'
