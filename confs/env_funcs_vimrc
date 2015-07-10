@@ -10,7 +10,7 @@ function! IsInWin()
 endfunction
 
 function! IsInWinGui()
-	return has("win32") && has("gui_running")
+	return IsInWin() && has("gui_running")
 endfunction
 
 function! IsInUnixGui()

@@ -40,7 +40,7 @@ endif
 " ~/.vim/pluginrc/plugins_vimrc
 " ~/.vim/confs/confs_vimrc
 " ~/.vim/keymap/all_vimrc
-"
+" ~/.vim/pluginrc/golang_vimrc
 " ~/.vim_extra/plugins_vimrc
 " ~/.vim_extra/conf_vimrc
 "
