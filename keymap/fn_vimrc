@@ -5,10 +5,18 @@
 nmap <F2> :up<cr>
 imap <F2> <ESC><F2>
 
+function! MapF3()
+	if exists("b:NERDTreeType") 
+		map <F3> t
+	else
+		map <F3> gf
+		imap <F3> <ESC><F3>
+	endif
+endfunction
+
 " F3 Goto File
 " in nerdtree means open file.
-map <F3> gf
-imap <F3> <ESC><F3>
+autocmd bufenter * :call MapF3()
 
 
 " F4 Close
@@ -27,5 +35,8 @@ imap <M-F4> <ESC><F4>
 " F8
 " F9 NerdTreeToggle
 " F10 Menu
-" F11 Fullscreen
-" F12 TagbarToggle
+" F11 Open
+map <F11> <F3>
+
+" F12 Close
+map <F12> <F4>

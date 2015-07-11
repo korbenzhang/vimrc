@@ -1,5 +1,5 @@
 "Go Lang
 " ========================
-au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.go setl filetype=go
 
 
