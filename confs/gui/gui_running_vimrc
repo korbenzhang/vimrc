@@ -51,7 +51,7 @@ if has("gui_win32")
 	au GUIEnter * simalt ~x
 endif
 
-" GTK F11 maximum windows
+" GTK maximum windows
 source $HOME/.vim/confs/gui/full_screen_gtk_vimrc
 
 " WinGUI fullscreen

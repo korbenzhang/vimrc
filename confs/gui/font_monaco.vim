@@ -1,3 +1,8 @@
+
+if !has("gui_running")
+	finish
+endif
+
 " Set GUI Font
 if has("gui_win32")
 	set guifont=Monaco:h13
