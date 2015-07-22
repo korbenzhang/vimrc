@@ -66,11 +66,14 @@ function! IsHasRuby()
 endfunction
 
 function! ShowEnv()
-	echo "Is Has Lua   :".IsHasLua()
-	echo "Is Has Ruby  :".IsHasRuby()
-	echo "Is Has Python:".IsHasPython()
+	echo "Is Has Lua            :".IsHasLua()
+	echo "Is Has Ruby           :".IsHasRuby()
+	echo "Is Has Python         :".IsHasPython()
+	echo "Is Has Lua            :".IsHasLua()
+	echo "Is In  Win            :".IsInWin()
+	echo "Is Has GUI Running    :".has("gui_running")
 
-	echo "Complete     :".g:vimrc#completer
+	echo "Complete              :".g:vimrc#completer
 endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
