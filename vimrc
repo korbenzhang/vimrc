@@ -233,8 +233,20 @@ nmap gf :tabnew <cfile><cr>
 nmap <M-f> gf
 imap <M-f> <esc>gf
 
-" GoTo declare
-map <M-d> gd
+" delete word
+nmap <M-d> dw
+imap <M-d> <esc>dw
+nmap <C-d> d#
+imap <C-d> <esc>d#
+
+" open new line in insert mode.
+imap <M-o> <esc>o
+imap <C-o> <esc>O
+
+" Key from Emacs
+" --------------
+nmap <c-k> dd
+imap <c-k> <esc>dd
 
 " alt key for tab window
 imap <M-1> <Esc>1gt
