@@ -215,78 +215,81 @@ nmap <silent> <esc><esc> :noh<cr>
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
+" alt not access menu
+set winaltkeys=no
+
 map <F4> :close<cr>
 nmap <C-T> :tabnew<cr>
 
 nmap <C-s> :w<cr>
 imap <C-s> <esc><C-s>
 
-nmap <M-s> <C-s>
-imap <M-s> <esc><C-s>
+nmap <A-s> <C-s>
+imap <A-s> <esc><C-s>
 
-nmap <M-q> :q<cr>
-imap <M-q> <esc><M-q>
+nmap <A-q> :q<cr>
+imap <A-q> <esc><A-q>
 
 nmap gf :tabnew <cfile><cr>
 
 " GoTo file
-nmap <M-f> gf
-imap <M-f> <esc>gf
+nmap <A-f> gf
+imap <A-f> <esc>gf
 
 " delete word
-nmap <M-d> dw
-imap <M-d> <esc>dw
+nmap <A-d> dw
+imap <A-d> <esc>dw
 nmap <C-d> d#
 imap <C-d> <esc>d#
 
 " open new line in insert mode.
-imap <M-o> <esc>o
+imap <A-o> <esc>o
 imap <C-o> <esc>O
 
 " Key from Emacs
 " --------------
-nmap <c-k> dd
-imap <c-k> <esc>dd
+nmap <C-k> dd
+imap <C-k> <esc>dd
 
 " alt key for tab window
-imap <M-1> <Esc>1gt
-nmap <M-1> 1gt
-imap <M-2> <Esc>2gt
-nmap <M-2> 2gt
-imap <M-3> <Esc>3gt
-nmap <M-3> 3gt
-imap <M-4> <Esc>4gt
-nmap <M-4> 4gt
-imap <M-5> <Esc>5gt
-nmap <M-5> 5gt
-imap <M-6> <Esc>6gt
-nmap <M-6> 6gt
-imap <M-7> <Esc>7gt
-nmap <M-7> 7gt
-imap <M-8> <Esc>8gt
-nmap <M-8> 8gt
-imap <M-9> <Esc>9gt
-nmap <M-9> 9gt
+imap <A-1> <Esc>1gt
+nmap <A-1> 1gt
+imap <A-2> <Esc>2gt
+nmap <A-2> 2gt
+imap <A-3> <Esc>3gt
+nmap <A-3> 3gt
+imap <A-4> <Esc>4gt
+nmap <A-4> 4gt
+imap <A-5> <Esc>5gt
+nmap <A-5> 5gt
+imap <A-6> <Esc>6gt
+nmap <A-6> 6gt
+imap <A-7> <Esc>7gt
+nmap <A-7> 7gt
+imap <A-8> <Esc>8gt
+nmap <A-8> 8gt
+imap <A-9> <Esc>9gt
+nmap <A-9> 9gt
 
 
 " go to first tab
-"nmap <M-h> <ESC>:tabfirst<cr>
-nmap <M-HOME> <ESC>:tabfirst<cr>
+"nmap <A-h> <ESC>:tabfirst<cr>
+nmap <A-HOME> <ESC>:tabfirst<cr>
 
 " go to last tab
-"nmap <M-e> <ESC>:tablast<cr>
-nmap <M-END> <ESC>:tablast<cr>
-"nmap <M-l> <ESC>:tablast<cr>
+"nmap <A-e> <ESC>:tablast<cr>
+nmap <A-END> <ESC>:tablast<cr>
+"nmap <A-l> <ESC>:tablast<cr>
 
 " go to previous tab
-" nmap <M-u> <ESC>:tabprevious<cr>
-nmap <M-PageUp> <ESC>:tabprevious<cr>
-"nmap <M-j> <ESC>:tabprevious<cr>
+" nmap <A-u> <ESC>:tabprevious<cr>
+nmap <A-PageUp> <ESC>:tabprevious<cr>
+"nmap <A-j> <ESC>:tabprevious<cr>
 
 " go to next tab
-" nmap <M-d> <ESC>:tabnext<cr>
-nmap <M-PageDown> <ESC>:tabnext<cr>
-"nmap <M-k> <ESC>:tabnext<cr>
+" nmap <A-d> <ESC>:tabnext<cr>
+nmap <A-PageDown> <ESC>:tabnext<cr>
+"nmap <A-k> <ESC>:tabnext<cr>
 
 
 " Windows switch with Ctrl+
