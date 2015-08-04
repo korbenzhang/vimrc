@@ -13,6 +13,7 @@ endif
 source ~/.vim/confs/env_funcs_vimrc
 
 filetype off
+
 " Vundle
 " --------------------------------------------------
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -22,19 +23,25 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'auto_mkdir'
 Plugin 'Emmet.vim'
+
 if !IsInWin()
 	Plugin 'scrooloose/syntastic'
 endif
+
 Plugin 'EasyMotion'
 Plugin 'delimitMate.vim'
 Plugin 'echofunc.vim'
+
 if has("unix")
 	Plugin 'SudoEdit.vim'
 endif
+
 Plugin 'honza/vim-snippets'
+
 if IsInWin()
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
+
 source ~/.vim/pluginrc/golang_vimrc
 source ~/.vim/pluginrc/tagbar_vimrc
 
@@ -68,9 +75,12 @@ if g:vimrc#completer != "YCM"
 	source ~/.vim/pluginrc/supertab_vimrc
 	source ~/.vim/pluginrc/autocomplpop_vimrc
 endif
+
 source ~/.vim/pluginrc/nerdtree_vimrc
 source ~/.vim/pluginrc/comment_vimrc
+
 Plugin 'xml.vim'							"xml
+
 " Extra Plugins
 if filereadable(expand('~/.vim_extra/plugins_vimrc'))
 	source ~/.vim_extra/plugins_vimrc
@@ -126,16 +136,14 @@ set whichwrap+=b,s,h,l,<,>,[,]
 set linebreak
 set shortmess+=I
 
+" Color 
+" --------------------------------------------------------
 " Popup menu hightLight Group
 hi Pmenu ctermbg=13 ctermfg=0 guibg=LightGray guifg=Black
 "hi Pmenu ctermbg=4 ctermfg=0 guibg=LightGray guifg=Black
 hi PmenuSel ctermbg=7 ctermfg=1 guibg=DarkBlue guifg=White
 hi PmenuSbar ctermbg=7 ctermfg=0 guibg=DarkGray guifg=Black
 hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
-
-" CursorLine
-" fg NONE so can keep syntax color.
-hi CursorLine cterm=NONE ctermbg=LightGray ctermfg=NONE guibg=LightGray guifg=NONE
 
 " TabLine
 hi TabLineSel ctermfg=1 ctermbg=4
