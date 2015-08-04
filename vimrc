@@ -170,6 +170,7 @@ set dictionary+=~/.vim/dict/words		" ~/.vim/dict/words
 "GUI
 set guitablabel=%N.%t
 set guioptions-=T
+set guioptions-=m
 
 if has("win32")
 	set shellpipe=\|\ tee
@@ -190,6 +191,10 @@ set ai          " auto indent
 set si          " smart indent
 set cindent     " c program indent
 
+behave mswin
+
+" Keys
+" -------------------------------------------------
 " keys for vimrc, quick load and edit vimrc file.
 map <leader>ee :tabedit $HOME/.vim/vimrc<cr>
 map <leader>ss :source $HOME/.vim/vimrc<cr>
@@ -206,6 +211,16 @@ map  Q gq
 
 map <F4> :close<cr>
 nmap <C-T> :tabnew<cr>
+map <C-s> :w<cr>
+map <A-q> :q<cr>
+
+map gf :tabnew <cfile><cr>
+
+" GoTo file
+map <A-f> gf
+
+" GoTo declare
+map <A-d> gd
 
 " alt key for tab window
 imap <M-1> <Esc>1gt
@@ -247,10 +262,20 @@ nmap <M-PageUp> <ESC>:tabprevious<cr>
 nmap <M-PageDown> <ESC>:tabnext<cr>
 "nmap <M-k> <ESC>:tabnext<cr>
 
+
+" Windows switch with Ctrl+
+"-------------------------------
+noremap <silent> <C-left> <esc><C-W><left>
+noremap <silent> <C-right> <esc><C-W><right>
+noremap <silent> <C-up> <esc><C-W><up>
+noremap <silent> <C-down> <esc><C-W><down>
+
+
 " Extra for override vim settings.
 if filereadable(expand('~/.vim_extra/conf_vimrc'))
 	source ~/.vim_extra/conf_vimrc
 endif
+
 
 " GOTO
 " ~/.vim/pluginrc/plugins_vimrc
