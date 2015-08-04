@@ -26,6 +26,7 @@ Plugin 'Emmet.vim'
 Plugin 'EasyMotion'
 Plugin 'delimitMate.vim'
 Plugin 'echofunc.vim'
+Plugin 'tpope/vim-dispatch'
 
 if has("unix")
 	Plugin 'SudoEdit.vim'
