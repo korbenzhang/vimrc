@@ -69,12 +69,8 @@ if g:vimrc#completer != "YCM"
 	source ~/.vim/pluginrc/autocomplpop_vimrc
 endif
 source ~/.vim/pluginrc/nerdtree_vimrc
-"source ~/.vim/pluginrc/colorscheme_vimrc
-"source ~/.vim/pluginrc/statusline_vimrc
 source ~/.vim/pluginrc/comment_vimrc
-"source ~/.vim/pluginrc/git_vimrc
-"source ~/.vim/pluginrc/markdown_vimrc
-source ~/.vim/pluginrc/xml_vimrc
+Plugin 'xml.vim'							"xml
 " Extra Plugins
 if filereadable(expand('~/.vim_extra/plugins_vimrc'))
 	source ~/.vim_extra/plugins_vimrc
@@ -169,8 +165,10 @@ set dictionary+=~/.vim/dict/words		" ~/.vim/dict/words
 
 "GUI
 set guitablabel=%N.%t
+
 set guioptions-=T
 set guioptions-=m
+set guioptions-=r
 
 if has("win32")
 	set shellpipe=\|\ tee
@@ -211,16 +209,24 @@ map  Q gq
 
 map <F4> :close<cr>
 nmap <C-T> :tabnew<cr>
-map <C-s> :w<cr>
-map <A-q> :q<cr>
 
-map gf :tabnew <cfile><cr>
+nmap <C-s> :w<cr>
+imap <C-s> <esc><C-s>
+
+nmap <M-s> <C-s>
+imap <M-s> <esc><C-s>
+
+nmap <M-q> :q<cr>
+imap <M-q> <esc><M-q>
+
+nmap gf :tabnew <cfile><cr>
 
 " GoTo file
-map <A-f> gf
+nmap <M-f> gf
+imap <M-f> <esc>gf
 
 " GoTo declare
-map <A-d> gd
+map <M-d> gd
 
 " alt key for tab window
 imap <M-1> <Esc>1gt
