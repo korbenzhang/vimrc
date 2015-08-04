@@ -3,8 +3,10 @@
 " ====================================================
 set nocompatible
 
-let mapleader = ","
-let g:mapleader = ","
+"let mapleader = ","
+"let g:mapleader = ","
+let mapleader="\<Space>"
+let g:mapleader="\<Space>"
 
 if filereadable(expand('~/.vim_extra/env.vim'))
 	source ~/.vim_extra/env.vim
