@@ -7,11 +7,6 @@ Plugin 'auto_mkdir'
 "Emmet
 Plugin 'Emmet.vim'
 
-" Syntax Check
-if !IsInWin()
-	Plugin 'scrooloose/syntastic'
-endif
-
 " EasyMotion
 Plugin 'EasyMotion'
 

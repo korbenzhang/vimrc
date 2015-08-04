@@ -1,12 +1,11 @@
 " golang
 " ========================================
 
-" repo for nsf/gocode
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
-"Plugin 'Blackrush/vim-gocode'
-
 " vim-go
 Plugin 'fatih/vim-go'
+
+" repo for nsf/gocode
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " config vim-go
 let g:go_disable_autoinstall = 1
@@ -45,4 +44,23 @@ au FileType go imap <buffer> <F5> <ESC><F5>
 
 au FileType go nmap <buffer> <F6> :!go test<CR>
 au FileType go imap <buffer> <F6> <ESC><F6>
+
+let g:go_def_mapping_enabled = 1
+
+" GoDef
+au FileType go nmap gt <Plug>(go-def-tab)
+
+" copy from vim-go Home page
+
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 
