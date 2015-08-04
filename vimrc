@@ -154,6 +154,9 @@ if &term =~ "xterm"
 	let &t_AB="\e[48;5;%dm"
 endif 
 
+set laststatus=2
+set showtabline=2
+
 set nobackup
 set noswapfile
 
