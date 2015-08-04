@@ -2,10 +2,10 @@
 " ===============
 
 " show match
-set sm
+set showmatch
 
 " show mode
-set smd
+set showmode
 
 " tty scole
 "set tsl=0

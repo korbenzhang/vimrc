@@ -96,8 +96,6 @@ set autoread
 " Changes the special characters that can be used in search patterns.
 " default is on.
 set magic
-" Wrap
-set wrap
 " auto change dir
 set autochdir
 " change windows directory seperitor to linux
@@ -179,6 +177,10 @@ if has("gui_running")
 	set guioptions-=r
 endif
 
+if has("gui_win32")
+	au GUIEnter * simalt ~x
+endif
+
 if has("win32")
 	set shellpipe=\|\ tee
 endif
@@ -196,7 +198,7 @@ set smartindent shiftwidth=4
 " ====================================================
 set ai          " auto indent
 set si          " smart indent
-set cindent     " c program indent
+"set cindent     " c program indent
 
 behave mswin
 
