@@ -7,6 +7,7 @@ set nocompatible
 "let g:mapleader = ","
 let mapleader="\<Space>"
 let g:mapleader="\<Space>"
+nmap , <leader>
 
 if filereadable(expand('~/.vim_extra/env.vim'))
 	source ~/.vim_extra/env.vim
@@ -218,6 +219,13 @@ source ~/.vim/confs/esc_alt_vimrc
 map <leader>ee :tabedit $HOME/.vim/vimrc<cr>
 map <leader>ss :source $HOME/.vim/vimrc<cr>
 
+" MapLeader
+map <leader>w :w<cr>
+map <leader>q :close<cr>
+map <leader>qq :q<cr>
+map <leader>s :up<cr>
+
+
 " reload after edit vimrc
 au! BufWritePost *[\._]vimrc source $HOME/.vim/vimrc
 au! BufWritePost vimrc source $HOME/.vim/vimrc
@@ -241,7 +249,7 @@ imap <C-s> <esc><C-s>
 nmap <M-s> <C-s>
 imap <M-s> <esc><C-s>
 
-nmap <M-q> :q<cr>
+nmap <M-q> :close<cr>
 imap <M-q> <esc><M-q>
 
 nmap gf :tabnew <cfile><cr>
