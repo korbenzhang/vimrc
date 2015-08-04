@@ -13,7 +13,7 @@ map  <leader>ds :%s/\s\+$//g<cr>
 map  <leader>sw :w !sudo tee %<cr>
 map  <leader>. :e .<cr>
 map  <leader>w :w!<cr>
-map  <leader>q :bd<cr>
+map  <leader>q :close<cr>
 map  <leader>s :update<cr>
 map  <leader>sh :shell<cr>
 nmap <leader>f :find<cr>

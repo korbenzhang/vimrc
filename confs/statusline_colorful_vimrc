@@ -7,19 +7,19 @@
 
 function! StatusLineColor(mode)
   if a:mode == 'i'
-    hi statusline guibg=magenta
+    hi statusline guibg=magenta ctermbg=magenta
   elseif a:mode == 'r'
-    hi statusline guibg=blue
+    hi statusline guibg=blue ctermbg=blue
   else
-    hi statusline guibg=red
+    hi statusline guibg=red ctermbg=red
   endif
 endfunction
 
 au InsertEnter * call StatusLineColor(v:insertmode)
 "au InsertChange * call StatusLineColor(v:insertmode)
-au InsertLeave * hi statusline guibg=green
+au InsertLeave * hi statusline guibg=green ctermbg=green
 
 " default the statusline to green when entering Vim
-hi statusline guibg=green guifg=blue
-
+hi statusline guibg=green guifg=blue ctermbg=green ctermfg=blue
+ 
 
