@@ -14,7 +14,7 @@ source ~/.vim/confs/term_vimrc				"term
 
 source ~/.vim/confs/backup_vimrc			"backup
 source ~/.vim/confs/swap_vimrc				"swap
-source ~/.vim/confs/view_vimrc				"swap
+"source ~/.vim/confs/view_vimrc				"swap
 
 source ~/.vim/confs/iab_vimrc				"abb set
 source ~/.vim/confs/mouse_vimrc				"mouse
