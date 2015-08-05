@@ -101,7 +101,7 @@ set autoread
 " default is on.
 set magic
 " auto change dir
-set autochdir
+"set autochdir
 " change windows directory seperitor to linux
 set shellslash
 
@@ -132,7 +132,7 @@ set clipboard+=unnamed	" Yanks go on clipboard instead.
 syntax enable
 syntax on
 
-set ruler
+"set ruler
 
 set backspace=indent,eol,start
 set whichwrap+=b,s,h,l,<,>,[,]
@@ -159,8 +159,8 @@ if &term =~ "xterm"
 	let &t_AB="\e[48;5;%dm"
 endif 
 
-set laststatus=2
-set showtabline=2
+"set laststatus=2
+"set showtabline=2
 
 set nobackup
 set noswapfile
@@ -258,13 +258,27 @@ imap <M-s> <esc><C-s>
 nmap <M-q> :close<cr>
 imap <M-q> <esc><M-q>
 
-nmap gf :tabnew <cfile><cr>
+" Lines
+nmap <C-k> dd
+imap <C-k> <esc><C-k>i
+
+nmap <C-Down> :<C-u>move .+1<CR>
+imap <C-Down> <C-o>:<C-u>move .+1<CR>
+vmap <C-Down> :move '>+1<CR>gv
+nmap <C-Up> :<C-u>move .-2<CR>
+imap <C-Up> <C-o>:<C-u>move .-2<CR>
+vmap <C-Up> :move '<-2<CR>gv
+
+" Words
+nmap <C-d> dw
+imap <C-d> <esc><C-d>i
 
 " GoTo file
+nmap gf :tabnew <cfile><cr>
 nmap <M-f> gf
 imap <M-f> <esc>gf
 
-" GoTo declear
+" GoTo Define
 nmap <M-d> gd
 imap <M-d> <esc><M-d>
 
@@ -295,43 +309,29 @@ imap <M-9> <Esc>9gt
 nmap <M-9> 9gt
 
 
-" go to first tab
-"nmap <M-h> <ESC>:tabfirst<cr>
+" Switch Tab
 nmap <M-HOME> <ESC>:tabfirst<cr>
-
-" go to last tab
-"nmap <M-e> <ESC>:tablast<cr>
 nmap <M-END> <ESC>:tablast<cr>
-"nmap <M-l> <ESC>:tablast<cr>
-
-" go to previous tab
-" nmap <M-u> <ESC>:tabprevious<cr>
 nmap <M-PageUp> <ESC>:tabprevious<cr>
-"nmap <M-j> <ESC>:tabprevious<cr>
-
-" go to next tab
-" nmap <M-d> <ESC>:tabnext<cr>
 nmap <M-PageDown> <ESC>:tabnext<cr>
-"nmap <M-k> <ESC>:tabnext<cr>
 
-
-" Windows switch with Ctrl+
-"-------------------------------
+" Switch Windows
 noremap <silent> <C-left> <esc><C-W><left>
 noremap <silent> <C-right> <esc><C-W><right>
 noremap <silent> <C-up> <esc><C-W><up>
 noremap <silent> <C-down> <esc><C-W><down>
 
+source ~/.vim/confs/mabetle_func_vimrc
 
 " Extra for override vim settings.
 if filereadable(expand('~/.vim_extra/conf_vimrc'))
 	source ~/.vim_extra/conf_vimrc
 endif
 
-
 " Files Links
 " ~/.vim/pluginrc/plugins_vimrc
 " ~/.vim/confs/confs_vimrc
+" ~/.vim/confs/mabetle_func_vimrc
 " ~/.vim/confs/complete_vimrc
 " ~/.vim/keymap/all_vimrc
 
