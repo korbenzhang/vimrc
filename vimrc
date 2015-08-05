@@ -61,7 +61,7 @@ let g:vimrc#completer="unknown"
 if IsHasPython() && !IsInWin()
 	" YCM need install and compile first.
 	" Not work for Windows.
-	source ~/.vim/pluginrc/ycm_vimrc
+	"source ~/.vim/pluginrc/ycm_vimrc
 	let g:vimrc#completer="YCM"
 elseif IsHasLua()
 	" No Python
