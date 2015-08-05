@@ -72,6 +72,7 @@ function! ShowEnv()
 	echo "Is Has Lua            :".IsHasLua()
 	echo "Is In  Win            :".IsInWin()
 	echo "Is Has GUI Running    :".has("gui_running")
+	echo "TERM                  :".&term
 
 	echo "Complete              :".g:vimrc#completer
 endfunction

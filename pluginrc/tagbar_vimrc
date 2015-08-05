@@ -1,13 +1,6 @@
 " Tagbar
 "======================================
-
-"better than taglist
-"--------------------------------------
 Plugin 'majutsushi/tagbar'
-
-"better than taglist
-"--------------------------------------
-"Plugin 'Tagbar'
 
 " F4: Switch on/off TagList
 "nmap <F12> :TagbarToggle<CR>
