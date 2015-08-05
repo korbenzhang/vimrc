@@ -109,6 +109,7 @@ set shellslash
 set hlsearch
 set incsearch
 set showmatch
+set showcmd
 set ignorecase
 " reserved complete words case.
 set infercase
@@ -136,6 +137,7 @@ set ruler
 set backspace=indent,eol,start
 set whichwrap+=b,s,h,l,<,>,[,]
 set linebreak
+" Turn off welcome page
 set shortmess+=I
 
 " Color 
@@ -169,10 +171,10 @@ set noswapfile
 " ========================
 " default is menu priview
 " menu menuone longest preview
-set completeopt=longest,menu
 set wildmenu						"enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~			"stuff to ignore when tab completing
 set wildignorecase
+set completeopt=longest,menu
+set wildignore=*.o,*.obj,*~			"stuff to ignore when tab completing
 set wildmode=list:longest		"make cmdline tab completion similar to bash
 set dictionary+=~/.vim/dict/words		" ~/.vim/dict/words
 
@@ -199,12 +201,11 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set smartindent shiftwidth=4
 
 " Indent
 " ====================================================
-set ai          " auto indent
-set si          " smart indent
+set smartindent
+set autoindent          " auto indent
 "set cindent     " c program indent
 
 behave mswin
@@ -224,13 +225,12 @@ map <leader>w :w<cr>
 map <leader>q :close<cr>
 map <leader>qq :q<cr>
 map <leader>s :up<cr>
-map <leader><leader> :
+map <leader>x :
 map <leader>e :edit 
 map <leader>te :tabedit 
 map <leader>tn :tabnew<cr>
 
 map <leader>m :make<cr>
-
 
 " reload after edit vimrc
 au! BufWritePost *[\._]vimrc source $HOME/.vim/vimrc
@@ -267,6 +267,12 @@ imap <M-f> <esc>gf
 " GoTo declear
 nmap <M-d> gd
 imap <M-d> <esc><M-d>
+
+" Indent
+nmap <M-[> <<
+nmap <M-]> >>
+vmap <M-[> <gv
+vmap <M-]> >gv
 
 " alt key for tab window
 imap <M-1> <Esc>1gt
