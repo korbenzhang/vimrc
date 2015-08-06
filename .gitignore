@@ -18,5 +18,7 @@ view/
 # can udpate this file freely, donot warry about disturb git repo.
 Session.vim
 
-
+autoload
+plugin
+doc
 
