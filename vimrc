@@ -62,6 +62,7 @@ if IsHasPython() && !IsInWin()
 	" YCM need install and compile first.
 	" Not work for Windows.
 	"source ~/.vim/pluginrc/ycm_vimrc
+	source ~/.vim/pluginrc/ycm_conf.vim
 	let g:vimrc#completer="YCM"
 elseif IsHasLua()
 	" No Python
@@ -101,7 +102,7 @@ set autoread
 " default is on.
 set magic
 " auto change dir
-"set autochdir
+set autochdir
 " change windows directory seperitor to linux
 set shellslash
 
@@ -129,8 +130,10 @@ au BufNewFile * set fenc=utf-8
 
 set clipboard+=unnamed	" Yanks go on clipboard instead.
 
-syntax enable
-syntax on
+if has("syntax")
+	syntax enable
+	syntax on
+endif
 
 "set ruler
 
@@ -168,7 +171,7 @@ set noswapfile
 "set nofoldenable
 
 " Complete
-" ========================
+" -------------------------------------------------
 " default is menu priview
 " menu menuone longest preview
 set wildmenu						"enable ctrl-n and ctrl-p to scroll thru matches
@@ -195,7 +198,7 @@ if has("win32")
 endif
 
 " Tab
-" ====================================================
+" -------------------------------------------------
 set noexpandtab
 set smarttab
 set tabstop=4
@@ -203,12 +206,25 @@ set shiftwidth=4
 set softtabstop=4
 
 " Indent
-" ====================================================
+" -------------------------------------------------
 set smartindent
-set autoindent          " auto indent
+set autoindent   " auto indent
 "set cindent     " c program indent
 
 behave mswin
+
+" Mouse
+" -------------------------------------------------
+if has("mouse")
+	set mouse=a
+	set mousefocus
+	set mousehide
+ 	set mousem=popup
+ 	set mouset=500
+ 	set ttym=sgr
+endif
+
+set title
 
 " Keys
 " -------------------------------------------------
