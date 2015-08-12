@@ -337,6 +337,12 @@ noremap <silent> <C-right> <esc><C-W><right>
 noremap <silent> <C-up> <esc><C-W><up>
 noremap <silent> <C-down> <esc><C-W><down>
 
+
+" AutoCmd
+" ---------------------------------------------
+au BufRead,BufNewFile *.md setl filetype=markdown
+au BufRead,BufNewFile *.tml setl filetype=html
+
 source ~/.vim/confs/mabetle_func_vimrc
 
 " Extra for override vim settings.
