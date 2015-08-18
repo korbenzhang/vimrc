@@ -286,8 +286,8 @@ imap <C-Up> <C-o>:<C-u>move .-2<CR>
 vmap <C-Up> :move '<-2<CR>gv
 
 " Words
-nmap <C-d> dw
-imap <C-d> <esc><C-d>i
+"nmap <C-d> dw
+"imap <C-d> <esc><C-d>i
 
 " GoTo file
 nmap gf :tabnew <cfile><cr>
