@@ -346,9 +346,6 @@ au BufRead,BufNewFile *.tml setl filetype=html
 
 source ~/.vim/confs/mabetle_func_vimrc
 
-if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
-	inoremap <silent> <C-[>OC <RIGHT>
-endif
 
 " Extra for override vim settings.
 if filereadable(expand('~/.vim_extra/conf_vimrc'))
