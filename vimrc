@@ -30,6 +30,7 @@ Plugin 'EasyMotion'
 Plugin 'delimitMate.vim'
 Plugin 'echofunc.vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-fugitive'
 
 if has("unix")
 	Plugin 'SudoEdit.vim'
@@ -344,6 +345,10 @@ au BufRead,BufNewFile *.md setl filetype=markdown
 au BufRead,BufNewFile *.tml setl filetype=html
 
 source ~/.vim/confs/mabetle_func_vimrc
+
+if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
+	inoremap <silent> <C-[>OC <RIGHT>
+endif
 
 " Extra for override vim settings.
 if filereadable(expand('~/.vim_extra/conf_vimrc'))
