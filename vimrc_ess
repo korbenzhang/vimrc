@@ -27,16 +27,16 @@ set wrap
 
 behave mswin
 
-source ~/.vim/confs/encoding_vimrc
+source ~/.vim/confs/encoding.vim
 
 if has("gui_running")
-	source ~/.vim/confs/gui/gui_running_vimrc
+	source ~/.vim/confs/gui/gui_running.vim
 endif
 
 " extra for override vim settings.
-if filereadable(expand('~/.vim_extra/conf_vimrc'))
-	source ~/.vim_extra/conf_vimrc
+if filereadable(expand('~/.vim_extra/conf.vim'))
+	source ~/.vim_extra/conf.vim
 endif
 
 " GOTO
-" ~/.vim_extra/conf_vimrc
+" ~/.vim_extra/conf.vim

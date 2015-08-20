@@ -1,6 +1,6 @@
 " Custom Vim Config
 " =============================================
-"source ~/.vim/confs/cursor_vimrc 	"change cursor when in insert mode.
+"source ~/.vim/confs/cursor.vim 	"change cursor when in insert mode.
 
 "set timeoutlen=200
 

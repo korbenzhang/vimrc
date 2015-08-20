@@ -2,5 +2,5 @@
 " ================
 Plugin 'kien/ctrlp.vim'
 Plugin 'tomasr/molokai'
-"source ~/.vim/pluginrc/statusline_vimrc
+"source ~/.vim/pluginrc/statusline.vim
 

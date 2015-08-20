@@ -13,7 +13,7 @@ if filereadable(expand('~/.vim_extra/env.vim'))
 	source ~/.vim_extra/env.vim
 endif
 
-source ~/.vim/confs/env_funcs_vimrc
+source ~/.vim/confs/env_funcs.vim
 
 filetype off
 
@@ -43,16 +43,16 @@ if IsInWin()
 endif
 
 source ~/.vim/pluginrc/syntastic.vim
-source ~/.vim/pluginrc/golang_vimrc
-source ~/.vim/pluginrc/tagbar_vimrc
+source ~/.vim/pluginrc/golang.vim
+source ~/.vim/pluginrc/tagbar.vim
 
 " Snippets, utlisnips / neosnippet / snipmate
 if IsHasPython()
-	source ~/.vim/pluginrc/utlisnips_vimrc
-	"source ~/.vim/pluginrc/neosnippet_vimrc
+	source ~/.vim/pluginrc/utlisnips.vim
+	"source ~/.vim/pluginrc/neosnippet.vim
 else
-	"source ~/.vim/pluginrc/snipmate_vimrc
-	source ~/.vim/pluginrc/snipmate_old_vimrc
+	"source ~/.vim/pluginrc/snipmate.vim
+	source ~/.vim/pluginrc/snipmate_old.vim
 endif
 
 " Complete, YCM / neocomplete /
@@ -62,33 +62,33 @@ let g:vimrc#completer="unknown"
 if IsHasPython() && !IsInWin()
 	" YCM need install and compile first.
 	" Not work for Windows.
-	"source ~/.vim/pluginrc/ycm_vimrc
+	"source ~/.vim/pluginrc/ycm.vim
 	source ~/.vim/pluginrc/ycm_conf.vim
 	let g:vimrc#completer="YCM"
 elseif IsHasLua()
 	" No Python
 	" neocomplete need lua
-	source ~/.vim/pluginrc/neocomplete_vimrc
+	source ~/.vim/pluginrc/neocomplete.vim
 	let g:vimrc#completer="neocomplete"
 endif
 
 if g:vimrc#completer != "YCM"
 	" No Python, Completer not equal YCM
-	source ~/.vim/pluginrc/supertab_vimrc
-	source ~/.vim/pluginrc/autocomplpop_vimrc
+	source ~/.vim/pluginrc/supertab.vim
+	source ~/.vim/pluginrc/autocomplpop.vim
 endif
 
-source ~/.vim/pluginrc/nerdtree_vimrc
-source ~/.vim/pluginrc/comment_vimrc
+source ~/.vim/pluginrc/nerdtree.vim
+source ~/.vim/pluginrc/comment.vim
 
 Plugin 'xml.vim'							"xml
 
 " Extra Plugins
-if filereadable(expand('~/.vim_extra/plugins_vimrc'))
-	source ~/.vim_extra/plugins_vimrc
+if filereadable(expand('~/.vim_extra/plugins.vim'))
+	source ~/.vim_extra/plugins.vim
 endif
 
-source ~/.vim/confs/vundle_end_vimrc
+source ~/.vim/confs/vundle_end.vim
 
 " Options
 " ----------------------------------------------------
@@ -214,6 +214,7 @@ set autoindent   " auto indent
 "set cindent     " c program indent
 
 behave mswin
+source ~/.vim/confs/mswin.vim
 
 " Mouse
 " -------------------------------------------------
@@ -231,13 +232,22 @@ set title
 " -------------------------------------------------
 
 " make alt work
-source ~/.vim/confs/esc_alt_vimrc
+source ~/.vim/confs/esc_alt.vim
 
 " keys for vimrc, quick load and edit vimrc file.
 map <leader>ee :tabedit $HOME/.vim/vimrc<cr>
 map <leader>ss :source $HOME/.vim/vimrc<cr>
+map <leader>vc :tabedit ~/.vim_extra/conf.vim<cr>
+map <leader>vp :tabedit ~/.vim_extra/plugins.vim<cr>
 
-" MapLeader
+" Move cursor
+nmap <up> gk
+nmap <down> gj
+nmap <home> g0
+nmap <end> g$
+
+
+" Leader
 map <leader>w :w<cr>
 map <leader>q :close<cr>
 map <leader>qq :q<cr>
@@ -275,20 +285,21 @@ imap <M-s> <esc><C-s>
 nmap <M-q> :close<cr>
 imap <M-q> <esc><M-q>
 
-" Lines
+"Delete Lines
 nmap <C-k> dd
 imap <C-k> <esc><C-k>i
 
-nmap <C-Down> :<C-u>move .+1<CR>
-imap <C-Down> <C-o>:<C-u>move .+1<CR>
-vmap <C-Down> :move '>+1<CR>gv
-nmap <C-Up> :<C-u>move .-2<CR>
-imap <C-Up> <C-o>:<C-u>move .-2<CR>
-vmap <C-Up> :move '<-2<CR>gv
+"Move Lines
+nmap <M-Down> :<C-u>move .+1<CR>
+imap <M-Down> <C-o>:<C-u>move .+1<CR>
+vmap <M-Down> :move '>+1<CR>gv
+nmap <M-Up> :<C-u>move .-2<CR>
+imap <M-Up> <C-o>:<C-u>move .-2<CR>
+vmap <M-Up> :move '<-2<CR>gv
 
 " Words
-"nmap <C-d> dw
-"imap <C-d> <esc><C-d>i
+nmap <S-Del> dw
+imap <S-Del> <esc><S-Del>
 
 " GoTo file
 nmap gf :tabnew <cfile><cr>
@@ -344,27 +355,26 @@ noremap <silent> <C-down> <esc><C-W><down>
 au BufRead,BufNewFile *.md setl filetype=markdown
 au BufRead,BufNewFile *.tml setl filetype=html
 
-source ~/.vim/confs/mabetle_func_vimrc
-
+source ~/.vim/confs/mabetle_func.vim
 
 " Extra for override vim settings.
-if filereadable(expand('~/.vim_extra/conf_vimrc'))
-	source ~/.vim_extra/conf_vimrc
+if filereadable(expand('~/.vim_extra/conf.vim'))
+	source ~/.vim_extra/conf.vim
 endif
 
 " Files Links
-" ~/.vim/pluginrc/plugins_vimrc
-" ~/.vim/confs/confs_vimrc
-" ~/.vim/confs/mabetle_func_vimrc
-" ~/.vim/confs/complete_vimrc
-" ~/.vim/keymap/all_vimrc
+" ~/.vim/pluginrc/plugins.vim
+" ~/.vim/confs/confs.vim
+" ~/.vim/confs/mabetle_func.vim
+" ~/.vim/confs/complete.vim
+" ~/.vim/keymap/all.vim
 
-" ~/.vim/pluginrc/golang_vimrc
-" ~/.vim/pluginrc/compl_vimrc
+" ~/.vim/pluginrc/golang.vim
+" ~/.vim/pluginrc/compl.vim
 
-" ~/.vim/misc/vim_extra/plugins_vimrc
-" ~/.vim/misc/vim_extra/conf_vimrc
+" ~/.vim/misc/vim_extra/plugins.vim
+" ~/.vim/misc/vim_extra/conf.vim
 
 " ~/.vim_extra/env.vim
-" ~/.vim_extra/plugins_vimrc
-" ~/.vim_extra/conf_vimrc
+" ~/.vim_extra/plugins.vim
+" ~/.vim_extra/conf.vim
