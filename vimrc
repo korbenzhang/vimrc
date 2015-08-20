@@ -156,7 +156,7 @@ hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 " TabLine
 hi TabLineSel ctermfg=15 ctermbg=2
 hi LeaderTab guifg=#666666 ctermfg=5
-hi LineNr guibg=LightGray ctermbg=1
+hi LineNr guibg=LightGray ctermbg=8 ctermfg=15
 
 if &term =~ "xterm"
 	let &t_Co=256
@@ -225,7 +225,6 @@ if has("mouse")
 	set mousehide
  	set mousem=popup
  	set mouset=500
- 	set ttym=sgr
 endif
 
 set title
