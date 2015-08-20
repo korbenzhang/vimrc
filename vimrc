@@ -154,8 +154,9 @@ hi PmenuSbar ctermbg=7 ctermfg=0 guibg=DarkGray guifg=Black
 hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 
 " TabLine
-hi TabLineSel ctermfg=1 ctermbg=4
-hi LeaderTab guifg=#666666
+hi TabLineSel ctermfg=15 ctermbg=2
+hi LeaderTab guifg=#666666 ctermfg=5
+hi LineNr guibg=LightGray ctermbg=1
 
 if &term =~ "xterm"
 	let &t_Co=256
@@ -163,7 +164,9 @@ if &term =~ "xterm"
 	let &t_AB="\e[48;5;%dm"
 endif 
 
-"set laststatus=2
+set ruler
+set number
+set laststatus=2
 "set showtabline=2
 
 set nobackup
