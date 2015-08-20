@@ -1,8 +1,10 @@
 " Run
-" F5 bind to run
-" S-F5 bind to build
-" F6 bind to test
+" F5   :run
+" S-F5 :build
+" F6   :test
 " =================
+
+map <leader>r <F5>
 
 imap <F5> <ESC><F5>
 
@@ -18,5 +20,5 @@ au FileType scala nmap <F5> :up<CR>:! scala %<CR>
 au FileType perl nmap <F5> :up<CR>:! perl %<CR>
 au FileType sql nmap <F5> :up<CR>:! mysql -uroot -p < %<CR>
 au FileType dosbatch nmap <F5> :up<CR>:!%<CR>
-
+au FileType make nmap <F5> :make<cr>
 
