@@ -1,14 +1,13 @@
 
 usage:
-	echo "make task"
+	echo "make default | ess | full"
 
 default:
-	ln -sTf ~/.vim/defult.vim ~/.vimrc
+	cp -f ~/.vim/misc/defult_vimrc ~/.vimrc
 
 ess:
-	ln -sTf ~/.vim/ess.vim ~/.vimrc
+	cp -f ~/.vim/misc/ess_vimrc ~/.vimrc
 
 full:
-	ln -sTf ~/.vim/full.vim ~/.vimrc
-
+	cp -f ~/.vim/misc/full_vimrc ~/.vimrc
 

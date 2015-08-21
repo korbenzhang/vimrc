@@ -13,7 +13,7 @@ au BufNewFile * set fenc=utf-8
 
 " cygwin
 if has("win32unix")
-	source $HOME/.vim/confs/encoding_utf8_vimrc
+	source $HOME/.vim/confs/encoding_utf8.vim
 endif
 
 " for gui
