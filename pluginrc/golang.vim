@@ -11,7 +11,8 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 let g:go_disable_autoinstall = 1
 
 " default is 1
-"let g:go_fmt_autosave = 0
+" when save fmt or not
+let g:go_fmt_autosave = 0
 
 " default is 0
 let g:go_dispatch_enabled = 1
@@ -20,7 +21,7 @@ let g:go_dispatch_enabled = 1
 "let g:go_snippet_engine="ultisnips"
 
 " prevent vim-go show fmt quickfix windows
-"let g:go_fmt_fail_silently = 1
+let g:go_fmt_fail_silently = 1
 
 " go highlight
 let g:go_highlight_operators = 1

@@ -278,8 +278,8 @@ nmap <C-T> :tabnew<cr>
 nmap <C-s> :w<cr>
 imap <C-s> <esc><C-s>
 
-nmap <M-s> <C-s>
-imap <M-s> <esc><C-s>
+nmap <M-s> :w<cr>
+imap <M-s> <C-O>:w<cr>
 
 nmap <M-q> :close<cr>
 imap <M-q> <esc><M-q>
