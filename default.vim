@@ -32,6 +32,10 @@ Plugin 'echofunc.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'InfoGeeker/html5.vim'
+Plugin 'vim-javascript'
+
+
 if has("unix")
 	Plugin 'SudoEdit.vim'
 endif
