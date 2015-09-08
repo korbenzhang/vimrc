@@ -28,19 +28,19 @@ if IsInWin()
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
 
-source ~/.vim/pluginrc/golang_vimrc
+source ~/.vim/pluginrc/golang.vim
 
-source ~/.vim/pluginrc/compl_vimrc
+source ~/.vim/pluginrc/compl.vim
 
-source ~/.vim/pluginrc/tagbar_vimrc
+source ~/.vim/pluginrc/tagbar.vim
 
 " Snippets, utlisnips / neosnippet / snipmate
 if IsHasPython()
-	source ~/.vim/pluginrc/utlisnips_vimrc
-	"source ~/.vim/pluginrc/neosnippet_vimrc
+	source ~/.vim/pluginrc/utlisnips.vim
+	"source ~/.vim/pluginrc/neosnippet.vim
 else
-	"source ~/.vim/pluginrc/snipmate_vimrc
-	source ~/.vim/pluginrc/snipmate_old_vimrc
+	"source ~/.vim/pluginrc/snipmate.vim
+	source ~/.vim/pluginrc/snipmate_old.vim
 endif
 
 " Complete, YCM / neocomplete /
@@ -50,27 +50,27 @@ let g:vimrc#completer="unknown"
 if IsHasPython() && !IsInWin()
 	" YCM need install and compile first.
 	" Not work for Windows.
-	source ~/.vim/pluginrc/ycm_vimrc
+	source ~/.vim/pluginrc/ycm.vim
 	let g:vimrc#completer="YCM"
 elseif IsHasLua()
 	" No Python
 	" neocomplete need lua
-	source ~/.vim/pluginrc/neocomplete_vimrc
+	source ~/.vim/pluginrc/neocomplete.vim
 	let g:vimrc#completer="neocomplete"
 endif
 
 if g:vimrc#completer != "YCM"
 	" No Python, Completer not equal YCM
-	source ~/.vim/pluginrc/supertab_vimrc
-	source ~/.vim/pluginrc/autocomplpop_vimrc
+	source ~/.vim/pluginrc/supertab.vim
+	source ~/.vim/pluginrc/autocomplpop.vim
 endif
 
-source ~/.vim/pluginrc/nerdtree_vimrc
-"source ~/.vim/pluginrc/colorscheme_vimrc
-"source ~/.vim/pluginrc/statusline_vimrc
-source ~/.vim/pluginrc/comment_vimrc
-"source ~/.vim/pluginrc/git_vimrc
-"source ~/.vim/pluginrc/markdown_vimrc
-source ~/.vim/pluginrc/xml_vimrc
+source ~/.vim/pluginrc/nerdtree.vim
+"source ~/.vim/pluginrc/colorscheme.vim
+"source ~/.vim/pluginrc/statusline.vim
+source ~/.vim/pluginrc/comment.vim
+"source ~/.vim/pluginrc/git.vim
+"source ~/.vim/pluginrc/markdown.vim
+source ~/.vim/pluginrc/xml.vim
 
 
