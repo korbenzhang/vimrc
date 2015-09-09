@@ -96,7 +96,8 @@ Plugin 'xml.vim'							"xml
 Plugin 'html5.vim'
 "Plugin 'InfoGeeker/html5.vim'
 "Plugin 'othree/html5.vim'
-Plugin 'css3'
+"Plugin 'css3'
+"Bundle 'lepture/vim-css'
 Plugin 'css_color.vim'
 Plugin 'pangloss/vim-javascript'
 
