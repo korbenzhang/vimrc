@@ -28,7 +28,6 @@ if IsInWin()
 	let g:snippets_dir = expand('$HOME/.vim/snippets/')
 endif
 
-source ~/.vim/pluginrc/golang.vim
 
 source ~/.vim/pluginrc/compl.vim
 
@@ -69,7 +68,12 @@ source ~/.vim/pluginrc/nerdtree.vim
 "source ~/.vim/pluginrc/colorscheme.vim
 "source ~/.vim/pluginrc/statusline.vim
 source ~/.vim/pluginrc/comment.vim
+
 "source ~/.vim/pluginrc/git.vim
+
+" Langs plugin
+" --------------------------------------
+source ~/.vim/pluginrc/golang.vim
 "source ~/.vim/pluginrc/markdown.vim
 source ~/.vim/pluginrc/xml.vim
 

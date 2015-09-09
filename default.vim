@@ -25,15 +25,17 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'auto_mkdir'
-Plugin 'Emmet.vim'
+"Plugin 'Emmet.vim'
+
+Plugin 'mattn/emmet-vim'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 Plugin 'EasyMotion'
 Plugin 'delimitMate.vim'
 Plugin 'echofunc.vim'
 Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'InfoGeeker/html5.vim'
-Plugin 'vim-javascript'
+"Plugin 'tpope/vim-fugitive'
 
 
 if has("unix")
@@ -47,7 +49,6 @@ if IsInWin()
 endif
 
 source ~/.vim/pluginrc/syntastic.vim
-source ~/.vim/pluginrc/golang.vim
 source ~/.vim/pluginrc/tagbar.vim
 
 " Snippets, utlisnips / neosnippet / snipmate
@@ -85,7 +86,19 @@ endif
 source ~/.vim/pluginrc/nerdtree.vim
 source ~/.vim/pluginrc/comment.vim
 
+"source ~/.vim/pluginrc/git.vim
+
+" langs plugin
+" ----------------------------------------------
+source ~/.vim/pluginrc/golang.vim
+"source ~/.vim/pluginrc/markdown.vim
 Plugin 'xml.vim'							"xml
+Plugin 'html5.vim'
+"Plugin 'InfoGeeker/html5.vim'
+"Plugin 'othree/html5.vim'
+Plugin 'css3'
+Plugin 'css_color.vim'
+Plugin 'pangloss/vim-javascript'
 
 " Extra Plugins
 if filereadable(expand('~/.vim_extra/plugins.vim'))
