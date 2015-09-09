@@ -93,9 +93,9 @@ source ~/.vim/pluginrc/comment.vim
 source ~/.vim/pluginrc/golang.vim
 "source ~/.vim/pluginrc/markdown.vim
 Plugin 'xml.vim'							"xml
-Plugin 'html5.vim'
+"Plugin 'html5.vim'
 "Plugin 'InfoGeeker/html5.vim'
-"Plugin 'othree/html5.vim'
+Plugin 'othree/html5.vim'
 "Plugin 'css3'
 "Bundle 'lepture/vim-css'
 Plugin 'css_color.vim'
