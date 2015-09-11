@@ -39,7 +39,7 @@ source ~/.vim/keymap/keys_misc.vim		" keys misc
 
 " Extra Configs
 " ------------------------------------------------------------------------
-source ~/.vim/conf/extra_conf.vim		" Extra config
+source ~/.vim/confs/extra_conf.vim		" Extra config
 
 " Files Links
 " ------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 Plugin 'fatih/vim-go'
 
 " repo for nsf/gocode
-"Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " config vim-go
 let g:go_disable_autoinstall = 1

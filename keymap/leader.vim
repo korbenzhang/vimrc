@@ -21,8 +21,6 @@ map  <leader>ds :%s/\s\+$//g<cr>
 " sudo save
 map  <leader>sw :w !sudo tee %<cr>
 map  <leader>. :e .<cr>
-map  <leader>q :close<cr>
-map  <leader>s :update<cr>
 map  <leader>sh :shell<cr>
 nmap <leader>f :find<cr>
 " run line

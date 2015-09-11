@@ -1,11 +1,11 @@
 " Vundle
 " --------------------------------------------------
 set rtp+=~/.vim/bundle/Vundle.vim
-filetype plugin indent off    " required
+filetype off                  " required
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'auto_mkdir'
 Plugin 'Emmet.vim'
@@ -27,6 +27,7 @@ source ~/.vim/pluginrc/comment.vim
 " langs plugin
 " ----------------------------------------------
 source ~/.vim/pluginrc/golang.vim
+
 Plugin 'xml.vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'

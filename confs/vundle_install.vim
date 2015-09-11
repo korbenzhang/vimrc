@@ -18,7 +18,7 @@ if !filereadable(vundle_readme)
 
 	echo ""
 
-	silent exec "!git clone https://github.com/gmarik/Vundle.vim.git ".bundle_dir."Vundle.vim"
+	silent exec "!git clone https://github.com/VundleVim/Vundle.vim.git ".bundle_dir."Vundle.vim"
 
 	setl shellslash
 endif
