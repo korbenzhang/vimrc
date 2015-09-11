@@ -2,7 +2,7 @@
 " ----------------------------------------------------
 set smartcase
 
-"Bell
+" Bell
 set noerrorbells
 set novisualbell
 " Set to auto read when a file is changed from the outside
@@ -47,4 +47,7 @@ set laststatus=2
 set nobackup
 set noswapfile
 set title
+
+" alt not access menu
+set winaltkeys=no
 

@@ -4,9 +4,6 @@ nmap <silent> <esc><esc> :noh<cr>
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
-" alt not access menu
-set winaltkeys=no
-
 map <F4> :close<cr>
 nmap <C-T> :tabnew<cr>
 

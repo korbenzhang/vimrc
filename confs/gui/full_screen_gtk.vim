@@ -26,7 +26,7 @@ function! ToggleFullscreen()
 endfunction
 command! -bar -narg=0 ToggleFullscreen  call ToggleFullscreen()
 
-"map <silent> <F11> :call ToggleFullscreen()<CR>
+map <silent> <F11> :call ToggleFullscreen()<CR>
 
 " Enter fullsecreen when GUI start.
 "au GuiEnter * call ToggleFullscreen()

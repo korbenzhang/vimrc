@@ -46,6 +46,7 @@ let g:go_def_mapping_enabled = 1
 
 " GoDef
 au FileType go nmap gt <Plug>(go-def-tab)
+au FileType go map <M-g> <Plug>(go-def-tab)
 
 " copy from vim-go Home page
 

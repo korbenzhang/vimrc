@@ -18,7 +18,10 @@ view/
 # can udpate this file freely, donot warry about disturb git repo.
 Session.vim
 
+#  the  triditional vim config dir.
 autoload
 plugin
 doc
-
+after
+ftplugin
+macros
