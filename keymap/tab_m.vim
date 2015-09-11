@@ -19,22 +19,14 @@ nmap <M-8> 8gt
 imap <M-9> <Esc>9gt
 nmap <M-9> 9gt
 
-
 " go to first tab
-nmap <M-h> <ESC>:tabfirst<cr>
-nmap <M-HOME> <ESC>:tabfirst<cr>
+nmap <M-HOME> :tabfirst<cr>
 
 " go to last tab
-nmap <M-e> <ESC>:tablast<cr>
-nmap <M-END> <ESC>:tablast<cr>
-nmap <M-l> <ESC>:tablast<cr>
+nmap <M-END> :tablast<cr>
 
 " go to previous tab
-nmap <M-u> <ESC>:tabprevious<cr>
-nmap <M-PageUp> <ESC>:tabprevious<cr>
-nmap <M-j> <ESC>:tabprevious<cr>
+nmap <M-PageUp> :tabprevious<cr>
 
 " go to next tab
-nmap <M-d> <ESC>:tabnext<cr>
-nmap <M-k> <ESC>:tabnext<cr>
-nmap <M-PageDown> <ESC>:tabnext<cr>
+nmap <M-PageDown> :tabnext<cr>

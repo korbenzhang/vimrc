@@ -1,6 +1,5 @@
 " Complete
 " ========================
-
 " default is menu priview
 " menu menuone longest preview
 set completeopt=longest,menu

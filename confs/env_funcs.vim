@@ -1,6 +1,16 @@
 " basic func for vim.
 " ---------------------
 
+"let mapleader = ","
+"let g:mapleader = ","
+let mapleader="\<Space>"
+let g:mapleader="\<Space>"
+nmap , <leader>
+
+if filereadable(expand('~/.vim_extra/env.vim'))
+	source ~/.vim_extra/env.vim
+endif
+
 function! IsInDos()
 	return has("win32") && !has("gui_running")
 endfunction

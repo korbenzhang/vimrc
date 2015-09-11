@@ -13,8 +13,8 @@ hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 hi CursorLine cterm=NONE ctermbg=LightGray ctermfg=NONE guibg=LightGray guifg=NONE
 
 " TabLine
-hi TabLineSel ctermfg=1 ctermbg=4
-hi LeaderTab guifg=#666666
+hi TabLineSel ctermfg=15 ctermbg=2
+hi LeaderTab guifg=#666666 ctermfg=5
 
 "highlight line end blank
 "highlight WhitespaceEOL ctermbg=red guibg=red
