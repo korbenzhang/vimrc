@@ -6,6 +6,8 @@ if !IsHasPython()
 	finish
 endif
 
+let g:vimrc#completer="YCM"
+
 if IsInWin()
 	Plugin 'xleng/YCM_WIN_X86'
 else

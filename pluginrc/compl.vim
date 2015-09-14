@@ -23,24 +23,4 @@
 " Complete, YCM / neocomplete /
 " YCM nedd python, YCM not work properly in Windows
 " NeoComplete need lua
-let g:vimrc#completer="unknown"
-"if IsHasPython() && !IsInWin()
-if IsHasPython()
-	" YCM need install and compile first.
-	" Not work for Windows.
-	source ~/.vim/pluginrc/ycm.vim
-	source ~/.vim/pluginrc/ycm_conf.vim
-	let g:vimrc#completer="YCM"
-elseif IsHasLua()
-	" No Python
-	" neocomplete need lua
-	source ~/.vim/pluginrc/neocomplete.vim
-	let g:vimrc#completer="neocomplete"
-endif
-
-if g:vimrc#completer != "YCM"
-	" No Python, Completer not equal YCM
-	source ~/.vim/pluginrc/supertab.vim
-	source ~/.vim/pluginrc/autocomplpop.vim
-endif
 
