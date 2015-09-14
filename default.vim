@@ -40,6 +40,6 @@ source ~/.vim/confs/extra_conf.vim		" Extra config
 " Files Links
 " ~/.vim/pluginrc/plugin_misc.vim
 " ~/.vim/pluginrc/golang.vim
-" ~/.vim_extra/env.vim
-" ~/.vim_extra/plugins.vim
-" ~/.vim_extra/conf.vim
+" ~/.vim_extra/extra_env.vim
+" ~/.vim_extra/extra_plugins.vim
+" ~/.vim_extra/extra_conf.vim

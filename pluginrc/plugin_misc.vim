@@ -33,8 +33,8 @@ Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 
 " Extra Plugins
-if filereadable(expand('~/.vim_extra/plugins.vim'))
-	source ~/.vim_extra/plugins.vim
+if filereadable(expand('~/.vim_extra/extra_plugins.vim'))
+	source ~/.vim_extra/extra_plugins.vim
 endif
 
 " End of Vundle

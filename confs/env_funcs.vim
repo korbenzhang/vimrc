@@ -7,8 +7,8 @@ let mapleader="\<Space>"
 let g:mapleader="\<Space>"
 nmap , <leader>
 
-if filereadable(expand('~/.vim_extra/env.vim'))
-	source ~/.vim_extra/env.vim
+if filereadable(expand('~/.vim_extra/extra_env.vim'))
+	source ~/.vim_extra/extra_env.vim
 endif
 
 function! IsInDos()
