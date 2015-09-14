@@ -51,3 +51,7 @@ set title
 " alt not access menu
 set winaltkeys=no
 
+" remove utf8 BOM 
+" create by Windows
+set nobomb
+
