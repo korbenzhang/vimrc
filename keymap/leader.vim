@@ -27,3 +27,9 @@ nmap <leader>f :find<cr>
 map  <leader>rl <ESC>:.w !bash<CR>
 " run file
 map  <leader>rf <ESC>:! "%"<CR>
+
+map <leader>pp :setlocal paste!<cr>
+
+
+
+

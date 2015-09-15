@@ -31,12 +31,4 @@ imap <M-F4> <ESC><F4>
 
 " F6 Test
 
-" F7
-" F8
-" F9 NerdTreeToggle
-" F10 Menu
-" F11 Open
-map <F11> <F3>
 
-" F12 Close
-map <F12> <F4>
