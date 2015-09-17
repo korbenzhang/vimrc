@@ -1,20 +1,18 @@
 " windows tab
 
-imap <leader>1 <ESC>1gt
 nmap <leader>1 1gt
-imap <leader>2 <ESC>2gt
 nmap <leader>2 2gt
-imap <leader>3 <ESC>3gt
 nmap <leader>3 3gt
-imap <leader>4 <ESC>4gt
 nmap <leader>4 4gt
-imap <leader>5 <ESC>5gt
 nmap <leader>5 5gt
-imap <leader>6 <ESC>6gt
 nmap <leader>6 6gt
-imap <leader>7 <ESC>7gt
 nmap <leader>7 7gt
-imap <leader>8 <ESC>8gt
 nmap <leader>8 8gt
-imap <leader>9 <ESC>9gt
 nmap <leader>9 9gt
+
+nmap <leader>tn :tabnext<cr>
+nmap <leader>tp :tabprevious<cr>
+nmap <leader>tf :tabfirst<cr>
+nmap <leader>tl :tablast<cr>
+
+
