@@ -23,7 +23,7 @@ source ~/.vim/confs/au.vim				" AutoCmd
 source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
 " ------------------------------------------------------------------------
 " Keys
-source ~/.vim/confs/esc_alt.vim			" Make alt work
+"source ~/.vim/confs/esc_alt.vim			" Make alt work
 source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
 source ~/.vim/keymap/leader.vim			" Leader
 source ~/.vim/keymap/arrow.vim			" Move cursor
