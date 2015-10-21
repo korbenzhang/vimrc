@@ -1,6 +1,6 @@
-" =========================================================================
+" ========================================================================
 " Korben Vim Config File
-" =========================================================================
+" ========================================================================
 set nocompatible
 " ------------------------------------------------------------------------
 " Env
@@ -21,9 +21,10 @@ source ~/.vim/confs/mswin.vim			" MS Win
 source ~/.vim/confs/mouse.vim			" Mouse
 source ~/.vim/confs/au.vim				" AutoCmd
 source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
+source ~/.vim/confs/statusline.vim
 " ------------------------------------------------------------------------
 " Keys
-"source ~/.vim/confs/esc_alt.vim			" Make alt work
+source ~/.vim/confs/esc_alt.vim			" Make alt work
 source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
 source ~/.vim/keymap/leader.vim			" Leader
 source ~/.vim/keymap/arrow.vim			" Move cursor

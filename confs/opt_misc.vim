@@ -42,7 +42,8 @@ if has("win32")
 endif
 
 set ruler
-set laststatus=0
+set laststatus=2
+set number
 "set showtabline=2
 set nobackup
 set noswapfile

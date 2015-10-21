@@ -9,9 +9,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'auto_mkdir'
 Plugin 'Emmet.vim'
-Plugin 'EasyMotion'
 Plugin 'delimitMate.vim'
-Plugin 'echofunc.vim'
+Plugin 'kien/ctrlp.vim'
+
+"Plugin 'EasyMotion'
+"Plugin 'echofunc.vim'
 Plugin 'tpope/vim-dispatch'
 
 if has("unix")
@@ -20,7 +22,7 @@ endif
 
 source ~/.vim/pluginrc/tagbar.vim
 source ~/.vim/pluginrc/snip.vim
-source ~/.vim/pluginrc/compl.vim
+"source ~/.vim/pluginrc/compl.vim
 source ~/.vim/pluginrc/nerdtree.vim
 source ~/.vim/pluginrc/comment.vim
 
