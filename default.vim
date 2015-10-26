@@ -26,6 +26,7 @@ source ~/.vim/confs/misc.vim			" Misc
 " Keys
 source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
 source ~/.vim/keymap/leader.vim			" Leader
+source ~/.vim/keymap/fn.vim			    " Fn
 source ~/.vim/keymap/arrow.vim			" Move cursor
 source ~/.vim/keymap/moveline.vim		" Move Lines
 source ~/.vim/keymap/indent.vim			" Indent
@@ -43,6 +44,7 @@ source ~/.vim/confs/extra_conf.vim		" Extra config
 " ~/.vim/confs/
 " ~/.vim/keymap/
 " ~/.vim_extra/
+" ~/.vim/dict/
 " 
 " ~/.vim/pluginrc/plugin_misc.vim
 " ~/.vim/pluginrc/golang.vim

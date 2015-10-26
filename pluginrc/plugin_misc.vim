@@ -25,6 +25,7 @@ source ~/.vim/pluginrc/snip.vim
 "source ~/.vim/pluginrc/compl.vim
 source ~/.vim/pluginrc/nerdtree.vim
 source ~/.vim/pluginrc/comment.vim
+source ~/.vim/pluginrc/dict.vim
 
 " langs plugin
 " ----------------------------------------------
