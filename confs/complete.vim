@@ -24,4 +24,5 @@ set wildmode=list:longest		"make cmdline tab completion similar to bash
 
 " dict in  .vim
 "set dictionary+=~/.vim/dict/words		" ~/.vim/dict/words
+set dictionary+=~/.vim/dict/misc.dict
 
