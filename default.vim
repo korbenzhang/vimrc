@@ -21,7 +21,6 @@ source ~/.vim/confs/mswin.vim			" MS Win
 source ~/.vim/confs/mouse.vim			" Mouse
 source ~/.vim/confs/au.vim				" AutoCmd
 source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
-source ~/.vim/confs/statusline.vim      " Statusline
 source ~/.vim/confs/misc.vim			" Misc
 " ------------------------------------------------------------------------
 " Keys

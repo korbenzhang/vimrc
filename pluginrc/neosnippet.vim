@@ -1,5 +1,8 @@
 "https://github.com/Shougo/neosnippet.vim.
 "==========================================
+
+let g:vimrc#snippet="neosnippet"
+
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 

@@ -20,7 +20,3 @@
 " set Ctrl+j in insert mode, like VS.Net
 "imap <C-j> <C-X><C-O>
 
-" Complete, YCM / neocomplete /
-" YCM nedd python, YCM not work properly in Windows
-" NeoComplete need lua
-

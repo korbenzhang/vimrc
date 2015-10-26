@@ -9,7 +9,6 @@ if IsHasLua()
 	" No Python
 	" neocomplete need lua
 	source ~/.vim/pluginrc/neocomplete.vim
-	let g:vimrc#completer="neocomplete"
 endif
 
 " No Python, Completer not equal YCM

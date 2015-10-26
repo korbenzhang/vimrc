@@ -6,11 +6,11 @@ if !IsHasPython()
 	finish
 endif
 
-let g:vimrc#completer="YCM"
-
-if IsInWin()
+if IsInWin() || IsInWinUnix()
+	let g:vimrc#completer="xleng/YCM_WIN_X86"
 	Plugin 'xleng/YCM_WIN_X86'
 else
+	let g:vimrc#completer="Valloric/YouCompleteMe"
 	Plugin 'Valloric/YouCompleteMe'
 endif
 

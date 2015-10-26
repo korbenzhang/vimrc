@@ -1,5 +1,8 @@
 " snipMate   智能补全
 " ========================
+
+let g:vimrc#snippet="snipMate"
+
 Plugin 'snipMate'							"snipmate
 
 "ino <tab> <c-r>=TriggerSnippet()<cr>

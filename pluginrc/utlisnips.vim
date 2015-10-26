@@ -5,6 +5,8 @@ if version < 702
 	finish
 endif
 
+let g:vimrc#snippet="ultisnips"
+
 Plugin 'SirVer/ultisnips'
 
 " Trigger configuration.

@@ -2,6 +2,8 @@
 " --------------------------------
 "Plugin 'Shougo/neocomplcache'
 
+let g:vimrc#completer="neocomplete"
+
 Plugin 'Shougo/vimproc'
 Plugin 'Shougo/context_filetype.vim'
 "Plugin 'Shougo/neoinclude.vim'

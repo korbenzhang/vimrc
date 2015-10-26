@@ -7,6 +7,10 @@ let mapleader="\<Space>"
 let g:mapleader="\<Space>"
 nmap , <leader>
 
+let g:vimrc#completer="unknown"
+let g:vimrc#snippet="unknown"
+let g:vimrc#debug=""
+
 if filereadable(expand('~/.vim_extra/extra_env.vim'))
 	source ~/.vim_extra/extra_env.vim
 endif
@@ -21,6 +25,10 @@ endfunction
 
 function! IsInWinGui()
 	return IsInWin() && has("gui_running")
+endfunction
+
+function! IsInUnix()
+	return has("unix")
 endfunction
 
 function! IsInUnixGui()
@@ -76,6 +84,7 @@ function! IsHasRuby()
 endfunction
 
 function! ShowEnv()
+	echo "Vim Version           :".version
 	echo "Is Has Lua            :".IsHasLua()
 	echo "Is Has Ruby           :".IsHasRuby()
 	echo "Is Has Python         :".IsHasPython()
@@ -85,6 +94,8 @@ function! ShowEnv()
 	echo "TERM                  :".&term
 
 	echo "Complete              :".g:vimrc#completer
+	echo "Snippet               :".g:vimrc#snippet
+	echo "Debug Message         :".g:vimrc#debug
 endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
