@@ -13,8 +13,10 @@ map <leader>m :make<cr>
 nmap <leader>sr :silent !
 map  <leader>bd :Bclose<cr>
 map  <leader>cd :cd %:p:h<cr>
+
 map  <leader>n :cn<cr>
 map  <leader>p :cp<cr>
+
 " delete ^M
 map  <leader>dm :%s///g<cr>
 map  <leader>ds :%s/\s\+$//g<cr>

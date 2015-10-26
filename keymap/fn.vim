@@ -35,4 +35,12 @@ imap <M-F4> <C-O><F4>
 
 " F6 Test
 
+"F7 Next Error
+nmap  <F7> :cn<cr>
+imap <F7> <C-O>:cn<cr>
+
+"F8 Previous Error
+map  <F8> :cp<cr>
+imap <F8> <C-O>:cp<cr>
+
 

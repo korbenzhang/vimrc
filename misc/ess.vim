@@ -30,13 +30,13 @@ behave mswin
 source ~/.vim/confs/encoding.vim
 
 if has("gui_running")
-	source ~/.vim/confs/gui/gui_running.vim
+	"source ~/.vim/confs/gui/gui_running.vim
 endif
 
 " extra for override vim settings.
-if filereadable(expand('~/.vim_extra/conf.vim'))
-	source ~/.vim_extra/conf.vim
+if filereadable(expand('~/.vim_extra/extra_conf.vim'))
+	source ~/.vim_extra/extra_conf.vim
 endif
 
 " GOTO
-" ~/.vim_extra/conf.vim
+" ~/.vim_extra/extra_conf.vim
