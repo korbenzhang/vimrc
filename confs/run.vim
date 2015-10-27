@@ -6,7 +6,7 @@
 
 map <leader>r <F5>
 
-imap <F5> <ESC><F5>
+imap <F5> <C-O><F5>
 
 au FileType js nmap <F5> :up<CR>:! node %<CR>
 au FileType javascript nmap <F5> :up<CR>:! node %<CR>

@@ -2,5 +2,6 @@
 Plugin 'scrooloose/nerdcommenter'			"comment
 
 nmap <A-c> <Plug>NERDCommenterToggle
-imap <A-c> <esc><A-c>
+imap <A-c> <C-O><Plug>NERDCommenterToggle
+
 map <leader>/ <Plug>NERDCommenterToggle

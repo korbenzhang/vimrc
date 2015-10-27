@@ -20,8 +20,8 @@ endfunction
 " autocmd bufenter * :call MapF3()
 
 " F3 GoTo Def 
-nmap <F3> gt
-imap <F3> <C-O>gt
+nmap <F3> gd
+imap <F3> <C-O>gd
 
 " F4 Close
 nmap <F4> :close<cr>
