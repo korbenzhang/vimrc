@@ -3,7 +3,7 @@
 Plugin 'honza/vim-snippets'
 
 if IsInWin()
-	let g:snippets_dir = expand('$HOME/.vim/snippets/')
+	let g:snippets_dir = expand('$HOME/.vim/snippets/,$HOME/.vim/bundle/vim-snippets/snippets/')
 endif
 
 " Snippets, utlisnips / neosnippet / snipmate

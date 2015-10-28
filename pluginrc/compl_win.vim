@@ -2,7 +2,7 @@
 " ====================
 
 " Complete, YCM / neocomplete /
-" YCM nedd python, YCM not work properly in Windows
+" YCM nedd python
 " NeoComplete need lua
 
 if IsHasLua()

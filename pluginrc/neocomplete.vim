@@ -1,6 +1,11 @@
-" donot konw what is the differences between neocomplcache and neocomplete.
+" donot konw what is the differences between 
+" neocomplcache and neocomplete.
 " --------------------------------
-"Plugin 'Shougo/neocomplcache'
+
+" neocomplete needs Lua
+if !IsHasLua()
+	finish
+endif
 
 let g:vimrc#completer="neocomplete"
 
