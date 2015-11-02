@@ -1,7 +1,7 @@
 Korben Vim Configs
 ==================
 
-This repository is for Vim customize. Using [Vundle](https://github.com/gmarik/Vundle.vim.git) to manage Vim plugins.
+Vim configs. Using [Vundle](https://github.com/gmarik/Vundle.vim.git) to manage Vim plugins.
 
 It works fine in linux, windows, msys, both Vim GUI and terminal version.
 
@@ -13,7 +13,6 @@ Install
 	git clone https://github.com/korbenzhang/vimrc.git ~/.vim
 
 	cp -f ~/.vim/_vimrc ~/.vimrc
-
 
 ```
 
@@ -29,21 +28,8 @@ Feathers
 * Golang support.
 * More feathers to be found when using it.
 
-
 Dependencies
 ------------
-
-### ctags
-
-Ubuntu: 
-
-```
-	sudo apt-get install ctags
-```
-
-Windows:
-
-Copy misc/tools/ctags.exe to %PATH%.
 
 ### gotags
 

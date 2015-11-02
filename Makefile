@@ -1,13 +1,8 @@
 
 usage:
-	echo "make default | ess | full"
+	echo "make link"
 
-default:
-	cp -f ~/.vim/misc/defult_vimrc ~/.vimrc
-
-ess:
-	cp -f ~/.vim/misc/ess_vimrc ~/.vimrc
-
-full:
-	cp -f ~/.vim/misc/full_vimrc ~/.vimrc
+link:
+	rm ~/.vimrc -frv
+	cp -f ~/.vim/_vimrc ~/.vimrc
 
