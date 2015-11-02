@@ -15,4 +15,6 @@ endfunction
 
 command! -bar -narg=0 ToogleFullScreenWin  call ToogleFullScreenWin()
 
+map <silent> <F11> :call ToogleFullScreenWin()<CR>
+
 

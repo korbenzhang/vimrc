@@ -1,8 +1,12 @@
 " Omni Complete
 " ================
 
-set omnifunc=syntaxcomplete#Complete
-setlocal omnifunc=syntaxcomplete#Complete
+if has("autocmd") && exists("+omnifunc")
+	autocmd Filetype *
+				\if &omnifunc == "" |
+				\setlocal omnifunc=syntaxcomplete#Complete |
+				\endif
+endif
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd Filetype html set omnifunc=htmlcomplete#CompleteTags

@@ -14,7 +14,7 @@ endif
 
 " need install wmctrl
 let g:fullscreen = 0
-function! ToggleFullscreen()
+function! ToggleFullScreen()
     if g:fullscreen == 1
         let g:fullscreen = 0
         let mod = "remove"
@@ -24,10 +24,10 @@ function! ToggleFullscreen()
     endif
     call system("wmctrl -ir " . v:windowid . " -b " . mod . ",fullscreen")
 endfunction
-command! -bar -narg=0 ToggleFullscreen  call ToggleFullscreen()
+command! -bar -narg=0 ToggleFullScreen  call ToggleFullScreen()
 
-map <silent> <F11> :call ToggleFullscreen()<CR>
+map <silent> <F11> :call ToggleFullScreen()<CR>
 
 " Enter fullsecreen when GUI start.
-"au GuiEnter * call ToggleFullscreen()
+"au GuiEnter * call ToggleFullScreen()
 

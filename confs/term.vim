@@ -7,7 +7,7 @@ if has("gui_running")
 endif
 
 " term color
-if &term =~ "xterm"
+if &term =~ "xterm" || &term =~ "screen"
 	let &t_Co=256
 	let &t_AF="\e[38;5;%dm"
 	let &t_AB="\e[48;5;%dm"

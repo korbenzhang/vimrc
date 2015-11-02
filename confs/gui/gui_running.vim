@@ -8,25 +8,26 @@ endif
 " Gui options. 
 " Windows default: egmrLtT
 " GTK default: aegimrLtT
-" a: Auto select
-" e: add tab page
-" g: gray menu item.
-" f: foreground
-" i: use a vim icon
-" m: menu bar
-" M: system menu bar not sourced.
-" r: right hand scroll bar
-" R: right hadd scroll bar present when vertical window.
-" L: left scrollbar present when vertical spit window.
-" l: left scroll always present.
-" T: Toolbar
-" t: include tear off menu item.
-" c: console dialog for simple choices.
-set go-=T "disable toolbar
-set go-=r "no right hand scroll bar
-set go-=R "no right hand scroll bar when spilt window.
-set go-=l "no left scroll bar
-set go-=L "no left scroll bar when spilt window.
+" a Auto select
+" e add tab page
+" g gray menu item.
+" f foreground
+" i use a vim icon
+" m menu bar
+" M system menu bar not sourced.
+" r right hand scroll bar
+" R right hadd scroll bar present when vertical window.
+" L left scrollbar present when vertical spit window.
+" l left scroll always present.
+" T Toolbar
+" t include tear off menu item.
+" c console dialog for simple choices.
+set go-=m
+set go-=T
+set go-=r
+set go-=R
+set go-=l
+set go-=L
 
 "noremap <M-Space> :simalt ~<CR>
 "inoremap <M-Space> <C-O>:simalt ~<CR>

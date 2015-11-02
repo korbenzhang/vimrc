@@ -11,7 +11,9 @@ set ffs=unix,dos,mac
 au BufNewFile * set fileformat=unix
 au BufNewFile * set fenc=utf-8
 
-set enc=utf-8
+if !IsInDos()
+	set enc=utf-8
+endif
 
 " for gui
 if has("gui_running")

@@ -1,0 +1,2 @@
+
+Plugin 'bash-support.vim'
