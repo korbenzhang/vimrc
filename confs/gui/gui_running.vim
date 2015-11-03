@@ -1,5 +1,4 @@
 " gui running settings.
-" ======================
 
 if !has("gui_running")
 	finish

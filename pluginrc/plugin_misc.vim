@@ -1,5 +1,5 @@
 " Vundle
-" --------------------------------------------------
+
 set rtp+=~/.vim/bundle/Vundle.vim
 filetype off                  " required
 call vundle#begin()
@@ -23,8 +23,7 @@ source ~/.vim/pluginrc/comment.vim
 source ~/.vim/pluginrc/dict.vim
 source ~/.vim/pluginrc/ctrlp.vim
 
-" langs pluginuuu
-" ----------------------------------------------
+" langs plugin
 source ~/.vim/pluginrc/golang.vim
 
 Plugin 'xml.vim'

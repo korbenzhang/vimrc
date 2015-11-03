@@ -1,5 +1,4 @@
 " linux gtk gui
-" ========================
 
 if !(has("gui_running") && has("gui_gtk2"))
 	finish
