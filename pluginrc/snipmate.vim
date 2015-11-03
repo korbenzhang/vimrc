@@ -1,5 +1,4 @@
 " snipMate   智能补全
-" ========================
 
 let g:vimrc#snippet="garbas/vim-snipmate"
 

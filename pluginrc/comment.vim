@@ -1,5 +1,6 @@
+"comment
 
-Plugin 'scrooloose/nerdcommenter'			"comment
+Plugin 'scrooloose/nerdcommenter'
 
 nmap <A-c> <Plug>NERDCommenterToggle
 imap <A-c> <C-O><Plug>NERDCommenterToggle

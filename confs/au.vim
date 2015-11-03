@@ -1,6 +1,4 @@
 " Autocmd
-" ========================
-
 
 au BufRead,BufNewFile *.go setl filetype=go
 au BufRead,BufNewFile *.md setl filetype=markdown
@@ -15,5 +13,4 @@ au BufRead,BufNewFile *.gradle setl filetype=groovy
 " delete end line space
 " ----------------------
 "au BufWritePre * execute ':%s/\s\+$//g'
-
 

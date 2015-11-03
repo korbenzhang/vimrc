@@ -1,5 +1,5 @@
 " AsyncCommand
-"==============
+
 Plugin 'AsyncCommand'
 
 map <leader>as :AsyncShell

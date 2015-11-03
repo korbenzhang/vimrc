@@ -1,9 +1,8 @@
 " Doxygen Plugin
-"=====================
-Plugin 'DoxyGen-Syntax'						"doxygen
-Plugin 'DoxygenToolkit.vim'					"doxygen
 
-map fg : Dox<cr>
+Plugin 'DoxyGen-Syntax'
+Plugin 'DoxygenToolkit.vim'
+
 
 let g:DoxygenToolkit_authorName="Korben Zhang"
 let g:DoxygenToolkit_licenseTag="GPL v2 \<enter>"
@@ -14,3 +13,4 @@ let g:DoxygenToolkit_returnTag = "@return\t"
 let g:DoxygenToolkit_briefTag_funcName = "no"
 let g:DoxygenToolkit_maxFunctionProtoLines = 30
 
+map fg : Dox<cr>

@@ -1,5 +1,4 @@
 " display
-" =====================
 
 " default is off
 "set number

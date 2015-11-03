@@ -1,5 +1,4 @@
-
-" Shell command {
+" Shell command 
 function! s:RunShellCommand(cmdline)
 	botright new
 

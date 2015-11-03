@@ -16,5 +16,3 @@ function! HasPaste()
 endfunction
 
 
-
-

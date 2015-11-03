@@ -1,5 +1,4 @@
 " Compelte for windows
-" ====================
 
 " Complete, YCM / neocomplete /
 " YCM nedd python

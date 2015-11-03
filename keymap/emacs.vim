@@ -1,5 +1,4 @@
 " map Key like emacs.
-"
 
 map <C-x><C-s> :w<cr>
 map <C-x><C-f> :edit 

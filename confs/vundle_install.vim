@@ -1,5 +1,5 @@
 " if no vundle, git clone it
-" --------------------------------------
+
 let vundle_readme=expand('$HOME/.vim/bundle/Vundle.vim/README.md')
 
 " Skip when has Vundle

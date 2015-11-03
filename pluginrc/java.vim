@@ -1,3 +1,5 @@
 
-"Plugin 'Vim-JDE'
-"Plugin 'maven-plugin'						"for maven
+Plugin 'Vim-JDE'
+
+"for maven
+Plugin 'maven-plugin'

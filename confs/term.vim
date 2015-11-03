@@ -1,5 +1,4 @@
 " settings for term
-" ==================
 
 " term setting not used for gui
 if has("gui_running")

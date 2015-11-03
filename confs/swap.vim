@@ -1,5 +1,5 @@
 " swapdir
-" ============
+
 let $swap_dir=expand('~/rundata/vim/swap/')
 
 call InitDir($swap_dir)

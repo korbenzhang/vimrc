@@ -1,5 +1,5 @@
 "powerline
-"=====================
+
 Plugin 'Lokaltog/vim-powerline'			"status line
 
 " fancy unicode compatible

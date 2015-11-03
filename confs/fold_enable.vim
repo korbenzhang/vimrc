@@ -1,5 +1,4 @@
 " Enable Fold
-"
 
 set foldenable
 

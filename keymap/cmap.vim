@@ -1,5 +1,4 @@
 " key cmap
-" =============
 
 cno $h e ~/
 cno $j e ./e

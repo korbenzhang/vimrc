@@ -1,5 +1,5 @@
 " key map for leader.
-" ----------------------------------------------------
+
 map <leader>w :w<cr>
 map <leader>q :close<cr>
 map <leader>qq :q<cr>

@@ -1,5 +1,4 @@
 " Colorfull StatusLine
-" ====================
 
 "hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
 "au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta

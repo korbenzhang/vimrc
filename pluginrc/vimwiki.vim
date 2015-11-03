@@ -1,5 +1,5 @@
 " vimwiki
-" ========================
+
 Plugin 'vimwiki'
 
 

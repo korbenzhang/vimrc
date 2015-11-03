@@ -1,0 +1,3 @@
+"sql
+
+Plugin 'SQLComplete.vim'

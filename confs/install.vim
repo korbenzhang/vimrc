@@ -1,5 +1,4 @@
 " Install some vim needed.
-" =====================================
 
 function! CheckCtags()
 	echo "Check ctags ... "

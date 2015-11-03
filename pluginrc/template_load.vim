@@ -1,5 +1,5 @@
 " template_load
-"=====================
+
 Plugin 'load_template'
 
 let g:template_load = 1

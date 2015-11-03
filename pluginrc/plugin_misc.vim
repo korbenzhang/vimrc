@@ -8,26 +8,22 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'auto_mkdir'
-Plugin 'Emmet.vim'
 Plugin 'delimitMate.vim'
-Plugin 'kien/ctrlp.vim'
-
-"Plugin 'EasyMotion'
-"Plugin 'echofunc.vim'
 Plugin 'tpope/vim-dispatch'
 
 if has("unix")
 	Plugin 'SudoEdit.vim'
 endif
 
+source ~/.vim/pluginrc/emmet.vim
 source ~/.vim/pluginrc/tagbar.vim
 source ~/.vim/pluginrc/snip.vim
-"source ~/.vim/pluginrc/compl.vim
 source ~/.vim/pluginrc/nerdtree.vim
 source ~/.vim/pluginrc/comment.vim
 source ~/.vim/pluginrc/dict.vim
+source ~/.vim/pluginrc/ctrlp.vim
 
-" langs plugin
+" langs pluginuuu
 " ----------------------------------------------
 source ~/.vim/pluginrc/golang.vim
 

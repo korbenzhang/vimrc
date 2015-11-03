@@ -1,5 +1,4 @@
 " Vim Configs
-" ===========
 
 source ~/.vim/confs/options.vim			"options
 source ~/.vim/confs/encoding.vim			"new encodings

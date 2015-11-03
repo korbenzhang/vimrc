@@ -1,5 +1,5 @@
 " backupdir
-" ====================================================
+
 set backup
 
 let $backup_dir=expand('~/rundata/vim/bak/')

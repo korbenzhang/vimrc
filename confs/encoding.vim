@@ -1,5 +1,4 @@
 " encoding 编码
-" ====================================================
 
 " file encodings
 set fencs=ucs-bom,utf-8,gb18030,cp936,GBK
@@ -14,6 +13,8 @@ au BufNewFile * set fenc=utf-8
 if !IsInDos()
 	set enc=utf-8
 endif
+
+set helplang=cn
 
 " for gui
 if has("gui_running")

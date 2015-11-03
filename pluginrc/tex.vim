@@ -1,5 +1,5 @@
 "Tex
-"=====================
+
 Plugin 'tex.vim'
 Plugin 'TeX-PDF'
 

@@ -1,5 +1,4 @@
 " Omni Complete
-" ================
 
 if has("autocmd") && exists("+omnifunc")
 	autocmd Filetype *

@@ -1,5 +1,4 @@
 "Highlight
-" ========================
 
 " Popup menu hightLight Group
 hi Pmenu ctermbg=13 ctermfg=0 guibg=LightGray guifg=Black

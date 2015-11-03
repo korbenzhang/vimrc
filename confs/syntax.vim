@@ -1,5 +1,5 @@
 " Syntax
-" ========================
+
 syntax enable
 syntax on
 

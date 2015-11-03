@@ -2,4 +2,4 @@
 
 # start a minimal vim environment.
 
-vim -u ~/.vim/ess_vimrc
+vim -u ~/.vim/misc/ess.vim

@@ -1,19 +1,16 @@
 " Filetype detect
-" ========================
+
 
 " Grep
-" ========================
 set grepprg=grep\ -nH\ $*
 
 set history=500
 
 " viminfo
-" ========================
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
 
 "switch to directory of current file
-" ========================
 command! CD cd %:p:h
 
 "set cdpath=$HOME/.vim,$PD,

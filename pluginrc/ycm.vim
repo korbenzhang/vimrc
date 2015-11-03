@@ -1,6 +1,6 @@
 " You Complete Me
 " YCM need python
-" =================================
+
 if !IsHasPython()
 	finish
 endif

@@ -34,13 +34,6 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_space_tab_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
 
-"Key map
-"-------------------------------------
-au FileType go nmap <buffer> <F5> :up<cr>:!go run %<CR>
-au FileType go imap <buffer> <F5> <ESC><F5>
-
-au FileType go nmap <buffer> <F6> :!go test<CR>
-au FileType go imap <buffer> <F6> <ESC><F6>
 
 let g:go_def_mapping_enabled = 1
 

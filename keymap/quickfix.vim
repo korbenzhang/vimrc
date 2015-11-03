@@ -1,4 +1,3 @@
-
 "QuickFix
 map <leader>n <esc>:cnext<cr>
 map <leader>p <esc>:cpriv<cr>

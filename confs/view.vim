@@ -1,5 +1,5 @@
 " view
-" ========================
+
 let $view_dir=expand('~/rundata/vim/views')
 
 call InitDir($view_dir)

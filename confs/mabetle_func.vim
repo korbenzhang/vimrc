@@ -1,5 +1,4 @@
 " Mabetle Functions
-" =================
 
 "  Vimrc
 function! MabetleVimrc()

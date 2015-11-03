@@ -1,5 +1,5 @@
 " Mouse
-" ========================
+
 if has("mouse")
 	set mouse=a
 	set mousefocus

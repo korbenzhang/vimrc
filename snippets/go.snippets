@@ -33,6 +33,22 @@ snippet ma
 # package main
 snippet pm
 	package main
+	
+	import(
+		"fmt"
+		"github.com/mabetle/mlog"
+	)
+
+	var(
+		logger = mlog.GetLogger("main")
+	)
+
+	func main() {
+		mlog.SetDebugLevel()
+		${1}
+
+		fmt.Println("===End===")
+	}
 
 	${0}
 # prl

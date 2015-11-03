@@ -1,5 +1,5 @@
 " tags
-" ==========
+
 set tag=tags,./tags
 
 au FileType go setl tag=tags,./tags,$GOCODES/src/tags,$GOROOT/src/tags

@@ -1,5 +1,5 @@
 " abb
-" ========================
+
 iab dt <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 
 iab pu public

@@ -1,10 +1,10 @@
 " Fold
-" ========================
+
 "set fo=l
 
-"set foldenable
+set foldenable
 
-"set foldmethod=syntax
+set foldmethod=syntax
 "set foldmethod=manual
 "set foldmethod=indent
 
@@ -14,7 +14,5 @@
 
 "set foldclose=all
 
-"highlight Folded guibg=grey guifg=blue
-"highlight FoldColumn guibg=darkgrey guifg=white
-
-set nofoldenable
+highlight Folded guibg=grey guifg=blue
+highlight FoldColumn guibg=darkgrey guifg=white

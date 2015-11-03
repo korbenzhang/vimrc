@@ -1,0 +1,3 @@
+" Fold
+
+set nofoldenable

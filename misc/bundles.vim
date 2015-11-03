@@ -1,4 +1,3 @@
-
 Plugin 'gmarik/vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'

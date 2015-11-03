@@ -1,5 +1,4 @@
 " extra plugins
-" ================
 
 Plugin 'tomasr/molokai'
 

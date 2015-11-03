@@ -1,9 +1,8 @@
 " options: no yes menu
-" =====================================
+
 set winaltkeys=no
 
 " alt shortcut
-" -------------------------------------
 
 " GoTo file
 map <A-f> gf
@@ -13,7 +12,6 @@ map <A-d> gd
 
 
 " insert mode alt key functions.
-" -------------------------------------
 
 "cursor
 imap <A-h> <Left>

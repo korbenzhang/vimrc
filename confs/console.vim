@@ -1,5 +1,4 @@
 " console
-" ===============
 
 " show match
 set showmatch

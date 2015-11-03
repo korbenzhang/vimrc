@@ -1,10 +1,6 @@
 " Tagbar
-"======================================
-Plugin 'majutsushi/tagbar'
 
-" F12: Switch on/off TagList
-nmap <F12> :TagbarToggle<CR>
-imap <F12> <esc><F12>
+Plugin 'majutsushi/tagbar'
 
 let g:tagbar_left = 1
 let g:tagbar_width = 25
@@ -77,3 +73,6 @@ let g:tagbar_type_go = {
 \ }
 
 
+" F12: Switch on/off TagList
+nmap <F12> :TagbarToggle<CR>
+imap <F12> <esc><F12>

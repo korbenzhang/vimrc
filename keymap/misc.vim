@@ -1,5 +1,4 @@
 " misc key maps.
-" -------------------------------------------
 
 " clear highlight match.
 nmap <silent> <esc><esc> :noh<cr>

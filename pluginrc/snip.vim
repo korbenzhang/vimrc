@@ -1,5 +1,4 @@
 
-
 Plugin 'honza/vim-snippets'
 
 if IsInWin()

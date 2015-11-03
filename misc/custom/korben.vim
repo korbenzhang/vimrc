@@ -1,7 +1,6 @@
 " korben.vim
 " some config for Korben
-" ====================================
-"
+
 " abbreviate
 iab kz Korben Zhang (korbenzhang@gmail.com)
 

@@ -1,2 +1,3 @@
 
-Plugin 'elzr/vim-json'						"json
+"json
+Plugin 'elzr/vim-json'

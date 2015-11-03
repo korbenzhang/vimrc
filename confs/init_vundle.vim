@@ -1,5 +1,5 @@
 " init vundle
-" ===========================
+
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim

@@ -1,7 +1,3 @@
-" donot konw what is the differences between 
-" neocomplcache and neocomplete.
-" --------------------------------
-
 " neocomplete needs Lua
 if !IsHasLua()
 	finish

@@ -1,6 +1,7 @@
-" UltiSnips require vim 7.0 and later, and require vim compile with
-" python2 or python3.
-" ----------------------------------------------------
+" UltiSnips 
+" require vim 7.0 and later, 
+" require vim compile with python2 or python3.
+
 if version < 702
 	finish
 endif

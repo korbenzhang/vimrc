@@ -1,7 +1,6 @@
 
 "set display=lastline
 
-" ========================
 "highlight LineNr guibg=black guifg=white
 
 hi Tb_Normal guifg=white ctermfg=white
@@ -10,7 +9,6 @@ hi Tb_VisibleNormal ctermbg=252 ctermfg=235
 hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 
 
-" ========================
 if has("gui_running")
   " Set nice colors
   " background for normal text is light grey
@@ -26,7 +24,7 @@ if has("gui_running")
   highlight Special gui=NONE guibg=grey95
 
 endif
-" ========================
+
 " When editing a file, always jump to the last known cursor position.
 " Don't do it when the position is invalid or when inside an event handler
 " (happens when dropping a file on gvim).
@@ -37,7 +35,6 @@ autocmd BufReadPost *
             \   exe "normal! g`\"" |
             \ endif
 " Cursor Line
-" ========================
 set cursorline
 "set cursorcolumn
 

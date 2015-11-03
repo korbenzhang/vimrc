@@ -1,5 +1,4 @@
 " basic func for vim.
-" ---------------------
 
 "let mapleader = ","
 "let g:mapleader = ","

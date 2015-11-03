@@ -1,5 +1,4 @@
 " TagList
-"=====================
 
 " if not exist ctags, skip.
 if !executable('ctags')
@@ -8,11 +7,6 @@ if !executable('ctags')
 endif
 
 Plugin 'taglist.vim'
-
-" F4: Switch on/off TagList
-"nnoremap <silent> <F4> :TlistToggle<CR>
-map <F4> <ESC>:TlistToggle<CR>
-nmap ,tl <ESC>:TlistToggle<CR>
 
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Auto_Open = 0
@@ -28,4 +22,9 @@ let Tlist_Display_Tag_Scope = 1 " Show tag scope next to the tag name.
 let Tlist_Close_On_Select = 1 " Close the taglist window when a file or tag is selected.
 let Tlist_Enable_Fold_Column = 0 " Don't Show the fold indicator column in the taglist window.
 "let Tlist_WinWidth = 40
+
+" F4: Switch on/off TagList
+"nnoremap <silent> <F4> :TlistToggle<CR>
+map <F4> <ESC>:TlistToggle<CR>
+nmap ,tl <ESC>:TlistToggle<CR>
 
