@@ -25,3 +25,10 @@ doc
 after
 ftplugin
 macros
+
+# vim run dir
+backup/
+swap/
+undo/
+views/
+

@@ -1,27 +1,27 @@
 " Save your backups to a less annoying place than the current directory.
 " If you have .vim-backup in the current directory, it'll use that.
-" Otherwise it saves it to ~/.vim_backup or . if all else fails.
+" Otherwise it saves it to ~/.vim/backup or . if all else fails.
 
-if isdirectory($HOME . '/.vim_backup') == 0
-  :silent !mkdir -p ~/.vim_backup >/dev/null 2>&1
+if isdirectory($HOME . '/.vim/backup') == 0
+  :silent !mkdir -p ~/.vim/backup >/dev/null 2>&1
 endif
 
 "set backupdir-=.
 "set backupdir+=.
 "set backupdir-=~/
 "set backupdir^=./.vim-backup/
-set backupdir=~/.vim_backup/
+set backupdir=~/.vim/backup/
 
 set backup
 
 " Save your swp files to a less annoying place than the current directory.
 " If you have .vim-swap in the current directory, it'll use that.
 " Otherwise it saves it to ~/.vim/swap, ~/tmp or .
-if isdirectory($HOME . '/.vim_swap') == 0
-  :silent !mkdir -p ~/.vim_swap >/dev/null 2>&1
+if isdirectory($HOME . '/.vim/swap') == 0
+  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
 endif
-"set directory=./.vim_swap//
-set directory=~/.vim_swap//,~/tmp//,.
+"set directory=./.vim/swap//
+set directory=~/.vim/swap//,~/tmp//,.
 
 " viminfo stores the the state of your previous editing session
 "set viminfo+=n~/.viminfo
@@ -31,12 +31,12 @@ if exists("+undofile")
   " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
   " :help undo-persistence
   " This is only present in 7.3+
-  if isdirectory($HOME . '/.vim_undo') == 0
-    :silent !mkdir -p ~/.vim_undo > /dev/null 2>&1
+  if isdirectory($HOME . '/.vim/undo') == 0
+    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
   endif
 
-  "set undodir=./.vim_undo//
-  set undodir=~/.vim_undo//
+  "set undodir=./.vim/undo//
+  set undodir=~/.vim/undo//
 
   set undofile
 endif
