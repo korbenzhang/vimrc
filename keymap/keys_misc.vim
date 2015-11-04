@@ -1,8 +1,16 @@
 " clear highlight match.
 nmap <silent> <esc><esc> :noh<cr>
 
+" Make Y behave like other capitals.
+nnoremap Y y$
+
 " Don't use Ex mode, use Q for formatting
 map  Q gq
+
+" For when you forget to sudo.. Really Write the file.
+cnoremap w!! w !sudo tee % >/dev/null
+
+
 
 map <F4> :close<cr>
 nmap <C-T> :tabnew<cr>

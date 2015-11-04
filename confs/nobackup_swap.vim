@@ -1,0 +1,5 @@
+
+set nobackup
+
+set noswapfile
+

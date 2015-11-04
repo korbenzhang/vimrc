@@ -24,6 +24,7 @@ source ~/.vim/confs/mswin.vim			" MS Win
 source ~/.vim/confs/mouse.vim			" Mouse
 source ~/.vim/confs/au.vim				" AutoCmd
 source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
+source ~/.vim/confs/undo_backup.vim		" Undo And Backup
 source ~/.vim/confs/misc.vim			" Misc
 
 " Keys
@@ -42,7 +43,7 @@ source ~/.vim/confs/esc_alt.vim			" Make alt work
 
 " Extra Configs
 " -------------
-source ~/.vim/confs/extra_conf.vim		" Extra config
+source ~/.vim/confs/extra_conf.vim		" Extra Config
 
 " Files Links
 " -----------

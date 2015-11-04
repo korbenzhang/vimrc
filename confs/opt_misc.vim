@@ -45,8 +45,7 @@ set ruler
 set laststatus=2
 set number
 "set showtabline=2
-set nobackup
-set noswapfile
+
 set title
 
 " alt not access menu
