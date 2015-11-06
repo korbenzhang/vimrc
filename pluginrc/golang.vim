@@ -44,12 +44,14 @@ au FileType go map <M-g> <Plug>(go-def-tab)
 " copy from vim-go Home page
 
 au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>gr <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>gb <Plug>(go-build)
 au FileType go nmap <C-b> <Plug>(go-build)
 au FileType go nmap <C-F5> <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>gt <Plug>(go-test)
 au FileType go nmap <F6> <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>gc <Plug>(go-coverage)
 
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
@@ -57,5 +59,8 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+
+au FileType go nmap <Leader>gn :GoInstall<cr>
+au FileType go nmap <C-i> :GoInstall<cr>
 
 source ~/.vim/confs/golang.vim
