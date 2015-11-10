@@ -29,18 +29,18 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_build_constraints = 1
-"let g:go_highlight_chan_whitespace_error = 0
-let g:go_highlight_chan_whitespace_error = 1
 let g:go_highlight_extra_types = 1
-let g:go_highlight_space_tab_error = 1
-let g:go_highlight_trailing_whitespace_error = 1
-let g:go_highlight_array_whitespace_error = 1
+
+"let g:go_highlight_chan_whitespace_error = 0
+let g:go_highlight_chan_whitespace_error = 0
+let g:go_highlight_space_tab_error = 0
+let g:go_highlight_trailing_whitespace_error = 0
+let g:go_highlight_array_whitespace_error = 0
 
 let g:go_def_mapping_enabled = 1
 
 " GoDef
 au FileType go nmap gt <Plug>(go-def-tab)
-au FileType go map <M-g> <Plug>(go-def-tab)
 
 " copy from vim-go Home page
 au FileType go nmap <leader>r :go run %  
