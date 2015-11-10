@@ -15,6 +15,3 @@ hi CursorLine cterm=NONE ctermbg=LightGray ctermfg=NONE guibg=LightGray guifg=NO
 hi TabLineSel ctermfg=15 ctermbg=2
 hi LeaderTab guifg=#666666 ctermfg=5
 
-"highlight line end blank
-"highlight WhitespaceEOL ctermbg=red guibg=red
-"match WhitespaceEOL /\s\+$/

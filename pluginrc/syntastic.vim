@@ -21,3 +21,6 @@ let g:syntastic_check_on_open = 0
 " 0 means skip check when :wq :x ZZ
 let g:syntastic_check_on_wq = 0
 
+" donot use vim-go fmt
+let g:go_fmt_autosave = 0
+
