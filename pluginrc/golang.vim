@@ -43,13 +43,13 @@ let g:go_def_mapping_enabled = 1
 au FileType go nmap gt <Plug>(go-def-tab)
 
 " copy from vim-go Home page
-au FileType go nmap <leader>r :go run %  
+au FileType go nmap <leader>r :!go run %  
+
+au FileType go nmap <C-F5> <Plug>(go-build)
+au FileType go nmap <F6> <Plug>(go-test)
 
 au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <C-F5> <Plug>(go-build)
-
 au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <F6> <Plug>(go-test)
 
 au FileType go nmap <leader>gc <Plug>(go-coverage)
 
@@ -60,8 +60,6 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 
-au FileType go nmap <Leader>gn :GoInstall<cr>
-au FileType go nmap <C-i> :GoInstall<cr>
 au FileType go nmap <C-b> :GoInstall<cr>
 au FileType go imap <C-b> <C-O>:GoInstall<cr>
 
