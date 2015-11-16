@@ -18,3 +18,14 @@ au FileType go imap <buffer> <F6> <C-O>:up<cr>:!go test<cr>
 " Install on save
 "autocmd BufWritePre *.go :GoInstall<cr>
 
+" Go install generate execute file name same as parent dir name.
+function! MabetleGoRunInstalled()
+	let cmd = split(expand("%:p:h"),"/")[-1]
+	"silent exec "!".cmd 
+	"echo "!".cmd
+	"call system(cmd)
+	exec "!".cmd 
+endfunction
+
+command! -bar -narg=0 GoRunInstalled  call MabetleGoRunInstalled()
+
