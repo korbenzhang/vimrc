@@ -14,12 +14,18 @@ if filereadable(expand('~/.vim_extra/extra_env.vim'))
 	source ~/.vim_extra/extra_env.vim
 endif
 
-function! IsInDos()
-	return has("win32") && !has("gui_running")
+function! IsInWin()
+	let win = ['win16', 'win32', 'win64', 'win95']
+	for w in win
+		if (has(w))
+			return 1
+		endif
+	endfor
+	return 0
 endfunction
 
-function! IsInWin()
-	return has("win32") || has("win64")
+function! IsInDos()
+	return IsInWin() && !has("gui_running")
 endfunction
 
 function! IsInWinGui()
@@ -51,7 +57,6 @@ endfunction
 function! InitDir(dir)
 	setl noshellslash
 	let init_dir = expand(a:dir)
-
 	if isdirectory(init_dir)
 		"dir exists, Skip
 		setl shellslash
@@ -91,6 +96,7 @@ function! ShowEnv()
 	echo "Is In  Win            :".IsInWin()
 	echo "Is Has GUI Running    :".has("gui_running")
 	echo "TERM                  :".&term
+	echo "Encoding              :".&encoding
 
 	echo "Complete              :".g:vimrc#completer
 	echo "Snippet               :".g:vimrc#snippet
@@ -99,4 +105,7 @@ endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
 
+function! IsHasCtags()
+	return executable("ctags")
+endfunction
 

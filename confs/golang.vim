@@ -12,20 +12,80 @@ if IsInWin()
 	"au FileType go nmap <buffer> <F6> :!start cmd /K go test<CR>
 endif
 
-au FileType go imap <buffer> <F5> <C-O>:up<cr>:!go run %<cr>
-au FileType go imap <buffer> <F6> <C-O>:up<cr>:!go test<cr>
+au FileType go imap <buffer> <F5> <ESC>:up<cr>:!go run %<cr>
+au FileType go imap <buffer> <F6> <ESC>:up<cr>:!go test<cr>
 
 " Install on save
 "autocmd BufWritePre *.go :GoInstall<cr>
 
-" Go install generate execute file name same as parent dir name.
-function! MabetleGoRunInstalled()
-	let cmd = split(expand("%:p:h"),"/")[-1]
-	"silent exec "!".cmd 
-	"echo "!".cmd
-	"call system(cmd)
-	exec "!".cmd 
+function! MabetleDirName()
+	return split(expand("%:p:h"),"/")[-1]
 endfunction
 
-command! -bar -narg=0 GoRunInstalled  call MabetleGoRunInstalled()
+function! MabetleGoInstall()
+	silent exec "! go install"
+endfunction
 
+function! MabetleWhichExe(cmd)
+	return system("which ".a:cmd)
+endfunction
+
+function! MabetleGoRemoveExe()
+	if !MabetleGoIsMain()
+		echo "not main package"
+		return
+	endif
+	let cmd = MabetleDirName()
+	if !executable(cmd)
+		echo cmd." not found"
+	endif
+	let realname = system("which ".cmd)
+	"echo realname
+	silent exec "! rm -fr ".realname
+endfunction
+
+" Go install generate execute file name same as parent dir name.
+function! MabetleGoRun()
+	if !MabetleGoIsMain()
+		echo "not main package, run go install"
+		return
+	endif
+	let cmd = MabetleDirName()
+	if !executable(cmd)
+		call MabetleGoInstall()
+	endif
+	exec "!".cmd
+endfunction
+command! -bar -narg=0 MabetleGoRun  call MabetleGoRun()
+
+function! MabetleGoFuncName()
+	
+endfunction
+
+" Goto view
+function! MabetleGoView()
+
+endfunction
+
+" Goto controller
+function! MabetleGoController()
+
+endfunction
+
+function! MabetleGoIsMain()
+	return getline(1) == "package main"
+endfunction
+
+function! MabetleGoOffs()
+	let pos = getpos(".")[1:2]
+	if &encoding == 'utf-8'
+		let offs = line2byte(pos[0]) + pos[1] - 2
+	else
+		let c = pos[1]
+		let buf = line('.') == 1 ? "" : (join(getline(1, pos[0] - 1), "\n") . "\n")
+		let buf .= c == 1 ? "" : getline(pos[0])[:c-2]
+		let offs = len(iconv(buf, &encoding, "utf-8"))
+	endif
+	let arg1=g:godef_command . " -f=" . expand("%:p") . " -i " . offs
+	echo arg1
+endfunction
