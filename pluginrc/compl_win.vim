@@ -10,7 +10,3 @@ if IsHasLua()
 	source ~/.vim/pluginrc/neocomplete.vim
 endif
 
-" No Python, Completer not equal YCM
-source ~/.vim/pluginrc/supertab.vim
-source ~/.vim/pluginrc/autocomplpop.vim
-
