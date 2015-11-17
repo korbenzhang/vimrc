@@ -1,4 +1,4 @@
-
+" func misc
 
 func! DeleteTrailingWS()
   exe "normal mz"
@@ -14,5 +14,15 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+func! NoBell()
+	set noerrorbells visualbell t_vb=
+	if has('autocmd')
+		autocmd GUIEnter * set visualbell t_vb=
+	endif
+	"set noerrorbells
+	"set novisualbell
+endfunc
+command! -bar -narg=0 NoBell  call NoBell()
 
 

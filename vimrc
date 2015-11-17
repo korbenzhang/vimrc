@@ -1,6 +1,3 @@
-" Korben Vim Config File
-" ======================
-
 set nocompatible
 
 " Env
@@ -39,6 +36,8 @@ source ~/.vim/keymap/tab_m.vim			" TabWindows Meta access
 source ~/.vim/keymap/tab_leader.vim		" TabWindows leader access
 source ~/.vim/keymap/win.vim			" Switch Windows
 source ~/.vim/keymap/keys_misc.vim		" Keys misc
+
+source ~/.vim/confs/run.vim				" Run 
 source ~/.vim/confs/esc_alt.vim			" Make alt work
 
 " Extra Configs

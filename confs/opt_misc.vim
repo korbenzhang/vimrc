@@ -2,9 +2,6 @@
 
 set smartcase
 
-" Bell
-set noerrorbells
-set novisualbell
 " Set to auto read when a file is changed from the outside
 set autoread
 " Changes the special characters that can be used in search patterns.
@@ -55,3 +52,14 @@ set winaltkeys=no
 " create by Windows
 set nobomb
 
+" Better Unix / Windows compatibility
+set viewoptions=folds,options,cursor,unix,slash 
+
+" Bell
+"set noerrorbells
+"set novisualbell
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
+set fillchars=vert:\ ,stl:\     
+set isfname-==
