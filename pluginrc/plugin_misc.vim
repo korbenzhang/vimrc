@@ -9,7 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'auto_mkdir'
 Plugin 'delimitMate.vim'
-Plugin 'tpope/vim-dispatch'
 
 if has("unix")
 	Plugin 'SudoEdit.vim'

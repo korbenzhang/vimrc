@@ -63,3 +63,6 @@ autocmd GUIEnter * set visualbell t_vb=
 
 set fillchars=vert:\ ,stl:\     
 set isfname-==
+
+set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
+
