@@ -1,6 +1,6 @@
 
 usage:
-	echo "make link"
+	echo "make link | mkdirs | vundle-update ..."
 
 link:
 	rm ~/.vimrc -frv
@@ -17,4 +17,10 @@ mkdirs-win:
 	md undo
 	md backup
 	md swap
+
+
+vundle-update:
+    vim +PluginInstall +qall
+
+vundle-install:
 
