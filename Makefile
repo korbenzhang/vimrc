@@ -18,9 +18,8 @@ mkdirs-win:
 	md backup
 	md swap
 
-
 vundle-update:
-    vim +PluginInstall +qall
+#    vim +PluginInstall +qall
 
 vundle-install:
 
