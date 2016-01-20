@@ -7,16 +7,10 @@ link:
 	cp -f ~/.vim/_vimrc ~/.vimrc
 
 mkdirs:
-	mkdir ~/.vim/views
-	mkdir ~/.vim/undo
-	mkdir ~/.vim/backup
-	mkdir ~/.vim/swap
+	sh ~/.vim/bin/unix_mkdirs.sh
 
 mkdirs-win:
-	md views
-	md undo
-	md backup
-	md swap
+	~/.vim/bin/win_mkdirs.bat
 
 vundle-update:
 #    vim +PluginInstall +qall
