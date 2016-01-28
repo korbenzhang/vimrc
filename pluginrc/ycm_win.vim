@@ -2,7 +2,7 @@
 " YCM need python
 " =================================
 
-if !IsHasPython()
+if !IsHasPython() || !IsInWin()
 	finish
 endif
 
