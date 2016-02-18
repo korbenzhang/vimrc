@@ -17,4 +17,6 @@ let g:ctrlp_match_window_reversed=0
 let g:ctrlp_mruf_max=500
 let g:ctrlp_follow_symlinks=1
 
-
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_use_caching = 1
+  

@@ -21,7 +21,8 @@ source ~/.vim/confs/mswin.vim			" MS Win
 source ~/.vim/confs/mouse.vim			" Mouse
 source ~/.vim/confs/au.vim				" AutoCmd
 source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
-source ~/.vim/confs/undo_backup.vim		" Undo And Backup
+"source ~/.vim/confs/undo_backup.vim	" Undo And Backup
+source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
 source ~/.vim/confs/func_misc.vim		" Misc Functions
 source ~/.vim/confs/misc.vim			" Misc
 
