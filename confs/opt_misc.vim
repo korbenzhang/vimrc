@@ -38,8 +38,6 @@ if has("win32")
 	set shellpipe=\|\ tee
 endif
 
-set ruler
-set laststatus=2
 set number
 "set showtabline=2
 

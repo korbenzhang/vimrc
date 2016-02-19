@@ -15,7 +15,7 @@ let g:go_disable_autoinstall = 1
 let g:go_fmt_autosave = 1
 
 " default is 0
-let g:go_dispatch_enabled = 1
+let g:go_dispatch_enabled = 0
 
 " default is ultisnips, can set with neocomplete
 "let g:go_snippet_engine="ultisnips"
@@ -39,11 +39,14 @@ let g:go_highlight_array_whitespace_error = 0
 
 let g:go_def_mapping_enabled = 1
 
+let g:go_auto_type_info = 0
+
 " GoDef
 au FileType go nmap gt <Plug>(go-def-tab)
 
 " copy from vim-go Home page
-au FileType go nmap <leader>r :!go run %  
+"au FileType go nmap <leader>r :!go run %  
+au FileType go nmap <leader>r <Plug>(go-run)
 
 au FileType go nmap <C-F5> <Plug>(go-build)
 au FileType go nmap <F6> <Plug>(go-test)
