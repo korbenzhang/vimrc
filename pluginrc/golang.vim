@@ -23,6 +23,9 @@ let g:go_dispatch_enabled = 0
 " prevent vim-go show fmt quickfix windows
 "let g:go_fmt_fail_silently = 1
 
+let g:go_def_mapping_enabled = 1
+let g:go_auto_type_info = 0
+
 " go highlight
 let g:go_highlight_operators = 1
 let g:go_highlight_functions = 1
@@ -36,10 +39,6 @@ let g:go_highlight_chan_whitespace_error = 0
 let g:go_highlight_space_tab_error = 0
 let g:go_highlight_trailing_whitespace_error = 0
 let g:go_highlight_array_whitespace_error = 0
-
-let g:go_def_mapping_enabled = 1
-
-let g:go_auto_type_info = 0
 
 " GoDef
 au FileType go nmap gt <Plug>(go-def-tab)
