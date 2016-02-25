@@ -77,6 +77,10 @@ function! IsHasPython()
 	return has("python") || has("python3")
 endfunction
 
+function! IsHasPython3()
+	return has("python3")
+endfunction
+
 " IsHasLua
 function! IsHasLua()
 	return has("lua")
@@ -92,7 +96,7 @@ function! ShowEnv()
 	echo "Is Has Lua            :".IsHasLua()
 	echo "Is Has Ruby           :".IsHasRuby()
 	echo "Is Has Python         :".IsHasPython()
-	echo "Is Has Lua            :".IsHasLua()
+	echo "Is Has Python3        :".IsHasPython3()
 	echo "Is In  Win            :".IsInWin()
 	echo "Is Has GUI Running    :".has("gui_running")
 	echo "TERM                  :".&term
