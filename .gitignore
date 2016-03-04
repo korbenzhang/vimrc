@@ -32,3 +32,5 @@ swap/
 undo/
 views/
 
+*.swp
+

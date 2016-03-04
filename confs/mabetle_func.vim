@@ -104,6 +104,13 @@ endfunction
 command! -bar -narg=0 RunCurrentLine  call RunCurrentLine()
 command! -bar -narg=0 RCL  call RunCurrentLine()
 
+" RunCurrentLine
+function! RunSelection()
+	execute ":'<,'>w ! sh"
+endfunction
+command! -bar -narg=0 RunSelection  call RunSelection()
+command! -bar -narg=0 RS  call RunSelection()
+
 " InstallCtags
 func! InstallCtags()
 	if executable('ctags')
