@@ -23,6 +23,7 @@ nmap <M-END> :tablast<cr>
 nmap <M-HOME> :tabfirst<cr>
 nmap <M-h> :tabfirst<cr>
 nmap <M-l> :tablast<cr>
+nmap <M-0> :tablast<cr>
 
 nmap <M-PageDown> :tabnext<cr>
 nmap <M-PageUp> :tabprevious<cr>
