@@ -1,18 +1,22 @@
-imap <C-1> <C-O>1tabnext
-nmap <C-1> 1tabnext
-imap <C-2> <C-O>2tabnext
-nmap <C-2> 2tabnext
-imap <C-3> <C-O>3tabnext
-nmap <C-3> 3tabnext
-imap <C-4> <C-O>4tabnext
-nmap <C-4> 4tabnext
-imap <C-5> <C-O>5tabnext
-nmap <C-5> 5tabnext
-imap <C-6> <C-O>6tabnext
-nmap <C-6> 6tabnext
-imap <C-7> <C-O>7tabnext
-nmap <C-7> 7tabnext
-imap <C-8> <C-O>8tabnext
-nmap <C-8> 8tabnext
-imap <C-9> <C-O>9tabnext
-nmap <C-9> 9tabnext
+imap <C-1> <C-O>1gt
+nmap <C-1> 1gt
+imap <C-2> <C-O>2gt
+nmap <C-2> 2gt
+imap <C-3> <C-O>3gt
+nmap <C-3> 3gt
+imap <C-4> <C-O>4gt
+nmap <C-4> 4gt
+imap <C-5> <C-O>5gt
+nmap <C-5> 5gt
+imap <C-6> <C-O>6gt
+nmap <C-6> 6gt
+imap <C-7> <C-O>7gt
+nmap <C-7> 7gt
+imap <C-8> <C-O>8gt
+nmap <C-8> 8gt
+imap <C-9> <C-O>9gt
+nmap <C-9> 9gt
+
+
+
+
