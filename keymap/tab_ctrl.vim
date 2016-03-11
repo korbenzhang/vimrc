@@ -1,22 +1,19 @@
-imap <C-1> <C-O>1gt
-nmap <C-1> 1gt
-imap <C-2> <C-O>2gt
-nmap <C-2> 2gt
-imap <C-3> <C-O>3gt
-nmap <C-3> 3gt
-imap <C-4> <C-O>4gt
-nmap <C-4> 4gt
-imap <C-5> <C-O>5gt
-nmap <C-5> 5gt
-imap <C-6> <C-O>6gt
-nmap <C-6> 6gt
-imap <C-7> <C-O>7gt
-nmap <C-7> 7gt
-imap <C-8> <C-O>8gt
-nmap <C-8> 8gt
-imap <C-9> <C-O>9gt
-nmap <C-9> 9gt
+imap <C-1> <C-O>:1tabnext<cr>
+imap <C-2> <C-O>:2tabnext<cr>
+imap <C-3> <C-O>:3tabnext<cr>
+imap <C-4> <C-O>:4tabnext<cr>
+imap <C-5> <C-O>:5tabnext<cr>
+imap <C-6> <C-O>:6tabnext<cr>
+imap <C-7> <C-O>:7tabnext<cr>
+imap <C-8> <C-O>:8tabnext<cr>
+imap <C-9> <C-O>:9tabnext<cr>
 
-
-
-
+nmap <C-1> :1tabnext<cr>
+nmap <C-2> :2tabnext<cr>
+nmap <C-3> :3tabnext<cr>
+nmap <C-4> :4tabnext<cr>
+nmap <C-5> :5tabnext<cr>
+nmap <C-6> :6tabnext<cr>
+nmap <C-7> :7tabnext<cr>
+nmap <C-8> :8tabnext<cr>
+nmap <C-9> :9tabnext<cr>
