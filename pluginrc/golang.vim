@@ -15,16 +15,18 @@ let g:go_disable_autoinstall = 1
 let g:go_fmt_autosave = 1
 
 " default is 0
-let g:go_dispatch_enabled = 0
+"let g:go_dispatch_enabled = 0
 
 " default is ultisnips, can set with neocomplete
 "let g:go_snippet_engine="ultisnips"
 
 " prevent vim-go show fmt quickfix windows
 "let g:go_fmt_fail_silently = 1
-
-let g:go_def_mapping_enabled = 1
-let g:go_auto_type_info = 0
+"let g:go_def_mapping_enabled = 1
+"let g:go_auto_type_info = 0
+"let g:go_metalinter_autosave = 1
+"let g:go_list_height = 10
+"let g:go_jump_to_error = 1
 
 " go highlight
 let g:go_highlight_operators = 1
