@@ -2,10 +2,6 @@
 " YCM need python
 " =================================
 
-if !IsHasPython() || !IsInWin()
-	finish
-endif
-
 let g:vimrc#completer="xleng/YCM_WIN_X86"
 Plugin 'xleng/YCM_WIN_X86'
 
