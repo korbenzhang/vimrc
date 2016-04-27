@@ -47,13 +47,13 @@ au FileType go nmap gt <Plug>(go-def-tab)
 
 " copy from vim-go Home page
 "au FileType go nmap <leader>r :!go run %  
-au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>gr <Plug>(go-run)
 
 au FileType go nmap <C-F5> <Plug>(go-build)
 au FileType go nmap <F6> <Plug>(go-test)
 
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>gb <Plug>(go-build)
+au FileType go nmap <leader>gt <Plug>(go-test)
 
 au FileType go nmap <leader>gc <Plug>(go-coverage)
 
@@ -75,4 +75,18 @@ augroup go
 	autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 augroup END
 
-source ~/.vim/confs/golang.vim
+
+"Go Lang
+au BufRead,BufNewFile *.go setl filetype=go
+
+au FileType go set dictionary=~/.vim/dict/golang.dict
+
+"should define GOROOT and GOCODES
+if exists("$GOROOT")
+	au FileType go setl tags+=$GOROOT/src/tags
+endif 
+
+if exists("$GOCODES")
+	au FileType go setl tags+=$GOCODES/src/tags
+endif
+

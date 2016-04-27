@@ -34,6 +34,7 @@ source ~/.vim/keymap/fn.vim			    " Fn
 source ~/.vim/keymap/arrow.vim			" Move cursor
 source ~/.vim/keymap/moveline.vim		" Move Lines
 source ~/.vim/keymap/indent.vim			" Indent
+source ~/.vim/keymap/tab.vim			" Tab
 source ~/.vim/keymap/tab_m.vim			" TabWindows Meta access
 source ~/.vim/keymap/tab_leader.vim		" TabWindows leader access
 source ~/.vim/keymap/win.vim			" Switch Windows
