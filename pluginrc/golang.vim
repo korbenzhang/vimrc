@@ -46,13 +46,14 @@ let g:go_highlight_array_whitespace_error = 0
 au FileType go nmap gt <Plug>(go-def-tab)
 
 " copy from vim-go Home page
-"au FileType go nmap <leader>r :!go run %  
-au FileType go nmap <leader>gr <Plug>(go-run)
+"au FileType go nmap <leader>gr <Plug>(go-run)
+au FileType go nmap <F5> <Plug>(go-run)
+au FileType go nmap <leader>gr :!go run %<cr>  
 
 au FileType go nmap <C-F5> <Plug>(go-build)
-au FileType go nmap <F6> <Plug>(go-test)
-
 au FileType go nmap <leader>gb <Plug>(go-build)
+
+au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
 
 au FileType go nmap <leader>gc <Plug>(go-coverage)
@@ -64,8 +65,7 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 
-au FileType go nmap <C-b> :GoInstall<cr>
-au FileType go imap <C-b> <C-O>:GoInstall<cr>
+au FileType go nmap <C-b> <Plug>(go-build)
 
 " vim-go alternate
 augroup go
