@@ -10,12 +10,16 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 " config vim-go
 let g:go_disable_autoinstall = 1
 
+let g:go_fmt_command = "goimports"
 " default is 1
 " when save fmt or not
 let g:go_fmt_autosave = 1
 
+let g:go_term_mode = "split"
+let g:go_term_enabled = 1
+
 " default is 0
-"let g:go_dispatch_enabled = 0
+let g:go_dispatch_enabled = 1
 
 " default is ultisnips, can set with neocomplete
 "let g:go_snippet_engine="ultisnips"
@@ -23,10 +27,10 @@ let g:go_fmt_autosave = 1
 " prevent vim-go show fmt quickfix windows
 "let g:go_fmt_fail_silently = 1
 "let g:go_def_mapping_enabled = 1
-"let g:go_auto_type_info = 0
-"let g:go_metalinter_autosave = 1
+let g:go_auto_type_info = 1
+let g:go_metalinter_autosave = 1
+let g:go_jump_to_error = 1
 "let g:go_list_height = 10
-"let g:go_jump_to_error = 1
 
 " go highlight
 let g:go_highlight_operators = 1
@@ -48,10 +52,13 @@ au FileType go nmap gt <Plug>(go-def-tab)
 " copy from vim-go Home page
 "au FileType go nmap <leader>gr <Plug>(go-run)
 au FileType go nmap <F5> <Plug>(go-run)
-au FileType go nmap <leader>gr :!go run %<cr>  
+au FileType go nmap <leader>rf :!go run %<cr>  
+au FileType go nmap <leader>rt <Plug>(go-run-tab)
+au FileType go nmap <Leader>rs <Plug>(go-run-split)
+au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
 
 au FileType go nmap <C-F5> <Plug>(go-build)
-au FileType go nmap <leader>gb <Plug>(go-build)
+au FileType go nmap <C-b> <Plug>(go-build)
 
 au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
@@ -64,8 +71,11 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 
-au FileType go nmap <C-b> <Plug>(go-build)
+au FileType go nmap <Leader>i <Plug>(go-implements)
+au FileType go nmap <Leader>e <Plug>(go-rename)
+
 
 " vim-go alternate
 augroup go
@@ -90,3 +100,6 @@ if exists("$GOCODES")
 	au FileType go setl tags+=$GOCODES/src/tags
 endif
 
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:go_list_type = "quickfix"
