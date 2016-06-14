@@ -1,5 +1,7 @@
 " Mabetle Functions
 
+source ~/.vim/confs/base_funcs.vim
+
 "  Vimrc
 function! MabetleVimrc()
     execute ':tabedit $HOME/.vim/vimrc'
@@ -97,6 +99,36 @@ function! RunFile()
 endfunction
 command! -bar -narg=0 RunFile  call RunFile()
 
+" // date
+" RunLine
+fun! RunLine()
+	let line = getline('.')
+	" trim space
+	let line = Trim(line)
+
+	let start = strpart(line,0,1)
+	" most script comment start with #
+	if start == "#" || start == '"' || start == '$'
+		let line = strpart(line,1,len(line))
+		let line = Trim(line)
+	endif
+	" c like comment
+	let start2 = strpart(line,0,2)
+	if start2 == '//'
+		let line = strpart(line,2,len(line))
+		let line = Trim(line)
+	endif
+	"bat rem
+	let start3 = strpart(line,0,3)
+	if start3 == 'REM' || start3 == 'rem'
+		let line = strpart(line,3,len(line))
+		let line = Trim(line)
+	endif
+	let line = Trim(line)
+	execute '!'.line
+endf
+command! -bar -narg=0 RunLine  call RunLine()
+
 " RunCurrentLine
 function! RunCurrentLine()
 	execute ':.w ! sh'
@@ -110,6 +142,13 @@ function! RunSelection()
 endfunction
 command! -bar -narg=0 RunSelection  call RunSelection()
 command! -bar -narg=0 RS  call RunSelection()
+
+"RunYank
+fun! RunYank()
+	echomsg "TODO"
+endf
+command! -bar -narg=0 RunYank  call RunYank()
+command! -bar -narg=0 RY  call RunYank()
 
 " InstallCtags
 func! InstallCtags()
