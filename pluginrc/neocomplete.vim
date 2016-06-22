@@ -5,7 +5,7 @@ endif
 
 let g:vimrc#completer="neocomplete"
 
-Plugin 'Shougo/vimproc.vim'
+"Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/context_filetype.vim'
 "Plugin 'Shougo/neoinclude.vim'
 

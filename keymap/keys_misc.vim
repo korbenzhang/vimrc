@@ -41,3 +41,7 @@ imap <M-f> <C-O>gf
 nmap <M-d> gd
 imap <M-d> <C-O>gd
 
+" sudo write
+cmap w!! w !sudo tee >/dev/null %
+
+
