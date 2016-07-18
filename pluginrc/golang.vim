@@ -51,13 +51,13 @@ au FileType go nmap gt <Plug>(go-def-tab)
 
 " copy from vim-go Home page
 "au FileType go nmap <leader>gr <Plug>(go-run)
-au FileType go nmap <F5> <Plug>(go-run)
+au FileType go nmap <C-F5> <Plug>(go-run)
+au FileType go nmap <F5> :!go run %<cr>
 au FileType go nmap <leader>rf :!go run %<cr>  
 au FileType go nmap <leader>rt <Plug>(go-run-tab)
 au FileType go nmap <Leader>rs <Plug>(go-run-split)
 au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
 
-au FileType go nmap <C-F5> <Plug>(go-build)
 au FileType go nmap <C-b> <Plug>(go-build)
 
 au FileType go nmap <F6> <Plug>(go-test)
