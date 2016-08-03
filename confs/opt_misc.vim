@@ -21,7 +21,8 @@ set ignorecase
 " reserved complete words case.
 set infercase
 set isfname+={,}
-set clipboard+=unnamed	" Yanks go on clipboard instead.
+"set clipboard+=unnamed	" Yanks go on clipboard instead.
+"set clipboard+=unnamedplus
 
 if has("syntax")
 	syntax enable
