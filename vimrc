@@ -1,4 +1,6 @@
-set nocompatible
+if !has("nvim")
+	set nocompatible
+endif
 
 " Env
 " ----
@@ -41,7 +43,10 @@ source ~/.vim/keymap/win.vim			" Switch Windows
 source ~/.vim/keymap/keys_misc.vim		" Keys misc
 
 source ~/.vim/confs/run.vim				" Run 
-source ~/.vim/confs/esc_alt.vim			" Make alt work
+
+if !has("nvim")
+	source ~/.vim/confs/esc_alt.vim			" Make alt work
+endif
 
 " Extra Configs
 " -------------

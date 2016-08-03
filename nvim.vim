@@ -1,4 +1,4 @@
-set nocompatible
+"set nocompatible " not need in nvim
 
 " Env
 " ----
