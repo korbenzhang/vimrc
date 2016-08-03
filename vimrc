@@ -31,6 +31,7 @@ source ~/.vim/confs/misc.vim			" Misc
 " Keys
 " ----
 source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
+
 source ~/.vim/keymap/leader.vim			" Leader
 source ~/.vim/keymap/fn.vim			    " Fn
 source ~/.vim/keymap/arrow.vim			" Move cursor
