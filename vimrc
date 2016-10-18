@@ -45,7 +45,7 @@ source ~/.vim/keymap/keys_misc.vim		" Keys misc
 
 source ~/.vim/confs/run.vim				" Run 
 
-if !has("nvim")
+if !has("nvim") || has("gui_running")
 	source ~/.vim/confs/esc_alt.vim			" Make alt work
 endif
 
