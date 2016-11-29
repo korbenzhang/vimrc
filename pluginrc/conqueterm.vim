@@ -1,0 +1,2 @@
+
+Plugin 'oplatek/Conque-Shell'
