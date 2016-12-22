@@ -10,9 +10,10 @@ set ffs=unix,dos,mac
 au BufNewFile * set fileformat=unix
 au BufNewFile * set fenc=utf-8
 
-if !IsInDos()
-	set enc=utf-8
-endif
+" can not set when buffer startup
+"if !IsInDos()
+	"set enc=utf-8
+"endif
 
 set helplang=cn
 
