@@ -4,6 +4,7 @@ if !(has("gui_running"))
 	finish
 endif
 
+" prebuild gvimfullscreen-x64 is in ~/.vim/misc/tools/
 if !filereadable(expand('$VIMRUNTIME/gvimfullscreen-x64.dll')) 
 	finish
 endif

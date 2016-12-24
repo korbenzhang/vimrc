@@ -42,7 +42,7 @@ if has("win32")
 	set shellpipe=\|\ tee
 endif
 
-set number
+"set number
 "set showtabline=2
 
 set title
@@ -50,8 +50,7 @@ set title
 " alt not access menu
 set winaltkeys=no
 
-" remove utf8 BOM 
-" create by Windows
+" remove utf8 BOM  create by Windows
 set nobomb
 
 " Better Unix / Windows compatibility
@@ -64,7 +63,10 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
 set fillchars=vert:\ ,stl:\     
+
+" isfname when go to file seperate by = 
 set isfname-==
 
+" title string
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 

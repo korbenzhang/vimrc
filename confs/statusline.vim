@@ -4,8 +4,6 @@ if (exists('g:powerline_loaded') || exists('g:loaded_airline'))
 	finish
 endif
 
-set laststatus=2
-
 "设置在状态行显示的信息如下：
 "%F 当前文件名
 "%m 当前文件修改状态
