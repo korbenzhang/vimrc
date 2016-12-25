@@ -5,9 +5,7 @@ if !(has("gui_running"))
 endif
 
 " prebuild gvimfullscreen-x64 is in ~/.vim/misc/tools/
-if !filereadable(expand('$VIMRUNTIME/gvimfullscreen-x64.dll')) 
-	finish
-endif
+" You show copy it to $VIM first.
 
 function! ToogleFullScreenWin()
 	call libcallnr("gvimfullscreen-x64.dll", "ToggleFullScreen", 0)

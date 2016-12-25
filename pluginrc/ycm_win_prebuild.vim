@@ -7,6 +7,6 @@ if !IsHasPython() || !IsInWin()
 endif
 
 let g:vimrc#completer="ycm_win_prebuild"
-Plugin 'vim-ycm-733de48-windows'
+Plugin 'vim-ycm-733de48-windows-x64'
 
 source ~/.vim/pluginrc/ycm_conf.vim
