@@ -5,7 +5,7 @@
 Plugin 'fatih/vim-go'
 
 " repo for nsf/gocode
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+"Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " config vim-go
 let g:go_disable_autoinstall = 1
@@ -15,6 +15,7 @@ let g:go_fmt_command = "goimports"
 " when save fmt or not
 let g:go_fmt_autosave = 1
 
+" for neovim only.
 let g:go_term_mode = "split"
 let g:go_term_enabled = 1
 
@@ -28,7 +29,10 @@ let g:go_dispatch_enabled = 1
 "let g:go_fmt_fail_silently = 1
 "let g:go_def_mapping_enabled = 1
 let g:go_auto_type_info = 1
+
+" default is disable
 let g:go_metalinter_autosave = 1
+
 let g:go_jump_to_error = 1
 "let g:go_list_height = 10
 

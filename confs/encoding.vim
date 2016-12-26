@@ -11,8 +11,9 @@ au BufNewFile * set fileformat=unix
 au BufNewFile * set fenc=utf-8
 
 " can not set when buffer startup
-"if !IsInDos()
-	"set enc=utf-8
+set enc=utf-8
+"if IsInDos()
+
 "endif
 
 set helplang=cn
@@ -22,7 +23,7 @@ if has("gui_running")
 	source $VIMRUNTIME/delmenu.vim  
 	source $VIMRUNTIME/menu.vim  
 	"解决consle输出乱码  
-	"language messages zh_CN.utf-8  
+	language messages zh_CN.utf-8
 endif
 
 "let &termencoding=&encoding
