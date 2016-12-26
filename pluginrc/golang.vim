@@ -4,13 +4,14 @@
 " vim-go
 Plugin 'fatih/vim-go'
 
-" repo for nsf/gocode
-"Plugin 'nsf/gocode', {'rtp': 'vim/'}
-
 " config vim-go
+
+" auto 
 let g:go_disable_autoinstall = 1
 
+" auto imports 
 let g:go_fmt_command = "goimports"
+
 " default is 1
 " when save fmt or not
 let g:go_fmt_autosave = 1
@@ -27,7 +28,11 @@ let g:go_dispatch_enabled = 1
 
 " prevent vim-go show fmt quickfix windows
 "let g:go_fmt_fail_silently = 1
+
+
+" default is 1, should open
 "let g:go_def_mapping_enabled = 1
+
 let g:go_auto_type_info = 1
 
 " default is disable
