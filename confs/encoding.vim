@@ -11,9 +11,7 @@ au BufNewFile * set fileformat=unix
 au BufNewFile * set fenc=utf-8
 
 " can not set when buffer startup
-set enc=utf-8
 "if IsInDos()
-
 "endif
 
 set helplang=cn

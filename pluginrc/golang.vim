@@ -6,7 +6,7 @@ Plugin 'fatih/vim-go'
 
 " config vim-go
 
-" auto 
+" auto install go depends binneny
 let g:go_disable_autoinstall = 1
 
 " auto imports 
