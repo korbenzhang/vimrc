@@ -12,6 +12,9 @@ let g:go_disable_autoinstall = 1
 " auto imports 
 let g:go_fmt_command = "goimports"
 
+" guru or godef
+"let g:go_def_mode = 'godef'
+
 " default is 1
 " when save fmt or not
 let g:go_fmt_autosave = 1
@@ -40,20 +43,6 @@ let g:go_metalinter_autosave = 1
 
 let g:go_jump_to_error = 1
 "let g:go_list_height = 10
-
-" go highlight
-let g:go_highlight_operators = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-
-"let g:go_highlight_chan_whitespace_error = 0
-let g:go_highlight_chan_whitespace_error = 0
-let g:go_highlight_space_tab_error = 0
-let g:go_highlight_trailing_whitespace_error = 0
-let g:go_highlight_array_whitespace_error = 0
 
 " GoDef
 au FileType go nmap gt <Plug>(go-def-tab)
