@@ -21,7 +21,7 @@ endif
 " T Toolbar
 " t include tear off menu item.
 " c console dialog for simple choices.
-set go-=m
+"set go-=m
 set go-=T
 set go-=r
 set go-=R

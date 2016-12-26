@@ -21,5 +21,7 @@ nmap <C-TAB> :tabNext<CR>
 nmap <leader><TAB> :tabNext<CR>
 nmap <leader><S-TAB> :tabnext<CR>
 
+" go to file
 map gf :tabnew <cfile><cr>
+
 "map <C-F4> :tabclose<cr>
