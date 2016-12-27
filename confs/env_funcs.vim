@@ -10,8 +10,8 @@ let g:vimrc#completer="unknown"
 let g:vimrc#snippet="unknown"
 let g:vimrc#debug=""
 
-if filereadable(expand('~/.vim_extra/extra_env.vim'))
-	source ~/.vim_extra/extra_env.vim
+if filereadable(expand('~/.vim/extra/extra_env.vim'))
+	source ~/.vim/extra/extra_env.vim
 endif
 
 function! IsInWin()

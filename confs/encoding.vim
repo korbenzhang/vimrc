@@ -1,7 +1,9 @@
 " encoding 编码
 
+set encoding=utf-8
+
 " file encodings
-set fencs=ucs-bom,utf-8,gb18030,cp936,GBK
+set fencs=ucs-bom,utf-8,gb18030,cp936,gbk,gb2312
 
 " file formates
 set ffs=unix,dos,mac
@@ -15,14 +17,6 @@ au BufNewFile * set fenc=utf-8
 "endif
 
 set helplang=cn
-
-" for gui
-if has("gui_running")
-	source $VIMRUNTIME/delmenu.vim  
-	source $VIMRUNTIME/menu.vim  
-	"解决consle输出乱码  
-	language messages zh_CN.utf-8
-endif
 
 "let &termencoding=&encoding
 

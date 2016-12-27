@@ -34,3 +34,6 @@ views/
 
 *.swp
 
+# local configs
+extra
+

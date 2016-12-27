@@ -28,9 +28,14 @@ Plugin 'xml.vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 
+
+source ~/.vim/pluginrc/surround.vim
+source ~/.vim/pluginrc/easymotion.vim
+source ~/.vim/pluginrc/colorscheme.vim
+
 " Extra Plugins
-if filereadable(expand('~/.vim_extra/extra_plugins.vim'))
-	source ~/.vim_extra/extra_plugins.vim
+if filereadable(expand('~/.vim/extra/extra_plugins.vim'))
+	source ~/.vim/extra/extra_plugins.vim
 endif
 
 " End of Vundle

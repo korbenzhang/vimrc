@@ -58,11 +58,11 @@ source ~/.vim/confs/extra_conf.vim		" Extra Config
 " ~/.vim/pluginrc/
 " ~/.vim/confs/
 " ~/.vim/keymap/
-" ~/.vim_extra/
+" ~/.vim/extra/
 " ~/.vim/dict/
 
 " ~/.vim/pluginrc/plugin_misc.vim
 " ~/.vim/pluginrc/golang.vim
-" ~/.vim_extra/extra_env.vim
-" ~/.vim_extra/extra_plugins.vim
-" ~/.vim_extra/extra_conf.vim
+" ~/.vim/extra/extra_env.vim
+" ~/.vim/extra/extra_plugins.vim
+" ~/.vim/extra/extra_conf.vim

@@ -1,5 +1,5 @@
 " load vim_extra
-if filereadable(expand('~/.vim_extra/extra_conf.vim'))
-	source ~/.vim_extra/extra_conf.vim
+if filereadable(expand('~/.vim/extra/extra_conf.vim'))
+	source ~/.vim/extra/extra_conf.vim
 endif
 
