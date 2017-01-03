@@ -10,8 +10,8 @@ if IsHasPython()
 	source ~/.vim/pluginrc/utlisnips.vim
 	"source ~/.vim/pluginrc/neosnippet.vim
 else
-	source ~/.vim/pluginrc/snipmate-msanders.vim
-	"source ~/.vim/pluginrc/snipmate.vim
+	"source ~/.vim/pluginrc/snipmate-msanders.vim
+	source ~/.vim/pluginrc/snipmate.vim
 	"source ~/.vim/pluginrc/snipmate_old.vim
 endif
 
