@@ -9,9 +9,8 @@ let g:ycm_auto_trigger = 1
 "let g:ycm_key_list_select_completion = ['', '']
 "let g:ycm_key_list_previous_completion = ['', '']
 " default is Tab Down
-let g:ycm_key_list_select_completion = ['<TAB>', '<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['S-TAB', '<C-p>', '<Up>']
-
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
 " should disable input methods shortcut C-Space key. 
 " default is <C-Space>
@@ -28,6 +27,8 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 
 " 跳转到定义处, 分屏打开
 let g:ycm_goto_buffer_command = 'horizontal-split'
+"let g:ycm_goto_buffer_command = 'new-or-existing-tab'
+"let g:ycm_goto_buffer_command = 'new-tab'
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
