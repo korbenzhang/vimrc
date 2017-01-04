@@ -2,7 +2,7 @@
 "=====================
 Plugin 'scrooloose/nerdtree'				"explore files
 
-map <F9> :NERDTreeToggle<cr>
+map <M-F9> :NERDTreeToggle<cr>
 
 "open a NERDTree automatically when vim starts up
 "autocmd vimenter * NERDTree
@@ -13,9 +13,12 @@ map <F9> :NERDTreeToggle<cr>
 "close vim if the only window left open is a NERDTree
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-let NERDTreeChDirMode=1
+"let NERDTreeChDirMode=1
 
-let NERDTreeDirArrows=0
+"let NERDTreeDirArrows=0
 
 " Default is 1
 "let NERDTreeHighlightCursorline = 0
+
+source ~/.vim/pluginrc/nerdtree_conf.vim
+
