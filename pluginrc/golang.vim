@@ -86,7 +86,7 @@ augroup END
 "Go Lang
 au BufRead,BufNewFile *.go setl filetype=go
 
-au FileType go set dictionary=~/.vim/dict/golang.dict
+au FileType go set dictionary+=~/.vim/dict/golang.dict
 
 "should define GOROOT and GOCODES
 if exists("$GOROOT")
