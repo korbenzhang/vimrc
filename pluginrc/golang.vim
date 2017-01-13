@@ -56,7 +56,8 @@ au FileType go nmap <leader>rt <Plug>(go-run-tab)
 au FileType go nmap <Leader>rs <Plug>(go-run-split)
 au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
 
-au FileType go nmap <C-b> <Plug>(go-build)
+"au FileType go nmap <C-b> <Plug>(go-build)
+au FileType go nmap <C-b> <Plug>(go-install)
 
 au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
@@ -108,7 +109,8 @@ function! s:build_go_files()
   if l:file =~# '^\f\+_test\.go$'
     call go#cmd#Test(0, 1)
   elseif l:file =~# '^\f\+\.go$'
-    call go#cmd#Build(0)
+    "call go#cmd#Build(0)
+    call go#cmd#Install(0)
   endif
 endfunction
 
