@@ -70,3 +70,20 @@ set isfname-==
 " title string
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 
+set nu
+set display=lastline
+set history=200
+set lazyredraw
+set linebreak
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<
+set pastetoggle=<F2>
+set scrolloff=1
+set shiftround
+set sidescrolloff=5
+set timeoutlen=1200 " A little bit more time for macros
+set ttimeoutlen=50  " Make Esc work faster
+setglobal tags=./tags;
+
+set wildmode=longest:full,full
+set wildignore+=tags,.*.un~,*.pyc
+
