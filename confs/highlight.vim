@@ -9,7 +9,7 @@ hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 
 " CursorLine
 " fg NONE so can keep syntax color.
-hi CursorLine cterm=NONE ctermbg=LightGray ctermfg=NONE guibg=LightGray guifg=NONE
+hi CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=LightGray guifg=NONE
 
 " TabLine
 hi TabLineSel ctermfg=15 ctermbg=2
