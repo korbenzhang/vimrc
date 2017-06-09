@@ -1,4 +1,6 @@
 
+# Task for vim
+
 usage:
 	echo "make link | mkdirs | vundle-update ..."
 
@@ -13,7 +15,9 @@ mkdirs-win:
 	~/.vim/bin/win_mkdirs.bat
 
 vundle-update:
-#    vim +PluginInstall +qall
+    vim +PluginUpdate +qall
 
 vundle-install:
+    vim +PluginInstall +qall
+
 
