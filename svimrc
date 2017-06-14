@@ -1,0 +1,68 @@
+if !has("nvim")
+	set nocompatible
+endif
+
+" Env
+" ----
+source ~/.vim/confs/env_funcs.vim		" Environment
+
+" Plugins
+" -------
+source ~/.vim/pluginrc/plugin_simple.vim	" All plugins
+
+" Configs
+" -------
+source ~/.vim/confs/opt_misc.vim		" Options and misc
+source ~/.vim/confs/encoding.vim		" Encodings
+source ~/.vim/confs/highlight.vim		" Color 
+source ~/.vim/confs/xterm.vim			" Xterm
+source ~/.vim/confs/complete.vim		" Complete
+source ~/.vim/confs/gui/gui_running.vim " GUI
+source ~/.vim/confs/tab_indent.vim		" Tab and Indent
+source ~/.vim/confs/mswin.vim			" MS Win 
+source ~/.vim/confs/mouse.vim			" Mouse
+source ~/.vim/confs/au.vim				" AutoCmd
+source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
+"source ~/.vim/confs/undo_backup.vim	" Undo And Backup
+source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
+source ~/.vim/confs/func_misc.vim		" Misc Functions
+source ~/.vim/confs/misc.vim			" Misc
+
+" Keys
+" ----
+source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
+
+source ~/.vim/keymap/leader.vim			" Leader
+source ~/.vim/keymap/fn.vim			    " Fn
+source ~/.vim/keymap/arrow.vim			" Move cursor
+source ~/.vim/keymap/moveline.vim		" Move Lines
+source ~/.vim/keymap/indent.vim			" Indent
+source ~/.vim/keymap/tab.vim			" Tab
+source ~/.vim/keymap/tab_m.vim			" TabWindows Meta access
+source ~/.vim/keymap/tab_leader.vim		" TabWindows leader access
+source ~/.vim/keymap/win.vim			" Switch Windows
+source ~/.vim/keymap/keys_misc.vim		" Keys misc
+
+source ~/.vim/confs/run.vim				" Run 
+
+if !has("nvim") || has("gui_running")
+	source ~/.vim/confs/esc_alt.vim			" Make alt work
+endif
+
+" Extra Configs
+" -------------
+source ~/.vim/confs/extra_conf_simple.vim		" Extra Config
+
+" Files Links
+" -----------
+" ~/.vim/pluginrc/
+" ~/.vim/confs/
+" ~/.vim/keymap/
+" ~/.vim/extra/
+" ~/.vim/dict/
+
+" ~/.vim/pluginrc/plugin_misc.vim
+" ~/.vim/pluginrc/golang.vim
+" ~/.vim/extra/extra_env.vim
+" ~/.vim/extra/extra_plugins.vim
+" ~/.vim/extra/extra_conf.vim
