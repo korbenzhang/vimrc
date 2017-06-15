@@ -1,0 +1,3 @@
+
+Plugin 'garyburd/go-explorer'
+

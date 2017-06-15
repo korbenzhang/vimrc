@@ -1,0 +1,3 @@
+
+Plugin 'mxw/vim-jsx'
+

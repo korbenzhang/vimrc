@@ -1,5 +1,5 @@
 
-Bundle 'thinca/vim-quickrun'
+Plugin 'thinca/vim-quickrun'
 
 let g:quickrun_config = {
 \   "_" : {
