@@ -1,0 +1,3 @@
+
+Plugin 'drmingdrmer/xptemplate'
+
