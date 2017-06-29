@@ -229,3 +229,7 @@ func! NoBell()
 endfunction
 command! -bar -narg=0 NoBell  call NoBell()
 
+func! ViewUrl()
+	exec "!lynx <cfile>"
+endfunc
+command! -bar -narg=0 ViewUrl call ViewUrl()
