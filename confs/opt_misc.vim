@@ -87,3 +87,5 @@ setglobal tags=./tags;
 set wildmode=longest:full,full
 set wildignore+=tags,.*.un~,*.pyc
 
+set laststatus=1
+

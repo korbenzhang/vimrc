@@ -20,6 +20,7 @@ source ~/.vim/pluginrc/comment.vim
 source ~/.vim/pluginrc/emmet.vim
 source ~/.vim/pluginrc/tagbar.vim
 source ~/.vim/pluginrc/ctrlp.vim
+source ~/.vim/pluginrc/endwise.vim
 
 " langs plugin
 source ~/.vim/pluginrc/golang.vim

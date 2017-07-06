@@ -24,6 +24,10 @@ function! IsInWin()
 	return 0
 endfunction
 
+func! IsInGui()
+	return has("gui_running")
+endfunc
+
 function! IsInDos()
 	return IsInWin() && !has("gui_running")
 endfunction
@@ -52,6 +56,11 @@ endfunction
 function! IsInXterm()
 	return &term =~ "xterm"
 endfunction
+
+func! IsInNvim()
+	return has("nvim")
+endfunc
+
 
 " make dir for both windows and unix.
 function! InitDir(dir)
@@ -91,25 +100,36 @@ function! IsHasRuby()
 	return has("ruby")
 endfunction
 
+function! IsHasCtags()
+	return executable("ctags")
+endfunction
+
+
 function! ShowEnv()
 	echo "Vim Version           :".version
 	echo "Is Has Lua            :".IsHasLua()
 	echo "Is Has Ruby           :".IsHasRuby()
 	echo "Is Has Python         :".IsHasPython()
 	echo "Is Has Python3        :".IsHasPython3()
+	echo "Is Has Ctags          :".IsHasCtags()
+	echo "\n"
+
+	echo "Is In  GUI            :".IsInGui()
 	echo "Is In  Win            :".IsInWin()
-	echo "Is Has GUI Running    :".has("gui_running")
+	echo "Is In  WinUnix        :".IsInWinUnix()
+	echo "Is In  Unix           :".IsInUnix()
+	echo "Is In  Xterm          :".IsInXterm()
+	echo "Is In  Nvim           :".IsInNvim()
+	echo "\n"
+	
 	echo "TERM                  :".&term
 	echo "Encoding              :".&encoding
-
+	echo "\n"
+	
 	echo "Complete              :".g:vimrc#completer
 	echo "Snippet               :".g:vimrc#snippet
 	echo "Debug Message         :".g:vimrc#debug
 endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
-
-function! IsHasCtags()
-	return executable("ctags")
-endfunction
 
