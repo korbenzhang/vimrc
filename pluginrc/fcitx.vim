@@ -1,0 +1,2 @@
+
+Plugin 'lilydjwg/fcitx.vim'

@@ -10,10 +10,7 @@ map  Q gq
 " For when you forget to sudo.. Really Write the file.
 cnoremap w!! w !sudo tee % >/dev/null
 
-
-
 map <F4> :close<cr>
-nmap <C-T> :tabnew<cr>
 
 nmap <C-s> :w<cr>
 imap <C-s> <C-O>:w<cr>
