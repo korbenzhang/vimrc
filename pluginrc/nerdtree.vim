@@ -1,5 +1,6 @@
 " NerdTree
 "=====================
+
 Plugin 'scrooloose/nerdtree'				"explore files
 
 map <M-F9> :NERDTreeToggle<cr>

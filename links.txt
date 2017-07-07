@@ -9,6 +9,8 @@
 
 " ~/.vim/pluginrc/plugin_misc.vim
 " ~/.vim/pluginrc/golang.vim
+" ~/.vim/pluginrc/golang_misc.vim
+
 " ~/.vim/extra/extra_env.vim
 " ~/.vim/extra/extra_plugins.vim
 " ~/.vim/extra/extra_conf.vim
