@@ -8,7 +8,6 @@ nmap , <leader>
 
 let g:vimrc#completer="unknown"
 let g:vimrc#snippet="unknown"
-let g:vimrc#debug=""
 
 if filereadable(expand('~/.vim/extra/extra_env.vim'))
 	source ~/.vim/extra/extra_env.vim
@@ -128,7 +127,6 @@ function! ShowEnv()
 	
 	echo "Complete              :".g:vimrc#completer
 	echo "Snippet               :".g:vimrc#snippet
-	echo "Debug Message         :".g:vimrc#debug
 endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
