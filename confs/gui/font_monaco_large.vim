@@ -3,7 +3,7 @@ if !has("gui_running")
 endif
 
 " Set GUI Font
-if has("gui_win32")
+if IsInWinGui()
 	set guifont=Monaco:h22:cANSI 
 	"set gfw=Microsoft_YaHei_Mono:h22:cGB2312
 elseif has("gui_gtk2")

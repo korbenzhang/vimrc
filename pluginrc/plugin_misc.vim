@@ -14,7 +14,7 @@ if has("unix")
 	Plugin 'SudoEdit.vim'
 endif
 
-source ~/.vim/pluginrc/nerdtree.vim
+"source ~/.vim/pluginrc/nerdtree.vim
 source ~/.vim/pluginrc/snip.vim
 source ~/.vim/pluginrc/comment.vim
 source ~/.vim/pluginrc/emmet.vim

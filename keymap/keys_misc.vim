@@ -49,3 +49,9 @@ vnoremap  <M->> >gv
 
 vnoremap  <Space> I<Space><Esc>gv
 
+"map for NERDCommenterToggle
+
+nmap <A-c> <Plug>NERDCommenterToggle
+imap <A-c> <C-O><Plug>NERDCommenterToggle
+
+map <leader>/ <Plug>NERDCommenterToggle

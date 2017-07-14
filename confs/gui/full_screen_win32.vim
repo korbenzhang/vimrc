@@ -1,6 +1,6 @@
 " WinGUI fullscreen
 
-if !(has("gui_running") && has("gui_win32"))
+if !(has("gui_running") && has("win32"))
 	finish
 endif
 

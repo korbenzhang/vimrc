@@ -46,14 +46,8 @@ source ~/.vim/keymap/win.vim			" Switch Windows
 source ~/.vim/keymap/keys_misc.vim		" Keys misc
 
 source ~/.vim/confs/run.vim				" Run 
-
-if !has("nvim") || !has("gui_running")
-	source ~/.vim/confs/esc_alt.vim			" Make alt work
-endif
-
-if has("nvim")
-	source ~/.vim/confs/nvim.vim
-endif
+source ~/.vim/confs/esc_alt.vim			" Make alt work
+source ~/.vim/confs/nvim.vim			" for nvim
 
 " Extra Configs
 " -------------

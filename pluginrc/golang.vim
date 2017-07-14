@@ -9,8 +9,9 @@ Plugin 'fatih/vim-go'
 " auto install go depends binneny
 let g:go_disable_autoinstall = 1
 
-" auto imports 
-let g:go_fmt_command = "goimports"
+" auto imports
+" default is gofmt
+"let g:go_fmt_command = 'goimports'
 
 " guru or godef
 "let g:go_def_mode = 'godef'
@@ -20,7 +21,7 @@ let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 
 " for neovim only.
-let g:go_term_mode = "split"
+let g:go_term_mode = 'split'
 let g:go_term_enabled = 1
 
 " default is 0

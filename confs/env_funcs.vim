@@ -70,7 +70,7 @@ function! InitDir(dir)
 		setl shellslash
 		return
 	endif
-	if has("win32")
+	if has("win32") || has('win64')
 		silent exec "!md ".init_dir
 		setl shellslash
 		return

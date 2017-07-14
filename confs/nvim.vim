@@ -5,6 +5,7 @@ if !has("nvim")
 endif
 
 set clipboard+=unnamedplus
+
 " when necessary
 set laststatus=1
 
