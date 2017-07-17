@@ -1,8 +1,5 @@
 
-" nvim 
-if !has("nvim")
-	set nocompatible
-endif
+set nocompatible
 
 " Env
 " ----

@@ -2,6 +2,14 @@
 " Author:       lilydjwg <lilydjwg@gmail.com>
 " ---------------------------------------------------------------------
 " Load Once:
+
+" donot support nvim
+
+if has("nvim")
+	finish
+endif
+
+
 if &cp || exists("g:loaded_escalt") || has("gui_running") || has("win32") || has("win64")
   finish
 endif
@@ -9,6 +17,7 @@ endif
 let s:keepcpo = &cpo
 let g:loaded_escalt = 1
 set cpo&vim
+
 " ---------------------------------------------------------------------
 " Functions:
 function Escalt_console()

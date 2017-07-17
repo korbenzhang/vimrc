@@ -5,6 +5,9 @@ endif
 
 let g:vimrc#completer="neocomplete"
 
+" If you add vimproc would be better for neocomplete.
+" So you can async run complete functions.
+
 "Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/context_filetype.vim'
 "Plugin 'Shougo/neoinclude.vim'
