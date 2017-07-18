@@ -33,9 +33,11 @@ set go-=L
 "cnoremap <M-Space> <C-C>:simalt ~<CR>
 
 " maximize windows when startup
-if has("gui_win32")
+if IsInWinGui()
 	au GUIEnter * simalt ~x
 endif
 
 " TabLine
 set guitablabel=%N.%t
+
+

@@ -76,6 +76,10 @@ au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 
+" metalinter
+au FileType go nmap <Leader>l <Plug>(go-metalinter)
+au FileType go nmap <C-F7> <Plug>(go-metalinter)
+
 au FileType go nmap <Leader>i <Plug>(go-implements)
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
