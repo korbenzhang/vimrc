@@ -37,10 +37,11 @@ let g:go_dispatch_enabled = 1
 " default is 1, should open
 "let g:go_def_mapping_enabled = 1
 
+"default is disable
 let g:go_auto_type_info = 0
 
 " default is disable
-let g:go_metalinter_autosave = 0
+"let g:go_metalinter_autosave = 0
 
 let g:go_jump_to_error = 1
 "let g:go_list_height = 10

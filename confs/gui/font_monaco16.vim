@@ -5,7 +5,7 @@ endif
 
 " Set GUI Font
 if IsInWinGui()
-	set guifont=Monaco:h16:cANSI 
+	set guifont=Monaco:h16
 elseif has("gui_gtk2")
 	set guifont=Monaco\ 16
 elseif has("gui_macvim")
