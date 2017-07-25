@@ -21,5 +21,5 @@ map <M-F9> :NERDTreeToggle<cr>
 " Default is 1
 "let NERDTreeHighlightCursorline = 0
 
-source ~/.vim/pluginrc/nerdtree_conf.vim
+"source ~/.vim/pluginrc/nerdtree_conf.vim
 
