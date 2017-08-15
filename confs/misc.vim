@@ -5,11 +5,6 @@ set grepprg=grep\ -nH\ $*
 
 set history=500
 
-" viminfo
-if !has("nvim")
-	set viminfo='10,\"100,:20,%,n~/.viminfo
-endif
-
 "switch to directory of current file
 command! CD cd %:p:h
 
