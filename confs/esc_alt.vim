@@ -20,7 +20,7 @@ set cpo&vim
 
 " ---------------------------------------------------------------------
 " Functions:
-function Escalt_console()
+function EscAltConsole()
   for i in range(48, 57) + range(65, 90) + range(97, 122)
     exe "set <M-".nr2char(i).">=\<Esc>".nr2char(i)
   endfor
@@ -72,7 +72,7 @@ function Escalt_console()
 endfunction
 " ---------------------------------------------------------------------
 " Call Functions:
-call Escalt_console()
+call EscAltConsole()
 " ---------------------------------------------------------------------
 " Restoration And Modelines:
 let &cpo= s:keepcpo
