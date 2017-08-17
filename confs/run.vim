@@ -17,7 +17,7 @@ au FileType python nmap <F5> :up<CR>:! python %<CR>
 au FileType groovy nmap <F5> :up<CR>:! groovy %<CR>
 au FileType scala nmap <F5> :up<CR>:! scala %<CR>
 au FileType perl nmap <F5> :up<CR>:! perl %<CR>
-au FileType sql nmap <F5> :up<CR>:! mysql -uroot -p < %<CR>
+au FileType sql nmap <F5> :up<CR>:! mysql -uroot -p -hmp2.crecg.com< %<CR>
 au FileType dosbatch nmap <F5> :up<CR>:!%<CR>
 au FileType make nmap <F5> :make<cr>
 
