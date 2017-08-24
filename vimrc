@@ -2,6 +2,7 @@
 scriptencoding utf-8
 
 set nocompatible
+"set hidden
 
 " Env
 " ----
