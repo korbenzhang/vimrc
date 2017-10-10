@@ -14,7 +14,6 @@ function! s:RunShellCommand(cmdline)
 	call setline(2, substitute(a:cmdline, '.', '=', 'g'))
 	execute 'silent $read !' . escape(a:cmdline, '%#')
 	setlocal nomodifiable
-	1
 endfunction
 
 command! -complete=file -nargs=+ Shell call s:RunShellCommand(<q-args>)

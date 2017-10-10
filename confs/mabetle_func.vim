@@ -129,6 +129,33 @@ fun! RunLine()
 endf
 command! -bar -narg=0 RunLine  call RunLine()
 
+fun! SQLRunLine()
+	let line = getline('.')
+	" trim space
+	let line = Trim(line)
+
+	let start = strpart(line,0,1)
+	" most script comment start with #
+	if start == "#" || start == '"' || start == '$'
+		let line = strpart(line,1,len(line))
+		let line = Trim(line)
+	endif
+	" c like comment
+	let start2 = strpart(line,0,2)
+	if start2 == '//'
+		let line = strpart(line,2,len(line))
+		let line = Trim(line)
+	endif
+	"bat rem
+	let start3 = strpart(line,0,3)
+	if start3 == 'REM' || start3 == 'rem'
+		let line = strpart(line,3,len(line))
+		let line = Trim(line)
+	endif
+	let line = Trim(line)
+	execute '! mysql -uroot -pen98as -hdb.mabetle.com dbc  -e "'.line.'"'
+endfun
+command! -bar -narg=0 SQLRunLine  call SQLRunLine()
 
 fun! SudoRunLine()
 	let line = getline('.')
@@ -165,6 +192,9 @@ function! RunCurrentLine()
 endfunction
 command! -bar -narg=0 RunCurrentLine  call RunLine()
 command! -bar -narg=0 RCL  call RunLine()
+
+
+
 
 " RunCurrentLine
 function! RunSelection()
