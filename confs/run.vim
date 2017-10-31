@@ -16,7 +16,7 @@ au FileType python nmap <F5> :up<CR>:! python %<CR>
 au FileType groovy nmap <F5> :up<CR>:! groovy %<CR>
 au FileType scala nmap <F5> :up<CR>:! scala %<CR>
 au FileType perl nmap <F5> :up<CR>:! perl %<CR>
-au FileType sql nmap <F5> :up<CR>:! mysql -uroot -pen98as -hdb.mabetle.com dbc < %<CR>
+au FileType sql nmap <F5> :up<CR>:! mysql -uroot -p -hdb.mabetle.com mysql < %<CR>
 au FileType dosbatch nmap <F5> :up<CR>:!%<CR>
 au FileType make nmap <F5> :make<cr>
 
