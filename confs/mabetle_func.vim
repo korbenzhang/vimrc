@@ -263,3 +263,26 @@ func! ViewUrl()
 	exec "!lynx <cfile>"
 endfunc
 command! -bar -narg=0 ViewUrl call ViewUrl()
+
+"run mcmd cmds directly
+fun! RunGoCmdFunc()
+	let line = getline('.')
+	let line = Trim(line)
+	
+	let start = strpart(line,0,4)
+	
+	if start != "func"
+		echo "no func in this line"
+		return
+	endif
+	
+	let ip = split(line,' ')
+	let fna = ip[3]
+	let fnb = split(fna,"(")
+	let fn  = fnb[0]
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	execute '!'.gocmd . fn
+endfun
+
+command! -bar -narg=0 RunGoCmdFunc  call RunGoCmdFunc()
+
