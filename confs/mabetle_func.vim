@@ -265,7 +265,7 @@ endfunc
 command! -bar -narg=0 ViewUrl call ViewUrl()
 
 "run mcmd cmds directly
-fun! RunGoCmdFunc()
+fun! RunGoCmdFunc(...)
 	let line = getline('.')
 	let line = Trim(line)
 	
@@ -275,14 +275,12 @@ fun! RunGoCmdFunc()
 		echo "no func in this line"
 		return
 	endif
-	
 	let ip = split(line,' ')
-	let fna = ip[3]
-	let fnb = split(fna,"(")
-	let fn  = fnb[0]
+	let tn = split(ip[2],")")[0]
+	let fn = split(ip[3],"(")[0]
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
-	execute '!'.gocmd . fn
+	execute '!'.gocmd . fn . '.' . tn.' '.join(a:000)
 endfun
 
-command! -bar -narg=0 RunGoCmdFunc  call RunGoCmdFunc()
+command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
 
