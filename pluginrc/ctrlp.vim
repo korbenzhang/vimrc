@@ -1,6 +1,7 @@
 
 
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'ctrlp.vim'
 
 map <leader>f :CtrlPMRU<CR>
