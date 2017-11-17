@@ -284,3 +284,11 @@ endfun
 
 command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
 
+"run mcmd cmds directly
+fun! RunGoCmds(...)
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	execute '!'.gocmd .' '.join(a:000)
+endfun
+
+command! -bar -narg=* RunGoCmds  call RunGoCmds(<f-args>)
+
