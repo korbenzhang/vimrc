@@ -19,7 +19,7 @@ view/
 Session.vim
 
 #  the  triditional vim config dir.
-autoload
+#autoload
 plugin
 doc
 after

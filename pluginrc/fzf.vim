@@ -1,3 +1,3 @@
 
-Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
