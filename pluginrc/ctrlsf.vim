@@ -1,6 +1,6 @@
 " 类似sublimetext的搜索
 "
-Bundle "dyng/ctrlsf.vim"
+Plug "dyng/ctrlsf.vim"
 
 " let g:ctrlsf_position = 'below'
 " let g:ctrlsf_winsize = '30%'

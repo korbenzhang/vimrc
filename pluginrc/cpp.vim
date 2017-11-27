@@ -1,2 +1,2 @@
 
-Plugin 'vim-cpp-auto-include'
+Plug 'vim-scripts/vim-cpp-auto-include'

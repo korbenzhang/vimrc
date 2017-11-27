@@ -1,7 +1,7 @@
 "Tex
 
-Plugin 'tex.vim'
-Plugin 'TeX-PDF'
+Plug 'vim-scripts/tex.vim'
+Plug 'vim-scripts/TeX-PDF'
 
 
 "let g:Tex_DefaultTargetFormat="pdf"

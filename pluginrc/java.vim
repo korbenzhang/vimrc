@@ -1,5 +1,5 @@
 
-Plugin 'Vim-JDE'
+Plug 'vim-scripts/Vim-JDE'
 
 "for maven
-Plugin 'maven-plugin'
+Plug 'vim-scripts/maven-plugin'

@@ -1,3 +1,3 @@
 
-Plugin 'garyburd/go-explorer'
+Plug 'garyburd/go-explorer'
 

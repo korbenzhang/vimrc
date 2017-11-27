@@ -1,5 +1,5 @@
 
-Plugin 'tpope/vim-rails.git'
-Plugin 'railstab.vim'
-"Plugin 'rails.vim'
-"Plugin 'vim-rails'
+Plug 'tpope/vim-rails.git'
+Plug 'vim-scripts/railstab.vim'
+"Plug 'vim-scripts/rails.vim'
+"Plug 'vim-scripts/vim-rails'

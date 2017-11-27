@@ -1,7 +1,7 @@
 " AutoComplPop
 " ====================================================
 
-Plugin 'AutoComplPop'
+Plug 'vim-scripts/AutoComplPop'
 
 " g:acp_enableAtStartup default 1
 let g:acp_enableAtStartup = 1

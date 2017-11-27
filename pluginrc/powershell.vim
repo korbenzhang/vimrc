@@ -1,6 +1,6 @@
 
 "support powershell
 
-"Plugin 'Windows-PowerShell-Syntax-Plugin'
+"Plug 'Windows-PowerShell-Syntax-Plugin'
 
-Plugin 'PProvost/vim-ps1'
+Plug 'PProvost/vim-ps1'

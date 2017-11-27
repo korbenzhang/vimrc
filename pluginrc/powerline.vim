@@ -1,6 +1,6 @@
 "powerline
 
-Plugin 'Lokaltog/vim-powerline'			"status line
+Plug 'Lokaltog/vim-powerline'			"status line
 
 " fancy unicode compatible
 let g:Powerline_symbols = 'compatible'

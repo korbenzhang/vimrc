@@ -1,4 +1,4 @@
 
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'altercation/vim-colors-solarized'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'altercation/vim-colors-solarized'
 

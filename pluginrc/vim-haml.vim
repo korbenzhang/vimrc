@@ -1,3 +1,3 @@
 
-Plugin 'tpope/vim-haml'
+Plug 'tpope/vim-haml'
 

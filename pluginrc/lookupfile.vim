@@ -1,6 +1,6 @@
 " 设置lookupfile插件 
 " ========================================================================
-Plugin 'lookupfile'
+Plug 'vim-scripts/lookupfile'
 
 
 let g:LookupFile_MinPatLength = 2               "最少输入2个字符才开始查找 

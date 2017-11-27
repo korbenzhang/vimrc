@@ -1,2 +1,2 @@
 
-Plugin 'chochos/ceylon-vim'
+Plug 'chochos/ceylon-vim'

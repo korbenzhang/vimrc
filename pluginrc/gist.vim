@@ -1,2 +1,2 @@
 
-Plugin 'Gist.vim'
+Plug 'Gist.vim'

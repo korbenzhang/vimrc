@@ -5,6 +5,6 @@ if IsInDos()
 	source ~/.vim/confs/statusline.vim
 else
 	"others
-	Plugin 'bling/vim-airline'
+	Plug 'bling/vim-airline'
 endif
 

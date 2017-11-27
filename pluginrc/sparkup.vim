@@ -1,5 +1,5 @@
 " sparkup
 
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 

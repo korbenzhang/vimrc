@@ -1,3 +1,3 @@
 
-Plugin 'pboettch/vim-cmake-syntax'
+Plug 'pboettch/vim-cmake-syntax'
 

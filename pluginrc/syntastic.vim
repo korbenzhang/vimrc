@@ -1,6 +1,6 @@
 " Syntax Check
 
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

@@ -1,5 +1,5 @@
 " 括号显示增强
-Bundle 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 
 " 不加入这行, 防止黑色括号出现, 很难识别
 " \ ['black',       'SeaGreen3'],

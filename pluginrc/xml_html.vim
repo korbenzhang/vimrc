@@ -1,5 +1,5 @@
 
-Plugin 'xml.vim'
-Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
+Plug 'vim-scripts/xml.vim'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
 

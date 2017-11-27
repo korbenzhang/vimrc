@@ -1,3 +1,3 @@
 
-Bundle 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/matchit.zip'
 

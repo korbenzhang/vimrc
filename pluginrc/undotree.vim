@@ -1,4 +1,4 @@
 
 " Undo history viewer
-Plugin 'mbbill/undotree'
+Plug 'mbbill/undotree'
 

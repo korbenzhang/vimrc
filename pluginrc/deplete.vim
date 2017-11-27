@@ -10,10 +10,10 @@ if !has("python3")
 endif
 
 "https://github.com/Shougo/deoplete.nvim
-Plugin 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim'
 
 "https://github.com/zchee/deoplete-go
-Plugin 'zchee/deoplete-go'
+Plug 'zchee/deoplete-go'
 
 "https://github.com/kbrw/elixir.nvim
-Plugin 'kbrw/elixir.nvim'
+Plug 'kbrw/elixir.nvim'

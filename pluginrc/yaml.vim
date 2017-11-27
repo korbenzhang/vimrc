@@ -1,2 +1,2 @@
 
-Plugin 'yaml.vim'
+Plug 'vim-scripts/yaml.vim'

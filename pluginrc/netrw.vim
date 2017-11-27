@@ -1,3 +1,3 @@
 
-Plugin 'netrw.vim'
+Plug 'vim-scripts/netrw.vim'
 

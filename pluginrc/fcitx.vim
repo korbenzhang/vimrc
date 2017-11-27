@@ -1,2 +1,2 @@
 
-Plugin 'lilydjwg/fcitx.vim'
+Plug 'lilydjwg/fcitx.vim'

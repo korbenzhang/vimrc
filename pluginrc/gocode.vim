@@ -1,4 +1,4 @@
 " gocode complete func
 
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plug 'nsf/gocode', {'rtp': 'vim/'}
 

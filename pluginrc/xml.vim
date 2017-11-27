@@ -1,7 +1,7 @@
 " XML
 
 "xml
-Plugin 'xml.vim'
+Plug 'vim-scripts/xml.vim'
 
-"Plugin 'XML-Folding'
-"Plugin 'XML-Indent'
+"Plug 'vim-scripts/XML-Folding'
+"Plug 'vim-scripts/XML-Indent'

@@ -1,2 +1,2 @@
 
-Plugin 'bash-support.vim'
+Plug 'vim-scripts/bash-support.vim'

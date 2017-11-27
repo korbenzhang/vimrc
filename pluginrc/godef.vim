@@ -1,5 +1,5 @@
 
-Plugin 'dgryski/vim-godef'
+Plug 'dgryski/vim-godef'
 
 " 1: current windown
 " 2: a new tab

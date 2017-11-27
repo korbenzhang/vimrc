@@ -1,2 +1,2 @@
 
-Plugin 'oplatek/Conque-Shell'
+Plug 'oplatek/Conque-Shell'

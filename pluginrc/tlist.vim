@@ -6,7 +6,7 @@ if !executable('ctags')
     finish
 endif
 
-Plugin 'taglist.vim'
+Plug 'vim-scripts/taglist.vim'
 
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Auto_Open = 0

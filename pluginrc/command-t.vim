@@ -1,2 +1,2 @@
 " command t 
-Plugin 'wincent/command-t'
+Plug 'wincent/command-t'

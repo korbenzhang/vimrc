@@ -1,5 +1,5 @@
 
-Plugin 'asins/vim-dict'
+Plug 'asins/vim-dict'
 
 autocmd filetype javascript set dictionary=~/.vim/bundle/vim-dict/dict/javascript.dic
 autocmd filetype javascript set dictionary=~/.vim/bundle/vim-dict/dict/node.dic

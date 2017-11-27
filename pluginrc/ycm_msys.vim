@@ -7,6 +7,6 @@ endif
 
 let g:vimrc#completer="ycm_msys"
 
-Plugin 'ycm_msys'
+Plug 'ycm_msys'
 
 source ~/.vim/pluginrc/ycm_conf.vim

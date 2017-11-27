@@ -1,5 +1,5 @@
 
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 if IsInWin()
 	let g:snippets_dir = expand('$HOME/.vim/snippets/,$HOME/.vim/bundle/vim-snippets/snippets/')

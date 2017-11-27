@@ -1,2 +1,2 @@
 
-Plugin 'node.js'
+Plug 'vim-scripts/node.js'

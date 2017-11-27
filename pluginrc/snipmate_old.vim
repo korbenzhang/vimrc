@@ -2,7 +2,7 @@
 
 let g:vimrc#snippet="snipMate"
 
-Plugin 'snipMate'							"snipmate
+Plug 'vim-scripts/snipMate'							"snipmate
 
 "ino <tab> <c-r>=TriggerSnippet()<cr>
 "snor <tab> <esc>i<right><c-r>=TriggerSnippet()<cr>

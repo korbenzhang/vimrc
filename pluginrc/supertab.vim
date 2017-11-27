@@ -1,6 +1,6 @@
 " SuperTab
 
-Plugin 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 "know the last complete type
 "----------------------------

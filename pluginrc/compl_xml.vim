@@ -1,3 +1,3 @@
 " xml
 
-Plugin 'XML-Completion'
+Plug 'vim-scripts/XML-Completion'

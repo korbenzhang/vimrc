@@ -1,3 +1,3 @@
 
-Plugin 'derekwyatt/vim-scala'
+Plug 'derekwyatt/vim-scala'
 

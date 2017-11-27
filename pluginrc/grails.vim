@@ -1,2 +1,2 @@
 
-Plugin 'grails-vim'
+Plug 'grails-vim'

@@ -2,9 +2,9 @@
 
 let g:vimrc#snippet="garbas/vim-snipmate"
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
 
 let g:snips_author='Korben Zhang'
 

@@ -1,7 +1,7 @@
 " Omni Complete
 "=====================
-Plugin 'OmniCppComplete'					"c and cpp complete
-Plugin 'OmniTags'
+Plug 'vim-scripts/OmniCppComplete'					"c and cpp complete
+Plug 'vim-scripts/OmniTags'
 
 
 " set Ctrl+j in insert mode, like VS.Net

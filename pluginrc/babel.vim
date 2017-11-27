@@ -1,6 +1,6 @@
 " babel
 
-Plugin 'jbgutierrez/vim-babel'
-Plugin 'mattn/webapi-vim'
+Plug 'jbgutierrez/vim-babel'
+Plug 'mattn/webapi-vim'
 
 

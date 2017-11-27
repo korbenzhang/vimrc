@@ -1,3 +1,3 @@
 
-Plugin 'yui/vim-yui3'
+Plug 'yui/vim-yui3'
 

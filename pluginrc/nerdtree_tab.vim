@@ -1,3 +1,3 @@
 
-Plugin 'jistr/vim-nerdtree-tabs'
+Plug 'jistr/vim-nerdtree-tabs'
 

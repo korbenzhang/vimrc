@@ -1,6 +1,6 @@
 
-Plugin 'skammer/vim-css-color'
-Plugin 'hail2u/vim-css3-syntax'
+Plug 'skammer/vim-css-color'
+Plug 'hail2u/vim-css3-syntax'
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 

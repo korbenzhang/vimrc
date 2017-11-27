@@ -1,7 +1,7 @@
 " Colorschemes
 " some basic good colorscheme
 
-Plugin 'tomasr/molokai'
-"Plugin 'rickharris/vim-monokai'
+Plug 'tomasr/molokai'
+"Plug 'rickharris/vim-monokai'
 
-Plugin 'tpope/vim-vividchalk'
+Plug 'tpope/vim-vividchalk'

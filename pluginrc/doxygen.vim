@@ -1,7 +1,7 @@
 " Doxygen Plugin
 
-Plugin 'DoxyGen-Syntax'
-Plugin 'DoxygenToolkit.vim'
+Plug 'vim-scripts/DoxyGen-Syntax'
+Plug 'vim-scripts/DoxygenToolkit.vim'
 
 
 let g:DoxygenToolkit_authorName="Korben Zhang"

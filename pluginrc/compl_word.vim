@@ -1,3 +1,3 @@
 
-Plugin 'Word-Fuzzy-Completion'
+Plug 'vim-scripts/Word-Fuzzy-Completion'
 

@@ -1,3 +1,3 @@
 
 " vimsheel needs vimproc.
-Plugin 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim'

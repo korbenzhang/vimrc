@@ -1,3 +1,3 @@
 
-Plugin 'tpope/vim-classpath'
+Plug 'tpope/vim-classpath'
 

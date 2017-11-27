@@ -1,7 +1,7 @@
 
 
-"Plugin 'Emmet.vim'
-Plugin 'mattn/emmet-vim'
+"Plug 'Emmet.vim'
+Plug 'mattn/emmet-vim'
 
 " config for matth/emmet-vim
 

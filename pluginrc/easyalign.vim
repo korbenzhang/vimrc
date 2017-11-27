@@ -1,6 +1,6 @@
 " 快速赋值语句对齐
 
-Bundle 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align'
 
 if !exists('g:easy_align_delimiters')
   let g:easy_align_delimiters = {}

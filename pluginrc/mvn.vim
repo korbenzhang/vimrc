@@ -1,4 +1,4 @@
 
-"Plugin 'maven-ide'
-Plugin 'mikelue/vim-maven-plugin'
-Plugin 'JalaiAmitahl/maven-compiler.vim'
+"Plug 'maven-ide'
+Plug 'mikelue/vim-maven-plugin'
+Plug 'JalaiAmitahl/maven-compiler.vim'

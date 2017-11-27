@@ -7,6 +7,6 @@ endif
 
 let g:vimrc#completer="Valloric/YouCompleteMe"
 
-Plugin 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 
 source ~/.vim/pluginrc/ycm_conf.vim

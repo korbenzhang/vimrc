@@ -1,2 +1,2 @@
 
-Plugin 'sql.vim'
+Plug 'vim-scripts/sql.vim'

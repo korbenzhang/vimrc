@@ -10,7 +10,6 @@ source ~/.vim/confs/env_funcs.vim		" Environment
 
 " Plugins
 " -------
-"source ~/.vim/pluginrc/plugin_misc.vim	" All plugins, use vundle
 source ~/.vim/pluginrc/plug_pkgs.vim	" All plugins, use plug
 
 " Configs

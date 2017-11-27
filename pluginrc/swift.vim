@@ -1,4 +1,4 @@
 " lang swfit
 
-Plugin 'aespinosa/Swift-vim'
-Plugin 'toyamarinyon/vim-swift'
+Plug 'aespinosa/Swift-vim'
+Plug 'toyamarinyon/vim-swift'

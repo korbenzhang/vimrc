@@ -1,6 +1,6 @@
 " vimwiki
 
-Plugin 'vimwiki'
+Plug 'vim-scripts/vimwiki'
 
 
 " 使用鼠标映射

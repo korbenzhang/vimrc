@@ -1,6 +1,6 @@
 " MiniBufExpl
 
-Plugin 'minibufexpl.vim'
+Plug 'vim-scripts/minibufexpl.vim'
 
 " make tabs show complete (no broken on two lines)
 let g:miniBufExplTabWrap = 1 

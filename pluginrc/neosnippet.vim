@@ -3,11 +3,11 @@
 
 let g:vimrc#snippet="neosnippet"
 
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 " FileType is provide by neocomplete
-"Plugin 'Shougo/context_filetype.vim'
+"Plug 'Shougo/context_filetype.vim'
 
 let g:neosnippet#enable_snipmate_compatibility = 1
 

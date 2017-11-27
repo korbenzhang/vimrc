@@ -1,3 +1,3 @@
 "sql
 
-Plugin 'SQLComplete.vim'
+Plug 'vim-scripts/SQLComplete.vim'

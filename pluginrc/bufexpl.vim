@@ -1,5 +1,5 @@
 " bufExplorer
 
-Plugin 'bufexplorer.zip'
+Plug 'vim-scripts/bufexplorer.zip'
 
 let g:bufExplorerSortBy = "name"

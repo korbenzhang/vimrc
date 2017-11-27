@@ -1,3 +1,3 @@
 
-Plugin 'groovy.vim'
-Plugin 'groovyindent'
+Plug 'vim-scripts/groovy.vim'
+Plug 'vim-scripts/groovyindent'

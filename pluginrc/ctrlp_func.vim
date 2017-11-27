@@ -1,6 +1,6 @@
 " ctrlp插件1 - 不用ctag进行函数快速跳转
 
-Bundle 'tacahiroy/ctrlp-funky'
+Plug 'tacahiroy/ctrlp-funky'
 
 let g:ctrlp_funky_syntax_highlight = 1
 let g:ctrlp_extensions = ['funky']

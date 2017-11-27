@@ -5,6 +5,6 @@ if !IsHasPython()
 	finish
 endif
 
-Plugin 'Valloric/MatchTagAlways'
+Plug 'Valloric/MatchTagAlways'
 
 
