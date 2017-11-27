@@ -16,3 +16,9 @@ let g:ctrlp_follow_symlinks=1
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_use_caching = 1
   
+" Sane Ignore For ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$|vendor\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|node_nodules\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$'
+  \ }
+

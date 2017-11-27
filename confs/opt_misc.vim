@@ -85,8 +85,14 @@ set ttimeoutlen=50  " Make Esc work faster
 setglobal tags=./tags;
 
 set wildmode=longest:full,full
-set wildignore+=tags,.*.un~,*.pyc
 
 set laststatus=1
 set ruler
+
+set ttyfast
+"set ttimeout
+set timeout timeoutlen=3000 ttimeoutlen=100
+
+set wildignore+=tags,.*.un~,*.pyc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*
 

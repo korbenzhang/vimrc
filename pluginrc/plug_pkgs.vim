@@ -7,6 +7,8 @@ source ~/.vim/autoload/plug.vim
 call plug#begin('~/.vim/bundle')
 
 Plug 'junegunn/vim-plug'
+Plug 'vim-scripts/auto_mkdir'
+Plug 'vim-scripts/SudoEdit.vim'
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-endwise'
