@@ -21,6 +21,7 @@ set ignorecase
 " reserved complete words case.
 set infercase
 set isfname+={,}
+set isfname-==
 
 if !has("nvim")
 	set clipboard+=unnamed	" Yanks go on clipboard instead.
@@ -80,19 +81,35 @@ set pastetoggle=<F2>
 set scrolloff=1
 set shiftround
 set sidescrolloff=5
-set timeoutlen=1200 " A little bit more time for macros
-set ttimeoutlen=50  " Make Esc work faster
 setglobal tags=./tags;
 
 set wildmode=longest:full,full
 
-set laststatus=1
 set ruler
 
 set ttyfast
 "set ttimeout
+set timeoutlen=1200 " A little bit more time for macros
+set ttimeoutlen=50  " Make Esc work faster
 set timeout timeoutlen=3000 ttimeoutlen=100
 
 set wildignore+=tags,.*.un~,*.pyc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*
+set laststatus=2
+set virtualedit=block
+set nojoinspaces
+set diffopt=filler,vertical
+set autoread
+set nrformats=hex
+set modelines=2
+set nostartofline
+
+if exists('&fixeol')
+  set nofixeol
+endif
+
+augroup vimrc
+  autocmd!
+augroup END
+
 

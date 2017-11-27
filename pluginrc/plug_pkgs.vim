@@ -43,13 +43,14 @@ Plug 'editorconfig/editorconfig-vim'
 "source ~/.vim/pluginrc/fugitive_conf.vim
 Plug 'mileszs/ack.vim'
 
+" colorscheme
 Plug 'tomasr/molokai'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'dracula/vim'
 
 Plug 'junegunn/fzf', { 'do': './install --all' }
-" ~/.vim/bundle/fzf.vim
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim' " fzf
+source ~/.vim/pluginrc/fzf_conf.vim
 
 "Plug 'ctrlpvim/ctrlp.vim'
 "source ~/.vim/pluginrc/ctrlp_conf.vim
@@ -69,4 +70,7 @@ endif
 
 " Initialize plugin system
 call plug#end()
+
+source ~/.vim/confs/plug_ext.vim
+
 

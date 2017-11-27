@@ -1,16 +1,12 @@
+"~/.vim/pluginrc/plug_pkgs.vim
 
 scriptencoding utf-8
 
 set nocompatible
-"set hidden
 
 " Env
 " ----
 source ~/.vim/confs/env_funcs.vim		" Environment
-
-" Plugins
-" -------
-source ~/.vim/pluginrc/plug_pkgs.vim	" All plugins, use plug
 
 " Configs
 " -------
@@ -30,6 +26,10 @@ source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
 source ~/.vim/confs/func_misc.vim		" Misc Functions
 source ~/.vim/confs/misc.vim			" Misc
 
+" Plugins
+" -------
+source ~/.vim/pluginrc/plug_pkgs.vim	" All plugins, use plug
+
 " Keys
 " ----
 source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
@@ -48,6 +48,9 @@ source ~/.vim/keymap/keys_misc.vim		" Keys misc
 source ~/.vim/confs/run.vim				" Run 
 source ~/.vim/confs/esc_alt.vim			" Make alt work
 source ~/.vim/confs/nvim.vim			" for nvim
+
+source ~/.vim/confs/todo.vim
+source ~/.vim/confs/vimawesome.vim
 
 " Extra Configs
 " -------------
