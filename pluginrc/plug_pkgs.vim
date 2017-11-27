@@ -7,8 +7,13 @@ source ~/.vim/autoload/plug.vim
 call plug#begin('~/.vim/bundle')
 
 Plug 'junegunn/vim-plug'
-Plug 'vim-scripts/auto_mkdir'
-Plug 'vim-scripts/SudoEdit.vim'
+"https://github.com/DataWraith/auto_mkdir
+"Plug 'DataWraith/auto_mkdir'
+"Plug 'vim-scripts/SudoEdit.vim'
+Plug 'chrisbra/SudoEdit.vim'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'now/vim-sudo'
+
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-endwise'
@@ -26,8 +31,6 @@ Plug 'Lokaltog/vim-easymotion'
 source ~/.vim/pluginrc/easymotion_conf.vim
 Plug 'fatih/vim-go'
 source ~/.vim/pluginrc/vim_go_conf.vim
-Plug 'pbrisbin/vim-mkdir'
-Plug 'now/vim-sudo'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'honza/vim-snippets'
