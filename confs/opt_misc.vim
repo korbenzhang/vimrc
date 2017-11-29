@@ -108,8 +108,3 @@ if exists('&fixeol')
   set nofixeol
 endif
 
-augroup vimrc
-  autocmd!
-augroup END
-
-

@@ -8,3 +8,4 @@ if has("directx") && $VIM_USE_DIRECTX != '0'
   let s:use_directx=1
 endif
 
+au GUIEnter * simalt ~x  

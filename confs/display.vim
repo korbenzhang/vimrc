@@ -1,7 +1,7 @@
 " display
 
 " default is off
-"set number
+set number
 
 " default is off
 set ruler
@@ -9,16 +9,10 @@ set ruler
 
 "set linespace=0
 
-" set color column
-"set cc=80
-
 "set wrapmargin=10
 
 " Status Line, vim default is 1
-" 0 for none
-" 1 for more than one windows
-" 2 always
-"set laststatus=2
+set laststatus=2
 
 " backspace and cursor keys wrap to previous/next line
 set backspace=indent,eol,start
@@ -54,6 +48,7 @@ set shortmess+=I
 
 " list toggle.
 " default is off
+"show tab 
 "set list
 
 " lcs default is eol:$

@@ -131,3 +131,7 @@ endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
 
+augroup vimrc
+  autocmd!
+augroup END
+

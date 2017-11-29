@@ -6,6 +6,7 @@ endif
 
 " prebuild gvimfullscreen-x64 is in ~/.vim/misc/tools/
 " You show copy it to $VIM first.
+" cp ~/.vim/misc/tools/gvimfullscreen-x64.dll $VIMRUNTIME
 
 function! ToogleFullScreenWin()
 	call libcallnr("gvimfullscreen-x64.dll", "ToggleFullScreen", 0)

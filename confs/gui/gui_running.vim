@@ -28,15 +28,6 @@ set go-=R
 set go-=l
 set go-=L
 
-"noremap <M-Space> :simalt ~<CR>
-"inoremap <M-Space> <C-O>:simalt ~<CR>
-"cnoremap <M-Space> <C-C>:simalt ~<CR>
-
-" maximize windows when startup
-if IsInWinGui()
-	au GUIEnter * simalt ~x
-endif
-
 " TabLine
 set guitablabel=%N.%t
 

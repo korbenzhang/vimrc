@@ -7,6 +7,11 @@ set nocompatible
 " Env
 " ----
 source ~/.vim/confs/env_funcs.vim		" Environment
+source ~/.vim/confs/gui/unix_gui.vim
+
+" Plugins
+" -------
+source ~/.vim/pluginrc/plug_pkgs.vim	" All plugins, use plug
 
 " Configs
 " -------
@@ -25,10 +30,6 @@ source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
 source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
 source ~/.vim/confs/func_misc.vim		" Misc Functions
 source ~/.vim/confs/misc.vim			" Misc
-
-" Plugins
-" -------
-source ~/.vim/pluginrc/plug_pkgs.vim	" All plugins, use plug
 
 " Keys
 " ----
