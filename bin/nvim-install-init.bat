@@ -1,7 +1,6 @@
 
 REM 
 REM install nvim init file
-REM REM c:\Users\zsc\AppData\Local\nvim
 REM 
 
 mkdir %USERPROFILE%\AppData\Local\nvim

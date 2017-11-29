@@ -58,11 +58,14 @@ set nobomb
 set viewoptions=folds,options,cursor,unix,slash 
 
 " Bell
-"set noerrorbells
+set noerrorbells
 "set novisualbell
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
+
+"show tab
+"set list 
 set fillchars=vert:\ ,stl:\     
 
 " isfname when go to file seperate by = 
@@ -95,12 +98,12 @@ set timeout timeoutlen=3000 ttimeoutlen=100
 
 set wildignore+=tags,.*.un~,*.pyc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*
-set laststatus=2
 set virtualedit=block
 set nojoinspaces
 set diffopt=filler,vertical
 set autoread
 set nrformats=hex
+set laststatus=2
 set modelines=2
 set nostartofline
 

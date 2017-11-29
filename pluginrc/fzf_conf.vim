@@ -1,4 +1,6 @@
 
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
 if has('nvim') || has('gui_running')
   let $FZF_DEFAULT_OPTS .= ' --inline-info'
   " let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
@@ -62,4 +64,6 @@ endfunction
 command! PlugHelp call fzf#run(fzf#wrap({
 	\ 'source': sort(keys(g:plugs)),
 	\ 'sink': function('s:plug_help_sink')}))
+
+
 

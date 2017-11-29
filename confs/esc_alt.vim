@@ -1,7 +1,6 @@
 " escalt.vim    控制台下让用 <M-x> 也可用
 " Author:       lilydjwg <lilydjwg@gmail.com>
 " ---------------------------------------------------------------------
-" Load Once:
 
 " donot support nvim
 

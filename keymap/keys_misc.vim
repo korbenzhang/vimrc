@@ -7,8 +7,6 @@ nnoremap Y y$
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
-" For when you forget to sudo.. Really Write the file.
-cnoremap w!! w !sudo tee % >/dev/null
 
 map <F4> :close<cr>
 
@@ -32,15 +30,13 @@ imap <S-Del> <C-O>dw
 " GoTo file
 nmap gf :tabnew <cfile><cr>
 nmap <M-f> gf
+nmap <A-f> gf
 imap <M-f> <C-O>gf
+imap <A-f> <C-O>gf
 
 " GoTo Define
 nmap <M-d> gd
 imap <M-d> <C-O>gd
-
-" sudo write
-cmap w!! w !sudo tee >/dev/null %
-
 
 inoremap <C-C> <Esc>`^
 
@@ -48,7 +44,6 @@ vnoremap  <M-<> <gv
 vnoremap  <M->> >gv
 
 vnoremap  <Space> I<Space><Esc>gv
-
 
 " Movement in insert mode
 inoremap <C-h> <C-o>h
@@ -93,5 +88,4 @@ cnoremap        <M-b> <S-Left>
 cnoremap        <M-f> <S-Right>
 silent! exe "set <S-Left>=\<Esc>b"
 silent! exe "set <S-Right>=\<Esc>f"
-
 

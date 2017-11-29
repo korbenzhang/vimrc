@@ -6,10 +6,6 @@ endif
 
 set clipboard+=unnamedplus
 
-" when necessary
-set laststatus=1
-
-
 let g:loaded_python_provider=1
 "let g:loaded_python3_provider=1
 

@@ -1,5 +1,5 @@
 # make some dirs
-mkdir ~/.vim/views
-mkdir ~/.vim/undo
-mkdir ~/.vim/backup
-mkdir ~/.vim/swap
+mkdir ~/.vim/rundata/views
+mkdir ~/.vim/rundata/undo
+mkdir ~/.vim/rundata/backup
+mkdir ~/.vim/rundata/swap

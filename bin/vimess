@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# start a minimal vim environment.
-
-vim -u ~/.vim/misc/ess.vim

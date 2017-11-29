@@ -1,5 +1,6 @@
-"~/.vim/pluginrc/plug_pkgs.vim
-
+" main vim config file.
+" author: korben
+" ====================
 scriptencoding utf-8
 
 set nocompatible
@@ -7,7 +8,9 @@ set nocompatible
 " Env
 " ----
 source ~/.vim/confs/env_funcs.vim		" Environment
+source ~/.vim/confs/func_misc.vim		" Misc Functions
 source ~/.vim/confs/gui/unix_gui.vim
+source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
 
 " Plugins
 " -------
@@ -25,10 +28,8 @@ source ~/.vim/confs/tab_indent.vim		" Tab and Indent
 source ~/.vim/confs/mswin.vim			" MS Win 
 source ~/.vim/confs/mouse.vim			" Mouse
 source ~/.vim/confs/au.vim				" AutoCmd
-source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
-"source ~/.vim/confs/undo_backup.vim	" Undo And Backup
-source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
-source ~/.vim/confs/func_misc.vim		" Misc Functions
+source ~/.vim/confs/undo_backup.vim	" Undo And Backup
+"source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
 source ~/.vim/confs/misc.vim			" Misc
 
 " Keys
@@ -52,6 +53,7 @@ source ~/.vim/confs/nvim.vim			" for nvim
 
 source ~/.vim/confs/todo.vim
 source ~/.vim/confs/vimawesome.vim
+source ~/.vim/confs/help_tab.vim
 
 " Extra Configs
 " -------------
