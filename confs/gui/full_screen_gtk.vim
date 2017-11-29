@@ -1,6 +1,10 @@
 " linux gtk gui
 
-if !(has("gui_running") && has("gui_gtk2"))
+if !has("gui_running") 
+	finish
+endif
+
+if !has("gui_gtk")
 	finish
 endif
 
