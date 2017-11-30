@@ -6,6 +6,7 @@ func! TrimEndWhiteSpace()
 	exe "normal `z"
 endfunc
 command! -bar -narg=0 TrimEndWhiteSpace call TrimEndWhiteSpace()
+"au BufWritePre * execute ':%s/\s\+$//g'
 
 function! HasPaste()
 	if &paste
