@@ -1,3 +1,3 @@
 
 " vimsheel needs vimproc.
-Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }

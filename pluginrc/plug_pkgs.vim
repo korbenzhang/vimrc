@@ -18,8 +18,6 @@ if IsInUnix()
 	Plug 'chrisbra/SudoEdit.vim'
 endif
 
-Plug 'scrooloose/nerdtree'
-source ~/.vim/pluginrc/nerdtree_conf.vim
 
 Plug 'tpope/vim-endwise'
 Plug 'raimondi/delimitmate'
@@ -30,15 +28,12 @@ Plug 'SirVer/ultisnips'
 source ~/.vim/pluginrc/utlisnips_conf.vim
 Plug 'honza/vim-snippets'
 
-"Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdcommenter'
-source ~/.vim/pluginrc/nerdcommenter_conf.vim
+source ~/.vim/pluginrc/comment.vim
 
 Plug 'majutsushi/tagbar'
 
 " colorscheme
 Plug 'tomasr/molokai'
-Plug 'gosukiwi/vim-atom-dark'
 
 "status line
 Plug 'itchyny/lightline.vim'
@@ -58,14 +53,6 @@ Plug 'ternjs/tern_for_vim'
 Plug 'fatih/vim-go'
 source ~/.vim/pluginrc/vim_go_conf.vim
 
-" open file 
-Plug 'junegunn/fzf', { 'do': './install --all' }
-Plug 'junegunn/fzf.vim' " fzf
-source ~/.vim/pluginrc/fzf_conf.vim
-
-"Asynchronous
-Plug 'tpope/vim-dispatch'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 "Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Extra Plugins

@@ -44,7 +44,6 @@ if has("win32")
 endif
 
 "set number
-"set showtabline=2
 
 set title
 
@@ -103,8 +102,11 @@ set nojoinspaces
 set diffopt=filler,vertical
 set autoread
 set nrformats=hex
+
+set showtabline=2
 set laststatus=2
 set modelines=2
+
 set nostartofline
 
 if exists('&fixeol')

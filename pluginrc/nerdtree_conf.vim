@@ -4,9 +4,9 @@ if has("gui_running")
 	finish
 endif
 
+"let NERDTreeDirArrows=0
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
-
 
 map <M-F9> :NERDTreeToggle<cr>
 
@@ -21,10 +21,6 @@ map <M-F9> :NERDTreeToggle<cr>
 
 "let NERDTreeChDirMode=1
 
-"let NERDTreeDirArrows=0
-
 " Default is 1
 "let NERDTreeHighlightCursorline = 0
-
-"source ~/.vim/pluginrc/nerdtree_conf.vim
 
