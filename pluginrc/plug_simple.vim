@@ -2,15 +2,15 @@
 " only include very simple basic vim plugins.
 source ~/.vim/autoload/plug.vim
 call plug#begin('~/.vim/bundle')
+
 Plug 'junegunn/vim-plug'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'now/vim-sudo'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'honza/vim-snippets'
 Plug 'tomasr/molokai'
 
 " Extra Plugins

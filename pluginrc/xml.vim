@@ -1,6 +1,4 @@
 " XML
-
-"xml
 Plug 'vim-scripts/xml.vim'
 
 "Plug 'vim-scripts/XML-Folding'

@@ -1,6 +1,5 @@
 " Set options and add mapping such that Vim behaves a lot like MS-Windows
-"
-" bail out if this isn't wanted (mrsvim.vim uses this).
+
 if exists("g:skip_loading_mswin") && g:skip_loading_mswin
   finish
 endif

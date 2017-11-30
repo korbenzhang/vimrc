@@ -8,3 +8,4 @@ function! s:helptab()
   endif
 endfunction
 autocmd vimrc BufEnter *.txt call s:helptab()
+

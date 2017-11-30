@@ -1,5 +1,10 @@
 " abb
 
+func! InsertDate()
+	"strftime("%Y-%m-%d %H:%M:%S")
+endfunc
+command! -bar -narg=0 InsertDate  call InsertDate()
+
 iab dt <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 
 iab pu public

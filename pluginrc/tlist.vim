@@ -23,8 +23,3 @@ let Tlist_Close_On_Select = 1 " Close the taglist window when a file or tag is s
 let Tlist_Enable_Fold_Column = 0 " Don't Show the fold indicator column in the taglist window.
 "let Tlist_WinWidth = 40
 
-" F4: Switch on/off TagList
-"nnoremap <silent> <F4> :TlistToggle<CR>
-map <F4> <ESC>:TlistToggle<CR>
-nmap ,tl <ESC>:TlistToggle<CR>
-

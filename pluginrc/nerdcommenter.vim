@@ -1,4 +1,10 @@
-"comment
-
+" nerdcommenter
 Plug 'scrooloose/nerdcommenter'
-source ~/.vim/pluginrc/nerdcommenter_conf.vim
+
+nmap <A-c> <Plug>NERDCommenterToggle
+imap <A-c> <C-O><Plug>NERDCommenterToggle
+"nmap <M-c> <Plug>NERDCommenterToggle
+"imap <M-c> <C-O><Plug>NERDCommenterToggle
+
+map <leader>/ <Plug>NERDCommenterToggle
+

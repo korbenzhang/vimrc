@@ -4,5 +4,5 @@
 set clipboard+=unnamed
 
 " toggle between paste and normal: for 'safer' pasting from keyboard
-"set pastetoggle=<F10>	
+set pastetoggle=<F12>	
 

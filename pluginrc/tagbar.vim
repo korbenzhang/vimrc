@@ -73,6 +73,3 @@ let g:tagbar_type_go = {
 \ }
 
 
-" F12: Switch on/off TagList
-nmap <F12> :TagbarToggle<CR>
-imap <F12> <esc><F12>

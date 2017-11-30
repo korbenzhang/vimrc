@@ -25,4 +25,4 @@ let g:ctrlsf_mapping = {
 " T - Lkie t but focus CtrlSF window instead of opened new tab.
 " q - Quit CtrlSF window.
 nmap \ <Plug>CtrlSFCwordPath<CR>
-" In CtrlSF window:
+

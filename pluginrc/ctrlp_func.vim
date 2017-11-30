@@ -1,4 +1,4 @@
-" ctrlp插件1 - 不用ctag进行函数快速跳转
+" 不用ctag进行函数快速跳转
 
 Plug 'tacahiroy/ctrlp-funky'
 

@@ -1,3 +1,3 @@
-
-Plug 'mhinz/vim-signify'	"show git midify
+"show git modify
+Plug 'mhinz/vim-signify'	
 

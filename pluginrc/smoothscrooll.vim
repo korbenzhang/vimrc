@@ -1,5 +1,6 @@
+"scrolling in Vim nice and smooth
+Plug 'terryma/vim-smooth-scroll' 
 
-Plug 'terryma/vim-smooth-scroll' "scrolling in Vim nice and smooth
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>

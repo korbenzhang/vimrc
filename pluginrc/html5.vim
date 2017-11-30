@@ -1,4 +1,3 @@
-
 " config for html5.vim
 
 let g:html5_aria_attributes_complete = 0

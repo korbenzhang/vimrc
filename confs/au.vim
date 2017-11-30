@@ -14,3 +14,5 @@ au BufRead,BufNewFile *.gradle setl filetype=groovy
 " ----------------------
 "au BufWritePre * execute ':%s/\s\+$//g'
 
+autocmd BufEnter * silent! lcd %:p:h
+

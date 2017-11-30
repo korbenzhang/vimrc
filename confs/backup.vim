@@ -2,9 +2,6 @@
 
 set backup
 
-let $backup_dir=expand('~/.vim/bakup/')
+set backupdir=expand('~/.vim/rundata/backup/')
 
-call InitDir($backup_dir)
-
-set backupdir=$backup_dir
 

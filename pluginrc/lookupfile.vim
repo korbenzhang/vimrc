@@ -1,7 +1,5 @@
 " 设置lookupfile插件 
-" ========================================================================
 Plug 'vim-scripts/lookupfile'
-
 
 let g:LookupFile_MinPatLength = 2               "最少输入2个字符才开始查找 
 let g:LookupFile_PreserveLastPattern = 0        "不保存上次查找的字符串 

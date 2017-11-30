@@ -31,4 +31,19 @@ func! DisableCompl()
 endfunc
 command! -bar -narg=0 DisableCompl  call DisableCompl()
 
+func! AddBlankLine()
+	exe ':%s/\n/\r\r/ge'
+endfunc
+command! -bar -narg=0 AddBlankLine call AddBlankLine()
+
+func! GitRmFile()
+	exec '!git rm % -f'
+endfunc
+command! -bar -narg=0 GitRmFile call GitRmFile()
+
+func! RmFile()
+	exec '!rm % -f'
+endfunc
+command! -bar -narg=0 RmFile call RmFile()
+
 

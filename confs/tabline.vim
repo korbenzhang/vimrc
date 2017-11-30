@@ -72,5 +72,5 @@ set guitablabel=%N.%t
 "set tabline=%!ShortTableLabel()
 
 " TabLabel
-"set showtabline=2
+set showtabline=2
 

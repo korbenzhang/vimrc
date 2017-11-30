@@ -1,4 +1,3 @@
-
 "markdown
 Plug 'plasticboy/vim-markdown'
 

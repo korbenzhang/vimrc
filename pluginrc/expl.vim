@@ -1,5 +1,4 @@
 " explore
-" ========================
 Plug 'vim-scripts/explorer'
 
 let g:explDetailedHelp=0

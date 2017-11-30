@@ -3,7 +3,6 @@
 Plug 'vim-scripts/OmniCppComplete'					"c and cpp complete
 Plug 'vim-scripts/OmniTags'
 
-
 " set Ctrl+j in insert mode, like VS.Net
 "imap <C-j> <C-X><C-O>
 

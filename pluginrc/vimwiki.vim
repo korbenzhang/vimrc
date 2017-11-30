@@ -1,5 +1,4 @@
 " vimwiki
-
 Plug 'vim-scripts/vimwiki'
 
 

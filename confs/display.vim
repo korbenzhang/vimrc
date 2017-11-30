@@ -34,7 +34,7 @@ set mat=2
 
 " cmd height
 " default is 1
-"set cmdheight=1
+set cmdheight=2
 
 " show some symble
 if has("ambiwidth")

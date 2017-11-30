@@ -20,7 +20,7 @@ set autoread
 "set autowriteall
 
 " lazyredraw don't redraw while executing macros
-"set lazyredraw
+set lazyredraw
 
 " Changes the special characters that can be used in search patterns.
 " default is on.
@@ -32,15 +32,12 @@ set wrap
 
 " auto change dir
 set autochdir
-"set noautochdir
 
 " change windows directory seperitor to linux
 set shellslash
 
 " 自动格式化
 "set formatoptions=tcrqn
-
-"set shell=sh
 
 "set timeoutlen=200
 

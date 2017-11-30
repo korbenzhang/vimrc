@@ -1,5 +1,4 @@
 " see https://github.com/JazzCore/ctrlp-cmatcher
-"
 
 Plug 'JazzCore/ctrlp-cmatcher'
 

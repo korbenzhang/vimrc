@@ -1,8 +1,8 @@
 " Buffer
 
 "hide buffers when not displayed
-"set hidden
+set hidden
 
 "Change buffer - without saving
 " useopen usetab split newtab
-"set switchbuf=split
+set switchbuf=split

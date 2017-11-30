@@ -1,4 +1,6 @@
 
 Plug 'terryma/vim-expand-region'
-source ~/.vim/pluginrc/expand_region_conf.vim
+
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
