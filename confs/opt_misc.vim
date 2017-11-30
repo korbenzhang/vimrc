@@ -4,11 +4,14 @@ set smartcase
 
 " Set to auto read when a file is changed from the outside
 set autoread
+
 " Changes the special characters that can be used in search patterns.
 " default is on.
 set magic
+
 " auto change dir
 set autochdir
+
 " change windows directory seperitor to linux
 set shellslash
 
@@ -18,6 +21,7 @@ set incsearch
 set showmatch
 set showcmd
 set ignorecase
+
 " reserved complete words case.
 set infercase
 set isfname+={,}
@@ -43,7 +47,7 @@ if has("win32")
 	set shellpipe=\|\ tee
 endif
 
-"set number
+set number
 
 set title
 
@@ -73,13 +77,12 @@ set isfname-==
 " title string
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 
-set nu
 set display=lastline
 set history=200
 set lazyredraw
 set linebreak
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<
-set pastetoggle=<F2>
+set pastetoggle=<F12>
 set scrolloff=1
 set shiftround
 set sidescrolloff=5
@@ -111,5 +114,9 @@ set nostartofline
 
 if exists('&fixeol')
   set nofixeol
+endif
+
+if has("nvim")
+	set termguicolors
 endif
 

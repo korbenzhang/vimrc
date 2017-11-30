@@ -47,4 +47,53 @@ func! RmFile()
 endfunc
 command! -bar -narg=0 RmFile call RmFile()
 
+func! ToggleWrap()
+	set wrap!
+endfunc
+command! -bar -narg=0 ToggleWrap call ToggleWrap()
+
+func! TogglePaste()
+	set paste!
+endfunc
+command! -bar -narg=0 TogglePaste call TogglePaste()
+
+func! DeleteBlankLines()
+	:g/^\s*$/d
+endfunc
+
+func! FmtLines()
+	:%s/\s\+$//e
+	:%s/\n\{3,}/\r\r/e
+endfunc
+
+func! HighlightEndBlank()
+	highlight WhitespaceEOL ctermbg=red guibg=red
+endfunc
+
+func! DeleteBeginBlank()
+	:%s/^\s\+//e
+endfunc
+
+
+function! StripTrailingWhitespace()
+  if !&binary && &filetype != 'diff'
+    normal mz
+    normal Hmy
+    %s/\s\+$//e
+    normal 'yz<CR>
+    normal `z
+  endif
+endfunction
+
+function! StripTrailingWhitespace2()
+	normal mZ
+	let l:chars = col("$")
+	%s/\s\+$//e
+	if (line("'Z") != line(".")) || (l:chars != col("$"))
+		echo "Trailing whitespace stripped\n"
+	endif
+	normal `Z
+endfunction
+
+
 

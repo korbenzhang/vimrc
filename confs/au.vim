@@ -10,9 +10,3 @@ au BufRead,BufNewFile *.gradle setl filetype=groovy
 au FileType text setl textwidth=78
 "au FileType text setl wrapmargin=78
 
-" delete end line space
-" ----------------------
-"au BufWritePre * execute ':%s/\s\+$//g'
-
-"autocmd BufEnter * silent! lcd %:p:h
-

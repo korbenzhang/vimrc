@@ -58,4 +58,3 @@ source ~/.vim/confs/help_tab.vim
 " Extra Configs
 " -------------
 source ~/.vim/confs/extra_conf.vim		" Extra Config
-

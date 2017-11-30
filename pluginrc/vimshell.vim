@@ -1,6 +1,3 @@
-" vimproc needs compile
-
+" vim shell need vimproc
 Plug 'Shougo/vimshell.vim'
-
-
 
