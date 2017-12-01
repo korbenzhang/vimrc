@@ -52,7 +52,6 @@ source ~/.vim/confs/esc_alt.vim			" Make alt work
 source ~/.vim/confs/nvim.vim			" for nvim
 
 source ~/.vim/confs/todo.vim
-source ~/.vim/confs/help_tab.vim
 
 " Extra Configs
 " -------------

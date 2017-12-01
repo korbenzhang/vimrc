@@ -42,5 +42,5 @@ endif
 " Initialize plugin system
 call plug#end()
 
-source ~/.vim/confs/plug_ext.vim
+"source ~/.vim/confs/plug_ext.vim
 
