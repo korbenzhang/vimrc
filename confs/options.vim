@@ -26,7 +26,6 @@ set lazyredraw
 " default is on.
 set magic
 
-
 " Wrap
 set wrap
 

@@ -4,7 +4,7 @@
 set number
 
 " default is off
-set ruler
+"set ruler
 "set rulerformat=%20(%2*%<%f%=\ %m%r\ %3l\ %c\ %p%%%)
 
 "set linespace=0
@@ -12,7 +12,7 @@ set ruler
 "set wrapmargin=10
 
 " Status Line, vim default is 1
-set laststatus=2
+"set laststatus=2
 
 " backspace and cursor keys wrap to previous/next line
 set backspace=indent,eol,start
@@ -23,10 +23,10 @@ set whichwrap+=b,s,h,l,<,>,[,]
 "set showbreak=...
 
 " warp line by words
-set linebreak
+"set linebreak
 
 "How many tenths of a second to blink
-set mat=2
+"set mat=2
 
 " display
 " lastline / uhex
@@ -34,7 +34,7 @@ set mat=2
 
 " cmd height
 " default is 1
-set cmdheight=2
+"set cmdheight=2
 
 " show some symble
 if has("ambiwidth")
@@ -44,7 +44,7 @@ endif
 " Turn off welcome page
 " default filnxtToO
 "set shortmess=atI
-set shortmess+=I
+"set shortmess+=I
 
 " list toggle.
 " default is off
@@ -58,5 +58,5 @@ set shortmess+=I
 "set background=dark
 
 " For all text files set 'textwidth' to 78 characters.
-autocmd FileType text setlocal textwidth=78
+"autocmd FileType text setlocal textwidth=78
 

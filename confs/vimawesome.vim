@@ -2,6 +2,9 @@
 " vimawesome.com
 " need ruby
 " ----------------------------------------------------------------------------
+
+
+
 function! VimAwesomeComplete() abort
   let prefix = matchstr(strpart(getline('.'), 0, col('.') - 1), '[.a-zA-Z0-9_/-]*$')
   echohl WarningMsg

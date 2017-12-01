@@ -1,3 +1,5 @@
+"config plug
+
 source ~/.vim/autoload/plug.vim
 
 call plug#begin('~/.vim/bundle')
@@ -22,19 +24,12 @@ Plug 'honza/vim-snippets'
 
 Plug 'majutsushi/tagbar'
 
-"status line
-Plug 'itchyny/lightline.vim'
-
-" misc
-source ~/.vim/pluginrc/terminal.vim
-
 "lang extends
 " html
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
-Plug 'ternjs/tern_for_vim'
 
 "golang
 source ~/.vim/pluginrc/golang.vim

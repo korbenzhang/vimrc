@@ -1,9 +1,8 @@
-" Filetype detect
 
 " Grep
-set grepprg=grep\ -nH\ $*
+"set grepprg=grep\ -nH\ $*
 
-set history=500
+"set history=500
 
 "switch to directory of current file
 command! CD cd %:p:h
@@ -22,5 +21,5 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthi
 endif
 
-set switchbuf=useopen
+"set switchbuf=useopen
 

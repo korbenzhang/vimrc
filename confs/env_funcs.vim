@@ -9,10 +9,6 @@ nmap , <leader>
 let g:vimrc#completer="unknown"
 let g:vimrc#snippet="unknown"
 
-if filereadable(expand('~/.vim/extra/extra_env.vim'))
-	source ~/.vim/extra/extra_env.vim
-endif
-
 function! IsInWin()
 	let win = ['win16', 'win32', 'win64', 'win95']
 	for w in win
@@ -130,8 +126,4 @@ function! ShowEnv()
 endfunction
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
-
-augroup vimrc
-  autocmd!
-augroup END
 

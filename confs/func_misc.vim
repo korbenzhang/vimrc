@@ -1,4 +1,7 @@
 " func misc
+function! Trim(str) abort
+  return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
+endfunction
 
 func! TrimEndWhiteSpace()
 	exe "normal mz"
@@ -67,13 +70,19 @@ func! FmtLines()
 endfunc
 
 func! HighlightEndBlank()
-	highlight WhitespaceEOL ctermbg=red guibg=red
+	:highlight extraSpace ctermbg=red guibg=red
+	:match extraSpace /\v\s+$/
+	":highlight WhitespaceEOL ctermbg=red guibg=red
+endfunc
+
+func! HightlightLongLink()
+	:highlight rightMargin term=bold ctermfg=blue guifg=blue
+	:match rightMargin /.\%>72v/
 endfunc
 
 func! DeleteBeginBlank()
 	:%s/^\s\+//e
 endfunc
-
 
 function! StripTrailingWhitespace()
   if !&binary && &filetype != 'diff'
@@ -95,5 +104,309 @@ function! StripTrailingWhitespace2()
 	normal `Z
 endfunction
 
+"  Vimrc
+function! EditVimrc()
+    :source ~/.vim/vimrc
+endfunction
+command! -bar -narg=0 EditVimrc  call EditVimrc()
+
+func! UpdateVimrc()
+	
+endfunc
+command! -bar -narg=0 UpdateVimrc  call UpdateVimrc()
+
+"  line end blank
+function! DeleteLineEndBlank()
+	execute ':%s/\s\+$//g'
+endfunction
+command! -bar -narg=0 DeleteLineEndBlank  call DeleteWindowsLineEnd()
+
+" edit hosts
+function! EditHosts()
+	if has("win32") || has("win32unix")
+		execute ':tabedit C:/Windows/System32/drivers/etc/hosts'
+	else
+		execute ':tabedit /etc/hosts'
+	endif
+endfunction
+command! -bar -narg=0 EditHosts  call EditHost()
+
+" Sudo save.
+function! SudoSave()
+	execute ':w !sudo tee %'
+endfunction
+command! -bar -narg=0 SudoSave  call SudoSave()
+
+"  Delete Windows ^M
+function! DeleteWindowsLineEnd()
+	execute ':%s///g'
+endfunction
+command! -bar -narg=0 DeleteWindowsLineEnd  call DeleteWindowsLineEnd()
+
+
+"Remove indenting on empty line
+"F2处理行尾的空格以及文件尾部的多余空行
+"map <F2> :w<CR>:call CleanupBuffer(1)<CR>:noh<CR>
+function! CleanupBuffer(keep)
+    " Skip binary files
+    if (&bin > 0)
+        return
+    endif
+    " Remove spaces and tabs from end of every line, if possible
+    silent! %s/\s\+$//ge
+    " Save current line number
+    let lnum = line(".")
+    " number of last line
+    let lastline = line("$")
+    let n        = lastline
+    " while loop
+    while (1)
+        " content of last line
+        let line = getline(n)
+        " remove spaces and tab
+        if (!empty(line))
+            break
+        endif
+        let n = n - 1
+    endwhile
+    " Delete all empty lines at the end of file
+    let start = n+1+a:keep
+    if (start < lastline)
+        execute n+1+a:keep . "," . lastline . "d"
+    endif
+    " after clean spaces and tabs, jump back
+    exec "normal " . lnum . "G"
+endfunction
+command! -bar -narg=0 CleanupBuffer call CleanupBuffer(1)
+
+function! UpdateTagFile()
+    silent !ctags -R --fields=+ianS --extra=+q
+endfunction
+command! -bar -narg=0 UpdateTagFile  call UpdateTagFile()
+
+" RunLine
+fun! RunLine()
+	let line = getline('.')
+	" trim space
+	let line = Trim(line)
+
+	let start = strpart(line,0,1)
+	" most script comment start with #
+	if start == "#" || start == '"' || start == '$'
+		let line = strpart(line,1,len(line))
+		let line = Trim(line)
+	endif
+	" c like comment
+	let start2 = strpart(line,0,2)
+	if start2 == '//'
+		let line = strpart(line,2,len(line))
+		let line = Trim(line)
+	endif
+	"bat rem
+	let start3 = strpart(line,0,3)
+	if start3 == 'REM' || start3 == 'rem'
+		let line = strpart(line,3,len(line))
+		let line = Trim(line)
+	endif
+	let line = Trim(line)
+	execute '!'.line
+endf
+command! -bar -narg=0 RunLine  call RunLine()
+command! -bar -narg=0 RL  call RunLine()
+
+fun! RunSQLLine()
+	let line = getline('.')
+	" trim space
+	let line = Trim(line)
+
+	let start = strpart(line,0,1)
+	" most script comment start with #
+	if start == "#" || start == '"' || start == '$'
+		let line = strpart(line,1,len(line))
+		let line = Trim(line)
+	endif
+	" c like comment
+	let start2 = strpart(line,0,2)
+	if start2 == '//'
+		let line = strpart(line,2,len(line))
+		let line = Trim(line)
+	endif
+	"bat rem
+	let start3 = strpart(line,0,3)
+	if start3 == 'REM' || start3 == 'rem'
+		let line = strpart(line,3,len(line))
+		let line = Trim(line)
+	endif
+	let line = Trim(line)
+	execute '! mysql -uroot -p'. $MYSQLPASSWD .' -hdb.mabetle.com dbc  -e "'.line.'"'
+endfun
+command! -bar -narg=0 RunSQLLine  call RunSQLLine()
+
+fun! SudoRunLine()
+	let line = getline('.')
+	" trim space
+	let line = Trim(line)
+
+	let start = strpart(line,0,1)
+	" most script comment start with #
+	if start == "#" || start == '"' || start == '$'
+		let line = strpart(line,1,len(line))
+		let line = Trim(line)
+	endif
+	" c like comment
+	let start2 = strpart(line,0,2)
+	if start2 == '//'
+		let line = strpart(line,2,len(line))
+		let line = Trim(line)
+	endif
+	"bat rem
+	let start3 = strpart(line,0,3)
+	if start3 == 'REM' || start3 == 'rem'
+		let line = strpart(line,3,len(line))
+		let line = Trim(line)
+	endif
+	let line = Trim(line)
+	execute '!sudo '.line
+endf
+command! -bar -narg=0 SudoRunLine  call SudoRunLine()
+
+" RunCurrentLine
+function! RunSelection()
+	execute ":'<,'>w ! sh"
+endfunction
+command! -bar -narg=0 RunSelection  call RunSelection()
+
+" InstallCtags
+func! InstallCtags()
+	if executable('ctags')
+		echo "There already has ctags in path. skip install."
+		return
+	endif
+
+	if has("unix") && (!has("win32unix"))
+		silent! sudo apt-get install ctags
+	endif
+	"in windows,copy to bin dir
+
+endfunction
+command! -bar -narg=0 InstallCtags  call InstallCtags()
+
+" GBKTerm
+func! GBKTerm()
+	set termencoding=GBK
+endfunction
+command! -bar -narg=0 GBKTerm  call GBKTerm()
+
+
+" UTFTerm
+func! UTFTerm()
+	set termencoding=utf-8
+endfunction
+command! -bar -narg=0 UTFTerm  call UTFTerm()
+
+" NoBell
+func! DisableBell()
+	set vb t_vb=
+endfunction
+command! -bar -narg=0 DisableBell  call DisableBell()
+
+func! ViewUrl()
+	exec "!lynx <cfile>"
+endfunc
+command! -bar -narg=0 ViewUrl call ViewUrl()
+
+"run mcmd cmds directly
+fun! RunGoCmdFunc(...)
+	let line = getline('.')
+	let line = Trim(line)
+	
+	let start = strpart(line,0,4)
+	
+	if start != "func"
+		echo "no func in this line"
+		return
+	endif
+	let ip = split(line,' ')
+	let tn = split(ip[2],")")[0]
+	let fn = split(ip[3],"(")[0]
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	execute '!'.gocmd . fn . '.' . tn.' '.join(a:000)
+endfun
+command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
+
+"run mcmd cmds directly
+fun! RunGoCmds(...)
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	execute '!'.gocmd .' '.join(a:000)
+endfun
+command! -bar -narg=* RunGoCmds  call RunGoCmds(<f-args>)
+
+" ----------------------------------------------------------------------------
+" :Root | Change directory to the root of the Git repository
+" ----------------------------------------------------------------------------
+function! Root()
+  let root = systemlist('git rev-parse --show-toplevel')[0]
+  if v:shell_error
+    echo 'Not in git repo'
+  else
+    execute 'lcd' root
+    echo 'Changed directory to: '.root
+  endif
+endfunction
+command! Root call Root()
+
+func! RunFile()
+	exec "up"	
+
+	"dgrage by file type
+	if &filetype == 'ruby'
+		exec '!ruby '.shellescape('%')
+	endif
+
+	if &filetype == 'sql'
+		exec '! mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
+	endif
+
+	if &filetype == 'js' || &filetype == 'javascript'
+		exec '!node '.shellescape('%')
+	endif
+
+	if &filetype == 'bash' || &filetype == 'sh'
+		exec '!bash '. shellescape('%')
+	endif
+
+	if &filetype == 'groovy'
+		exec '!groovy '.shellescape('%')
+	endif
+
+	if &filetype == 'python'
+		exec '!python '.shellescape('%')
+	endif
+
+	if &filetype == 'dosbatch' && has('win32')
+		exec '! %'
+	endif
+
+	if &filetype == 'make'
+		exec 'make'
+	endif
+
+	echo 'Unsupport run this file'
+endfunc
+command! RunFile call RunFile()
+
+inoremap <silent> <F5> <C-O><F5>
+nnoremap <silent> <F5> :RunFile<cr>
+
+func! FmtIndent()
+	normal gg=G
+endfunc
+command! FmtIndent call FmtIndent()
+
+func! Hello()
+	echo 'hello'
+	echohl 'hello hl'
+endfunc
+command! Hello call Hello()
 
 

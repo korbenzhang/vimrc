@@ -1,6 +1,11 @@
 " ----------------------------------------------------------------------------
 " vim-plug extension
 " ----------------------------------------------------------------------------
+
+augroup vimrc
+  autocmd!
+augroup END
+
 function! s:plug_gx()
   let line = getline('.')
   let sha  = matchstr(line, '^  \X*\zs\x\{7,9}\ze ')

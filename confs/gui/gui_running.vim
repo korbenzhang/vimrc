@@ -30,5 +30,3 @@ set go-=L
 
 " TabLine
 set guitablabel=%N.%t
-
-

@@ -28,6 +28,4 @@ nmap <M-l> :tablast<cr>
 
 nmap <M-PageDown> :tabnext<cr>
 nmap <M-PageUp> :tabprevious<cr>
-nmap <M-n> :tabnext<cr>
-nmap <M-p> :tabprevious<cr>
 

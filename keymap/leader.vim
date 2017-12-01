@@ -2,6 +2,5 @@
 " ==================
 
 map <leader>. :e .<cr>
-map <leader>pp :setlocal paste!<cr>
-map <leader><leader> <leader>f
+nmap <leader><leader> :
 

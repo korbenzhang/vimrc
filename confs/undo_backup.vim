@@ -1,6 +1,6 @@
 " Save your backups to a less annoying place than the current directory.
 " If you have .vim-backup in the current directory, it'll use that.
-" Otherwise it saves it to ~/.vim/backup or . if all else fails.
+" Otherwise it saves it to ~/.vim/rundata/backup or . if all else fails.
 
 if isdirectory($HOME . '/.vim/rundata/backup') == 0
   :silent !mkdir -p ~/.vim/rundata/backup >/dev/null 2>&1

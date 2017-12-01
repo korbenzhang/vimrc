@@ -7,7 +7,6 @@ nnoremap Y y$
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
-
 map <F4> :close<cr>
 
 nmap <C-s> :w<cr>
@@ -87,6 +86,9 @@ cnoremap <expr> <C-F> getcmdpos()>strlen(getcmdline())?&cedit:"\<Lt>Right>"
 cnoremap        <M-b> <S-Left>
 cnoremap        <M-f> <S-Right>
 
-silent! exe "set <S-Left>=\<Esc>b"
-silent! exe "set <S-Right>=\<Esc>f"
+"silent! exe "set <S-Left>=\<Esc>b"
+"silent! exe "set <S-Right>=\<Esc>f"
+
+nnoremap <pageup> <c-u>
+nnoremap <pagedown> <c-d>
 

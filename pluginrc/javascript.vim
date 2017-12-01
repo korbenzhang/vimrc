@@ -11,3 +11,4 @@ Plug 'jamescarr/snipmate-nodejs'
 Plug 'ternjs/tern_for_vim'
 "Plug 'vim-scripts/vim-jsbeautify'
 "Plug 'walm/jshint.vim'
+

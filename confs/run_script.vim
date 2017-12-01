@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------
 " <F5> / <F6> | Run script
 " ----------------------------------------------------------------------------
-function! s:run_this_script(output)
+function! s:RunThisScript(output)
   let head   = getline(1)
   let pos    = stridx(head, '#!')
   let file   = expand('%:p')
@@ -47,7 +47,7 @@ function! s:run_this_script(output)
   execute win.'wincmd w'
 endfunction
 
-nnoremap <silent> <F5> :call <SID>run_this_script(0)<cr>
-nnoremap <silent> <F6> :call <SID>run_this_script(1)<cr>
+nnoremap <silent> <F5> :call <SID>RunThisScript(0)<cr>
+nnoremap <silent> <F6> :call <SID>RunThisScript(1)<cr>
 
 

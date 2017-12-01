@@ -7,10 +7,11 @@ set nocompatible
 
 " Env
 " ----
+if filereadable(expand('~/.vim/extra/extra_env.vim'))
+	source ~/.vim/extra/extra_env.vim
+endif
 source ~/.vim/confs/env_funcs.vim		" Environment
 source ~/.vim/confs/func_misc.vim		" Misc Functions
-source ~/.vim/confs/gui/unix_gui.vim
-source ~/.vim/confs/mabetle_func.vim	" Mabetle Functions
 
 " Plugins
 " -------
@@ -28,8 +29,8 @@ source ~/.vim/confs/tab_indent.vim		" Tab and Indent
 source ~/.vim/confs/mswin.vim			" MS Win 
 source ~/.vim/confs/mouse.vim			" Mouse
 source ~/.vim/confs/au.vim				" AutoCmd
-source ~/.vim/confs/undo_backup.vim	" Undo And Backup
-"source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
+"source ~/.vim/confs/undo_backup.vim	" Undo And Backup
+source ~/.vim/confs/nobackup_swap.vim	" No Undo Backup and Swap
 source ~/.vim/confs/misc.vim			" Misc
 
 " Keys
@@ -47,12 +48,10 @@ source ~/.vim/keymap/tab_leader.vim		" TabWindows leader access
 source ~/.vim/keymap/win.vim			" Switch Windows
 source ~/.vim/keymap/keys_misc.vim		" Keys misc
 
-source ~/.vim/confs/run.vim				" Run 
 source ~/.vim/confs/esc_alt.vim			" Make alt work
 source ~/.vim/confs/nvim.vim			" for nvim
 
 source ~/.vim/confs/todo.vim
-source ~/.vim/confs/vimawesome.vim
 source ~/.vim/confs/help_tab.vim
 
 " Extra Configs
