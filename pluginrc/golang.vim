@@ -51,7 +51,6 @@ au FileType go nmap gt <Plug>(go-def-tab)
 "au FileType go nmap <leader>gr <Plug>(go-run)
 au FileType go nmap <C-F5> <Plug>(go-run)
 
-au FileType go nmap <F5> :!go run %<cr>
 au FileType go nmap <leader>rf :!go run %<cr>
 
 au FileType go nmap <leader>rt <Plug>(go-run-tab)

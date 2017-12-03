@@ -391,6 +391,10 @@ func! RunFile()
 		exec 'make'
 	endif
 
+	if & filetype == 'go'
+		exec '! go run '.shellescape('%')
+	endif
+
 	echo 'Unsupport run this file'
 endfunc
 command! RunFile call RunFile()
