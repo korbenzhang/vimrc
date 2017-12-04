@@ -18,16 +18,16 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 
-source ~/.vim/pluginrc/ycm.vim
-source ~/.vim/pluginrc/syntastic.vim
-"source ~/.vim/pluginrc/statusline.vim
-"source ~/.vim/pluginrc/ceylon.vim
-"source ~/.vim/pluginrc/rust.vim
-"source ~/.vim/pluginrc/elixir.vim
+source ~/.vim/confs/pluginrc/ycm.vim
+source ~/.vim/confs/pluginrc/syntastic.vim
+"source ~/.vim/confs/pluginrc/statusline.vim
+"source ~/.vim/confs/pluginrc/ceylon.vim
+"source ~/.vim/confs/pluginrc/rust.vim
+"source ~/.vim/confs/pluginrc/elixir.vim
 
-"source ~/.vim/pluginrc/git.vim
+"source ~/.vim/confs/pluginrc/git.vim
 
-source ~/.vim/pluginrc/ctrlp.vim
+source ~/.vim/confs/pluginrc/ctrlp.vim
 
 "Plugin 'html-advanced-text-objects'
 "Plugin 'xhtml.vim'

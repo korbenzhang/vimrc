@@ -15,7 +15,7 @@ source ~/.vim/confs/func_misc.vim		" Misc Functions
 
 " Plugins
 " -------
-source ~/.vim/pluginrc/plug_pkgs.vim	" All plugins, use plug
+source ~/.vim/confs/pluginrc/plug_pkgs.vim	" All plugins, use plug
 
 " Configs
 " -------
@@ -35,24 +35,23 @@ source ~/.vim/confs/misc.vim			" Misc
 
 " Keys
 " ----
-source ~/.vim/keymap/vimrc.vim			" Edit and load .vim
+source ~/.vim/confs/keymap/vimrc.vim		" Edit and load .vim
+source ~/.vim/confs/keymap/leader.vim		" Leader
+source ~/.vim/confs/keymap/fn.vim		    " Fn
+source ~/.vim/confs/keymap/arrow.vim		" Move cursor
+source ~/.vim/confs/keymap/moveline.vim		" Move Lines
+source ~/.vim/confs/keymap/indent.vim		" Indent
+source ~/.vim/confs/keymap/tab.vim			" Tab
+source ~/.vim/confs/keymap/tab_m.vim		" TabWindows Meta access
+source ~/.vim/confs/keymap/tab_leader.vim	" TabWindows leader access
+source ~/.vim/confs/keymap/win.vim			" Switch Windows
+source ~/.vim/confs/keymap/keys_misc.vim	" Keys misc
 
-source ~/.vim/keymap/leader.vim			" Leader
-source ~/.vim/keymap/fn.vim			    " Fn
-source ~/.vim/keymap/arrow.vim			" Move cursor
-source ~/.vim/keymap/moveline.vim		" Move Lines
-source ~/.vim/keymap/indent.vim			" Indent
-source ~/.vim/keymap/tab.vim			" Tab
-source ~/.vim/keymap/tab_m.vim			" TabWindows Meta access
-source ~/.vim/keymap/tab_leader.vim		" TabWindows leader access
-source ~/.vim/keymap/win.vim			" Switch Windows
-source ~/.vim/keymap/keys_misc.vim		" Keys misc
-
-source ~/.vim/confs/esc_alt.vim			" Make alt work
-source ~/.vim/confs/nvim.vim			" for nvim
+source ~/.vim/confs/esc_alt.vim				" Make alt work
+source ~/.vim/confs/nvim.vim				" for nvim
 
 source ~/.vim/confs/todo.vim
 
 " Extra Configs
 " -------------
-source ~/.vim/confs/extra_conf.vim		" Extra Config
+source ~/.vim/confs/extra_conf.vim			" Extra Config

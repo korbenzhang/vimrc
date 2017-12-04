@@ -1,6 +1,6 @@
 "config plug
 
-source ~/.vim/autoload/plug.vim
+source ~/.vim/confs/plug.vim
 
 call plug#begin('~/.vim/bundle')
 
@@ -19,7 +19,7 @@ Plug 'raimondi/delimitmate'
 Plug 'gorodinskiy/vim-coloresque'
 
 "complete
-source ~/.vim/pluginrc/utlisnips.vim
+source ~/.vim/confs/pluginrc/utlisnips.vim
 Plug 'honza/vim-snippets'
 
 Plug 'majutsushi/tagbar'
@@ -32,7 +32,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
 
 "golang
-source ~/.vim/pluginrc/golang.vim
+source ~/.vim/confs/pluginrc/golang.vim
 
 " Extra Plugins
 if filereadable(expand('~/.vim/extra/extra_plugins.vim'))

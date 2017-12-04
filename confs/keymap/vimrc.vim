@@ -1,7 +1,7 @@
 " keys for vimrc, quick load and edit vimrc file.
 map <leader>ve :tabedit ~/.vim/vimrc<cr>
-map <leader>vk :tabedit ~/.vim/keymap/keys_misc.vim<cr>
-map <leader>vl :tabedit ~/.vim/keymap/leader.vim<cr>
+map <leader>vk :tabedit ~/.vim/confs/keymap/keys_misc.vim<cr>
+map <leader>vl :tabedit ~/.vim/confs/keymap/leader.vim<cr>
 
 map <leader>vs :source ~/.vim/vimrc<cr>
 

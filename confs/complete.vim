@@ -23,8 +23,8 @@ set wildignorecase
 set wildmode=list:longest		"make cmdline tab completion similar to bash
 
 " dict in  .vim
-"set dictionary+=~/.vim/dict/words		" ~/.vim/dict/words
-set dictionary+=~/.vim/dict/misc.dict
+"set dictionary+=~/.vim/confs/dict/words		" ~/.vim/confs/dict/words
+set dictionary+=~/.vim/confs/dict/misc.dict
 
 " set Ctrl+j in insert mode, like VS.Net
 imap <C-j> <C-X><C-O>
