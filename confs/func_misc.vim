@@ -393,7 +393,7 @@ func! RunFile()
 		exec 'make'
 	endif
 
-	if & filetype == 'go'
+	if &filetype == 'go'
 		exec '! go run '.shellescape('%')
 	endif
 
