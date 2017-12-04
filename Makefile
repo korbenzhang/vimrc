@@ -1,9 +1,5 @@
 # Task for vim
 
-link:
-	rm ~/.vimrc -frv
-	cp -f ~/.vim/_vimrc ~/.vimrc
-
 mkdirs:
 	sh ~/.vim/bin/unix_mkdirs.sh
 

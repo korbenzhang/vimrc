@@ -1,6 +1,6 @@
 " to speed up vim
 " only include very simple basic vim plugins.
-source ~/.vim/autoload/plug.vim
+source ~/.vim/confs/plug.vim
 call plug#begin('~/.vim/bundle')
 
 Plug 'junegunn/vim-plug'

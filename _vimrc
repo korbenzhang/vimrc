@@ -1,4 +1,3 @@
-
 " nvim 
 if !has("nvim")
 	set nocompatible
