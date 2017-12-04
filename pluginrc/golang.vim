@@ -7,6 +7,8 @@ Plug 'fatih/vim-go'
 " auto install go depends binneny
 let g:go_disable_autoinstall = 1
 
+let g:go_template_autocreate = 0 
+
 " auto imports
 " default is gofmt
 let g:go_fmt_command = 'goimports'
@@ -23,7 +25,7 @@ let g:go_term_mode = 'split'
 let g:go_term_enabled = 1
 
 " default is 0
-let g:go_dispatch_enabled = 1
+" let g:go_dispatch_enabled = 0
 
 " default is ultisnips, can set with neocomplete
 "let g:go_snippet_engine="ultisnips"
@@ -31,12 +33,11 @@ let g:go_dispatch_enabled = 1
 " prevent vim-go show fmt quickfix windows
 "let g:go_fmt_fail_silently = 1
 
-
 " default is 1, should open
 "let g:go_def_mapping_enabled = 1
 
 "default is disable
-let g:go_auto_type_info = 0
+"let g:go_auto_type_info = 0
 
 " default is disable
 "let g:go_metalinter_autosave = 0
@@ -51,7 +52,6 @@ au FileType go nmap gt <Plug>(go-def-tab)
 "au FileType go nmap <leader>gr <Plug>(go-run)
 au FileType go nmap <C-F5> <Plug>(go-run)
 
-au FileType go nmap <F5> :!go run %<cr>
 au FileType go nmap <leader>rf :!go run %<cr>
 
 au FileType go nmap <leader>rt <Plug>(go-run-tab)
@@ -115,7 +115,7 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
 
 " run :GoBuild or :GoTestCompile based on the go file
-function! GoGoFiles()
+function! GoBuildFiles()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
     call go#cmd#Test(0, 1)

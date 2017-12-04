@@ -1,7 +1,7 @@
 "Plug 'kien/ctrlp.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 map <leader>f :CtrlPMRU<CR>
 
