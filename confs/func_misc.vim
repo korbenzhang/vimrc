@@ -1,4 +1,6 @@
 " func misc
+
+"trim string 
 function! Trim(str) abort
   return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
 endfunction
@@ -129,7 +131,7 @@ function! EditHosts()
 		execute ':tabedit /etc/hosts'
 	endif
 endfunction
-command! -bar -narg=0 EditHosts  call EditHost()
+command! -bar -narg=0 EditHosts  call EditHosts()
 
 " Sudo save.
 function! SudoSave()
@@ -410,3 +412,9 @@ endfunc
 command! Hello call Hello()
 
 
+function! TrimEndLines()
+	let save_cursor = getpos(".")
+	:silent! %s#\($\n\s*\)\+\%$##
+	call setpos('.', save_cursor)
+endfunction
+command! -bar -narg=0 TrimEndLines call TrimEndLines()
