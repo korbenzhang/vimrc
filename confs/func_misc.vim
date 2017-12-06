@@ -215,6 +215,7 @@ fun! RunLine()
 endf
 command! -bar -narg=0 RunLine  call RunLine()
 command! -bar -narg=0 RL  call RunLine()
+command! -bar -narg=0 RCL  call RunLine()
 
 fun! RunSQLLine()
 	let line = getline('.')
@@ -366,13 +367,13 @@ func! RunFile()
 	elseif	&filetype == 'sql'
 		exec '! mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
-		exec '!node '.shellescape('%')
+		exec '!node %'
 	elseif &filetype == 'bash' || &filetype == 'sh'
-		exec '!bash '. shellescape('%')
+		exec '!bash %'
 	elseif &filetype == 'groovy'
-		exec '!groovy '.shellescape('%')
+		exec '!groovy %'
 	elseif &filetype == 'python'
-		exec '!python '.shellescape('%')
+		exec '!python %'
 	elseif &filetype == 'dosbatch' && has('win32')
 		exec '! %'
 	elseif &filetype == 'make'
@@ -381,6 +382,12 @@ func! RunFile()
 		"exec '! go run '.shellescape('%')
 		"exec '! go run %'
 		exec '!go run %'
+	elseif &filetype == 'scala'
+		exec '!scala %'
+	elseif &filetype == 'perl'
+		exec '!perl %'
+	elseif &filetype == 'ps'
+		echo not impl for powershell
 	else
 		echo 'Unsupport run this file'
 	endif
@@ -394,12 +401,6 @@ func! FmtIndent()
 	normal gg=G
 endfunc
 command! FmtIndent call FmtIndent()
-
-func! Hello()
-	echo 'hello'
-	echohl 'hello hl'
-endfunc
-command! Hello call Hello()
 
 function! TrimEndLines()
 	let save_cursor = getpos(".")
