@@ -1,4 +1,8 @@
 
+if !IsHasPython()
+	finish
+endif
+
 if IsInWin()
 	Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 else
