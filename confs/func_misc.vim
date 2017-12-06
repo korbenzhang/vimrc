@@ -363,41 +363,27 @@ func! RunFile()
 	"dgrage by file type
 	if &filetype == 'ruby'
 		exec '!ruby '.shellescape('%')
-	endif
-
-	if &filetype == 'sql'
+	elseif	&filetype == 'sql'
 		exec '! mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
-	endif
-
-	if &filetype == 'js' || &filetype == 'javascript'
+	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec '!node '.shellescape('%')
-	endif
-
-	if &filetype == 'bash' || &filetype == 'sh'
+	elseif &filetype == 'bash' || &filetype == 'sh'
 		exec '!bash '. shellescape('%')
-	endif
-
-	if &filetype == 'groovy'
+	elseif &filetype == 'groovy'
 		exec '!groovy '.shellescape('%')
-	endif
-
-	if &filetype == 'python'
+	elseif &filetype == 'python'
 		exec '!python '.shellescape('%')
-	endif
-
-	if &filetype == 'dosbatch' && has('win32')
+	elseif &filetype == 'dosbatch' && has('win32')
 		exec '! %'
-	endif
-
-	if &filetype == 'make'
+	elseif &filetype == 'make'
 		exec 'make'
+	elseif &filetype == 'go'
+		"exec '! go run '.shellescape('%')
+		"exec '! go run %'
+		exec '!go run %'
+	else
+		echo 'Unsupport run this file'
 	endif
-
-	if &filetype == 'go'
-		exec '! go run '.shellescape('%')
-	endif
-
-	echo 'Unsupport run this file'
 endfunc
 command! RunFile call RunFile()
 
@@ -414,7 +400,6 @@ func! Hello()
 	echohl 'hello hl'
 endfunc
 command! Hello call Hello()
-
 
 function! TrimEndLines()
 	let save_cursor = getpos(".")
