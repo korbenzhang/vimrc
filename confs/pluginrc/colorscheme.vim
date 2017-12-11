@@ -9,3 +9,6 @@ Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'altercation/vim-colors-solarized'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'rickharris/vim-monokai'
+Plug 'dracula/vim'
+
+

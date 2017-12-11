@@ -1,0 +1,3 @@
+
+Plug 'OmniSharp/omnisharp-vim'
+
