@@ -116,6 +116,10 @@ function! ShowEnv()
 	echo "Is In  Xterm          :".IsInXterm()
 	echo "Is In  Nvim           :".IsInNvim()
 	echo "\n"
+
+	echo "GOROOT                :".$GOROOT
+	echo "GOPATH                :".$GOPATH
+	echo "\n"
 	
 	echo "TERM                  :".&term
 	echo "Encoding              :".&encoding
