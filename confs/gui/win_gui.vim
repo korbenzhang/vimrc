@@ -3,9 +3,8 @@ if !IsInWinGui()
 	finish
 endif
 
-if has("directx") && $VIM_USE_DIRECTX != '0'
+if has("directx")
   set renderoptions=type:directx
-  let s:use_directx=1
 endif
 
 func! MaximizeWindow()
@@ -15,6 +14,7 @@ func! MaximizeWindow()
 endfunc
 command! -bar -narg=0 MaximizeWindow  call MaximizeWindow()
 
+" MaximizeWindow when givm startup.
 if has('gui_running') && has("win32")
 	au GUIEnter * simalt ~x
 endif

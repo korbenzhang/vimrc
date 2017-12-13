@@ -4,16 +4,11 @@ if !(has("gui_running") && has("win32"))
 	finish
 endif
 
-if !filereadable(expand('$VIMRUNTIME/gvimfullscreen.dll')) 
-	finish
-endif
-
-function! ToogleFullScreenWin()
+function! ToggleFullScreenWin()
 	call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
 endfunction
 
-command! -bar -narg=0 ToogleFullScreenWin  call ToogleFullScreenWin()
+command! -bar -narg=0 ToggleFullScreenWin  call ToggleFullScreenWin()
 
-map <silent> <F11> :call ToogleFullScreenWin()<CR>
-
+map <silent> <F11> :call ToggleFullScreenWin()<CR>
 

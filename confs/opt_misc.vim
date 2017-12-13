@@ -96,3 +96,4 @@ set timeout timeoutlen=2000 ttimeoutlen=100
 "set nojoinspaces
 "set diffopt=filler,vertical
 set autoread
+set ambiwidth=double

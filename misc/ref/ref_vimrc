@@ -1,26 +1,26 @@
 " experimental
-Plugin 'tpope/vim-dispatch'
-Plugin 'kien/ctrlp.vim'					"find file in dir
-Plugin 'gdbmgr'							"debug
-Plugin 'edsono/vim-matchit'				"match tag
-Plugin 'tpope/vim-surround'				"process tag
-Plugin 'justinmk/vim-sneak'				"move quickly between motion
-Plugin 'sjl/gundo.vim'						"undo tree
-Plugin 'tpope/vim-sleuth'					"ajust tab
-Plugin 'tyru/open-browser.vim'				"open browser
-Plugin 'Lookup'
-"Plugin 'ack.vim'							"perl
-"Plugin 'autofmt'							"auto format
-"Plugin 'bash-support.vim'					"bash
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
-"Plugin 'Command-T'
-Plugin 'Railscasts-Theme-GUIand256color'
-Plugin 'DarkZen-Color-Scheme'
-Plugin 'Pleasant-colorscheme'
-Plugin 'textmate16'
-Plugin 'Conque-Shell'
-Plugin 'CmdlineCompl'
-Plugin 'FindEverything'
+Plug 'tpope/vim-dispatch'
+Plug 'kien/ctrlp.vim'					"find file in dir
+Plug 'gdbmgr'							"debug
+Plug 'edsono/vim-matchit'				"match tag
+Plug 'tpope/vim-surround'				"process tag
+Plug 'justinmk/vim-sneak'				"move quickly between motion
+Plug 'sjl/gundo.vim'						"undo tree
+Plug 'tpope/vim-sleuth'					"ajust tab
+Plug 'tyru/open-browser.vim'				"open browser
+Plug 'Lookup'
+"Plug 'ack.vim'							"perl
+"Plug 'autofmt'							"auto format
+"Plug 'bash-support.vim'					"bash
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}	"need python
+"Plug 'Command-T'
+Plug 'Railscasts-Theme-GUIand256color'
+Plug 'DarkZen-Color-Scheme'
+Plug 'Pleasant-colorscheme'
+Plug 'textmate16'
+Plug 'Conque-Shell'
+Plug 'CmdlineCompl'
+Plug 'FindEverything'
 
 
 "source $HOME/.vim/pluginrc/closetag_vimrc
@@ -37,6 +37,3 @@ source $HOME/.vim/pluginrc/winmanager_vimrc
 "source $HOME/.vim/pluginrc/bufexpl_vimrc
 "source $HOME/.vim/pluginrc/async_vimrc
 
-"highlight line end blank
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/

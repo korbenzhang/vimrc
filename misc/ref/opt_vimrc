@@ -1,7 +1,0 @@
-
-" Thesaurus not work in windows, because there is no dict files.
-if !IsInWin()
-	Plugin 'Thesaurus'
-endif
-
-Plugin 'beloglazov/vim-online-thesaurus'
