@@ -369,7 +369,7 @@ func! RunFile()
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec '!node %'
 	elseif &filetype == 'bash' || &filetype == 'sh'
-		exec '!bash %'
+		exec '!bash --login -i %'
 	elseif &filetype == 'groovy'
 		exec '!groovy %'
 	elseif &filetype == 'python'
