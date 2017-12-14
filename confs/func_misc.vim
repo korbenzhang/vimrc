@@ -396,7 +396,7 @@ func! RunFile()
 	elseif &filetype == 'ps'
 		exec s:prefix.'powershell.exe %'
 	else
-		echo 'Unsupport run this file'
+		echo 'Cannot run, Unsupport file type'
 	endif
 endfunc
 command! RunFile call RunFile()
@@ -415,3 +415,18 @@ function! TrimEndLines()
 	call setpos('.', save_cursor)
 endfunction
 command! -bar -narg=0 TrimEndLines call TrimEndLines()
+
+func! Fmt()
+	exec "up"	
+	let s:prefix=GetExecPrefix()
+	"dgrage by file type
+	if &filetype == 'css'
+		exec s:prefix. 'cssfmt %'		
+	elseif &filetype=="js" || &filetype="javascript"
+		exec s:prefix.'jsfmt -w %'
+	else
+		echo 'Cannot format, unsupport filetype.'
+	fi
+endfunc
+command! -bar -narg=0 Fmt call Fmt()
+
