@@ -1,5 +1,12 @@
 " func misc
 
+func! GetExecPrefix()
+	if has("win32")
+		return "!start cmd /k "
+	endif
+	return "!"
+endfunc
+
 "trim string 
 function! Trim(str) abort
   return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
@@ -333,14 +340,16 @@ fun! RunGoCmdFunc(...)
 	let tn = split(ip[2],")")[0]
 	let fn = split(ip[3],"(")[0]
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
-	execute '!'.gocmd . fn . '.' . tn.' '.join(a:000)
+
+
+	execute GetExecPrefix().' '.gocmd . fn . '.' . tn.' '.join(a:000)
 endfun
 command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
 
 "run mcmd cmds directly
 fun! RunGoCmds(...)
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
-	execute '!'.gocmd .' '.join(a:000)
+	execute GetExecPrefix().' '.gocmd .' '.join(a:000)
 endfun
 command! -bar -narg=* RunGoCmds  call RunGoCmds(<f-args>)
 
@@ -360,35 +369,32 @@ command! Root call Root()
 
 func! RunFile()
 	exec "up"	
-
+	let s:prefix=GetExecPrefix()
 	"dgrage by file type
 	if &filetype == 'ruby'
-		exec '!ruby '.shellescape('%')
+		exec s:prefix.'ruby '.shellescape('%')
 	elseif	&filetype == 'sql'
-		exec '! mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
+		exec s:prefix.'mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
-		exec '!node %'
+		exec s:prefix.'node %'
 	elseif &filetype == 'bash' || &filetype == 'sh'
-		"exec '!bash --login -i %'
-		exec '!bash %'
+		exec s:prefix.'bash %'
 	elseif &filetype == 'groovy'
-		exec '!groovy %'
+		exec s:prefix.'groovy %'
 	elseif &filetype == 'python'
-		exec '!python %'
+		exec s:prefix.'python %'
 	elseif &filetype == 'dosbatch' && has('win32')
-		exec '! %'
+		exec s:prefix.'%'
 	elseif &filetype == 'make'
-		exec 'make'
+		exec s:prefix.'make'
 	elseif &filetype == 'go'
-		"exec '! go run '.shellescape('%')
-		"exec '! go run %'
-		exec '!go run %'
+		exec s:prefix.'go run %'
 	elseif &filetype == 'scala'
-		exec '!scala %'
+		exec s:prefix.'scala %'
 	elseif &filetype == 'perl'
-		exec '!perl %'
+		exec s:prefix.'perl %'
 	elseif &filetype == 'ps'
-		echo not impl for powershell
+		exec s:prefix.'powershell.exe %'
 	else
 		echo 'Unsupport run this file'
 	endif
