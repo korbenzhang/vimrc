@@ -430,3 +430,9 @@ func! Fmt()
 endfunc
 command! -bar -narg=0 Fmt call Fmt()
 
+" startup windows cmd
+func! WinCmd()
+	exec '!start cmd /K'
+endfunc
+command! -bar -narg=0 WinCmd call WinCmd()
+

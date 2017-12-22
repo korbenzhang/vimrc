@@ -2,6 +2,6 @@
 
 " set linespace=12
 
-set transparency=1
-set macligatures
+"set transparency=1
+"set macligatures
 
