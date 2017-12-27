@@ -97,3 +97,8 @@ set timeout timeoutlen=2000 ttimeoutlen=100
 "set diffopt=filler,vertical
 set autoread
 set ambiwidth=double
+
+set noimcmdline
+
+autocmd QuickFixCmdPre * :update
+autocmd QuickFixCmdPost * :copen 

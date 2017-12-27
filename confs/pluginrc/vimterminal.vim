@@ -1,0 +1,3 @@
+
+Plug 'mattn/vim-terminal'
+
