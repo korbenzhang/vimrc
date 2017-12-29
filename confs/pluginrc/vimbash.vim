@@ -1,0 +1,4 @@
+
+Plug 'kovetskiy/vim-bash'
+
+

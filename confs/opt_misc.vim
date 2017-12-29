@@ -102,3 +102,7 @@ set noimcmdline
 
 autocmd QuickFixCmdPre * :update
 autocmd QuickFixCmdPost * :copen 
+
+set notimeout          " 映射时不检查超时
+set ttimeout           " 终端键码检查超时
+set timeoutlen=100     " 超时为 100 毫秒

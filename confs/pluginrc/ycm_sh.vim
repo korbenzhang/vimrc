@@ -1,0 +1,3 @@
+
+Plug 'kovetskiy/ycm-sh'
+
