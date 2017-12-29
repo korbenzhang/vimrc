@@ -1,0 +1,1 @@
+Plug 'svermeulen/vim-easyclip'
