@@ -34,40 +34,40 @@ function! UniqLine()
 endfunction
 command! -bar -narg=0 UniqLine  call UniqLine()
 
-func! DisableBell()
+func! BellDisable()
 	set vb t_vb=
 endfunc
-command! -bar -narg=0 DisableBell  call DisableBell()
+command! -bar -narg=0 BellDisable  call BellDisable()
 
-func! DisableCompl()
+func! ComplDisable()
 	set completefunc=
 endfunc
-command! -bar -narg=0 DisableCompl  call DisableCompl()
+command! -bar -narg=0 ComplDisable  call ComplDisable()
 
 func! AddBlankLine()
 	exe ':%s/\n/\r\r/ge'
 endfunc
 command! -bar -narg=0 AddBlankLine call AddBlankLine()
 
-func! GitRmFile()
+func! GitRemoveFile()
 	exec '!git rm % -f'
 endfunc
-command! -bar -narg=0 GitRmFile call GitRmFile()
+command! -bar -narg=0 GitRemoveFile call GitRemoveFile()
 
-func! RmFile()
+func! RemoveFile()
 	exec '!rm % -f'
 endfunc
-command! -bar -narg=0 RmFile call RmFile()
+command! -bar -narg=0 RemoveFile call RemoveFile()
 
-func! ToggleWrap()
+func! WrapToggle()
 	set wrap!
 endfunc
-command! -bar -narg=0 ToggleWrap call ToggleWrap()
+command! -bar -narg=0 WrapToggle call WrapToggle()
 
-func! TogglePaste()
+func! PasteToggle()
 	set paste!
 endfunc
-command! -bar -narg=0 TogglePaste call TogglePaste()
+command! -bar -narg=0 PasteToggle call PasteToggle()
 
 func! DeleteBlankLines()
 	:g/^\s*$/d
@@ -315,10 +315,10 @@ endfunction
 command! -bar -narg=0 UTFTerm  call UTFTerm()
 
 " NoBell
-func! DisableBell()
+func! BellDisable()
 	set vb t_vb=
 endfunction
-command! -bar -narg=0 DisableBell  call DisableBell()
+command! -bar -narg=0 BellDisable  call BellDisable()
 
 func! ViewUrl()
 	exec "!lynx <cfile>"

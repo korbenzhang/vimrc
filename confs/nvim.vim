@@ -15,3 +15,19 @@ if IsInWin()
 	let g:python3_host_prog = '/apps/Python36/python.exe'
 endif
 
+func! NvimGuiFont()
+	if has("nvim")
+		let g:Guifont="DejaVu Sans Mono:h20"
+		call GuiFont(g:Guifont)
+	endif
+endfunc
+command! NvimGuiFont call NvimGuiFont()
+
+func! NvimMonaco()
+	if has("nvim")
+		let g:Guifont="Monaco:h20"
+		call GuiFont(g:Guifont)
+	endif
+endfunc
+command! NvimMonaco call NvimMonaco()
+
