@@ -30,6 +30,7 @@ vnoremap <C-Insert> "+y
 " CTRL-V and SHIFT-Insert are Paste
 "map <C-V>		"+gP
 map <S-Insert>		"+gP
+imap <S-Insert> <C-R>+
 
 "cmap <C-V>		<C-R>+
 cmap <S-Insert>		<C-R>+

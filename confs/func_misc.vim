@@ -1,10 +1,16 @@
 " func misc
 
+let g:ExecPrefix="!"
+
+func! SetExecPrefix(prefix)
+	let g:ExecPrefix=a:prefix
+endfunc
+command! AsyncExecEnable call SetExecPrefix("AsyncRun ")
+command! AsyncExecDisable call SetExecPrefix("! ")
+
+
 func! GetExecPrefix()
-	if has("win32")
-		return "!start cmd /k "
-	endif
-	return "!"
+	return g:ExecPrefix
 endfunc
 
 "trim string 

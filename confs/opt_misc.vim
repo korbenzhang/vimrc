@@ -106,3 +106,9 @@ autocmd QuickFixCmdPost * :copen
 set notimeout          " 映射时不检查超时
 set ttimeout           " 终端键码检查超时
 set timeoutlen=100     " 超时为 100 毫秒
+
+
+"打开断行模块对亚洲语言支持, m 表示允许在两个汉字之间断行， 即使汉字之间没有出
+"现空格。 B 表示将两行合并为一行的时候，汉字与汉字之间不要补空格。
+set fo+=mB 
+
