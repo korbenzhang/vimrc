@@ -63,3 +63,4 @@ if exists('g:loaded_syntastic_plugin')
 	set statusline+=%{SyntasticStatuslineFlag()}
 endif
 
+set laststatus=2

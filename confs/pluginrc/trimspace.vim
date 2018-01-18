@@ -2,5 +2,3 @@
 
 Plug 'bronson/vim-trailing-whitespace'
 
-"map <leader>ds  :FixWhitespace<cr>
-

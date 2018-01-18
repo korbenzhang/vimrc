@@ -4,6 +4,8 @@
 " vim-go
 Plug 'fatih/vim-go'
 
+let g:go_version_warning = 0
+
 " auto install go depends binneny
 let g:go_disable_autoinstall = 1
 

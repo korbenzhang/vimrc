@@ -1,7 +1,4 @@
-
-REM 
-REM install nvim init file
-REM 
+:: install nvim init file
 
 mkdir %USERPROFILE%\AppData\Local\nvim
 
