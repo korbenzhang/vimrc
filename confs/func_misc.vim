@@ -9,8 +9,11 @@ command! AsyncExecEnable call SetExecPrefix("AsyncRun ")
 command! AsyncExecDisable call SetExecPrefix("! ")
 
 
-func! GetExecPrefix()
-	return g:ExecPrefix
+func! GetExecPrefix(prefix)
+	if (a:prefix == "")
+		return g:ExecPrefix
+	endif
+	return a:prefix
 endfunc
 
 "trim string 
@@ -200,7 +203,7 @@ endfunction
 command! -bar -narg=0 UpdateTagFile  call UpdateTagFile()
 
 " RunLine
-fun! RunLine()
+fun! RunLine(prefix)
 	let line = getline('.')
 	" trim space
 	let line = Trim(line)
@@ -224,11 +227,13 @@ fun! RunLine()
 		let line = Trim(line)
 	endif
 	let line = Trim(line)
-	execute '!'.line
+	exec a:prefix.' '.line
 endf
-command! -bar -narg=0 RunLine  call RunLine()
-command! -bar -narg=0 RL  call RunLine()
-command! -bar -narg=0 RCL  call RunLine()
+
+command! -bar -narg=0 RunLine  call RunLine("!")
+command! -bar -narg=0 RL  call RunLine("!")
+command! -bar -narg=0 RCL  call RunLine("!")
+command! -bar -narg=0 ARCL call RunLine("!start cmd /k")
 
 fun! RunSQLLine()
 	let line = getline('.')
@@ -347,7 +352,6 @@ fun! RunGoCmdFunc(...)
 	let fn = split(ip[3],"(")[0]
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
 
-
 	execute GetExecPrefix().' '.gocmd . fn . '.' . tn.' '.join(a:000)
 endfun
 command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
@@ -373,9 +377,9 @@ function! Root()
 endfunction
 command! Root call Root()
 
-func! RunFile()
+func! RunFile(prefix)
 	exec "up"	
-	let s:prefix=GetExecPrefix()
+	let s:prefix=GetExecPrefix(a:prefix)
 	"dgrage by file type
 	if &filetype == 'ruby'
 		exec s:prefix.'ruby '.shellescape('%')
@@ -399,13 +403,14 @@ func! RunFile()
 		exec s:prefix.'scala %'
 	elseif &filetype == 'perl'
 		exec s:prefix.'perl %'
-	elseif &filetype == 'ps'
+	elseif &filetype == 'ps1'
 		exec s:prefix.'powershell.exe %'
 	else
 		echo 'Cannot run, Unsupport file type'
 	endif
 endfunc
-command! RunFile call RunFile()
+command! RunFile call RunFile("!")
+command! AsyncRunFile call RunFile("!start cmd /k")
 
 inoremap <silent> <F5> <C-O><F5>
 nnoremap <silent> <F5> :RunFile<cr>
