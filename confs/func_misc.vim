@@ -352,7 +352,7 @@ fun! RunGoCmdFunc(...)
 	let fn = split(ip[3],"(")[0]
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
 
-	execute GetExecPrefix().' '.gocmd . fn . '.' . tn.' '.join(a:000)
+	execute GetExecPrefix("!").' '.gocmd . fn . '.' . tn.' '.join(a:000)
 endfun
 command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
 
