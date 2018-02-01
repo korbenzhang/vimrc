@@ -10,5 +10,5 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'rickharris/vim-monokai'
 Plug 'dracula/vim'
-
-
+Plug 'reewr/vim-monokai-phoenix'
+Plug 'shaond/vim-guru'

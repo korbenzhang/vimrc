@@ -10,3 +10,7 @@
 Plug 'jamescarr/snipmate-nodejs'
 Plug 'ternjs/tern_for_vim'
 Plug 'vim-scripts/JavaScript-syntax-add-E4X-support'
+Plug 'michalliu/jsruntime.vim'
+Plug 'michalliu/jsflakes.vim'
+Plug 'michalliu/sourcebeautify.vim'
+Plug 'michalliu/jsoncodecs.vim'

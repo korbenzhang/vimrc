@@ -19,6 +19,6 @@ let g:Lf_RootMarkers = ['.project', '.svn','.git','.hg']
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 
 let g:Lf_WildIgnore = {
-	\ 'dir': ['.svn','.git','.hg'],
+	\ 'dir': ['.svn','.git','.hg','_libs','dist','target','build'],
 	\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
 	\}

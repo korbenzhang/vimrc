@@ -7,7 +7,7 @@ set completeopt=longest,menu
 
 set wildmenu						"enable ctrl-n and ctrl-p to scroll thru matches
 "set wildignore=*.o,*.obj,*~			"stuff to ignore when tab completing
-set wildignore+=tags,.*.un~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*
+set wildignore+=tags,.*.un~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*,*/_libs/*
 
 " default is off
 set wildignorecase
