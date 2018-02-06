@@ -401,6 +401,8 @@ func! RunFile(prefix)
 		exec s:prefix.'go run %'
 	elseif &filetype == 'scala'
 		exec s:prefix.'scala %'
+	elseif &filetype == 'swift'
+		exec s:prefix.'swift %'
 	elseif &filetype == 'perl'
 		exec s:prefix.'perl %'
 	elseif &filetype == 'ps1'
@@ -446,4 +448,16 @@ func! WinCmd()
 	exec '!start cmd /K'
 endfunc
 command! -bar -narg=0 WinCmd call WinCmd()
+
+func! MinUI()
+	set laststatus=0
+	set showtabline=0
+endfunc
+command! -bar -narg=0 MinUI call MinUI()
+
+func! FullUI()
+	set laststatus=1
+	set showtabline=1
+endfunc
+command! -bar -narg=0 FullUI call FullUI()
 

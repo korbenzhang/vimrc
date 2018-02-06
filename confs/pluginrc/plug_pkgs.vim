@@ -29,7 +29,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-markdown'
+"Plug 'tpope/vim-markdown'
 
 "golang
 source ~/.vim/confs/pluginrc/golang.vim

@@ -25,3 +25,5 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$|vendor\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|node_nodules\|tmp$',
   \ 'file': '\.exe$\|\.so$\|\.dat$'
   \ }
+
+noremap <F1> :CtrlP<cr>

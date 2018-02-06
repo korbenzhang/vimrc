@@ -21,7 +21,7 @@ source ~/.vim/confs/pluginrc/plug_pkgs.vim	" All plugins, use plug
 " -------
 source ~/.vim/confs/opt_misc.vim		" Options and misc
 source ~/.vim/confs/encoding.vim		" Encodings
-source ~/.vim/confs/highlight.vim		" Color 
+"source ~/.vim/confs/highlight.vim		" Color 
 source ~/.vim/confs/xterm.vim			" Xterm
 source ~/.vim/confs/complete.vim		" Complete
 source ~/.vim/confs/gui/gui_running.vim " GUI

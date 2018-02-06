@@ -22,3 +22,9 @@ let g:Lf_WildIgnore = {
 	\ 'dir': ['.svn','.git','.hg','_libs','dist','target','build'],
 	\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
 	\}
+
+" key map
+"
+"noremap <f1> <leader>f
+noremap <f1> :LeaderfFile<cr>
+

@@ -30,11 +30,13 @@ let g:fzf_colors =
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
-nnoremap <silent> <Leader><Leader> :Files<CR>
 nnoremap <silent> <Leader>f :Files<CR>
+nnoremap <silent> <Leader>F :GFiles<CR>
+nnoremap <silent> <F1>		:GFiles<CR>
 nnoremap <silent> <expr> <Leader><Leader> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 nnoremap <silent> <Leader>C        :Colors<CR>
 nnoremap <silent> <Leader><Enter>  :Buffers<CR>
+nnoremap <silent> <Leader>b		   :Buffers<CR>
 nnoremap <silent> <Leader>l        :Lines<CR>
 nnoremap <silent> <Leader>ag       :Ag <C-R><C-W><CR>
 nnoremap <silent> <Leader>AG       :Ag <C-R><C-A><CR>
