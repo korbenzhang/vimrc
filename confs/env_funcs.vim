@@ -102,6 +102,7 @@ endfunction
 
 function! ShowEnv()
 	echo "Vim Version           :".version
+	"echo 'Vim            :'.
 	echo "Is Has Lua            :".IsHasLua()
 	echo "Is Has Ruby           :".IsHasRuby()
 	echo "Is Has Python         :".IsHasPython()
@@ -115,6 +116,7 @@ function! ShowEnv()
 	echo "Is In  Unix           :".IsInUnix()
 	echo "Is In  Xterm          :".IsInXterm()
 	echo "Is In  Nvim           :".IsInNvim()
+	echo "Is In  Directx        :".has("directx")
 	echo "\n"
 
 	echo "GOROOT                :".$GOROOT
