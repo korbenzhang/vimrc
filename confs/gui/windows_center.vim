@@ -18,5 +18,5 @@ function! WindowCenterInScreen()
 endfunc
 command! WindowCenter call WindowCenterInScreen()
 
-au GUIEnter * call WindowCenterInScreen()
+"au GUIEnter * call WindowCenterInScreen()
 

@@ -43,11 +43,6 @@ function! UniqLine()
 endfunction
 command! -bar -narg=0 UniqLine  call UniqLine()
 
-func! BellDisable()
-	set vb t_vb=
-endfunc
-command! -bar -narg=0 BellDisable  call BellDisable()
-
 func! ComplDisable()
 	set completefunc=
 endfunc

@@ -1,4 +1,4 @@
-
+" config for windows GUI gvim.
 if !IsInWinGui()
 	finish
 endif
@@ -16,5 +16,5 @@ command! -bar -narg=0 MaximizeWindow  call MaximizeWindow()
 
 " MaximizeWindow when givm startup.
 if has('gui_running') && has("win32")
-	au GUIEnter * simalt ~x
+	"au GUIEnter * simalt ~x
 endif

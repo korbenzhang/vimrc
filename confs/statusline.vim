@@ -20,7 +20,7 @@ endif
 "%L 当前文件总行数
 
 function! CurDir()
-    let curdir = substitute(getcwd(), $HOME, "~", "g")
+    let curdir = substitute(getcwd(), expand($HOME), "~", "g")
     return curdir
 endfunction
 
