@@ -8,9 +8,9 @@ endif
 " You show copy it to $VIM first.
 " cp ~/.vim/misc/tools/gvimfullscreen-x64.dll $VIMRUNTIME
 
-function! ToggleFullScreenWin()
+func! ToggleFullScreenWin()
 	call libcallnr("gvimfullscreen-x64.dll", "ToggleFullScreen", 0)
-endfunction
+endfunc
 
 func!	ToggleFullScreen2()
 	call libcall("gvimfullscreen-x64.dll", 'ToggleFullScreen', 27 + 29*256 + 30*256*256)

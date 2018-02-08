@@ -6,14 +6,14 @@ nmap <F2> :up<cr>
 imap <F2> <C-O><F2>
 
 "F3 Goto File
-function! MapGoToFile()
+func! MapGoToFile()
 	if exists("b:NERDTreeType") 
 		map <F3> t
 	else
 		map <F3> gf
 		imap <F3> <C-O><F3>
 	endif
-endfunction
+endfunc
 
 " F3 Goto File
 " in nerdtree means open file.

@@ -11,7 +11,7 @@ map <A-f> gf
 map <A-d> gd
 
 
-" insert mode alt key functions.
+" insert mode alt key funcs.
 
 "cursor
 imap <A-h> <Left>

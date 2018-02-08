@@ -1,4 +1,5 @@
 "Format the statusline
+"---------------------
 
 if (exists('g:powerline_loaded') || exists('g:loaded_airline'))
 	finish
@@ -19,10 +20,10 @@ endif
 "%% 百分号
 "%L 当前文件总行数
 
-function! CurDir()
+func! CurDir()
     let curdir = substitute(getcwd(), expand($HOME), "~", "g")
     return curdir
-endfunction
+endfunc
 
 set statusline=
 

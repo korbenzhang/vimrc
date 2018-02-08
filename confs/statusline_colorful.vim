@@ -4,7 +4,7 @@
 "au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
 "au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
-function! StatusLineColor(mode)
+func! StatusLineColor(mode)
   if a:mode == 'i'
     hi statusline guibg=magenta ctermbg=magenta
   elseif a:mode == 'r'
@@ -12,7 +12,7 @@ function! StatusLineColor(mode)
   else
     hi statusline guibg=red ctermbg=red
   endif
-endfunction
+endfunc
 
 au InsertEnter * call StatusLineColor(v:insertmode)
 "au InsertChange * call StatusLineColor(v:insertmode)

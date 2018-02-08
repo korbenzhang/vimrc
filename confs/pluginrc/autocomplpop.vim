@@ -17,5 +17,5 @@ let g:acp_behaviorKeywordLength = 2
 
 "let g:acp_behaviorKeywordCommand = '\<C-n>'
 
-" many functions start with Get and Is
+" many funcs start with Get and Is
 let g:acp_behaviorKeywordIgnores = ["Get","get", "Is", "is"]

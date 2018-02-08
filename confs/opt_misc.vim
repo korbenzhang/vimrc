@@ -1,4 +1,5 @@
 " Options
+" =======
 
 set smartcase
 
@@ -117,4 +118,14 @@ set showtabline=2
 
 set belloff=all
 
+if executable("bash")
+	set shell=/bin/bash
+endif
 
+if has("directx")
+  set renderoptions=type:directx
+endif
+
+if has('conceal')
+	set conceallevel=2 concealcursor=i
+endif

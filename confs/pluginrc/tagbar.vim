@@ -57,7 +57,7 @@ let g:tagbar_type_go = {
         \ 'e:embedded',
         \ 'm:methods',
         \ 'r:constructor',
-        \ 'f:functions'
+        \ 'f:funcs'
     \ ],
     \ 'sro' : '.',
     \ 'kind2scope' : {

@@ -2,7 +2,6 @@
 " Plugins for javascrit.
 
 "Plug 'myhere/vim-nodejs-complete'
-"Plug 'vim-scripts/Enhanced-Javascript-syntax'
 "Plug 'vim-scripts/JSON.vim'
 "Plug 'vim-scripts/jQuery'
 "Plug 'vim-scripts/jsonvim'
@@ -16,6 +15,7 @@ Plug 'vim-scripts/JavaScript-syntax-add-E4X-support'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug '1995eaton/vim-better-javascript-completion'
+Plug 'jelera/vim-javascript-syntax'
 
 "Plug 'michalliu/jsruntime.vim'
 "Plug 'michalliu/jsflakes.vim'

@@ -26,7 +26,7 @@ let OmniCpp_DisplayMode = 1
 " 1 = show scope in abbreviation and remove the last column
 
 let OmniCpp_ShowScopeInAbbr = 0
-" This option allows to display the prototype of a function in the abbreviation part of the popup menu.
+" This option allows to display the prototype of a func in the abbreviation part of the popup menu.
 " 0 = don't display prototype in abbreviation
 " 1 = display prototype in abbreviation
 

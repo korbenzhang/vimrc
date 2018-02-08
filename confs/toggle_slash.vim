@@ -1,5 +1,5 @@
 
-function! ToggleSlash(independent) range
+func! ToggleSlash(independent) range
   let from = ''
   for lnum in range(a:firstline, a:lastline)
     let line = getline(lnum)
@@ -12,7 +12,7 @@ function! ToggleSlash(independent) range
       call setline(lnum, substitute(line, from, opposite, 'g'))
     endif
   endfor
-endfunction
+endfunc
 command! -bang -range ToggleSlash <line1>,<line2>call ToggleSlash(<bang>1)
 
 

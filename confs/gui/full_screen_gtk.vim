@@ -9,15 +9,12 @@ if !has("gui_gtk")
 endif
 
 if !executable('wmctrl') 
-	"echo "need install wmctrl"
-	"echo "sudo apt-get install wmctrl"
-	"echo ""
-	finish
+	call system('sudo apt-get install wmctrl -y')
 endif
 
 " need install wmctrl
 let g:fullscreen = 0
-function! ToggleFullScreen()
+func! ToggleFullScreen()
     if g:fullscreen == 1
         let g:fullscreen = 0
         let mod = "remove"
@@ -26,7 +23,7 @@ function! ToggleFullScreen()
         let mod = "add"
     endif
     call system("wmctrl -ir " . v:windowid . " -b " . mod . ",fullscreen")
-endfunction
+endfunc
 command! -bar -narg=0 ToggleFullScreen  call ToggleFullScreen()
 
 map <silent> <F11> :call ToggleFullScreen()<CR>

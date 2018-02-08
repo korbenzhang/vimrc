@@ -1,17 +1,20 @@
-"need wmctrl, should install it first.
-"sudo apt-get install wmctrl
 
 if !has("gui_running") 
 	finish
 endif
 
-if !has("gui_gtk")
+if !IsInUnixGui()
 	finish
 endif
 
-function! MaximizeWindow()      
+"need wmctrl, should install it first.
+if !executable("wmctrl")
+	call system('sudo apt-get install wmctrl -y')
+endif
+
+func! MaximizeWindow()      
     silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz  
-endfunction
+endfunc
 command! -bar -narg=0 MaximizeWindow  call MaximizeWindow()
 
 "au GUIEnter * call MaximizeWindow()  

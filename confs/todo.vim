@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------
 " Todo
 " ----------------------------------------------------------------------------
-function! s:todo() abort
+func! s:todo() abort
   let entries = []
   for cmd in ['git grep -niI -e TODO -e FIXME -e XXX 2> /dev/null',
             \ 'grep -rniI -e TODO -e FIXME -e XXX * 2> /dev/null']
@@ -18,7 +18,7 @@ function! s:todo() abort
     call setqflist(entries)
     copen
   endif
-endfunction
+endfunc
 command! Todo call s:todo()
 
 

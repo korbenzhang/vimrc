@@ -1,0 +1,3 @@
+
+Plug 'syngan/vim-vimlint'
+

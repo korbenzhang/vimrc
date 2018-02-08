@@ -1,11 +1,11 @@
 " ----------------------------------------------------------------------------
 " Help in new tabs
 " ----------------------------------------------------------------------------
-function! s:helptab()
+func! s:helptab()
   if &buftype == 'help'
     wincmd T
     nnoremap <buffer> q :q<cr>
   endif
-endfunction
+endfunc
 autocmd vimrc BufEnter *.txt call s:helptab()
 

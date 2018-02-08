@@ -3,9 +3,6 @@ if !IsInWinGui()
 	finish
 endif
 
-if has("directx")
-  set renderoptions=type:directx
-endif
 
 func! MaximizeWindow()
 	if has('gui_running') && has("win32")

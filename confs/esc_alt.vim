@@ -19,7 +19,7 @@ set cpo&vim
 
 " ---------------------------------------------------------------------
 " Functions:
-function EscAltConsole()
+func EscAltConsole()
   for i in range(48, 57) + range(65, 90) + range(97, 122)
     exe "set <M-".nr2char(i).">=\<Esc>".nr2char(i)
   endfor
@@ -68,7 +68,7 @@ function EscAltConsole()
     set <S-F3>=O1;2R
     set <S-F4>=O1;2S
   endif
-endfunction
+endfunc
 " ---------------------------------------------------------------------
 " Call Functions:
 call EscAltConsole()

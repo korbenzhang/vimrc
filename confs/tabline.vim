@@ -1,5 +1,5 @@
 " Tab Line
-function! MabetleTabLine()
+func! MabetleTabLine()
 	let s = ''
 	for i in range(tabpagenr('$'))
 		" 选择高亮
@@ -24,15 +24,15 @@ function! MabetleTabLine()
 		let s .= '%=%#TabLine#%999Xclose'
 	endif
 	return s
-endfunction
+endfunc
 
-function! MabetleTabLabel(n)
+func! MabetleTabLabel(n)
 	let buflist = tabpagebuflist(a:n)
 	let winnr = tabpagewinnr(a:n)
 	return bufname(buflist[winnr - 1])
-endfunction
+endfunc
 
-function! MabetleGuiTabLabel()
+func! MabetleGuiTabLabel()
 	let label = ''
 	let bufnrlist = tabpagebuflist(v:lnum)
 
@@ -53,14 +53,14 @@ function! MabetleGuiTabLabel()
 	endif
 	" 附加缓冲区名
 	return label . bufname(bufnrlist[tabpagewinnr(v:lnum) - 1])
-endfunction
+endfunc
 
-function! ShortTableLabel()
+func! ShortTableLabel()
 	let buflist	 = tabpagebuflist(v:lnum)
 	let label    = bufname(buflist[tabpagewinnr(v:lnum)]-1)
 	let filename = fnamemodify(label,':t')
 	return filename
-endfunction
+endfunc
 
 
 "some stuff to get the mouse going in term

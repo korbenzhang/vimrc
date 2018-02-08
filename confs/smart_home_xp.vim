@@ -1,4 +1,4 @@
-function! SmartHome()
+func! SmartHome()
   let first_nonblank = match(getline('.'), '\S') + 1
   if first_nonblank == 0
     return col('.') + 1 >= col('$') ? '0' : '^'
@@ -7,7 +7,7 @@ function! SmartHome()
     return '0'  " if at first nonblank, go to start line
   endif
   return &wrap && wincol() > 1 ? 'g^' : '^'
-endfunction
+endfunc
 noremap <expr> <silent> <Home> SmartHome()
 imap <silent> <Home> <C-O><Home>
 

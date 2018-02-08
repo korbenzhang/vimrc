@@ -56,7 +56,7 @@ nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
 
-function! s:plug_help_sink(line)
+func! s:plug_help_sink(line)
   let dir = g:plugs[a:line].dir
   for pat in ['doc/*.txt', 'README.md']
     let match = get(split(globpath(dir, pat), "\n"), 0, '')
@@ -67,10 +67,14 @@ function! s:plug_help_sink(line)
   endfor
   tabnew
   execute 'Explore' dir
-endfunction
+endfunc
 
 command! PlugHelp call fzf#run(fzf#wrap({
 	\ 'source': sort(keys(g:plugs)),
-	\ 'sink': function('s:plug_help_sink')}))
+	\ 'sink': func('s:plug_help_sink')}))
 
-
+if has("gui_running") && has("unix_gui") && !has("terminal")
+	"let g:fzf_launcher = 'xterm -e bash -ic %s'
+	let g:fzf_launcher='xterm -fa \"Monospace\" -fs 25 -bg black -fg white -rightbar -sb -e bash -ic %s'
+	"let g:fzf_launcher='gnome-terminal --disable-factory -x bash -ic %s'
+endif

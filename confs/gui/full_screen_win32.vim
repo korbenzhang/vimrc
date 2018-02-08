@@ -4,9 +4,9 @@ if !(has("gui_running") && has("win32"))
 	finish
 endif
 
-function! ToggleFullScreenWin()
+func! ToggleFullScreenWin()
 	call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
-endfunction
+endfunc
 
 command! -bar -narg=0 ToggleFullScreenWin  call ToggleFullScreenWin()
 

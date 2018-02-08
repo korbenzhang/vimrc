@@ -13,7 +13,7 @@ iab fu func
 iab im import
 iab pa package
 iab ma main
-iab fun function
+iab fun func
 iab re return
 
 ab  teh the

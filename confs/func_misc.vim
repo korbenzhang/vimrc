@@ -17,9 +17,9 @@ func! GetExecPrefix(prefix)
 endfunc
 
 "trim string 
-function! Trim(str) abort
+func! Trim(str) abort
   return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
-endfunction
+endfunc
 
 func! TrimEndWhiteSpace()
 	exe "normal mz"
@@ -29,18 +29,18 @@ endfunc
 command! -bar -narg=0 TrimEndWhiteSpace call TrimEndWhiteSpace()
 "au BufWritePre * execute ':%s/\s\+$//g'
 
-function! HasPaste()
+func! HasPaste()
 	if &paste
 		return 'PASTE MODE  '
 	endif
 	return ''
-endfunction
+endfunc
 
-function! UniqLine()
+func! UniqLine()
 	exe "normal mz"
 	%s/^\(.*\)\(\n\1\)\+$/\1/
 	exe "normal `z"
-endfunction
+endfunc
 command! -bar -narg=0 UniqLine  call UniqLine()
 
 func! ComplDisable()
@@ -97,7 +97,7 @@ func! DeleteBeginBlank()
 	:%s/^\s\+//e
 endfunc
 
-function! StripTrailingWhitespace()
+func! StripTrailingWhitespace()
   if !&binary && &filetype != 'diff'
     normal mz
     normal Hmy
@@ -105,9 +105,9 @@ function! StripTrailingWhitespace()
     normal 'yz<CR>
     normal `z
   endif
-endfunction
+endfunc
 
-function! StripTrailingWhitespace2()
+func! StripTrailingWhitespace2()
 	normal mZ
 	let l:chars = col("$")
 	%s/\s\+$//e
@@ -115,12 +115,12 @@ function! StripTrailingWhitespace2()
 		echo "Trailing whitespace stripped\n"
 	endif
 	normal `Z
-endfunction
+endfunc
 
 "  Vimrc
-function! EditVimrc()
+func! EditVimrc()
     :source ~/.vim/vimrc
-endfunction
+endfunc
 command! -bar -narg=0 EditVimrc  call EditVimrc()
 
 func! UpdateVimrc()
@@ -129,38 +129,38 @@ endfunc
 command! -bar -narg=0 UpdateVimrc  call UpdateVimrc()
 
 "  line end blank
-function! DeleteLineEndBlank()
+func! DeleteLineEndBlank()
 	execute ':%s/\s\+$//g'
-endfunction
+endfunc
 command! -bar -narg=0 DeleteLineEndBlank  call DeleteWindowsLineEnd()
 
 " edit hosts
-function! EditHosts()
+func! EditHosts()
 	if has("win32") || has("win32unix")
 		execute ':tabedit C:/Windows/System32/drivers/etc/hosts'
 	else
 		execute ':tabedit /etc/hosts'
 	endif
-endfunction
+endfunc
 command! -bar -narg=0 EditHosts  call EditHosts()
 
 " Sudo save.
-function! SudoSave()
+func! SudoSave()
 	execute ':w !sudo tee %'
-endfunction
+endfunc
 command! -bar -narg=0 SudoSave  call SudoSave()
 
 "  Delete Windows ^M
-function! DeleteWindowsLineEnd()
+func! DeleteWindowsLineEnd()
 	execute ':%s///g'
-endfunction
+endfunc
 command! -bar -narg=0 DeleteWindowsLineEnd  call DeleteWindowsLineEnd()
 
 
 "Remove indenting on empty line
 "F2处理行尾的空格以及文件尾部的多余空行
 "map <F2> :w<CR>:call CleanupBuffer(1)<CR>:noh<CR>
-function! CleanupBuffer(keep)
+func! CleanupBuffer(keep)
     " Skip binary files
     if (&bin > 0)
         return
@@ -189,12 +189,12 @@ function! CleanupBuffer(keep)
     endif
     " after clean spaces and tabs, jump back
     exec "normal " . lnum . "G"
-endfunction
+endfunc
 command! -bar -narg=0 CleanupBuffer call CleanupBuffer(1)
 
-function! UpdateTagFile()
+func! UpdateTagFile()
     silent !ctags -R --fields=+ianS --extra=+q
-endfunction
+endfunc
 command! -bar -narg=0 UpdateTagFile  call UpdateTagFile()
 
 " RunLine
@@ -287,9 +287,9 @@ endf
 command! -bar -narg=0 SudoRunLine  call SudoRunLine()
 
 " RunCurrentLine
-function! RunSelection()
+func! RunSelection()
 	execute ":'<,'>w ! sh"
-endfunction
+endfunc
 command! -bar -narg=0 RunSelection  call RunSelection()
 
 " InstallCtags
@@ -304,26 +304,26 @@ func! InstallCtags()
 	endif
 	"in windows,copy to bin dir
 
-endfunction
+endfunc
 command! -bar -narg=0 InstallCtags  call InstallCtags()
 
 " GBKTerm
 func! GBKTerm()
 	set termencoding=GBK
-endfunction
+endfunc
 command! -bar -narg=0 GBKTerm  call GBKTerm()
 
 
 " UTFTerm
 func! UTFTerm()
 	set termencoding=utf-8
-endfunction
+endfunc
 command! -bar -narg=0 UTFTerm  call UTFTerm()
 
 " NoBell
 func! BellDisable()
 	set vb t_vb=
-endfunction
+endfunc
 command! -bar -narg=0 BellDisable  call BellDisable()
 
 func! ViewUrl()
@@ -361,7 +361,7 @@ command! -bar -narg=* RunGoCmds  call RunGoCmds(<f-args>)
 " ----------------------------------------------------------------------------
 " :Root | Change directory to the root of the Git repository
 " ----------------------------------------------------------------------------
-function! Root()
+func! Root()
   let root = systemlist('git rev-parse --show-toplevel')[0]
   if v:shell_error
     echo 'Not in git repo'
@@ -369,7 +369,7 @@ function! Root()
     execute 'lcd' root
     echo 'Changed directory to: '.root
   endif
-endfunction
+endfunc
 command! Root call Root()
 
 func! RunFile(prefix)
@@ -417,11 +417,11 @@ func! FmtIndent()
 endfunc
 command! FmtIndent call FmtIndent()
 
-function! TrimEndLines()
+func! TrimEndLines()
 	let save_cursor = getpos(".")
 	:silent! %s#\($\n\s*\)\+\%$##
 	call setpos('.', save_cursor)
-endfunction
+endfunc
 command! -bar -narg=0 TrimEndLines call TrimEndLines()
 
 func! Fmt()

@@ -117,7 +117,7 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
 
 " run :GoBuild or :GoTestCompile based on the go file
-function! GoBuildFiles()
+func! GoBuildFiles()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
     call go#cmd#Test(0, 1)
@@ -125,7 +125,7 @@ function! GoBuildFiles()
     "call go#cmd#Build(0)
     call go#cmd#Install(0)
   endif
-endfunction
+endfunc
 command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>

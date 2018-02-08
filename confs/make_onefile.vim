@@ -8,7 +8,7 @@ if(has("win32") || has("win95") || has("win64") || has("win16"))
     let g:iswindows=1
 endif
 
-function! Do_OneFileMake()
+func! Do_OneFileMake()
     if expand("%:p:h")!=getcwd()
         echohl WarningMsg | echo "Fail to make! This file is not in the current dir! Press <F7> to redirect to the dir of this file." | echohl None
         return
@@ -68,17 +68,17 @@ function! Do_OneFileMake()
         endif
     endif
     execute "copen"
-endfunction
+endfunc
 command! -bar -narg=0 DoMakeOneFile  call Do_OneFileMake()
 
 "进行make的设置
 "map <F6> :call Do_make()<CR>
 "map <c-F6> :silent make clean<CR>
-function! Do_make()
+func! Do_make()
     set makeprg=make
     execute "silent make"
     execute "copen"
-endfunction
+endfunc
 command! -bar -narg=0 DoMake  call Do_make()
 
 

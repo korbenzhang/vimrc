@@ -9,7 +9,7 @@ nmap , <leader>
 let g:vimrc#completer="unknown"
 let g:vimrc#snippet="unknown"
 
-function! IsInWin()
+func! IsInWin()
 	let win = ['win16', 'win32', 'win64', 'win95']
 	for w in win
 		if (has(w))
@@ -17,40 +17,40 @@ function! IsInWin()
 		endif
 	endfor
 	return 0
-endfunction
+endfunc
 
 func! IsInGui()
 	return has("gui_running")
 endfunc
 
-function! IsInDos()
+func! IsInDos()
 	return IsInWin() && !has("gui_running")
-endfunction
+endfunc
 
-function! IsInWinGui()
+func! IsInWinGui()
 	return IsInWin() && has("gui_running")
-endfunction
+endfunc
 
-function! IsInUnix()
+func! IsInUnix()
 	return has("unix")
-endfunction
+endfunc
 
-function! IsInUnixGui()
+func! IsInUnixGui()
 	return has("unix") && has("gui_running")
-endfunction
+endfunc
 
-function! IsInUnixConsole()
+func! IsInUnixConsole()
 	return has("unix") && !has("gui_running")
-endfunction
+endfunc
 
 " cygwin
-function! IsInWinUnix()
+func! IsInWinUnix()
 	return has("win32unix")
-endfunction
+endfunc
 
-function! IsInXterm()
+func! IsInXterm()
 	return &term =~ "xterm"
-endfunction
+endfunc
 
 func! IsInNvim()
 	return has("nvim")
@@ -58,7 +58,7 @@ endfunc
 
 
 " make dir for both windows and unix.
-function! InitDir(dir)
+func! InitDir(dir)
 	setl noshellslash
 	let init_dir = expand(a:dir)
 	if isdirectory(init_dir)
@@ -74,40 +74,44 @@ function! InitDir(dir)
 	" linux and others.
 	silent exec "!mkdir -p ".init_dir
 	setl shellslash
-endfunction
+endfunc
 
 " IsHasPython
-function! IsHasPython()
+func! IsHasPython()
 	return has("python") || has("python3")
-endfunction
+endfunc
 
-function! IsHasPython3()
+func! IsHasPython3()
 	return has("python3")
-endfunction
+endfunc
 
 " IsHasLua
-function! IsHasLua()
+func! IsHasLua()
 	return has("lua")
-endfunction
+endfunc
 
 " IsHasRuby
-function! IsHasRuby()
+func! IsHasRuby()
 	return has("ruby")
-endfunction
+endfunc
 
-function! IsHasCtags()
+func! IsHasCtags()
 	return executable("ctags")
-endfunction
+endfunc
 
+func! IsHasXterm()
+	return executable("xterm")
+endfunc
 
-function! ShowEnv()
+func! ShowEnv()
 	echo "Vim Version           :".version
-	"echo 'Vim            :'.
 	echo "Is Has Lua            :".IsHasLua()
 	echo "Is Has Ruby           :".IsHasRuby()
 	echo "Is Has Python         :".IsHasPython()
 	echo "Is Has Python3        :".IsHasPython3()
 	echo "Is Has Ctags          :".IsHasCtags()
+	echo "Is Has Directx        :".has("directx")
+	echo "Is Has Terminal       :".has("terminal")
 	echo "\n"
 
 	echo "Is In  GUI            :".IsInGui()
@@ -116,7 +120,6 @@ function! ShowEnv()
 	echo "Is In  Unix           :".IsInUnix()
 	echo "Is In  Xterm          :".IsInXterm()
 	echo "Is In  Nvim           :".IsInNvim()
-	echo "Is In  Directx        :".has("directx")
 	echo "\n"
 
 	echo "GOROOT                :".$GOROOT
@@ -129,7 +132,7 @@ function! ShowEnv()
 	
 	echo "Complete              :".g:vimrc#completer
 	echo "Snippet               :".g:vimrc#snippet
-endfunction
+endfunc
 
 command! -bar -narg=0 ShowEnv  call ShowEnv()
 

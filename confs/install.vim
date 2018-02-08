@@ -1,6 +1,6 @@
 " Install some vim needed.
 
-function! CheckCtags()
+func! CheckCtags()
 	echo "Check ctags ... "
 	if executable('ctags')
 		echo "ctags is exists."
@@ -16,9 +16,9 @@ function! CheckCtags()
 	endif
 
 	echo "end check ctags."
-endfunction
+endfunc
 
-function! CheckGoTags()
+func! CheckGoTags()
 	echo "Check gotags ..."
 
 	if !executable("gotags")
@@ -35,19 +35,19 @@ function! CheckGoTags()
 	silent exec "go get github.com/jstemmer/gotags"
 
 	echo "end check gotags."
-endfunction
+endfunc
 
-function! IsHasGo()
+func! IsHasGo()
 	if executable("go")
 		return 1
 	endif
 	echo "not found go, gotags depends on go."
 	echo "see: https://github.com/golang/go"
 	return 0
-endfunction
+endfunc
 
 
-function! CheckGoCode()
+func! CheckGoCode()
 	echo "check gocode ..."
 	if executable("gocode")
 		echo "gocode exists."
@@ -62,6 +62,6 @@ function! CheckGoCode()
 	silent exec "go get github.com/nsf/gocode"
 	
 	echo "end check gocode."
-endfunction
+endfunc
 
 

@@ -1,5 +1,8 @@
+if has("gui_running")
+	finish
+endif
 
-function! WindowCenterInScreen()
+func! WindowCenterInScreen()
     set lines=9999 columns=9999
     let g:windowsSizeFixX = 58
     let g:windowsSizeFixY = 118

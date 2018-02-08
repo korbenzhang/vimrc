@@ -27,10 +27,10 @@ map <M-F9> :NERDTreeToggle<cr>
 
 let NERDTreeIgnore = ['\~$','\.pyc$','\*NTUSER*','\*ntuser*','\NTUSER.DAT','\ntuser.ini']
 
-function! Newtab(path)
+func! Newtab(path)
     let filepath = a:path 
     exec 'tabe'
     exec 'NERDTree '.filepath
-endfunction
+endfunc
 com! -nargs=1 -range=% Newtab call Newtab(<f-args>)
 

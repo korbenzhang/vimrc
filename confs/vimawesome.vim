@@ -5,7 +5,7 @@
 
 
 
-function! VimAwesomeComplete() abort
+func! VimAwesomeComplete() abort
   let prefix = matchstr(strpart(getline('.'), 0, col('.') - 1), '[.a-zA-Z0-9_/-]*$')
   echohl WarningMsg
   echo 'Downloading plugin list from VimAwesome'
@@ -42,7 +42,7 @@ EOF
     call complete(col('.') - strchars(prefix), cands)
   endif
   return ''
-endfunction
+endfunc
 
 autocmd vimrc FileType vim inoremap <buffer> <c-x><c-v> <c-r>=VimAwesomeComplete()<cr>
 
