@@ -118,7 +118,7 @@ set showtabline=2
 
 set belloff=all
 
-if executable("bash")
+if has("unix") && executable("bash")
 	set shell=/bin/bash
 endif
 
