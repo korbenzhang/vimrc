@@ -456,3 +456,16 @@ func! FullUI()
 endfunc
 command! -bar -narg=0 FullUI call FullUI()
 
+
+func! GitCloneLine()
+	"TODO check dir exists or not
+	exec '!cd ~/checkout/ && git clone '. getline('.')
+endfunc
+command! -bar -narg=0 GitCloneLine call GitCloneLine()
+
+func! GoGetLine()
+	"TODO check dir exists or not
+	exec '!go get -v '. getline('.')
+endfunc
+command! -bar -narg=0 GoGetLine call GoGetLine()
+
