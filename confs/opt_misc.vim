@@ -1,6 +1,7 @@
 " Options
 " =======
 
+"for search
 set smartcase
 
 " Set to auto read when a file is changed from the outside
@@ -38,6 +39,7 @@ syntax on
 
 set backspace=indent,eol,start
 set whichwrap+=b,s,h,l,<,>,[,]
+
 set linebreak
 
 " Turn off welcome page
@@ -47,9 +49,12 @@ if has("win32")
 	set shellpipe=\|\ tee
 endif
 
+" show number by default
 set number
 
+"default is off. 
 set title
+
 
 " alt not access menu
 set winaltkeys=no
@@ -77,15 +82,22 @@ set isfname-==
 
 "set display=lastline
 "set history=200
-set lazyredraw
-set linebreak
+"default is off
+"set lazyredraw
+
 "set listchars=tab:>\ ,trail:-,extends:>,precedes:<
+
 set pastetoggle=<F12>
+
 "set scrolloff=1
+
 "set sidescrolloff=5
+
 set shiftround
+
 "setglobal tags=./tags;
-"set ruler
+
+set ruler
 
 "set ttyfast
 "set ttimeout
@@ -94,14 +106,18 @@ set shiftround
 set timeout timeoutlen=2000 ttimeoutlen=100
 
 "set virtualedit=block
+
 "set nojoinspaces
+
 "set diffopt=filler,vertical
-set autoread
+
 set ambiwidth=double
 
 set noimcmdline
 
 autocmd QuickFixCmdPre * :update
+
+" auto open quick fix window
 autocmd QuickFixCmdPost * :copen 
 
 set notimeout          " 映射时不检查超时
@@ -113,8 +129,8 @@ set timeoutlen=100     " 超时为 100 毫秒
 "现空格。 B 表示将两行合并为一行的时候，汉字与汉字之间不要补空格。
 set fo+=mB 
 
-set laststatus=2
-set showtabline=2
+"set laststatus=1
+"set showtabline=1
 
 set belloff=all
 
