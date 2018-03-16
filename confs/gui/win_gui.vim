@@ -11,7 +11,14 @@ func! MaximizeWindow()
 endfunc
 command! -bar -narg=0 MaximizeWindow  call MaximizeWindow()
 
+if exists("g:maxwin")
+	"do nothing
+else
+	let g:maxwin=0
+endif
+
 " MaximizeWindow when givm startup.
-if has('gui_running') && has("win32")
+if has('gui_running') && has("win32") && (g:maxwin==0)
 	au GUIEnter * simalt ~x
+	let g:maxwin=1
 endif

@@ -11,7 +11,12 @@ endif
 
 let g:vimrc#completer="Valloric/YouCompleteMe"
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'on': [] }
+
+augroup load_ycm
+    autocmd!
+    autocmd InsertEnter * call plug#load('YouCompleteMe') | autocmd! load_cmd
+augroup END
 
 " YCM Config
 
@@ -45,6 +50,7 @@ let g:ycm_goto_buffer_command = 'horizontal-split'
 "let g:ycm_goto_buffer_command = 'new-or-existing-tab'
 "let g:ycm_goto_buffer_command = 'new-tab'
 
+nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
 

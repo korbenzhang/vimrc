@@ -1,9 +1,10 @@
 " vimsheel needs vimproc.
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+"
+" see ~/.vim/bundle/vimproc.vim
 
-if has("win64")
-	let g:vimproc_dll_path="~/.vim/misc/tools/vimproc_win64.dll"
-elseif has("win32")
-	let g:vimproc_dll_path="~/.vim/misc/tools/vimproc_win32.dll"
+if has("win32")
+	Plug 'Shougo/vimproc.vim'
+else
+	Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 endif
 

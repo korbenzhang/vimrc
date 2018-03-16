@@ -229,6 +229,8 @@ command! -bar -narg=0 RunLine  call RunLine("!")
 command! -bar -narg=0 RL  call RunLine("!")
 command! -bar -narg=0 RCL  call RunLine("!")
 command! -bar -narg=0 ARCL call RunLine("!start cmd /k")
+command! -bar -narg=0 TRCL call RunLine("term")
+command! -bar -narg=0 AsyncRCL call RunLine("AsyncRun")
 
 fun! RunSQLLine()
 	let line = getline('.')
