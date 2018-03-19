@@ -1,6 +1,3 @@
 " XML
-Plug 'vim-scripts/xml.vim'
-Plug 'nistude/xmledit'
+Plug 'othree/xml.vim'
 
-"Plug 'vim-scripts/XML-Folding'
-"Plug 'vim-scripts/XML-Indent'

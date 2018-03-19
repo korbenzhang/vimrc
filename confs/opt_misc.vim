@@ -145,3 +145,18 @@ endif
 if has('conceal')
 	set conceallevel=2 concealcursor=i
 endif
+
+
+" speed key words comlete.
+set complete-=i   " disable scanning included files
+set complete-=t   " disable searching tags
+
+set completeopt=longest,menu
+
+set splitbelow
+set splitright
+
+if has('terminal')
+	"noremap <M-`> :term<cr>
+	map <M-`> :term<cr>
+endif

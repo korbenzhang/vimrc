@@ -7,15 +7,17 @@ nnoremap Y y$
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
-map <F4> :close<cr>
+noremap <F4> :close<cr>
 
-nmap <C-s> :w<cr>
+" NOTICE: linux console use C-S lock console
+" use C-Q unlock console.
+noremap <C-s> :w<cr>
 imap <C-s> <C-O>:w<cr>
 
-nmap <M-s> :w<cr>
+noremap <M-s> :w<cr>
 imap <M-s> <C-O>:w<cr>
 
-nmap <M-q> :close<cr>
+noremap <M-q> :close<cr>
 imap <M-q> <C-O>:close<cr>
 
 "Delete Lines

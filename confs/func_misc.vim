@@ -333,6 +333,27 @@ func! ViewUrl()
 endfunc
 command! -bar -narg=0 ViewUrl call ViewUrl()
 
+" RevelView 
+fun! RevelView()
+	let line = getline('.')
+	let line = Trim(line)
+
+	let start = strpart(line,0,4)
+
+	if start != "func"
+		echo "no func in this line"
+		return
+	endif
+	
+	let ip = split(line,' ')
+	let tn = split(ip[2],")")[0]
+	let fn = split(ip[3],"(")[0]
+	execute ':tabnew ../views/'. tn . '/' . fn.'.html'
+	"echo ':tabnew ../views/'. tn . '/' . fn.'.html'
+endfun
+command! -bar -narg=0 RevelView  call RevelView()
+
+
 "run mcmd cmds directly
 fun! RunGoCmdFunc(...)
 	let line = getline('.')

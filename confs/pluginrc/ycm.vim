@@ -11,12 +11,7 @@ endif
 
 let g:vimrc#completer="Valloric/YouCompleteMe"
 
-Plug 'Valloric/YouCompleteMe', { 'on': [] }
-
-augroup load_ycm
-    autocmd!
-    autocmd InsertEnter * call plug#load('YouCompleteMe') | autocmd! load_cmd
-augroup END
+Plug 'Valloric/YouCompleteMe'
 
 " YCM Config
 
@@ -44,23 +39,21 @@ let g:ycm_complete_in_strings = 1   "在字符串输入中也能补全
 let g:ycm_use_ultisnips_completer = 1 "提示UltiSnips
 let g:ycm_collect_identifiers_from_comments_and_strings = 1   "注释和字符串中的文字也会被收入补全
 let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_autoclose_preview_window_after_completion=1
 
 " 跳转到定义处, 分屏打开
 let g:ycm_goto_buffer_command = 'horizontal-split'
 "let g:ycm_goto_buffer_command = 'new-or-existing-tab'
 "let g:ycm_goto_buffer_command = 'new-tab'
 
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
-
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
 let g:ycm_global_ycm_extra_conf ='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 let g:ycm_confirm_extra_conf=0 "关闭加载.ycm_extra_conf.py提示
-
-
-
 
 
