@@ -3,7 +3,6 @@ if !IsInWinGui()
 	finish
 endif
 
-
 func! MaximizeWindow()
 	if has('gui_running') && has("win32")
 		simalt ~x
