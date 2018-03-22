@@ -1,0 +1,3 @@
+
+Plug 'maksimr/vim-jsbeautify'
+
