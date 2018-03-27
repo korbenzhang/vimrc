@@ -5,6 +5,9 @@ scriptencoding utf-8
 
 set nocompatible
 
+source ~/.vim/confs/vimrc.vim
+source ~/.vim/confs/gvimrc.vim
+
 " Env
 " ----
 if filereadable(expand('~/.vim/extra/extra_env.vim'))

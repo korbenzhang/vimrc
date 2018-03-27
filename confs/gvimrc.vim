@@ -1,16 +1,5 @@
-" An example for a gvimrc file.
-" The commands in this are executed when the GUI is started, after the vimrc
-" has been executed.
+" see $VIMRUNTIME/gvimrc_example.vim
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2016 Apr 05
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.gvimrc
-"	      for Amiga:  s:.gvimrc
-"  for MS-DOS and Win32:  $VIM\_gvimrc
-"	    for OpenVMS:  sys$login:.gvimrc
-
 " Make external commands work through a pipe instead of a pseudo-tty
 "set noguipty
 
@@ -32,12 +21,6 @@ if version >= 500
   if !exists("syntax_on")
     syntax on
   endif
-
-  " For Win32 version, have "K" lookup the keyword in a help file
-  "if has("win32")
-  "  let winhelpfile='windows.hlp'
-  "  map K :execute "!start winhlp32 -k <cword> " . winhelpfile <CR>
-  "endif
 
   " Set nice colors
   " background for normal text is light grey

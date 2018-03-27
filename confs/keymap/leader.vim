@@ -2,5 +2,6 @@
 " ==================
 
 map <leader>. :e .<cr>
-nmap <leader><leader> :
+
+"nmap <leader><leader> :
 
