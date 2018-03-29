@@ -1,7 +1,3 @@
-#!/bin/sh
-
-#see ~/.vim/rundata
-
 # make some dirs
 mkdir ~/.vim/rundata/views
 mkdir ~/.vim/rundata/undo
