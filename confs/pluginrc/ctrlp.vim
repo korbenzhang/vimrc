@@ -3,7 +3,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-map <leader>f :CtrlPMRU<CR>
+noremap <leader>f :CtrlP<CR>
 
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',

@@ -6,7 +6,9 @@ if v:progname =~? "evim"
 endif
 
 " Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+if !has("nvim")
+	source $VIMRUNTIME/defaults.vim
+endif
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -46,6 +48,6 @@ endif " has("autocmd")
 " compatible.
 " The ! means the package won't be loaded right away but when plugins are
 " loaded during initialization.
-if has('syntax') && has('eval')
+if has('syntax') && has('eval') && (!has('nvim'))
   packadd! matchit
 endif

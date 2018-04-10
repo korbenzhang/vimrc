@@ -16,8 +16,8 @@ let g:go_template_autocreate = 0
 let g:go_fmt_command = 'goimports'
 
 " guru or godef
-"let g:go_def_mode = 'godef'
-let g:go_def_mode = 'guru'
+let g:go_def_mode = 'godef'
+"let g:go_def_mode = 'guru'
 
 " default is 1
 " when save fmt or not
@@ -136,9 +136,6 @@ command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>
 
 let g:go_doc_keywordprg_enabled = 1
-
-" options: gocode guru
-let g:go_def_mode = 'guru'
 
 " GoInstallBinnaries
 " default is 1.
