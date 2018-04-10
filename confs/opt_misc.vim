@@ -50,11 +50,10 @@ if has("win32")
 endif
 
 " show number by default
-set number
+set nonu
 
 "default is off. 
 set title
-
 
 " alt not access menu
 set winaltkeys=no
@@ -129,8 +128,8 @@ set timeoutlen=100     " 超时为 100 毫秒
 "现空格。 B 表示将两行合并为一行的时候，汉字与汉字之间不要补空格。
 set fo+=mB 
 
-"set laststatus=1
-"set showtabline=1
+set laststatus=0
+set showtabline=2
 
 set belloff=all
 
@@ -160,3 +159,7 @@ if has('terminal')
 	"noremap <M-`> :term<cr>
 	map <M-`> :term<cr>
 endif
+
+set noshowmode
+
+

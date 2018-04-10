@@ -17,14 +17,17 @@ let g:go_fmt_command = 'goimports'
 
 " guru or godef
 "let g:go_def_mode = 'godef'
+let g:go_def_mode = 'guru'
 
 " default is 1
 " when save fmt or not
 let g:go_fmt_autosave = 1
 
 " for neovim only.
-let g:go_term_mode = 'split'
-let g:go_term_enabled = 1
+if has('nvim')
+	let g:go_term_mode = 'split'
+	let g:go_term_enabled = 1
+endif
 
 " default is 0
 " let g:go_dispatch_enabled = 0
@@ -39,7 +42,9 @@ let g:go_term_enabled = 1
 "let g:go_def_mapping_enabled = 1
 
 "default is disable
-"let g:go_auto_type_info = 0
+" slow down vim 
+let g:go_auto_type_info = 0
+let g:go_auto_sameids = 0
 
 " default is disable
 "let g:go_metalinter_autosave = 0
@@ -130,3 +135,20 @@ command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>
 
+let g:go_doc_keywordprg_enabled = 1
+
+" options: gocode guru
+let g:go_def_mode = 'guru'
+
+" GoInstallBinnaries
+" default is 1.
+let g:go_get_update = 1
+
+" default is 1, need noshowmode
+set noshowmode
+let g:go_echo_go_info = 1
+
+" options: guru gocode, default is gocode, gocode is faster than guru
+let g:go_info_mode = 'gocode'
+
+let g:go_def_mapping_enabled = 1

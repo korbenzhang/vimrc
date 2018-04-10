@@ -8,7 +8,7 @@ set novisualbell
 
 " show mode in last line.
 " vim default is on.
-"set showmode
+set noshowmode
 
 " display incomplete command,default is on
 "set showcmd

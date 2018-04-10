@@ -1,0 +1,4 @@
+
+Plug 'joereynolds/vim-minisnip'
+
+

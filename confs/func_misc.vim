@@ -492,3 +492,26 @@ func! GoGetLine()
 endfunc
 command! -bar -narg=0 GoGetLine call GoGetLine()
 
+func! ViewGoPkgDir()
+	let line=getline('.')
+	let as=split(line,' ')
+	let pkg=as[len(as)-1]
+	let cmd=":e " . $GOPATH . '/src/' . pkg
+	"echo expand(cmd)
+	exec "". expand(cmd)
+endfunc
+command! -bar -narg=0 ViewGoPkgDir call ViewGoPkgDir()
+
+func! GoGet()
+	let line=getline('.')
+	let cmd="go get -v " . pkg
+	exec "". cmd
+endfunc
+command! -bar -narg=0 GoGet call GoGet()
+
+func! GoUpdate()
+	let line=getline('.')
+	let cmd="go get -u -v " . pkg
+	exec "". cmd
+endfunc
+command! -bar -narg=0 GoUpdate call GoUpdate()

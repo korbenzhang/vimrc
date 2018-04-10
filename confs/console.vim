@@ -3,8 +3,8 @@
 " show match
 set showmatch
 
-" show mode
-set showmode
+" show mode, show insert/update etc in status line.
+set noshowmode
 
 " tty scole
 "set tsl=0
