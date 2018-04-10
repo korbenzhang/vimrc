@@ -52,6 +52,28 @@ let g:go_auto_sameids = 0
 let g:go_jump_to_error = 1
 "let g:go_list_height = 10
 
+let g:go_doc_keywordprg_enabled = 1
+
+" GoInstallBinnaries
+" default is 1.
+let g:go_get_update = 1
+
+" default is 1, need noshowmode
+"set noshowmode
+"let g:go_echo_go_info = 1
+
+" options: guru gocode, default is gocode, gocode is faster than guru
+let g:go_info_mode = 'gocode'
+
+let g:go_def_mapping_enabled = 1
+
+if has("win32")
+  let g:go_gocode_socket_type = 'tcp'
+else
+  let g:go_gocode_socket_type = 'unix'
+endif
+
+
 " GoDef
 au FileType go nmap gt <Plug>(go-def-tab)
 
@@ -70,6 +92,7 @@ if has("win32")
 else
 	au FileType go nmap <C-b> <Plug>(go-install)
 endif
+
 
 au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
@@ -109,15 +132,6 @@ au BufRead,BufNewFile *.go setl filetype=go
 
 au FileType go set dictionary+=~/.vim/confs/dict/golang.dict
 
-"should define GOROOT and GOCODES
-if exists("$GOROOT")
-	au FileType go setl tags+=$GOROOT/src/tags
-endif 
-
-if exists("$GOCODES")
-	au FileType go setl tags+=$GOCODES/src/tags
-endif
-
 "let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 "let g:syntastic_go_checkers = ['golint', 'govet']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
@@ -138,17 +152,3 @@ command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>
 
-let g:go_doc_keywordprg_enabled = 1
-
-" GoInstallBinnaries
-" default is 1.
-let g:go_get_update = 1
-
-" default is 1, need noshowmode
-set noshowmode
-let g:go_echo_go_info = 1
-
-" options: guru gocode, default is gocode, gocode is faster than guru
-let g:go_info_mode = 'gocode'
-
-let g:go_def_mapping_enabled = 1
