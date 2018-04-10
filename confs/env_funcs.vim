@@ -19,10 +19,6 @@ func! IsInWin()
 	return 0
 endfunc
 
-func! IsInGui()
-	return has("gui_running")
-endfunc
-
 func! IsInDos()
 	return IsInWin() && !has("gui_running")
 endfunc
@@ -52,11 +48,6 @@ func! IsInXterm()
 	return &term =~ "xterm"
 endfunc
 
-func! IsInNvim()
-	return has("nvim")
-endfunc
-
-
 " make dir for both windows and unix.
 func! InitDir(dir)
 	setl noshellslash
@@ -76,50 +67,14 @@ func! InitDir(dir)
 	setl shellslash
 endfunc
 
-" IsHasPython
-func! IsHasPython()
-	return has("python") || has("python3")
-endfunc
-
-func! IsHasPython3()
-	return has("python3")
-endfunc
-
-" IsHasLua
-func! IsHasLua()
-	return has("lua")
-endfunc
-
-" IsHasRuby
-func! IsHasRuby()
-	return has("ruby")
-endfunc
-
-func! IsHasCtags()
-	return executable("ctags")
-endfunc
-
-func! IsHasXterm()
-	return executable("xterm")
-endfunc
-
 func! ShowEnv()
 	echo "Vim Version           :".version
-	echo "Is Has Lua            :".IsHasLua()
-	echo "Is Has Ruby           :".IsHasRuby()
-	echo "Is Has Python         :".IsHasPython()
-	echo "Is Has Python3        :".IsHasPython3()
-	echo "Is Has Ctags          :".IsHasCtags()
+	echo "Is Has Lua            :".has("lua")
+	echo "Is Has Ruby           :".has("ruby")
+	echo "Is Has Python         :".has("python")
+	echo "Is Has Python3        :".has("python3")
 	echo "Is Has Directx        :".has("directx")
 	echo "Is Has Terminal       :".has("terminal")
-	echo "\n"
-
-	echo "Is In  GUI            :".IsInGui()
-	echo "Is In  Win            :".IsInWin()
-	echo "Is In  WinUnix        :".IsInWinUnix()
-	echo "Is In  Unix           :".IsInUnix()
-	echo "Is In  Xterm          :".IsInXterm()
-	echo "Is In  Nvim           :".IsInNvim()
 	echo "\n"
 
 	echo "GOROOT                :".$GOROOT

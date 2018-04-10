@@ -28,11 +28,6 @@ Plug 'majutsushi/tagbar'
 " html
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
-"Plug 'tpope/vim-markdown'
-
-"golang
-source ~/.vim/confs/pluginrc/golang.vim
 
 " Extra Plugins
 if filereadable(expand('~/.vim/extra/extra_plugins.vim'))

@@ -53,7 +53,11 @@ endif
 set nonu
 
 "default is off. 
+"see titlestring
 set title
+
+" title string
+"set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 
 " alt not access menu
 set winaltkeys=no
@@ -76,9 +80,6 @@ set noerrorbells novisualbell t_vb=
 " isfname when go to file seperate by = 
 set isfname-==
 
-" title string
-"set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
-
 "set display=lastline
 "set history=200
 "default is off
@@ -86,13 +87,11 @@ set isfname-==
 
 "set listchars=tab:>\ ,trail:-,extends:>,precedes:<
 
-set pastetoggle=<F12>
+"set pastetoggle=<F12>
 
 "set scrolloff=1
 
 "set sidescrolloff=5
-
-set shiftround
 
 "setglobal tags=./tags;
 
@@ -145,21 +144,24 @@ if has('conceal')
 	set conceallevel=2 concealcursor=i
 endif
 
+" default is off
+"set shiftround
 
 " speed key words comlete.
 set complete-=i   " disable scanning included files
 set complete-=t   " disable searching tags
 
-set completeopt=longest,menu
-
 set splitbelow
 set splitright
 
 if has('terminal')
+	" 
 	"noremap <M-`> :term<cr>
 	map <M-`> :term<cr>
 endif
 
+"If in Insert, Replace or Visual mode put a message on the last line.
+"default is off
 set noshowmode
 
 

@@ -29,13 +29,6 @@ endfunc
 command! -bar -narg=0 TrimEndWhiteSpace call TrimEndWhiteSpace()
 "au BufWritePre * execute ':%s/\s\+$//g'
 
-func! HasPaste()
-	if &paste
-		return 'PASTE MODE  '
-	endif
-	return ''
-endfunc
-
 func! UniqLine()
 	exe "normal mz"
 	%s/^\(.*\)\(\n\1\)\+$/\1/
@@ -49,7 +42,7 @@ endfunc
 command! -bar -narg=0 ComplDisable  call ComplDisable()
 
 func! AddBlankLine()
-	exe ':%s/\n/\r\r/ge'
+	exec ':%s/\n/\r\r/ge'
 endfunc
 command! -bar -narg=0 AddBlankLine call AddBlankLine()
 
@@ -117,17 +110,6 @@ func! StripTrailingWhitespace2()
 	normal `Z
 endfunc
 
-"  Vimrc
-func! EditVimrc()
-    :source ~/.vim/vimrc
-endfunc
-command! -bar -narg=0 EditVimrc  call EditVimrc()
-
-func! UpdateVimrc()
-	
-endfunc
-command! -bar -narg=0 UpdateVimrc  call UpdateVimrc()
-
 "  line end blank
 func! DeleteLineEndBlank()
 	execute ':%s/\s\+$//g'
@@ -156,10 +138,13 @@ func! DeleteWindowsLineEnd()
 endfunc
 command! -bar -narg=0 DeleteWindowsLineEnd  call DeleteWindowsLineEnd()
 
+func! ToUnixFile()
+	set ff=unix
+	silent :w
+endfunc
+command! -bar -narg=0 ToUnixFile  call ToUnixFile()
 
 "Remove indenting on empty line
-"F2处理行尾的空格以及文件尾部的多余空行
-"map <F2> :w<CR>:call CleanupBuffer(1)<CR>:noh<CR>
 func! CleanupBuffer(keep)
     " Skip binary files
     if (&bin > 0)
@@ -191,11 +176,6 @@ func! CleanupBuffer(keep)
     exec "normal " . lnum . "G"
 endfunc
 command! -bar -narg=0 CleanupBuffer call CleanupBuffer(1)
-
-func! UpdateTagFile()
-    silent !ctags -R --fields=+ianS --extra=+q
-endfunc
-command! -bar -narg=0 UpdateTagFile  call UpdateTagFile()
 
 " RunLine
 fun! RunLine(prefix)
@@ -294,27 +274,11 @@ func! RunSelection()
 endfunc
 command! -bar -narg=0 RunSelection  call RunSelection()
 
-" InstallCtags
-func! InstallCtags()
-	if executable('ctags')
-		echo "There already has ctags in path. skip install."
-		return
-	endif
-
-	if has("unix") && (!has("win32unix"))
-		silent! sudo apt-get install ctags
-	endif
-	"in windows,copy to bin dir
-
-endfunc
-command! -bar -narg=0 InstallCtags  call InstallCtags()
-
 " GBKTerm
 func! GBKTerm()
 	set termencoding=GBK
 endfunc
 command! -bar -narg=0 GBKTerm  call GBKTerm()
-
 
 " UTFTerm
 func! UTFTerm()
@@ -471,28 +435,34 @@ func! MinUI()
 	set laststatus=0
 	set showtabline=0
 endfunc
-command! -bar -narg=0 MinUI call MinUI()
+command! -bar -narg=0 UIMin call MinUI()
 
 func! FullUI()
+	set laststatus=2
+	set showtabline=2
+endfunc
+command! -bar -narg=0 UIFull call FullUI()
+
+func! AdaptUI()
 	set laststatus=1
 	set showtabline=1
 endfunc
-command! -bar -narg=0 FullUI call FullUI()
+command! -bar -narg=0 UIAdapt call AdaptUI()
 
-
+"Git clone line
 func! GitCloneLine()
 	"TODO check dir exists or not
 	exec '!cd ~/checkout/ && git clone '. getline('.')
 endfunc
 command! -bar -narg=0 GitCloneLine call GitCloneLine()
 
-func! GoGetLine()
+func! LineGoGet()
 	"TODO check dir exists or not
 	exec '!go get -v '. getline('.')
 endfunc
-command! -bar -narg=0 GoGetLine call GoGetLine()
+command! -bar -narg=0 LineGoGet call LineGoGet()
 
-func! ViewGoPkgDir()
+func! LineViewGoPkgDir()
 	let line=getline('.')
 	let as=split(line,' ')
 	let pkg=as[len(as)-1]
@@ -500,18 +470,19 @@ func! ViewGoPkgDir()
 	"echo expand(cmd)
 	exec "". expand(cmd)
 endfunc
-command! -bar -narg=0 ViewGoPkgDir call ViewGoPkgDir()
+command! -bar -narg=0 LineViewGoPkgDir call Lineviewgopkgdir()
 
-func! GoGet()
+"Get line package
+func! LineGoGet()
 	let line=getline('.')
 	let cmd="go get -v " . pkg
 	exec "". cmd
 endfunc
-command! -bar -narg=0 GoGet call GoGet()
+command! -bar -narg=0 LineGoGet call LineGoGet()
 
-func! GoUpdate()
+func! LineGoUp()
 	let line=getline('.')
 	let cmd="go get -u -v " . pkg
 	exec "". cmd
 endfunc
-command! -bar -narg=0 GoUpdate call GoUpdate()
+command! -bar -narg=0 LineGoUp call LineGoUp()

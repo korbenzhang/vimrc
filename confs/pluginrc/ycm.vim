@@ -1,7 +1,7 @@
 " You Complete Me
 " YCM need python
 
-if !IsHasPython()
+if !has("python")
 	finish
 endif
 

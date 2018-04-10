@@ -1,5 +1,5 @@
 
-if !IsHasPython()
+if !has("python")
 	finish
 endif
 

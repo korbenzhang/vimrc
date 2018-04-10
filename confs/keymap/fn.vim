@@ -6,6 +6,7 @@ nmap <F2> :up<cr>
 imap <F2> <C-O><F2>
 
 "F3 Goto File
+" like eclipse? F3 go to definition
 func! MapGoToFile()
 	if exists("b:NERDTreeType") 
 		map <F3> t
@@ -42,6 +43,4 @@ imap <F7> <C-O>:cn<cr>
 "F8 Previous Error
 map  <F8> :cp<cr>
 imap <F8> <C-O>:cp<cr>
-
-
 
