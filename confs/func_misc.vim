@@ -8,17 +8,16 @@ endfunc
 command! AsyncExecEnable call SetExecPrefix("AsyncRun ")
 command! AsyncExecDisable call SetExecPrefix("! ")
 
+"trim string 
+func! Trim(str) abort
+  return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
+endfunc
 
 func! GetExecPrefix(prefix)
 	if (a:prefix == "")
 		return g:ExecPrefix
 	endif
 	return a:prefix
-endfunc
-
-"trim string 
-func! Trim(str) abort
-  return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
 endfunc
 
 func! TrimEndWhiteSpace()
@@ -47,12 +46,12 @@ endfunc
 command! -bar -narg=0 AddBlankLine call AddBlankLine()
 
 func! GitRemoveFile()
-	exec '!git rm % -f'
+	silent exec '!git rm % -f'
 endfunc
 command! -bar -narg=0 GitRemoveFile call GitRemoveFile()
 
 func! RemoveFile()
-	exec '!rm % -f'
+	silent exec '!rm % -f'
 endfunc
 command! -bar -narg=0 RemoveFile call RemoveFile()
 
@@ -128,13 +127,13 @@ command! -bar -narg=0 EditHosts  call EditHosts()
 
 " Sudo save.
 func! SudoSave()
-	execute ':w !sudo tee %'
+	exec ':w !sudo tee %'
 endfunc
 command! -bar -narg=0 SudoSave  call SudoSave()
 
 "  Delete Windows ^M
 func! DeleteWindowsLineEnd()
-	execute ':%s///g'
+	exec ':%s///g'
 endfunc
 command! -bar -narg=0 DeleteWindowsLineEnd  call DeleteWindowsLineEnd()
 
@@ -467,22 +466,43 @@ func! LineViewGoPkgDir()
 	let as=split(line,' ')
 	let pkg=as[len(as)-1]
 	let cmd=":e " . $GOPATH . '/src/' . pkg
-	"echo expand(cmd)
-	exec "". expand(cmd)
+	echo expand(cmd)
+	"exec "". expand(cmd)
 endfunc
-command! -bar -narg=0 LineViewGoPkgDir call Lineviewgopkgdir()
+command! -bar -narg=0 LineViewGoPkgDir call LineViewGoPkgDir()
+
+func! GetTrimLine()
+	let line=getline('.')
+	return Trim(line)
+endfunc
 
 "Get line package
 func! LineGoGet()
-	let line=getline('.')
+	let line=GetTrimLine()
 	let cmd="go get -v " . pkg
 	exec "". cmd
 endfunc
 command! -bar -narg=0 LineGoGet call LineGoGet()
 
 func! LineGoUp()
-	let line=getline('.')
+	let line=GetTrimLine()
 	let cmd="go get -u -v " . pkg
 	exec "". cmd
 endfunc
 command! -bar -narg=0 LineGoUp call LineGoUp()
+
+func! Monaco(size)
+	if !has("gui_running")
+		return
+	endif
+	if (a:size=="")
+		let a:size = "13"
+	endif
+	if has("win32")
+		let &guifont="Monaco:h". a:size
+	elseif has("gui_gtk2")
+		let &guifont="Monaco\ ". a:size
+	endif
+endfunc
+command! -bar -narg=* Monaco call Monaco(<f-args>)
+
