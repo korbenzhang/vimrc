@@ -1,5 +1,6 @@
 " You Complete Me
 " YCM need python
+" gocode: $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/gocode
 
 if !has("python")
 	finish
@@ -42,9 +43,9 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 
 " 跳转到定义处, 分屏打开
-let g:ycm_goto_buffer_command = 'horizontal-split'
+"let g:ycm_goto_buffer_command = 'horizontal-split'
 "let g:ycm_goto_buffer_command = 'new-or-existing-tab'
-"let g:ycm_goto_buffer_command = 'new-tab'
+let g:ycm_goto_buffer_command = 'new-tab'
 
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
