@@ -58,3 +58,16 @@ let g:ycm_global_ycm_extra_conf ='~/.vim/confs/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0 "关闭加载.ycm_extra_conf.py提示
 
 
+let g:ycm_filetype_blacklist = {
+			\ 'tagbar' : 1,
+			\ 'qf' : 1,
+			\ 'notes' : 1,
+			\ 'markdown' : 1,
+			\ 'unite' : 1,
+			\ 'vim' : 1,
+			\ 'text' : 1,
+			\ 'vimwiki' : 1,
+			\ 'pandoc' : 1,
+			\ 'infolog' : 1,
+			\ 'mail' : 1
+			\}
