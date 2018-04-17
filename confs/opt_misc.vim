@@ -152,7 +152,6 @@ set splitbelow
 set splitright
 
 if has('terminal')
-	" 
 	"noremap <M-`> :term<cr>
 	map <M-`> :term<cr>
 endif
