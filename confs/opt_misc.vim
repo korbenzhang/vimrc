@@ -82,6 +82,7 @@ set isfname-==
 
 "set display=lastline
 "set history=200
+
 "default is off
 "set lazyredraw
 
@@ -137,6 +138,7 @@ if has("directx")
   set renderoptions=type:directx
 endif
 
+" hidden
 if has('conceal')
 	set conceallevel=2 concealcursor=i
 endif
@@ -148,6 +150,7 @@ endif
 set complete-=i   " disable scanning included files
 set complete-=t   " disable searching tags
 
+" split position.
 set splitbelow
 set splitright
 
