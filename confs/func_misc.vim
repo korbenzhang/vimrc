@@ -361,15 +361,25 @@ command! Root call Root()
 func! RunFile(prefix)
 	exec "up"	
 	let s:prefix=GetExecPrefix(a:prefix)
-	"dgrage by file type
+	"run by file type
 	if &filetype == 'ruby'
 		exec s:prefix.'ruby '.shellescape('%')
 	elseif	&filetype == 'sql'
 		exec s:prefix.'mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec s:prefix.'node %'
-	elseif &filetype == 'bash' || &filetype == 'sh'
-		exec s:prefix.'bash %'
+	elseif &filetype == 'sh'
+		exec s:prefix.'sh %'
+	elseif &filetype == 'bash'
+		if has("win32")
+			if exists('gitbash')
+				exec s:prefix.'gitbash %'
+			else
+				exec s:prefix.'sh %'
+			endif
+		else
+			exec s:prefix.'bash %'
+		endif
 	elseif &filetype == 'groovy'
 		exec s:prefix.'groovy %'
 	elseif &filetype == 'python'
