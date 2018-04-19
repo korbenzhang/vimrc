@@ -516,3 +516,13 @@ func! Monaco(size)
 endfunc
 command! -bar -narg=* Monaco call Monaco(<f-args>)
 
+
+func! CopyFilePath()
+	if has("win32")
+		let @+ = expand('%p')
+	else
+	exec system("xclip -i -selection clipboard", expand("%:p"))
+	endif
+endfunc
+command! CopyFilePath call CopyFilePath()
+
