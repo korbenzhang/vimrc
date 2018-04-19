@@ -12,3 +12,6 @@ Plug 'rickharris/vim-monokai'
 Plug 'dracula/vim'
 Plug 'reewr/vim-monokai-phoenix'
 Plug 'shaond/vim-guru'
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+
