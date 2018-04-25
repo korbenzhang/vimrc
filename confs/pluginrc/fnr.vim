@@ -1,0 +1,3 @@
+
+Plug 'junegunn/vim-fnr'
+
