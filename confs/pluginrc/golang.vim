@@ -87,13 +87,7 @@ au FileType go nmap <leader>rt <Plug>(go-run-tab)
 au FileType go nmap <Leader>rs <Plug>(go-run-split)
 au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
 
-if has("win32")
-	"au FileType go nmap <C-b> <Plug>(go-build)
-	au FileType go nmap <C-b> <Plug>(go-install)
-else
-	au FileType go nmap <C-b> <Plug>(go-install)
-endif
-
+au FileType go nmap <C-b> <Plug>(go-build)
 
 au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
