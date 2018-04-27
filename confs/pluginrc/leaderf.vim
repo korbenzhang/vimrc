@@ -4,7 +4,8 @@ if !has("python")
 endif
 
 if IsInWin()
-	Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+	"Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+	Plug 'Yggdroot/LeaderF'
 else
 	Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 endif
@@ -19,7 +20,7 @@ let g:Lf_RootMarkers = ['.project', '.svn','.git','.hg']
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 
 let g:Lf_WildIgnore = {
-	\ 'dir': ['.svn','.git','.hg','_libs','dist','target','build'],
+	\ 'dir': ['.svn','.git','.hg','_libs','dist','target','build','node_modules'],
 	\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
 	\}
 
