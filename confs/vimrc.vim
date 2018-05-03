@@ -6,7 +6,7 @@ if v:progname =~? "evim"
 endif
 
 " Get the defaults that most users want.
-if !has("nvim")
+if !has("nvim") && filereadable(expand('$VIMRUNTIME/defaults.vim'))
 	source $VIMRUNTIME/defaults.vim
 endif
 
