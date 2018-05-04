@@ -50,21 +50,12 @@ endfunc
 
 " make dir for both windows and unix.
 func! InitDir(dir)
-	setl noshellslash
 	let init_dir = expand(a:dir)
 	if isdirectory(init_dir)
 		"dir exists, Skip
-		setl shellslash
 		return
 	endif
-	if has("win32") || has('win64')
-		silent exec "!md ".init_dir
-		setl shellslash
-		return
-	endif
-	" linux and others.
 	silent exec "!mkdir -p ".init_dir
-	setl shellslash
 endfunc
 
 func! ShowEnv()
