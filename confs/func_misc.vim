@@ -235,7 +235,7 @@ fun! RunSQLLine()
 		let line = Trim(line)
 	endif
 	let line = Trim(line)
-	execute '! mysql -uroot -p'. $MYSQLPASSWD .' -hdb.mabetle.com dbc  -e "'.line.'"'
+	execute '! mysql -uroot -p'. $MYSQLPW .' -hdb.mabetle.com dbc  -e "'.line.'"'
 endfun
 command! -bar -narg=0 RunSQLLine  call RunSQLLine()
 
@@ -365,7 +365,7 @@ func! RunFile(prefix)
 	if &filetype == 'ruby'
 		exec s:prefix.'ruby '.shellescape('%')
 	elseif	&filetype == 'sql'
-		exec s:prefix.'mysql -u root -p'. $MYSQLPASSWD . ' -hdb.mabetle.com < %'
+		exec s:prefix.'mysql -u root -p'. $MYSQLPW . ' -hdb.mabetle.com < %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec s:prefix.'node %'
 	elseif &filetype == 'sh'
