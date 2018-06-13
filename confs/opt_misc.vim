@@ -163,4 +163,4 @@ endif
 "default is off
 set noshowmode
 
-
+set formatoptions+=j " Delete comment character when joining commented lines

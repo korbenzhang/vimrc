@@ -1,4 +1,6 @@
 " NerdTree
+let NERDTreeHijackNetrw=1
+
 Plug 'scrooloose/nerdtree'
 
 " mintty cannot show nerdtree arrow properly.

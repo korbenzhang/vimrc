@@ -1,5 +1,8 @@
 "config plug
 
+
+let g:netrw_liststyle = 3
+
 source ~/.vim/confs/plug.vim
 
 call plug#begin('~/.vim/bundle')
