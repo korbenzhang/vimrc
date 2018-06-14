@@ -11,7 +11,12 @@ else
 endif
 
 let g:Lf_WorkingDirectoryMode = 'Ac'
-let g:Lf_DefaultMode = 'Fuzzy'
+"'NameOnly' - fuzzy mode, match file name only when searching
+"'FullPath' - fuzzy mode, match full path when searching
+"'Fuzzy' - fuzzy mode, when lines in the result are not file path
+"'Regex' - regex mode
+"Default value is 'NameOnly'
+let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_CursorBlink = 0
 
 let g:Lf_MruFileExclude = ['*.so']
@@ -25,9 +30,7 @@ let g:Lf_WildIgnore = {
 	\}
 
 " key map
-"
-"noremap <f1> <leader>f
-noremap <f1> :LeaderfFile<cr>
+noremap! <f1> :LeaderfFile<cr>
 
 let g:Lf_StlPalette = {
 			\   'stlName': {
