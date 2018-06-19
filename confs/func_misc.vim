@@ -327,7 +327,7 @@ fun! GoMigrate(...)
 	endif
 	let ip = split(line,' ')
 	let tn = ip[1]
-	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/migrate_models_task/main.go "
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/migrate_models_task/main.go migrate "
 	execute GetExecPrefix("!").' '.gocmd . tn.' '.join(a:000)
 endfun
 command! -bar -narg=* GoMigrate  call GoMigrate(<f-args>)
