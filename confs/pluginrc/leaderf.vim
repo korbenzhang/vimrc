@@ -17,8 +17,6 @@ let g:Lf_WorkingDirectoryMode = 'Ac'
 "'Regex' - regex mode
 "Default value is 'NameOnly'
 let g:Lf_DefaultMode = 'FullPath'
-let g:Lf_CursorBlink = 0
-
 let g:Lf_MruFileExclude = ['*.so']
 let g:Lf_DefaultExternalTool = 'ag'
 let g:Lf_RootMarkers = ['.project', '.svn','.git','.hg']
