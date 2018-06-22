@@ -383,13 +383,13 @@ func! RunFile(prefix)
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec s:prefix.'node %'
 	elseif &filetype == 'sh'
-		exec s:prefix.'sh %'
+		exec s:prefix.'bash %'
 	elseif &filetype == 'bash'
 		if has("win32")
 			if exists('gitbash')
 				exec s:prefix.'gitbash %'
 			else
-				exec s:prefix.'sh %'
+				exec s:prefix.'bash %'
 			endif
 		else
 			exec s:prefix.'bash %'
