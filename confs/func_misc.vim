@@ -348,6 +348,7 @@ fun! RunGoCmdFunc(...)
 	execute GetExecPrefix("!").' '.gocmd . fn . '.' . tn.' '.join(a:000)
 endfun
 command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
+command! -bar -narg=* GoRunCmdFunc  call RunGoCmdFunc(<f-args>)
 
 "run mcmd cmds directly
 fun! RunGoCmds(...)
@@ -355,6 +356,7 @@ fun! RunGoCmds(...)
 	execute GetExecPrefix("!").' '.gocmd .' '.join(a:000)
 endfun
 command! -bar -narg=* RunGoCmds  call RunGoCmds(<f-args>)
+command! -bar -narg=* GoRunCmds  call RunGoCmds(<f-args>)
 
 " ----------------------------------------------------------------------------
 " :Root | Change directory to the root of the Git repository
