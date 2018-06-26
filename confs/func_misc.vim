@@ -331,6 +331,13 @@ fun! GoMigrate(...)
 	execute GetExecPrefix("!").' '.gocmd . tn.' '.join(a:000)
 endfun
 command! -bar -narg=* GoMigrate  call GoMigrate(<f-args>)
+"run mcmd cmds directly
+fun! GoMigrateCursorWord(...)
+	let tn = expand("<cword>")
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/migrate_models_task/main.go migrate "
+	execute GetExecPrefix("!").' '.gocmd . tn.' '.join(a:000)
+endfun
+command! -bar -narg=* GoMigrateCursorWord  call GoMigrateCursorWord(<f-args>)
 
 "run mcmd cmds directly
 fun! RunGoCmdFunc(...)
@@ -349,6 +356,14 @@ fun! RunGoCmdFunc(...)
 endfun
 command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
 command! -bar -narg=* GoRunCmdFunc  call RunGoCmdFunc(<f-args>)
+
+"run mcmd cmds directly
+fun! GoRunCmdCursorWord(...)
+	let fn = expand("<cword>")
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	execute GetExecPrefix("!").' '.gocmd . fn .' '.join(a:000)
+endfun
+command! -bar -narg=* GoRunCmdCursorWord  call RunGoCmdCursorWord(<f-args>)
 
 "run mcmd cmds directly
 fun! RunGoCmds(...)
