@@ -318,26 +318,11 @@ command! -bar -narg=0 RevelView  call RevelView()
 
 "run mcmd cmds directly
 fun! GoMigrate(...)
-	let line = getline('.')
-	let line = Trim(line)
-	let start = strpart(line,0,4)
-	if start != "type"
-		echo "no type in this line"
-		return
-	endif
-	let ip = split(line,' ')
-	let tn = ip[1]
-	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/migrate_models_task/main.go migrate "
-	execute GetExecPrefix("!").' '.gocmd . tn.' '.join(a:000)
-endfun
-command! -bar -narg=* GoMigrate  call GoMigrate(<f-args>)
-"run mcmd cmds directly
-fun! GoMigrateCursorWord(...)
 	let tn = expand("<cword>")
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/migrate_models_task/main.go migrate "
 	execute GetExecPrefix("!").' '.gocmd . tn.' '.join(a:000)
 endfun
-command! -bar -narg=* GoMigrateCursorWord  call GoMigrateCursorWord(<f-args>)
+command! -bar -narg=* GoMigrate  call GoMigrate(<f-args>)
 
 "run mcmd cmds directly
 fun! RunGoCmdFunc(...)
