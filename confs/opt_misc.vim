@@ -12,10 +12,10 @@ set autoread
 "set magic
 
 " auto change dir
-"set autochdir
+set autochdir
 
 " change windows directory seperitor to linux
-"set shellslash
+set shellslash
 
 " Search
 set hlsearch
@@ -66,7 +66,7 @@ set winaltkeys=no
 set nobomb
 
 " Better Unix / Windows compatibility
-set viewoptions=folds,options,cursor,unix,curdir
+set viewoptions=folds,options,cursor,unix,curdir,slash
 "set viewoptions=folds,options,cursor,unix,slash 
 
 " Bell
@@ -97,7 +97,7 @@ set isfname-==
 
 "setglobal tags=./tags;
 
-"set ruler
+set ruler
 
 "set ttyfast
 "set ttimeout
@@ -152,11 +152,11 @@ set complete-=i   " disable scanning included files
 set complete-=t   " disable searching tags
 
 " split position.
-"set splitbelow
-"set splitright
+set splitbelow
+set splitright
 
 "If in Insert, Replace or Visual mode put a message on the last line.
 "default is off
-"set noshowmode
+set noshowmode
 
 set formatoptions+=j " Delete comment character when joining commented lines
