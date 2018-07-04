@@ -40,7 +40,8 @@ syntax on
 set backspace=indent,eol,start
 set whichwrap+=b,s,h,l,<,>,[,]
 
-set linebreak
+"'linebreak' 'lbr'	boolean	(default off)
+"set linebreak
 
 " Turn off welcome page
 set shortmess+=I
@@ -157,6 +158,6 @@ set splitright
 
 "If in Insert, Replace or Visual mode put a message on the last line.
 "default is off
-set noshowmode
+"set noshowmode
 
 set formatoptions+=j " Delete comment character when joining commented lines
