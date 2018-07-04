@@ -1,5 +1,19 @@
 " func misc
 
+" utils
+func! GetTrimLine()
+	let line=getline('.')
+	return Trim(line)
+endfunc
+
+"trim string
+func! Trim(str) abort
+	let line=substitute(a:str,"\"","","g")
+	return matchstr(line,'^\s*\zs.\{-}\ze\s*$')
+endfunc
+
+" ==== end utils ===
+
 let g:ExecPrefix="!"
 
 func! SetExecPrefix(prefix)
@@ -7,11 +21,6 @@ func! SetExecPrefix(prefix)
 endfunc
 command! AsyncExecEnable call SetExecPrefix("AsyncRun ")
 command! AsyncExecDisable call SetExecPrefix("! ")
-
-"trim string 
-func! Trim(str) abort
-  return matchstr(a:str,'^\s*\zs.\{-}\ze\s*$')
-endfunc
 
 func! GetExecPrefix(prefix)
 	if (a:prefix == "")
@@ -54,16 +63,6 @@ func! RemoveFile()
 	silent exec '!rm % -f'
 endfunc
 command! -bar -narg=0 RemoveFile call RemoveFile()
-
-func! WrapToggle()
-	set wrap!
-endfunc
-command! -bar -narg=0 WrapToggle call WrapToggle()
-
-func! PasteToggle()
-	set paste!
-endfunc
-command! -bar -narg=0 PasteToggle call PasteToggle()
 
 func! DeleteBlankLines()
 	:g/^\s*$/d
@@ -205,11 +204,7 @@ fun! RunLine(prefix)
 endf
 
 command! -bar -narg=0 RunLine  call RunLine("!")
-command! -bar -narg=0 RL  call RunLine("!")
-command! -bar -narg=0 RCL  call RunLine("!")
-command! -bar -narg=0 ARCL call RunLine("!start cmd /k")
-command! -bar -narg=0 TRCL call RunLine("term")
-command! -bar -narg=0 AsyncRCL call RunLine("AsyncRun")
+command! -bar -narg=0 AsyncRunLine call RunLine("AsyncRun")
 
 fun! RunSQLLine()
 	let line = getline('.')
@@ -273,30 +268,12 @@ func! RunSelection()
 endfunc
 command! -bar -narg=0 RunSelection  call RunSelection()
 
-" GBKTerm
-func! GBKTerm()
-	set termencoding=GBK
-endfunc
-command! -bar -narg=0 GBKTerm  call GBKTerm()
-
-" UTFTerm
-func! UTFTerm()
-	set termencoding=utf-8
-endfunc
-command! -bar -narg=0 UTFTerm  call UTFTerm()
-
-" NoBell
-func! BellDisable()
-	set vb t_vb=
-endfunc
-command! -bar -narg=0 BellDisable  call BellDisable()
-
 func! ViewUrl()
 	exec "!lynx <cfile>"
 endfunc
 command! -bar -narg=0 ViewUrl call ViewUrl()
 
-" RevelView 
+" RevelView
 fun! RevelView()
 	let line = getline('.')
 	let line = Trim(line)
@@ -307,7 +284,7 @@ fun! RevelView()
 		echo "no func in this line"
 		return
 	endif
-	
+
 	let ip = split(line,' ')
 	let tn = split(ip[2],")")[0]
 	let fn = split(ip[3],"(")[0]
@@ -339,7 +316,6 @@ fun! RunGoCmdFunc(...)
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
 	execute GetExecPrefix("!").' '.gocmd . fn . '.' . tn.' '.join(a:000)
 endfun
-command! -bar -narg=* RunGoCmdFunc  call RunGoCmdFunc(<f-args>)
 command! -bar -narg=* GoRunCmdFunc  call RunGoCmdFunc(<f-args>)
 
 "run mcmd cmds directly
@@ -355,12 +331,8 @@ fun! RunGoCmds(...)
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
 	execute GetExecPrefix("!").' '.gocmd .' '.join(a:000)
 endfun
-command! -bar -narg=* RunGoCmds  call RunGoCmds(<f-args>)
 command! -bar -narg=* GoRunCmds  call RunGoCmds(<f-args>)
 
-" ----------------------------------------------------------------------------
-" :Root | Change directory to the root of the Git repository
-" ----------------------------------------------------------------------------
 func! Root()
   let root = systemlist('git rev-parse --show-toplevel')[0]
   if v:shell_error
@@ -373,7 +345,7 @@ endfunc
 command! Root call Root()
 
 func! RunFile(prefix)
-	exec "up"	
+	exec "up"
 	let s:prefix=GetExecPrefix(a:prefix)
 	"run by file type
 	if &filetype == 'ruby'
@@ -419,14 +391,6 @@ endfunc
 command! RunFile call RunFile("!")
 command! AsyncRunFile call RunFile("!start cmd /k")
 
-inoremap <silent> <F5> <C-O><F5>
-nnoremap <silent> <F5> :RunFile<cr>
-
-func! FmtIndent()
-	normal gg=G
-endfunc
-command! FmtIndent call FmtIndent()
-
 func! TrimEndLines()
 	let save_cursor = getpos(".")
 	:silent! %s#\($\n\s*\)\+\%$##
@@ -435,11 +399,11 @@ endfunc
 command! -bar -narg=0 TrimEndLines call TrimEndLines()
 
 func! Fmt()
-	exec "up"	
+	exec "up"
 	let s:prefix=GetExecPrefix()
-	"dgrage by file type
+	"judge by file type
 	if &filetype == 'css'
-		exec s:prefix. 'cssfmt %'		
+		exec s:prefix. 'cssfmt %'
 	elseif &filetype=="js" || &filetype="javascript"
 		exec s:prefix.'jsfmt -w %'
 	else
@@ -448,88 +412,35 @@ func! Fmt()
 endfunc
 command! -bar -narg=0 Fmt call Fmt()
 
-" startup windows cmd
-func! WinCmd()
-	exec '!start cmd /K'
-endfunc
-command! -bar -narg=0 WinCmd call WinCmd()
-
-func! MinUI()
-	set laststatus=0
-	set showtabline=0
-endfunc
-command! -bar -narg=0 UIMin call MinUI()
-
-func! FullUI()
-	set laststatus=2
-	set showtabline=2
-endfunc
-command! -bar -narg=0 UIFull call FullUI()
-
-func! AdaptUI()
-	set laststatus=1
-	set showtabline=1
-endfunc
-command! -bar -narg=0 UIAdapt call AdaptUI()
-
 "Git clone line
 func! GitCloneLine()
-	"TODO check dir exists or not
 	exec '!cd ~/checkout/ && git clone '. getline('.')
 endfunc
 command! -bar -narg=0 GitCloneLine call GitCloneLine()
 
-func! LineGoGet()
-	"TODO check dir exists or not
-	exec '!go get -v '. getline('.')
+func! GoGet()
+	let line=GetTrimLine()
+	exec '!go get -v '. line
 endfunc
-command! -bar -narg=0 LineGoGet call LineGoGet()
+command! -bar -narg=0 GoGet call GoGet()
 
-func! LineViewGoPkgDir()
-	let line=getline('.')
+func! ViewGoPkgDir()
+	let line=GetTrimLine()
 	let as=split(line,' ')
 	let pkg=as[len(as)-1]
-	let cmd=":e " . $GOPATH . '/src/' . pkg
-	echo expand(cmd)
-	"exec "". expand(cmd)
+	let pkg=substitute(pkg,"\"","","g")
+	let cmd=':tabedit ' . expand($GOPATH) . '/src/' . pkg
+	"echom cmd
+	exec cmd
 endfunc
-command! -bar -narg=0 LineViewGoPkgDir call LineViewGoPkgDir()
+command! -bar -narg=0 ViewGoPkgDir call ViewGoPkgDir()
 
-func! GetTrimLine()
-	let line=getline('.')
-	return Trim(line)
-endfunc
-
-"Get line package
-func! LineGoGet()
+func! GoGetUp()
 	let line=GetTrimLine()
-	let cmd="go get -v " . pkg
+	let cmd="go get -u -v " . line
 	exec "". cmd
 endfunc
-command! -bar -narg=0 LineGoGet call LineGoGet()
-
-func! LineGoUp()
-	let line=GetTrimLine()
-	let cmd="go get -u -v " . pkg
-	exec "". cmd
-endfunc
-command! -bar -narg=0 LineGoUp call LineGoUp()
-
-func! Monaco(size)
-	if !has("gui_running")
-		return
-	endif
-	if (a:size=="")
-		let a:size = "13"
-	endif
-	if has("win32")
-		let &guifont="Monaco:h". a:size
-	elseif has("gui_gtk2")
-		let &guifont="Monaco\ ". a:size
-	endif
-endfunc
-command! -bar -narg=* Monaco call Monaco(<f-args>)
-
+command! -bar -narg=0 GoGetUp call GoGetUp()
 
 func! CopyFilePath()
 	if has("win32")
