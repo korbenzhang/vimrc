@@ -45,7 +45,7 @@ set linebreak
 " Turn off welcome page
 set shortmess+=I
 
-if has("win32")
+if !has("win32")
 	set shellpipe=\|\ tee
 endif
 
@@ -66,14 +66,15 @@ set winaltkeys=no
 set nobomb
 
 " Better Unix / Windows compatibility
-set viewoptions=folds,options,cursor,unix,slash 
+set viewoptions=folds,options,cursor,unix,curdir,slash
+"set viewoptions=folds,options,cursor,unix,slash 
 
 " Bell
 "set noerrorbells
 "set novisualbell
 set noerrorbells novisualbell t_vb=
 
-"show tab
+" Show tab
 "set list 
 "set fillchars=vert:\ ,stl:\     
 
@@ -153,11 +154,6 @@ set complete-=t   " disable searching tags
 " split position.
 set splitbelow
 set splitright
-
-if has('terminal')
-	"noremap <M-`> :term<cr>
-	map <M-`> :term<cr>
-endif
 
 "If in Insert, Replace or Visual mode put a message on the last line.
 "default is off
