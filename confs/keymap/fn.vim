@@ -1,10 +1,5 @@
 " map for F1 ... F12
 
-" F2 Save buffer
-" where file is changed do write.
-nmap <F2> :up<cr>
-imap <F2> <C-O><F2>
-
 "F3 Goto File
 " like eclipse? F3 go to definition
 func! MapGoToFile()
@@ -23,10 +18,6 @@ endfunc
 " F3 GoTo Def 
 nmap <F3> gd
 imap <F3> <C-O>gd
-
-" F4 Close
-nmap <F4> :close<cr>
-imap <F4> <C-O><F4>
 
 " close give up modify
 nmap <M-F4> :close!<cr>

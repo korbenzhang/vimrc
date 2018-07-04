@@ -1,6 +1,6 @@
 " Autocmd
 
-au BufRead,BufNewFile *.go setl filetype=go
+"au BufRead,BufNewFile *.go setl filetype=go
 au BufRead,BufNewFile *.md setl filetype=markdown
 au BufRead,BufNewFile *.tml setl filetype=html
 au BufRead,BufNewFile *.jspx setl filetype=jsp

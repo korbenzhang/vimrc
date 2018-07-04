@@ -7,8 +7,6 @@ nnoremap Y y$
 " Don't use Ex mode, use Q for formatting
 map  Q gq
 
-noremap <F4> :close<cr>
-
 " NOTICE: linux console use C-S lock console
 " use C-Q unlock console.
 noremap <C-s> :w<cr>
@@ -91,6 +89,6 @@ cnoremap        <M-f> <S-Right>
 "silent! exe "set <S-Left>=\<Esc>b"
 "silent! exe "set <S-Right>=\<Esc>f"
 
-nnoremap <pageup> <c-u>
-nnoremap <pagedown> <c-d>
+"nnoremap <pageup> <c-u>
+"nnoremap <pagedown> <c-d>
 

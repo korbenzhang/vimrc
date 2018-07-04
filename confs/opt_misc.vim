@@ -12,22 +12,35 @@ set autoread
 "set magic
 
 " auto change dir
+" default is off
 set autochdir
 
 " change windows directory seperitor to linux
+" default is off
 set shellslash
 
 " Search
 set hlsearch
+
 set incsearch
+
+" default is off
 set showmatch
+
+"Show (partial) command in the last line of the screen.  
+" default is on
 set showcmd
+
 set ignorecase
 
 " reserved complete words case.
+" default is off
 set infercase
+
+" path file name
 "set isfname+={,}
-"set isfname-==
+" isfname when go to file seperate by = 
+set isfname-==
 
 if !has("nvim")
 	set clipboard+=unnamed	" Yanks go on clipboard instead.
@@ -79,8 +92,6 @@ set noerrorbells novisualbell t_vb=
 "set list 
 "set fillchars=vert:\ ,stl:\     
 
-" isfname when go to file seperate by = 
-set isfname-==
 
 "set display=lastline
 "set history=200
@@ -106,14 +117,30 @@ set ruler
 "set ttimeoutlen=50  " Make Esc work faster
 set timeout timeoutlen=2000 ttimeoutlen=100
 
+
+"block	Allow virtual editing in Visual block mode.
+"insert	Allow virtual editing in Insert mode.
+"all		Allow virtual editing in all modes.
+"onemore	Allow the cursor to move just past the end of the line
+" default is off
 "set virtualedit=block
 
+"Insert two spaces after a '.', '?' and '!' with a join command.
+"When 'cpoptions' includes the 'j' flag, only do this after a '.'.
+"Otherwise only one space is inserted.
+" default is on
 "set nojoinspaces
 
 "set diffopt=filler,vertical
 
 set ambiwidth=double
 
+"When set the Input Method is always on when starting to edit a command
+"line, unless entering a search pattern (see 'imsearch' for that).
+"Setting this option is useful when your input method allows entering
+"English characters directly, e.g., when it's used to type accented
+"characters with dead keys.
+" default is off
 set noimcmdline
 
 autocmd QuickFixCmdPre * :update
@@ -130,6 +157,7 @@ set timeoutlen=100     " 超时为 100 毫秒
 "现空格。 B 表示将两行合并为一行的时候，汉字与汉字之间不要补空格。
 set fo+=mB 
 
+"default is ''
 set belloff=all
 
 if has("unix") && executable("bash")
@@ -137,18 +165,25 @@ if has("unix") && executable("bash")
 endif
 
 if has("directx")
-  set renderoptions=type:directx
+	set renderoptions=type:directx
 endif
 
 " hidden
+"number (default 0)
 if has('conceal')
 	set conceallevel=2 concealcursor=i
 endif
 
 " default is off
+"Round indent to multiple of 'shiftwidth'.  Applies to > and <
 "set shiftround
 
 " speed key words comlete.
+	"v	variable
+	"f	function or method
+	"m	member of a struct or class
+	"t	typedef
+	"d	#define or macro
 set complete-=i   " disable scanning included files
 set complete-=t   " disable searching tags
 
@@ -160,4 +195,8 @@ set splitright
 "default is off
 "set noshowmode
 
+"(Vim default: "tcq", Vi default: "vt")
+"This is a sequence of letters which describes how automatic
+"formatting is to be done.  
+"j	Where it makes sense, remove a comment leader when joining lines.
 set formatoptions+=j " Delete comment character when joining commented lines

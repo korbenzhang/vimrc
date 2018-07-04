@@ -25,8 +25,6 @@ Plug 'gorodinskiy/vim-coloresque'
 source ~/.vim/confs/pluginrc/utlisnips.vim
 Plug 'honza/vim-snippets'
 
-Plug 'majutsushi/tagbar'
-
 "lang extends
 " html
 Plug 'mattn/emmet-vim'
