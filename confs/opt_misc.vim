@@ -200,3 +200,5 @@ set splitright
 "formatting is to be done.  
 "j	Where it makes sense, remove a comment leader when joining lines.
 set formatoptions+=j " Delete comment character when joining commented lines
+
+set showtabline=2

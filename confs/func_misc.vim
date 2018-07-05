@@ -350,6 +350,8 @@ func! RunFile(prefix)
 endfunc
 command! RunFile call RunFile("!")
 command! AsyncRunFile call RunFile("!start cmd /k")
+nmap <f5> :RunFile<cr>
+imap <f5> <C-O><f5>
 
 func! TrimEndLines()
 	let save_cursor = getpos(".")
