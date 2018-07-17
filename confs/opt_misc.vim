@@ -44,7 +44,11 @@ set isfname-==
 
 if !has("nvim")
 	set clipboard+=unnamed	" Yanks go on clipboard instead.
-	"set clipboard+=unnamedplus
+endif
+
+if has('unnamedplus')
+  set clipboard^=unnamed
+  set clipboard^=unnamedplus
 endif
 
 syntax enable
@@ -201,4 +205,16 @@ set splitright
 "j	Where it makes sense, remove a comment leader when joining lines.
 set formatoptions+=j " Delete comment character when joining commented lines
 
-set showtabline=2
+if has('persistent_undo')
+  set undofile
+  set undodir=~/.config/vim/tmp/undo//
+endif
+
+let g:rehash256 = 1
+let g:molokai_original = 1
+
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+
+" Enter automatically into the files directory
+"autocmd BufEnter * silent! lcd %:p:h

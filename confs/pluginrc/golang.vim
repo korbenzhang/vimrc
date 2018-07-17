@@ -135,11 +135,21 @@ func! GoBuildFiles()
   if l:file =~# '^\f\+_test\.go$'
     call go#cmd#Test(0, 1)
   elseif l:file =~# '^\f\+\.go$'
-    "call go#cmd#Build(0)
-    call go#cmd#Install(0)
+	call go#cmd#Build(0)
+    "call go#cmd#Install(0)
   endif
 endfunc
 command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>
 
+let g:go_fmt_command = "goimports"
+let g:go_autodetect_gopath = 1
+let g:go_list_type = "quickfix"
+
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_generate_tags = 1
