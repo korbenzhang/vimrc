@@ -8,9 +8,9 @@ if has("mouse")
 
 	set mousehide
 
-	set mousem=popup
+	"set mousem=popup
 	
-	set mouset=500
+	"set mouset=500
 	
 	"set mousemodel=extend
 	

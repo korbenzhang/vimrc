@@ -6,6 +6,7 @@
 set completeopt=longest,menu
 
 set wildmenu						"enable ctrl-n and ctrl-p to scroll thru matches
+
 "set wildignore=*.o,*.obj,*~			"stuff to ignore when tab completing
 set wildignore+=tags,.*.un~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*,*/_libs/*
 
@@ -24,7 +25,7 @@ set wildmode=list:longest		"make cmdline tab completion similar to bash
 
 " dict in  .vim
 "set dictionary+=~/.vim/confs/dict/words		" ~/.vim/confs/dict/words
-set dictionary+=~/.vim/confs/dict/misc.dict
+"set dictionary+=~/.vim/confs/dict/misc.dict
 
 " set Ctrl+j in insert mode, like VS.Net
 imap <C-j> <C-X><C-O>

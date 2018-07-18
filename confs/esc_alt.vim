@@ -8,6 +8,7 @@ if has("nvim")
 endif
 
 
+" not work in windows?
 if &cp || exists("g:loaded_escalt") || has("gui_running") || has("win32") || has("win64")
   finish
 endif

@@ -1,5 +1,5 @@
 
-if !has("python")
+if !(has("python") || has("python3"))
 	finish
 endif
 
@@ -11,23 +11,27 @@ else
 endif
 
 let g:Lf_WorkingDirectoryMode = 'Ac'
-let g:Lf_DefaultMode = 'Fuzzy'
-let g:Lf_CursorBlink = 0
-
+"'NameOnly' - fuzzy mode, match file name only when searching
+"'FullPath' - fuzzy mode, match full path when searching
+"'Fuzzy' - fuzzy mode, when lines in the result are not file path
+"'Regex' - regex mode
+"Default value is 'NameOnly'
+let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_MruFileExclude = ['*.so']
 let g:Lf_DefaultExternalTool = 'ag'
-let g:Lf_RootMarkers = ['.project', '.svn','.git','.hg']
+let g:Lf_RootMarkers = ['.project','.svn','.git','.hg']
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 
 let g:Lf_WildIgnore = {
 	\ 'dir': ['.svn','.git','.hg','_libs','dist','target','build','node_modules'],
-	\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+	\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.dll','*.zip','*.png','*.jpg','*.o','*.so','*.py[co]']
 	\}
 
 " key map
-"
-"noremap <f1> <leader>f
-noremap <f1> :LeaderfFile<cr>
+noremap! <f1> :LeaderfFile<cr>
+map <leader>p :LeaderfSelf<cr>
+map <c-p> :LeaderfSelf<cr>
+map <c-P> :LeaderfSelf<cr>
 
 let g:Lf_StlPalette = {
 			\   'stlName': {

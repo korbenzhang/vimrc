@@ -10,9 +10,12 @@ source ~/.vim/confs/gvimrc.vim				" gvimrc
 
 " Env
 " ----
-source ~/.vim/confs/extra_env.vim			" Environment
+if filereadable(expand('~/.vim/extra/extra_env.vim'))
+	source ~/.vim/extra/extra_env.vim
+endif
 source ~/.vim/confs/env_funcs.vim			" Environment
 source ~/.vim/confs/func_misc.vim			" Misc Functions
+source ~/.vim/confs/func_golang.vim			" Go lang Functions
 
 " Configs
 " -------
@@ -52,4 +55,6 @@ source ~/.vim/confs/pluginrc/plug_pkgs.vim	" All plugins, use plug
 
 " Extra Configs
 " -------------
-source ~/.vim/confs/extra_conf.vim			" Extra Config
+if filereadable(expand('~/.vim/extra/extra_conf.vim'))
+	source ~/.vim/extra/extra_conf.vim
+endif

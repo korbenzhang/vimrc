@@ -11,7 +11,9 @@ command! CD cd %:p:h
 
 "set report=0
 
-set iskeyword+=_,$,@,%,#,-
+"Keywords are used in searching and recognizing with many commands:
+"w", etc.  
+"set iskeyword+=_,$,@,%,#,-
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
@@ -21,5 +23,10 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthi
 endif
 
-"set switchbuf=useopen
+" default is ''
+" useopen
+" usetab
+" spit
+" newtab
+set switchbuf=newtab
 

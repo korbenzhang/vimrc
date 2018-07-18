@@ -1,5 +1,8 @@
 "config plug
 
+
+let g:netrw_liststyle = 3
+
 source ~/.vim/confs/plug.vim
 
 call plug#begin('~/.vim/bundle')
@@ -21,8 +24,6 @@ Plug 'gorodinskiy/vim-coloresque'
 "complete
 source ~/.vim/confs/pluginrc/utlisnips.vim
 Plug 'honza/vim-snippets'
-
-Plug 'majutsushi/tagbar'
 
 "lang extends
 " html

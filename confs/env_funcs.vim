@@ -48,14 +48,8 @@ func! IsInXterm()
 	return &term =~ "xterm"
 endfunc
 
-" make dir for both windows and unix.
-func! InitDir(dir)
-	let init_dir = expand(a:dir)
-	if isdirectory(init_dir)
-		"dir exists, Skip
-		return
-	endif
-	silent exec "!mkdir -p ".init_dir
+func! HasPython()
+	return has("python") || has("python3")
 endfunc
 
 func! ShowEnv()

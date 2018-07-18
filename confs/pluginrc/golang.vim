@@ -87,7 +87,7 @@ au FileType go nmap <leader>rt <Plug>(go-run-tab)
 au FileType go nmap <Leader>rs <Plug>(go-run-split)
 au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
 
-au FileType go nmap <C-b> <Plug>(go-build)
+au FileType go nmap <C-b> :GoErrCheck<cr>
 
 au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
@@ -121,11 +121,7 @@ augroup go
 	autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 augroup END
 
-
-"Go Lang
-au BufRead,BufNewFile *.go setl filetype=go
-
-au FileType go set dictionary+=~/.vim/confs/dict/golang.dict
+"au FileType go set dictionary+=~/.vim/confs/dict/golang.dict
 
 "let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 "let g:syntastic_go_checkers = ['golint', 'govet']
@@ -139,11 +135,21 @@ func! GoBuildFiles()
   if l:file =~# '^\f\+_test\.go$'
     call go#cmd#Test(0, 1)
   elseif l:file =~# '^\f\+\.go$'
-    "call go#cmd#Build(0)
-    call go#cmd#Install(0)
+	call go#cmd#Build(0)
+    "call go#cmd#Install(0)
   endif
 endfunc
 command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>
 
+let g:go_fmt_command = "goimports"
+let g:go_autodetect_gopath = 1
+let g:go_list_type = "quickfix"
+
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_generate_tags = 1
