@@ -2,7 +2,7 @@
 " YCM need python
 " gocode: $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/gocode
 
-if !has("python")
+if !has("python") && !has("python3")
 	finish
 endif
 

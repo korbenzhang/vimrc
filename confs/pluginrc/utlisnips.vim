@@ -2,7 +2,7 @@
 " require vim 7.0 and later, 
 " require vim compile with python2 or python3.
 
-if version < 702 || !has("python")
+if version < 702 || !( has("python") || has("python3")) 
 	finish
 endif
 
