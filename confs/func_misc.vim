@@ -375,7 +375,7 @@ func! RunFile(prefix)
 			if exists('gitbash')
 				exec s:prefix.'gitbash %'
 			else
-				exec s:prefix.'sh %'
+				exec s:prefix.'bash %'
 			endif
 		else
 			exec s:prefix.'bash %'
