@@ -1,4 +1,3 @@
-
 "run vim in a slow term
 " screen would be better
 "

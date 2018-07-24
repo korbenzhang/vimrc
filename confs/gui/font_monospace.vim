@@ -1,16 +1,10 @@
-
 if !has("gui_running")
 	finish
 endif
 
-" Set GUI Font
-if IsInWinGui()
-	set guifont=Monospace:h13
-elseif has("gui_gtk")
-	set guifont=Monospace\ 13
-elseif has("gui_macvim")
-	set guifont=Monospace:h13
+if has("win32")
+	set guifont=Monospace:h15
 else
-	set guifont=Monospace:h13
+	set guifont=Monospace\ 15
 endif
 

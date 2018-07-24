@@ -2,7 +2,7 @@ if !has("gui_running")
 	finish
 endif
 
-if IsInWinGui()
-	set gfw=Microsoft_YaHei_Mono:h14
+if has("win32")
+	set gfw=Microsoft_YaHei_Mono:h15
 endif
 

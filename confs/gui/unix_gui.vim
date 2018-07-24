@@ -1,4 +1,3 @@
-
 if !has("gui_running") 
 	finish
 endif
