@@ -31,7 +31,6 @@ let g:Lf_WildIgnore = {
 noremap! <f1> :LeaderfFile<cr>
 map <leader>p :LeaderfSelf<cr>
 map <c-p> :LeaderfSelf<cr>
-map <c-P> :LeaderfSelf<cr>
 
 let g:Lf_StlPalette = {
 			\   'stlName': {
