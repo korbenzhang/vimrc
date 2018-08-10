@@ -58,7 +58,7 @@ set backspace=indent,eol,start
 set whichwrap+=b,s,h,l,<,>,[,]
 
 "'linebreak' 'lbr'	boolean	(default off)
-"set linebreak
+set linebreak
 
 " Turn off welcome page
 set shortmess+=I
