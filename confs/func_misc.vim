@@ -314,15 +314,9 @@ func! RunFile(prefix)
 		exec s:prefix.'mysql -u root -p'. $MYSQLPW . ' -hdb.mabetle.com < %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec s:prefix.'node %'
-	elseif &filetype == 'sh'
-		exec s:prefix.'bash %'
-	elseif &filetype == 'bash'
+	elseif &filetype == 'bash' || &filetype == 'sh'
 		if has("win32")
-			if exists('gitbash')
-				exec s:prefix.'gitbash %'
-			else
-				exec s:prefix.'bash %'
-			endif
+			exec s:prefix.'gitbash.bat %'
 		else
 			exec s:prefix.'bash %'
 		endif
