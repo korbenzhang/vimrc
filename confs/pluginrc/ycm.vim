@@ -14,8 +14,6 @@ let g:vimrc#completer="Valloric/YouCompleteMe"
 
 Plug 'Valloric/YouCompleteMe'
 
-" YCM Config
-
 " run syntastic's checkers for c, cpp, objc, and objcpp
 " default is 1
 "let g:ycm_show_diagnostics_ui = 0
@@ -55,7 +53,7 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let g:ycm_global_ycm_extra_conf ='~/.vim/confs/ycm_extra_conf.py'
 
-let g:ycm_confirm_extra_conf=0 "关闭加载.ycm_extra_conf.py提示
+let g:ycm_confirm_extra_conf=0 "close load .ycm_extra_conf.py remind.
 
 
 let g:ycm_filetype_blacklist = {
