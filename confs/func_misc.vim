@@ -309,7 +309,9 @@ func! RunFile(prefix)
 	let s:prefix=GetExecPrefix(a:prefix)
 	"run by file type
 	if &filetype == 'ruby'
-		exec s:prefix.'ruby '.shellescape('%')
+		exec s:prefix.'ruby %'
+	elseif &filetype == 'java'
+		exec s:prefix.'java %'
 	elseif	&filetype == 'sql'
 		exec s:prefix.'mysql -u root -p'. $MYSQLPW . ' -hdb.mabetle.com < %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
