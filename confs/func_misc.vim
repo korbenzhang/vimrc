@@ -14,7 +14,7 @@ endfunc
 
 " ==== end utils ===
 
-let g:ExecPrefix="!"
+let g:ExecPrefix="ter "
 
 func! SetExecPrefix(prefix)
 	let g:ExecPrefix=a:prefix
