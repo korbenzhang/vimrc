@@ -3,7 +3,8 @@ if !(has("python") || has("python3"))
 	finish
 endif
 
-let g:Lf_PythonVersion = 3
+"let g:Lf_PythonVersion = 2
+"let g:Lf_PythonVersion = 3
 
 if IsInWin()
 	"Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
