@@ -204,7 +204,9 @@ fun! RunLine(prefix)
 endf
 
 command! -bar -narg=0 RunLine  call RunLine("!")
+command! -bar -narg=0 RL  call RunLine("!")
 command! -bar -narg=0 AsyncRunLine call RunLine("AsyncRun")
+command! -bar -narg=0 ARL call RunLine("AsyncRun")
 
 fun! RunSQLLine()
 	let line = getline('.')
