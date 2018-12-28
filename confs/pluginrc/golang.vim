@@ -87,7 +87,8 @@ au FileType go nmap <leader>rt <Plug>(go-run-tab)
 au FileType go nmap <Leader>rs <Plug>(go-run-split)
 au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
 
-au FileType go nmap <C-b> :GoErrCheck<cr>
+"au FileType go nmap <C-b> :GoErrCheck<cr>
+au FileType go nmap <C-b> :GoBuild<cr>
 
 au FileType go nmap <F6> <Plug>(go-test)
 au FileType go nmap <leader>gt <Plug>(go-test)
