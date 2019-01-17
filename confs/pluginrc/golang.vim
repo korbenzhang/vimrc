@@ -46,8 +46,11 @@ endif
 let g:go_auto_type_info = 0
 let g:go_auto_sameids = 0
 
+"let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_enabled = ['vet', 'golint']
+
 " default is disable
-"let g:go_metalinter_autosave = 0
+let g:go_metalinter_autosave = 0
 
 let g:go_jump_to_error = 1
 "let g:go_list_height = 10
