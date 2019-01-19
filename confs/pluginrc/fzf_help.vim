@@ -12,6 +12,6 @@ func! s:plug_help_sink(line)
 	execute 'Explore' dir
 endfunc
 
-command! PlugHelp call fzf#run(fzf#wrap({
+command! FzfPlugHelp call fzf#run(fzf#wrap({
 			\ 'source': sort(keys(g:plugs)),
 			\ 'sink': func('s:plug_help_sink')}))

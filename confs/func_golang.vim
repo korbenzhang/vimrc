@@ -27,7 +27,7 @@ endfun
 command! -bar -narg=* GoRunCmdFunc  call RunGoCmdFunc(<f-args>)
 
 "run mcmd cmds directly
-fun! GoRunCmdCursorWord(...)
+fun! RunGoCmdCursorWord(...)
 	let fn = expand("<cword>")
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
 	execute GetExecPrefix("!").' '.gocmd . fn .' '.join(a:000)
