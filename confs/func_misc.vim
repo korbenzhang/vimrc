@@ -326,7 +326,7 @@ func! RunFile(prefix)
 		exec s:prefix.'wscript %'
 	elseif &filetype == 'bash' || &filetype == 'sh'
 		if has("win32")
-			exec s:prefix.'gitbash.bat %'
+			exec s:prefix.'@wsl %'
 		else
 			exec s:prefix.'bash %'
 		endif
