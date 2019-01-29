@@ -1,7 +1,8 @@
 " NerdTree
 let NERDTreeHijackNetrw=1
 
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " mintty cannot show nerdtree arrow properly.
 if !has("gui_running")

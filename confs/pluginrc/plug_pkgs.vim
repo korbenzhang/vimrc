@@ -3,11 +3,18 @@
 
 let g:netrw_liststyle = 3
 
+" if put plug.vim in ~/.vim/autoload dir, 
+" not need following line.
 source ~/.vim/confs/plug.vim
 
+"use ~/.vim/bundle as plugins dir
+"so can work with Bundle
 call plug#begin('~/.vim/bundle')
 
+"see ~/.vim/bundle/vim-plug
 Plug 'junegunn/vim-plug'
+
+Plug '~/.vim/confs/myplug'
 
 "basic vim extends
 "Plug 'DataWraith/auto_mkdir'
@@ -34,6 +41,11 @@ Plug 'othree/html5.vim'
 if filereadable(expand('~/.vim/extra/extra_plugins.vim'))
 	source ~/.vim/extra/extra_plugins.vim
 endif
+
+if filereadable(expand('~/.vim_extra_plugins.vim'))
+	source ~/.vim_extra_plugins.vim
+endif
+
 
 " Initialize plugin system
 call plug#end()

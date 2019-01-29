@@ -13,6 +13,12 @@ source ~/.vim/confs/gvimrc.vim				" gvimrc
 if filereadable(expand('~/.vim/extra/extra_env.vim'))
 	source ~/.vim/extra/extra_env.vim
 endif
+
+if filereadable(expand('~/.vim_extra_env.vim'))
+	source ~/.vim_extra_env.vim
+endif
+
+
 source ~/.vim/confs/env_funcs.vim			" Environment
 source ~/.vim/confs/func_misc.vim			" Misc Functions
 source ~/.vim/confs/func_golang.vim			" Go lang Functions
@@ -57,4 +63,8 @@ source ~/.vim/confs/pluginrc/plug_pkgs.vim	" All plugins, use plug
 " -------------
 if filereadable(expand('~/.vim/extra/extra_conf.vim'))
 	source ~/.vim/extra/extra_conf.vim
+endif
+
+if filereadable(expand('~/.vim_extra_conf.vim'))
+	source ~/.vim_extra_conf.vim
 endif
