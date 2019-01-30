@@ -1,6 +1,16 @@
 " main vim config file.
 " author: korben
 " ====================
+
+"~/.vim/confs/pluginrc/plug_pkgs.vim
+"~/.vim/extra/extra_conf.vim
+"~/.vim/extra/extra_env.vim
+"~/.vim/extra/extra_plugins.vim
+"~/.vim_extra_conf.vim
+"~/.vim_extra_env.vim
+"~/.vim_extra_plugins.vim
+
+
 scriptencoding utf-8
 
 set nocompatible
