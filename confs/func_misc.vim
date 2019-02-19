@@ -207,8 +207,8 @@ command! -bar -narg=0 RunLine  call RunLine("!")
 command! -bar -narg=0 RL  call RunLine("!")
 command! -bar -narg=0 RLWSL  call RunLine("! @wsl")
 
-command! -bar -narg=0 RLAPT  call RunLine("! @wsl sudo apt-get install -y")
-command! -bar -narg=0 RLGoGet  call RunLine("! @wsl go get -v ")
+command! -bar -narg=0 RLAPT  call RunLine("! sudo apt-get install -y")
+command! -bar -narg=0 RLGoGet  call RunLine("! go get -v ")
 
 command! -bar -narg=0 AsyncRunLine call RunLine("AsyncRun")
 command! -bar -narg=0 ARL call RunLine("AsyncRun")
