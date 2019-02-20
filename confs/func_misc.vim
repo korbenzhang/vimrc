@@ -212,7 +212,7 @@ command! -bar -narg=0 RLGoGet  call RunLine("! go get -v ")
 
 command! -bar -narg=0 AsyncRunLine call RunLine("AsyncRun")
 command! -bar -narg=0 ARL call RunLine("AsyncRun")
-nmap <c-f5> :RunLine<cr>
+nmap <c-l> :RunLine<cr>
 
 fun! RunSQLLine()
 	let line = getline('.')
@@ -395,3 +395,20 @@ func! CopyFilePath()
 endfunc
 command! CopyFilePath call CopyFilePath()
 
+" check API output
+fun! CURL(...)
+	let line = getline('.')
+	let line = Trim(line)
+	let start = strpart(line,0,4)
+	if start != "func"
+		echo "no func in this line"
+		return
+	endif
+	let ip = split(line,' ')
+	let tn = split(ip[2],")")[0]
+	let fn = split(ip[3],"(")[0]
+	let cmd  = "curl http://localhost:9000/".tn."/".fn.join(a:000)
+	echo cmd
+	execute GetExecPrefix("!").cmd 
+endfun
+command! -bar -narg=* CURL  call CURL(<f-args>)

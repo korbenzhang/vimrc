@@ -9,6 +9,7 @@ fun! GoMigrate(...)
 endfun
 command! -bar -narg=* GoMigrate  call GoMigrate(<f-args>)
 
+
 "run mcmd cmds directly
 fun! RunGoCmdFunc(...)
 	let line = getline('.')
