@@ -218,3 +218,5 @@ map <C-m> :cprevious<CR>
 
 " Enter automatically into the files directory
 "autocmd BufEnter * silent! lcd %:p:h
+"
+
