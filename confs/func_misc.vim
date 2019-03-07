@@ -322,6 +322,8 @@ func! RunFile(prefix)
 		exec s:prefix.'java %'
 	elseif	&filetype == 'sql'
 		exec s:prefix.'mysql -u root -p'. $MYSQLPW . ' -hdb.mabetle.com dbc < %'
+	elseif &filetype == 'ts' || &filetype == 'typescript'
+		exec s:prefix.'ts-node %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec s:prefix.'node %'
 	elseif &filetype == 'vb'
