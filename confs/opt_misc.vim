@@ -1,6 +1,10 @@
 " Options
 " =======
 
+filetype on
+filetype indent on
+filetype plugin on
+
 "for search
 set smartcase
 
@@ -219,4 +223,6 @@ map <C-m> :cprevious<CR>
 " Enter automatically into the files directory
 "autocmd BufEnter * silent! lcd %:p:h
 "
+
+set report=0
 
