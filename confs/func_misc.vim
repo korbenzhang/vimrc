@@ -212,7 +212,7 @@ command! -bar -narg=0 RLGoGet  call RunLine("! go get -v ")
 
 command! -bar -narg=0 AsyncRunLine call RunLine("AsyncRun")
 command! -bar -narg=0 ARL call RunLine("AsyncRun")
-nmap <A-l> :RunLine<cr>
+nmap <C-L> :RunLine<cr>
 
 fun! RunSQLLine()
 	let line = getline('.')
