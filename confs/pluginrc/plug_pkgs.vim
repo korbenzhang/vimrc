@@ -26,7 +26,7 @@ endif
 
 Plug 'tpope/vim-endwise'
 Plug 'raimondi/delimitmate'
-Plug 'gorodinskiy/vim-coloresque'
+"Plug 'gorodinskiy/vim-coloresque'
 
 "complete
 source ~/.vim/confs/pluginrc/utlisnips.vim
@@ -34,7 +34,7 @@ Plug 'honza/vim-snippets'
 
 "lang extends
 " html
-Plug 'mattn/emmet-vim'
+"Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 
 " Extra Plugins
