@@ -14,7 +14,7 @@ call plug#begin('~/.vim/bundle')
 "see ~/.vim/bundle/vim-plug
 Plug 'junegunn/vim-plug'
 
-Plug '~/.vim/confs/myplug'
+"Plug '~/.vim/confs/myplug'
 
 "basic vim extends
 "Plug 'DataWraith/auto_mkdir'
