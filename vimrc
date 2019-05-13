@@ -64,6 +64,7 @@ source ~/.vim/confs/esc_alt.vim				" Make alt work
 source ~/.vim/confs/nvim.vim				" for nvim
 source ~/.vim/confs/todo.vim				" todo 
 source ~/.vim/confs/terminal.vim			" terminal
+source ~/.vim/confs/dict.vim			" terminal
 
 " Plugins
 " -------

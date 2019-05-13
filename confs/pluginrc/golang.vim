@@ -125,8 +125,6 @@ augroup go
 	autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 augroup END
 
-au FileType go set dictionary+=~/.vim/confs/dict/golang.dict
-
 "let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 "let g:syntastic_go_checkers = ['golint', 'govet']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
