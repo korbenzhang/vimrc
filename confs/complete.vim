@@ -5,10 +5,13 @@
 "set completeopt=menu,preview
 set completeopt=longest,menu
 
-set wildmenu						"enable ctrl-n and ctrl-p to scroll thru matches
+"enable ctrl-n and ctrl-p to scroll thru matches
+set wildmenu
 
-set wildignore+=tags,.*.un~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules/*,*/_libs/*,*.dll
-set wildignore+=*.o,*.obj,*~			"stuff to ignore when tab completing
+set wildignore+=tags,.*.un~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*.dll,*.exe
+
+"stuff to ignore when tab completing
+set wildignore+=*.o,*.obj,*.bak,*~
 
 " default is off
 set wildignorecase

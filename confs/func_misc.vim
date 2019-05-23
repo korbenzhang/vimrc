@@ -242,6 +242,34 @@ fun! RunSQLLine()
 endfun
 command! -bar -narg=0 RunSQLLine  call RunSQLLine()
 
+fun! SudoRunSQLLine()
+	let line = getline('.')
+	" trim space
+	let line = Trim(line)
+
+	let start = strpart(line,0,1)
+	" most script comment start with #
+	if start == "#" || start == '"' || start == '$'
+		let line = strpart(line,1,len(line))
+		let line = Trim(line)
+	endif
+	" c like comment
+	let start2 = strpart(line,0,2)
+	if start2 == '//'
+		let line = strpart(line,2,len(line))
+		let line = Trim(line)
+	endif
+	"bat rem
+	let start3 = strpart(line,0,3)
+	if start3 == 'REM' || start3 == 'rem'
+		let line = strpart(line,3,len(line))
+		let line = Trim(line)
+	endif
+	let line = Trim(line)
+	execute '! sudo mysql dbc  -e "'.line.'"'
+endfun
+command! -bar -narg=0 SudoRunSQLLine  call SudoRunSQLLine()
+
 fun! SudoRunLine()
 	let line = getline('.')
 	" trim space
@@ -414,3 +442,14 @@ fun! CURL(...)
 	execute GetExecPrefix("!").cmd 
 endfun
 command! -bar -narg=* CURL  call CURL(<f-args>)
+
+func! TableDefine()
+	exec "!tabledefine %"
+endfunc
+command! -bar -narg=* TableDefine  call TableDefine(<f-args>)
+
+func! ImportYAML()
+	exec "!importyaml %"
+endfunc
+command! -bar -narg=* ImportYAML  call ImportYAML(<f-args>)
+

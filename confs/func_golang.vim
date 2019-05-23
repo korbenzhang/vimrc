@@ -66,3 +66,8 @@ func! GoGetUp()
 endfunc
 command! -bar -narg=0 GoGetUp call GoGetUp()
 
+func! FixGoComment()
+	exec "!fixgocomment %"
+endfunc
+command! -bar -narg=0 FixGoComment call FixGoComment()
+
