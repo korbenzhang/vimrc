@@ -444,7 +444,7 @@ endfun
 command! -bar -narg=* CURL  call CURL(<f-args>)
 
 func! TableDefine()
-	exec "!tabledefine %"
+	exec "!tabledef %"
 endfunc
 command! -bar -narg=* TableDefine  call TableDefine(<f-args>)
 
