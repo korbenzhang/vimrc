@@ -22,7 +22,7 @@ fun! RunGoCmdFunc(...)
 	let ip = split(line,' ')
 	let tn = split(ip[2],")")[0]
 	let fn = split(ip[3],"(")[0]
-	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmdtask/main.go "
 	execute GetExecPrefix("!").' '.gocmd . tn . '.' . fn' '.join(a:000)
 endfun
 command! -bar -narg=* GoRunCmdFunc  call RunGoCmdFunc(<f-args>)
@@ -30,14 +30,14 @@ command! -bar -narg=* GoRunCmdFunc  call RunGoCmdFunc(<f-args>)
 "run mcmd cmds directly
 fun! RunGoCmdCursorWord(...)
 	let fn = expand("<cword>")
-	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmdtask/main.go "
 	execute GetExecPrefix("!").' '.gocmd . fn .' '.join(a:000)
 endfun
 command! -bar -narg=* GoRunCmdCursorWord  call RunGoCmdCursorWord(<f-args>)
 
 "run mcmd cmds directly
 fun! RunGoCmds(...)
-	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmds_task/main.go "
+	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmdtask/main.go "
 	execute GetExecPrefix("!").' '.gocmd .' '.join(a:000)
 endfun
 command! -bar -narg=* GoRunCmds  call RunGoCmds(<f-args>)
