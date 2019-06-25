@@ -189,7 +189,7 @@ fun! RunLine(prefix)
 	endif
 	" c like comment
 	let start2 = strpart(line,0,2)
-	if start2 == '//'
+	if start2 == '//' || start2 == '--'
 		let line = strpart(line,2,len(line))
 		let line = Trim(line)
 	endif
