@@ -42,11 +42,6 @@ if filereadable(expand('~/.vim/extra/extra_plugins.vim'))
 	source ~/.vim/extra/extra_plugins.vim
 endif
 
-if filereadable(expand('~/.vim_extra_plugins.vim'))
-	source ~/.vim_extra_plugins.vim
-endif
-
-
 " Initialize plugin system
 call plug#end()
 
