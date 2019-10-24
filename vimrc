@@ -35,7 +35,7 @@ source ~/.vim/confs/encoding.vim			" Encodings
 source ~/.vim/confs/xterm.vim				" Xterm
 source ~/.vim/confs/complete.vim			" Complete
 source ~/.vim/confs/gui/gui_running.vim		" GUI
-source ~/.vim/confs/tab_indent.vim			" Tab and Indent
+source ~/.vim/confs/tab_indent2.vim			" Tab and Indent
 source ~/.vim/confs/mswin.vim				" MS Win 
 source ~/.vim/confs/mouse.vim				" Mouse
 source ~/.vim/confs/au.vim					" AutoCmd
