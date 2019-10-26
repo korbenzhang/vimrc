@@ -227,3 +227,6 @@ map <C-m> :cprevious<CR>
 set report=0
 
 let g:sql_type_default = 'mysql'
+
+set conceallevel=0
+
