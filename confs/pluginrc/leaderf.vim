@@ -127,3 +127,6 @@ let g:Lf_StlPalette = {
 			\       'ctermbg': '149'
 			\   }
 			\ }
+
+let g:Lf_FollowLinks = 1
+
