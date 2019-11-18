@@ -412,7 +412,7 @@ command! -bar -narg=0 Fmt call Fmt()
 
 "Git clone line
 func! GitCloneLine()
-	exec '!cd ~/checkout/ && git clone '. getline('.')
+	exec '!cd /uhome/checkout/ && git clone '. getline('.')
 endfunc
 command! -bar -narg=0 GitCloneLine call GitCloneLine()
 

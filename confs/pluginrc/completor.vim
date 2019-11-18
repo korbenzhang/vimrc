@@ -1,11 +1,10 @@
 
 Plug 'maralla/completor.vim'
 
-
 Plug 'masawada/completor-dictionary'
 
 
-autocmd FileType * execute 'setlocal dictionary='.expand($HOME.'/.vim/confs/dict/'.&filetype.'.dict')
+autocmd FileType * execute 'setlocal dictionary='.expand('/uhome/.vim/confs/dict/'.&filetype.'.dict')
 
 
 Plug 'maralla/completor-typescript'
@@ -18,3 +17,4 @@ let g:completor_css_omni_trigger = '([\w-]+|@[\w-]*|[\w-]+:\s*[\w-]*)$'
 "vsplit: same as :vsplit.
 "tab:    same as :tab split
 let g:completor_def_split = 'tab'
+

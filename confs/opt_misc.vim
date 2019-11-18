@@ -211,7 +211,7 @@ set formatoptions+=j " Delete comment character when joining commented lines
 
 if has('persistent_undo')
   set undofile
-  set undodir=~/.config/vim/tmp/undo//
+  set undodir=/uhome/.config/vim/tmp/undo//
 endif
 
 let g:rehash256 = 1

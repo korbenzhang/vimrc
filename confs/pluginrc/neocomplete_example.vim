@@ -12,8 +12,8 @@ let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
+    \ 'vimshell' : '/uhome/.vimshell_hist',
+    \ 'scheme' : '/uhome/.gosh_completions'
         \ }
 
 " Define keyword.

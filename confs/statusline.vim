@@ -2,7 +2,7 @@
 "---------------------
 
 if (exists('g:powerline_loaded') || exists('g:loaded_airline'))
-	finish
+  finish
 endif
 
 "设置在状态行显示的信息如下：
@@ -21,8 +21,8 @@ endif
 "%L 当前文件总行数
 
 func! CurDir()
-    let curdir = substitute(getcwd(), expand($HOME), "~", "g")
-    return curdir
+  let curdir = substitute(getcwd(), '/uhome', "~", "g")
+  return curdir
 endfunc
 
 set statusline=
@@ -50,7 +50,7 @@ set statusline+=\ CWD:%r%{CurDir()}%h
 set statusline+=\ Line:%l/%L
 
 if exists('g:loaded_fugitive')
-	set statusline+=%{fugitive#statusline()}
+  set statusline+=%{fugitive#statusline()}
 endif
 
 " left/right separator
@@ -60,7 +60,7 @@ set statusline+=%=
 set statusline+=\ %#warningmsg#
 
 if exists('g:loaded_syntastic_plugin')
-	" SyntasticStatusLine
-	set statusline+=%{SyntasticStatuslineFlag()}
+  " SyntasticStatusLine
+  set statusline+=%{SyntasticStatuslineFlag()}
 endif
 

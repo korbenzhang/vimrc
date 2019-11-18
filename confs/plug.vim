@@ -1,14 +1,14 @@
 " vim-plug: Vim plugin manager
 " ============================
 "
-" Download plug.vim and put it in ~/.vim/autoload
+" Download plug.vim and put it in /uhome/.vim/autoload
 "
-"   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"   curl -fLo /uhome/.vim/autoload/plug.vim --create-dirs \
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "
 " Edit your .vimrc
 "
-"   call plug#begin('~/.vim/plugged')
+"   call plug#begin('/uhome/.vim/plugged')
 "
 "   " Make sure you use single quotes
 "
@@ -34,11 +34,11 @@
 "   " Plugin options
 "   Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 "
-"   " Plugin outside ~/.vim/plugged with post-update hook
-"   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"   " Plugin outside /uhome/.vim/plugged with post-update hook
+"   Plug 'junegunn/fzf', { 'dir': '/uhome/.fzf', 'do': './install --all' }
 "
 "   " Unmanaged plugin (manually installed and updated)
-"   Plug '~/my-prototype-plugin'
+"   Plug '/uhome/my-prototype-plugin'
 "
 "   " Initialize plugin system
 "   call plug#end()

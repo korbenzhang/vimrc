@@ -1,6 +1,6 @@
 " You Complete Me
 " YCM need python
-" gocode: $HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/gocode
+" gocode: /uhome/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/gocode
 
 if !has("python") && !has("python3")
 	finish
@@ -41,7 +41,7 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1   "注释和字符�
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_min_num_identifier_candidate_chars = 2
-let g:ycm_global_ycm_extra_conf ='~/.vim/confs/ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf ='/uhome/.vim/confs/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0 "close load .ycm_extra_conf.py remind.
 
 " 跳转到定义处, 分屏打开

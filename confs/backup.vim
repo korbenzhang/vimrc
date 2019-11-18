@@ -2,6 +2,6 @@
 
 set backup
 
-set backupdir=expand('~/.vim/rundata/backup/')
+set backupdir=expand('/uhome/.vim/rundata/backup/')
 
 

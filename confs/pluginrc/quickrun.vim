@@ -1,4 +1,4 @@
-" ~/.vim/bundle/vim-quickrun
+" /uhome/.vim/bundle/vim-quickrun
 
 Plug 'thinca/vim-quickrun'
 
