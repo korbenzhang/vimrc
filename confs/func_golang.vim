@@ -2,15 +2,6 @@
 "
 
 "run mcmd cmds directly
-fun! GoMigrate(...)
-	let tn = expand("<cword>")
-	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/migrate_models_task/main.go migrate "
-	execute GetExecPrefix("!").' '.gocmd . tn.' '.join(a:000)
-endfun
-command! -bar -narg=* GoMigrate  call GoMigrate(<f-args>)
-
-
-"run mcmd cmds directly
 fun! RunGoCmdFunc(...)
 	let line = getline('.')
 	let line = Trim(line)
