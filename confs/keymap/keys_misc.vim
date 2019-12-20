@@ -93,3 +93,5 @@ cnoremap        <M-f> <S-Right>
 "nnoremap <pageup> <c-u>
 "nnoremap <pagedown> <c-d>
 
+map <m-r> <f5>
+
