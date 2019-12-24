@@ -21,6 +21,7 @@ nmap <A-8> :8tabnext<cr>
 nmap <A-9> :9tabnext<cr>
 nmap <A-0> :tablelast<cr>
 
+nmap <A-N> :tabnew<cr>
 nmap <A-END> :tablast<cr>
 nmap <A-HOME> :tabfirst<cr>
 nmap <A-PageDown> :tabnext<cr>

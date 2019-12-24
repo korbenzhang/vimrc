@@ -11,3 +11,8 @@ nmap <leader>8 :8tabnext<cr>
 nmap <leader>9 :9tabnext<cr>
 nmap <leader>0 :tablast<cr>
 
+nmap <leader>tn :tabnew<cr>
+nmap <leader>te :tabedit 
+nmap <leader>tb :tabnext<cr>
+nmap <leader>tp :tabprevious<cr>
+

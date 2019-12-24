@@ -1,5 +1,4 @@
 " Tab Window
-map <leader>te :tabedit 
 nmap <C-S-N> :tabnew<cr>
 
 nmap <C-TAB> :tabNext<CR>
