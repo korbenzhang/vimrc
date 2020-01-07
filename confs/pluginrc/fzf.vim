@@ -22,7 +22,7 @@ endif
 
 let $FZF_DEFAULT_COMMAND='ag -g ""'
 
-nnoremap <silent> <Leader>f :GFiles<CR>
+nnoremap <silent> <Leader>f :FZF<CR>
 nnoremap <silent> <F1>		:GFiles<CR>
 nnoremap <silent> <expr> <Leader><Leader> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":GFiles\<cr>"
 nnoremap <silent> <Leader>C        :Colors<CR>
