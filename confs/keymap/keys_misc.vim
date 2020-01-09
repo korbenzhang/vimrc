@@ -27,7 +27,7 @@ nmap <S-Del> dw
 imap <S-Del> <C-O>dw
 
 " GoTo file
-nmap gf :tabnew<cfile><cr>
+nmap gf :edit<cfile><cr>
 nmap tf :tabnew <cfile><cr>
 nmap <M-f> gf
 nmap <A-f> gf

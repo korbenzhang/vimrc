@@ -5,5 +5,5 @@ nmap <C-TAB> :tabNext<CR>
 imap <C-TAB> <ESC>:tabNext<CR>
 
 " go to file
-map gf :tabnew <cfile><cr>
+map gf :edit <cfile><cr>
 
