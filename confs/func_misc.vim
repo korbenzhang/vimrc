@@ -364,6 +364,8 @@ func! RunFile(prefix)
 		endif
 	elseif &filetype == 'groovy'
 		exec s:prefix.'groovy %'
+	elseif &filetype == 'yaml'
+		exec s:prefix.'importyaml %'
 	elseif &filetype == 'python'
 		exec s:prefix.'python %'
 	elseif &filetype == 'dosbatch' && has('win32')
