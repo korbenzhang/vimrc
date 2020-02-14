@@ -27,6 +27,19 @@ endfun
 command! -bar -narg=* GoRunCmdCursorWord  call RunGoCmdCursorWord(<f-args>)
 
 "run mcmd cmds directly
+fun! Fweb(...)
+	let fn = expand("<cword>")
+	execute GetExecPrefix("!fwebw "). fn .' '.join(a:000)
+endfun
+command! -bar -narg=* Fweb  call Fweb(<f-args>)
+
+fun! Fapi(...)
+	let fn = expand("<cword>")
+	execute GetExecPrefix("!fapiw "). fn .' '.join(a:000)
+endfun
+command! -bar -narg=* Fapi  call Fapi(<f-args>)
+
+"run mcmd cmds directly
 fun! RunGoCmds(...)
 	let gocmd  = "go run /devlab/gocodes/src/mabetle/cmds/cmdstask/main.go "
 	execute GetExecPrefix("!").' '.gocmd .' '.join(a:000)
