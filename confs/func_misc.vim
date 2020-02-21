@@ -354,6 +354,8 @@ func! RunFile(prefix)
 		exec s:prefix.'ts-node %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
 		exec s:prefix.'node %'
+	elseif &filetype == 'ejs' 
+		exec s:prefix.'node -r esm %'
 	elseif &filetype == 'vb'
 		exec s:prefix.'wscript %'
 	elseif &filetype == 'bash' || &filetype == 'sh'
