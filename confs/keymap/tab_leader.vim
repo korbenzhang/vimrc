@@ -15,4 +15,5 @@ nmap <leader>tn :tabnew<cr>
 nmap <leader>te :tabedit 
 nmap <leader>tb :tabnext<cr>
 nmap <leader>tp :tabprevious<cr>
+nmap <leader>q :x<cr>
 

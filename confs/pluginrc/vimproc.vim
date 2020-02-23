@@ -1,6 +1,6 @@
 " vimsheel needs vimproc.
 "
-" see /uhome/.vim/bundle/vimproc.vim
+" see $HOME/.vim/bundle/vimproc.vim
 
 if has("win32")
 	Plug 'Shougo/vimproc.vim'

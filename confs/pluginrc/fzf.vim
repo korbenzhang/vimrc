@@ -1,14 +1,14 @@
 
 " open file 
 if has("win32")
-	Plug 'junegunn/fzf', { 'dir': '/uhome/.fzf' }
+	Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf' }
 else
-	Plug 'junegunn/fzf', { 'dir': '/uhome/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
 endif
 
 Plug 'junegunn/fzf.vim'
 
-let g:fzf_history_dir = '/uhome/.local/share/fzf-history'
+let g:fzf_history_dir = '$HOME/.local/share/fzf-history'
 
 " fzf status
 autocmd! FileType fzf

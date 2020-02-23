@@ -13,5 +13,5 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " snippets directory
 
-"let g:neosnippet#snippets_directory='/uhome/.vim/bundle/vim-snippets/snippets'
-"let g:neosnippet#snippets_directory='/uhome/.vim/bundle/neosnippet-snippets/neosnippets'
+"let g:neosnippet#snippets_directory='$HOME/.vim/bundle/vim-snippets/snippets'
+"let g:neosnippet#snippets_directory='$HOME/.vim/bundle/neosnippet-snippets/neosnippets'

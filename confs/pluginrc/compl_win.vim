@@ -7,6 +7,6 @@
 if IsHasLua()
 	" No Python
 	" neocomplete need lua
-	source /uhome/.vim/confs/pluginrc/neocomplete.vim
+	source $HOME/.vim/confs/pluginrc/neocomplete.vim
 endif
 

@@ -7,7 +7,7 @@
 "switch to directory of current file
 command! CD cd %:p:h
 
-"set cdpath=/uhome/.vim,$PD,
+"set cdpath=$HOME/.vim,$PD,
 
 "set report=0
 

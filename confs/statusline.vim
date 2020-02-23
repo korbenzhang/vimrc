@@ -21,7 +21,7 @@ endif
 "%L 当前文件总行数
 
 func! CurDir()
-  let curdir = substitute(getcwd(), '/uhome', "~", "g")
+  let curdir = substitute(getcwd(), '$HOME', "~", "g")
   return curdir
 endfunc
 

@@ -14,7 +14,7 @@ let g:tagbar_width = 25
 "let g:tagbar_autoclose = 1
 
 if !executable("ctags") && has("win32")
-	let g:tagbar_ctags_bin = expand('/uhome/.vim/tools/ctags.exe')
+	let g:tagbar_ctags_bin = expand('$HOME/.vim/tools/ctags.exe')
 endif
 
 " open Tagbar on vim startup

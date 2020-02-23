@@ -4,9 +4,9 @@ if !(has("gui_running") && has("win64"))
 	finish
 endif
 
-" prebuild gvimfullscreen-x64 is in /uhome/.vim/bin/
+" prebuild gvimfullscreen-x64 is in $HOME/.vim/bin/
 " You show copy it to $VIM first.
-" cp /uhome/.vim/bin/gvimfullscreen-x64.dll $VIMRUNTIME
+" cp $HOME/.vim/bin/gvimfullscreen-x64.dll $VIMRUNTIME
 
 func! ToggleFullScreen()
 	call libcallnr("gvimfullscreen-x64.dll", "ToggleFullScreen", 0)

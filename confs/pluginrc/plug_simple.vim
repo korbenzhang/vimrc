@@ -1,7 +1,7 @@
 " to speed up vim
 " only include very simple basic vim plugins.
-source /uhome/.vim/confs/plug.vim
-call plug#begin('/uhome/.vim/bundle')
+source $HOME/.vim/confs/plug.vim
+call plug#begin('$HOME/.vim/bundle')
 
 Plug 'junegunn/vim-plug'
 Plug 'pbrisbin/vim-mkdir'
@@ -14,8 +14,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tomasr/molokai'
 
 " Extra Plugins
-if filereadable(expand('/uhome/.vim/extra/extra_plugins.vim'))
-	source /uhome/.vim/extra/extra_plugins.vim
+if filereadable(expand('$HOME/.vim/extra/extra_plugins.vim'))
+	source $HOME/.vim/extra/extra_plugins.vim
 endif
 
 " Initialize plugin system

@@ -4,7 +4,7 @@ Plug 'maralla/completor.vim'
 Plug 'masawada/completor-dictionary'
 
 
-autocmd FileType * execute 'setlocal dictionary='.expand('/uhome/.vim/confs/dict/'.&filetype.'.dict')
+autocmd FileType * execute 'setlocal dictionary='.expand('$HOME/.vim/confs/dict/'.&filetype.'.dict')
 
 
 Plug 'maralla/completor-typescript'

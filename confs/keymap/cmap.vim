@@ -1,8 +1,8 @@
 " key cmap
 
-cno $h e /uhome/
+cno $h e $HOME/
 cno $j e ./e
-cno $th tabnew /uhome/
+cno $th tabnew $HOME/
 cno $dm %s///g
 
 cmap <C-E>    <End>

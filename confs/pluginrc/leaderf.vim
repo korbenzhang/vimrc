@@ -22,11 +22,11 @@ let g:Lf_WorkingDirectoryMode = 'Ac'
 let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_MruFileExclude = ['*.so']
 let g:Lf_DefaultExternalTool = 'ag'
-let g:Lf_RootMarkers = ['.project','.svn','.git','.hg','package.json']
+let g:Lf_RootMarkers = ['.project','.svn','.git','.hg']
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 
 let g:Lf_WildIgnore = {
-	\ 'dir': ['.svn','.git','.hg','_libs','_demo','dist','target','build','node_modules'],
+	\ 'dir': ['.svn','.git','.hg','target','build','node_modules'],
 	\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.dll','*.zip','*.png','*.jpg','*.o','*.so','*.py[co]']
 	\}
 
