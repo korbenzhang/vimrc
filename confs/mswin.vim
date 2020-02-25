@@ -60,10 +60,6 @@ if !has("unix")
   set guioptions-=a
 endif
 
-" CTRL-Z is Undo; not in cmdline though
-"noremap <C-Z> u
-"inoremap <C-Z> <C-O>u
-
 " CTRL-Y is Redo (although not repeat); not in cmdline though
 noremap <C-Y> <C-R>
 inoremap <C-Y> <C-O><C-R>
