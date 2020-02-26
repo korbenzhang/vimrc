@@ -179,7 +179,7 @@ endif
 " hidden
 "number (default 0)
 if has('conceal')
-	set conceallevel=2 concealcursor=i
+	set conceallevel=0 concealcursor=i
 endif
 
 " default is off
@@ -227,6 +227,5 @@ map <C-m> :cprevious<CR>
 set report=0
 
 let g:sql_type_default = 'mysql'
-
-set conceallevel=0
+let g:vim_json_syntax_conceal = 0
 
