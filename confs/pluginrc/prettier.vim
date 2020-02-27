@@ -31,7 +31,7 @@ let g:prettier#config#jsx_bracket_same_line = 'true'
 let g:prettier#config#arrow_parens = 'always'
 
 " none|es5|all
-let g:prettier#config#trailing_comma = 'es5'
+let g:prettier#config#trailing_comma = 'none'
 
 " flow|babylon|typescript|css|less|scss|json|graphql|markdown
 "let g:prettier#config#parser = 'flow'
