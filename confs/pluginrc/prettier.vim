@@ -1,11 +1,11 @@
 
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#bracket_spacing = 'false'
 "let g:prettier#config#trailing_comma = 'es5'
 let g:prettier#config#trailing_comma = 'all'
 let g:prettier#config#single_quote = 'false' 
-let g:prettier#config#semi = 'true'
+let g:prettier#config#semi = 'false'
 
 "let g:prettier#quickfix_enabled  = 1
 "let g:prettier#quickfix_auto_focus = 1
