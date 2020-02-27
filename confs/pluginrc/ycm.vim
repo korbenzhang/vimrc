@@ -18,6 +18,11 @@ Plug 'Valloric/YouCompleteMe'
 " default is 1
 "let g:ycm_show_diagnostics_ui = 0
 
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_error_symbol = 'K'
+let g:ycm_warning_symbol = 'O'
+
 
 let g:ycm_auto_trigger = 1
 
@@ -27,7 +32,7 @@ let g:ycm_auto_trigger = 1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
-" should disable input methods shortcut C-Space key. 
+" should disable input methods shortcut C-Space key.
 " default is <C-Space>
 " ----------------------------------
 "let g:ycm_key_invoke_completion = '<C-Space>'

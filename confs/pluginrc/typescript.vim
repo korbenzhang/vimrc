@@ -8,6 +8,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 
 "Language Service Tools
 Plug 'Quramy/tsuquyomi'
+
 Plug 'clausreinke/typescript-tools.vim'
 
 if !exists("g:ycm_semantic_triggers")

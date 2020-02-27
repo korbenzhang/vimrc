@@ -3,7 +3,7 @@
 
 let g:netrw_liststyle = 3
 
-" if put plug.vim in $HOME/.vim/autoload dir, 
+" if put plug.vim in $HOME/.vim/autoload dir,
 " not need following line.
 source $HOME/.vim/confs/plug.vim
 
@@ -25,6 +25,7 @@ if IsInUnix()
 endif
 
 Plug 'tpope/vim-endwise'
+
 Plug 'raimondi/delimitmate'
 "Plug 'gorodinskiy/vim-coloresque'
 
@@ -34,7 +35,8 @@ Plug 'honza/vim-snippets'
 
 "lang extends
 " html
-"Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
+
 Plug 'othree/html5.vim'
 
 " Extra Plugins
@@ -46,4 +48,3 @@ endif
 call plug#end()
 
 "source $HOME/.vim/confs/plug_ext.vim
-
