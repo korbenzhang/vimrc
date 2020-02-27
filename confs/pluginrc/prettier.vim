@@ -7,7 +7,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
       "\         'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " max line length that prettier will wrap on
-let g:prettier#config#print_width = 'never'
+let g:prettier#config#print_width = 200
 
 " number of spaces per indentation level
 let g:prettier#config#tab_width = 2
