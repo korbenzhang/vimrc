@@ -28,5 +28,5 @@ endif
 " usetab
 " spit
 " newtab
-set switchbuf=newtab
+"set switchbuf=newtab
 

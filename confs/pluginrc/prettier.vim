@@ -48,12 +48,12 @@ let g:prettier#config#html_whitespace_sensitivity = 'css'
 let g:prettier#config#end_of_line = 'lf'
 
 "let g:prettier#quickfix_enabled  = 1
+let g:prettier#quickfix_enabled = 0
 "let g:prettier#quickfix_auto_focus = 1
 "let g:prettier#autoformat = 1
-"let g:prettier#quickfix_enabled = 0
 
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,
-      \*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,
+      "\*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 
 "autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,
 "\*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync

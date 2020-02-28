@@ -149,7 +149,7 @@ set ambiwidth=double
 "English characters directly, e.g., when it's used to type accented
 "characters with dead keys.
 " default is off
-set noimcmdline
+"set noimcmdline
 
 autocmd QuickFixCmdPre * :update
 
@@ -224,7 +224,7 @@ map <C-m> :cprevious<CR>
 "autocmd BufEnter * silent! lcd %:p:h
 "
 
-set report=0
+"set report=0
 
 let g:sql_type_default = 'mysql'
 let g:vim_json_syntax_conceal = 0

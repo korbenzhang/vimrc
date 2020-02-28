@@ -50,9 +50,9 @@ source $HOME/.vim/confs/keymap/fn.vim		    " Fn
 source $HOME/.vim/confs/keymap/arrow.vim		" Move cursor
 source $HOME/.vim/confs/keymap/moveline.vim		" Move Lines
 source $HOME/.vim/confs/keymap/indent.vim		" Indent
-source $HOME/.vim/confs/keymap/tab.vim			" Tab
-source $HOME/.vim/confs/keymap/tab_m.vim		" TabWindows Meta access
-source $HOME/.vim/confs/keymap/tab_leader.vim	" TabWindows leader access
+"source $HOME/.vim/confs/keymap/tab.vim			" Tab
+"source $HOME/.vim/confs/keymap/tab_m.vim		" TabWindows Meta access
+"source $HOME/.vim/confs/keymap/tab_leader.vim	" TabWindows leader access
 source $HOME/.vim/confs/keymap/leader.vim	" TabWindows leader access
 source $HOME/.vim/confs/keymap/win.vim			" Switch Windows
 source $HOME/.vim/confs/keymap/keys_misc.vim	" Keys misc
