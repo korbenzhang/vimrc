@@ -39,8 +39,11 @@ endif
 "And if you want to open Tagbar only for specific filetypes, not for all of the
 "supported ones:
 "--------------------------------------
-"autocmd FileType c,cpp,go,java nested :TagbarOpen
-"autocmd FileType c,cpp,go,java nested :call tagbar#autoopen(0)
+"autocmd FileType c,cpp,go,java,javascript,typescript nested :TagbarOpen
+"autocmd FileType c,cpp,go,java,javascript,typescript nested :call tagbar#autoopen(0)
+
+nmap  <leader>tt  :call tagbar#autoopen(0)<cr>
+nmap  <leader>tc :TagbarClose<cr>
 
 let g:tagbar_sort = 1
 
