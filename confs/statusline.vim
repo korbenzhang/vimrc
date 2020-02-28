@@ -64,3 +64,4 @@ if exists('g:loaded_syntastic_plugin')
   set statusline+=%{SyntasticStatuslineFlag()}
 endif
 
+source ~/.vim/confs/statusline_colorful.vim

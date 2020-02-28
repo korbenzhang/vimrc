@@ -42,8 +42,6 @@ endif
 "autocmd FileType c,cpp,go,java,javascript,typescript nested :TagbarOpen
 "autocmd FileType c,cpp,go,java,javascript,typescript nested :call tagbar#autoopen(0)
 
-nmap  <leader>tt  :call tagbar#autoopen(0)<cr>
-nmap  <leader>tc :TagbarClose<cr>
 
 let g:tagbar_sort = 1
 
@@ -76,3 +74,5 @@ let g:tagbar_type_go = {
 \ }
 
 
+nmap  <leader>tb  :call tagbar#autoopen(0)<cr>
+nmap  <leader>tc :TagbarClose<cr>
