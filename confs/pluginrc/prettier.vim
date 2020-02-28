@@ -52,8 +52,8 @@ let g:prettier#quickfix_enabled = 0
 "let g:prettier#quickfix_auto_focus = 1
 "let g:prettier#autoformat = 1
 
-"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,
-      "\*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,
+      \*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 
 "autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,
 "\*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
