@@ -9,11 +9,11 @@
 
 Plug 'ternjs/tern_for_vim'
 Plug 'pangloss/vim-javascript'
-Plug 'isRuslan/vim-es6'
+"Plug 'isRuslan/vim-es6'
 Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
 Plug 'jamescarr/snipmate-nodejs'
-Plug 'maksimr/vim-jsbeautify'
+"Plug 'maksimr/vim-jsbeautify'
 "Plug 'vim-scripts/JavaScript-syntax-add-E4X-support'
 "Plug 'pangloss/vim-javascript'
 "Plug 'othree/javascript-libraries-syntax.vim'
