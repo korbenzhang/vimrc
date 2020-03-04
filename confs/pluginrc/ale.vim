@@ -24,3 +24,10 @@ let g:ale_fixers = {
       \   'typescript': ['prettier', 'eslint'],
       \   'css': ['prettier'],
       \}
+
+set omnifunc=ale#completion#OmniFunc
+set completeopt=menu,menuone,preview,noselect,noinsert
+"set completeopt=menu,menuone,popup,noselect,noinsert
+
+nmap <F8> <Plug>(ale_fix)
+
