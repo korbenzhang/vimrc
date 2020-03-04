@@ -1,4 +1,4 @@
-" clear highlight match.
+"clear highlight match.
 nmap <silent> <esc><esc> :noh<cr>
 
 " Make Y behave like other capitals.
@@ -94,4 +94,8 @@ cnoremap        <M-f> <S-Right>
 "nnoremap <pagedown> <c-d>
 
 map <m-r> <f5>
+
+"save all
+nmap <C-S-s> :wa<cr>
+imap <C-S-s> <esc>:wa<cr>i
 
