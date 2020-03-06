@@ -6,10 +6,6 @@ if !has("python") && !has("python3")
 	finish
 endif
 
-if IsInWinUnix()
-	finish
-endif
-
 let g:vimrc#completer="Valloric/YouCompleteMe"
 
 Plug 'Valloric/YouCompleteMe'
