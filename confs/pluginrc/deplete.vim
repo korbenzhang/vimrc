@@ -1,19 +1,15 @@
-
-if !has("nvim")
-	finish
-endif
-
-
 " need python3
 if !has("python3")
 	finish
 endif
 
-"https://github.com/Shougo/deoplete.nvim
-Plug 'Shougo/deoplete.nvim'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
-"https://github.com/zchee/deoplete-go
-Plug 'zchee/deoplete-go'
 
-"https://github.com/kbrw/elixir.nvim
-Plug 'kbrw/elixir.nvim'
+let g:deoplete#enable_at_startup = 1
