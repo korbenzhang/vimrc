@@ -9,7 +9,7 @@ let g:go_version_warning = 0
 " auto install go depends binneny
 let g:go_disable_autoinstall = 1
 
-let g:go_template_autocreate = 0 
+let g:go_template_autocreate = 0
 
 " auto imports
 " default is gofmt
@@ -147,7 +147,7 @@ command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
-let g:go_list_type = "quickfix"
+"let g:go_list_type = "quickfix"
 
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1

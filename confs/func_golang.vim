@@ -1,5 +1,4 @@
 " func for go lang
-"
 
 "run mcmd cmds directly
 fun! RunGoCmdFunc(...)
@@ -74,4 +73,3 @@ func! FixGoComment()
 	exec "!fixgocomment %"
 endfunc
 command! -bar -narg=0 FixGoComment call FixGoComment()
-
