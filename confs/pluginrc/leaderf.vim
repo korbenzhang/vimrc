@@ -23,7 +23,8 @@ let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_MruFileExclude = ['*.so']
 let g:Lf_DefaultExternalTool = 'ag'
 let g:Lf_RootMarkers = ['.project','.svn','.git','.hg']
-let g:Lf_StlSeparator = { 'left': '', 'right': '' }
+"let g:Lf_StlSeparator = { 'left': '', 'right': '' }
+let g:Lf_StlSeparator = { 'left': '►', 'right': '◄', 'font': '' }
 
 let g:Lf_WildIgnore = {
 	\ 'dir': ['.svn','.git','.hg','target','build','node_modules'],
@@ -129,4 +130,3 @@ let g:Lf_StlPalette = {
 			\ }
 
 let g:Lf_FollowLinks = 1
-
