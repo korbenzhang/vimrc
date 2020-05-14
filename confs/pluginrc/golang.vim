@@ -16,7 +16,7 @@ let g:go_template_autocreate = 0
 let g:go_fmt_command = 'goimports'
 
 " guru or godef
-let g:go_def_mode = 'godef'
+"let g:go_def_mode = 'godef'
 "let g:go_def_mode = 'guru'
 
 " default is 1
@@ -155,3 +155,7 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
+
+au FileType go nmap <leader>rt <Plug>(go-run-tab)
+au FileType go nmap <leader>rs <Plug>(go-run-split)
+au FileType go nmap <leader>rv <Plug>(go-run-vertical)
