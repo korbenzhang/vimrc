@@ -130,3 +130,4 @@ let g:Lf_StlPalette = {
 			\ }
 
 let g:Lf_FollowLinks = 1
+let g:Lf_ShowDevIcons = 0 
