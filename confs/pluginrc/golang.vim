@@ -4,7 +4,7 @@
 " vim-go
 Plug 'fatih/vim-go'
 
-let g:go_version_warning = 0
+let g:go_version_warning = 1
 
 " auto install go depends binneny
 let g:go_disable_autoinstall = 1
@@ -13,7 +13,7 @@ let g:go_template_autocreate = 0
 
 " auto imports
 " default is gofmt
-let g:go_fmt_command = 'goimports'
+"let g:go_fmt_command = 'goimports'
 
 " guru or godef
 "let g:go_def_mode = 'godef'
@@ -21,13 +21,13 @@ let g:go_fmt_command = 'goimports'
 
 " default is 1
 " when save fmt or not
-let g:go_fmt_autosave = 1
+"let g:go_fmt_autosave = 1
 
 " for neovim only.
-if has('nvim')
-	let g:go_term_mode = 'split'
-	let g:go_term_enabled = 1
-endif
+"if has('nvim')
+	"let g:go_term_mode = 'split'
+	"let g:go_term_enabled = 1
+"endif
 
 " default is 0
 " let g:go_dispatch_enabled = 0
@@ -43,36 +43,36 @@ endif
 
 "default is disable
 " slow down vim 
-let g:go_auto_type_info = 0
-let g:go_auto_sameids = 0
+"let g:go_auto_type_info = 0
+"let g:go_auto_sameids = 0
 
 "let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 "let g:go_metalinter_enabled = ['vet', 'golint']
 
 " default is disable
-let g:go_metalinter_autosave = 0
+"let g:go_metalinter_autosave = 0
 
-let g:go_jump_to_error = 1
+"let g:go_jump_to_error = 1
 "let g:go_list_height = 10
 
-let g:go_doc_keywordprg_enabled = 1
+"let g:go_doc_keywordprg_enabled = 1
 
 " GoInstallBinnaries
 " default is 1.
-let g:go_get_update = 1
+"let g:go_get_update = 1
 
 " default is 1, need noshowmode
 "set noshowmode
 "let g:go_echo_go_info = 1
 
 " options: guru gocode, default is gocode, gocode is faster than guru
-let g:go_info_mode = 'gocode'
+"let g:go_info_mode = 'gocode'
 
-let g:go_def_mapping_enabled = 1
+"let g:go_def_mapping_enabled = 1
 
-if has("win32")
-  let g:go_gocode_socket_type = 'tcp'
-endif
+"if has("win32")
+  "let g:go_gocode_socket_type = 'tcp'
+"endif
 
 
 " GoDef
@@ -127,7 +127,7 @@ augroup END
 "let g:syntastic_go_checkers = ['golint', 'govet']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
-let g:go_list_type = "quickfix"
+"let g:go_list_type = "quickfix"
 
 " run :GoBuild or :GoTestCompile based on the go file
 func! GoBuildFiles()
@@ -142,10 +142,6 @@ endfunc
 command! -bar -narg=0 GoBuildFiles call GoBuildFiles()
 
 "autocmd FileType go nmap <leader>b :<C-u>call BuildGoFiles()<CR>
-
-let g:go_fmt_command = "goimports"
-"let g:go_autodetect_gopath = 1
-"let g:go_list_type = "quickfix"
 
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
