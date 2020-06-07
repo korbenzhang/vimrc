@@ -13,7 +13,7 @@ let g:go_template_autocreate = 0
 
 " auto imports
 " default is gofmt
-"let g:go_fmt_command = 'goimports'
+let g:go_fmt_command = 'goimports'
 
 " guru or godef
 "let g:go_def_mode = 'godef'
