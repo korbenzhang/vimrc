@@ -22,7 +22,7 @@ let g:Lf_WorkingDirectoryMode = 'Ac'
 let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_MruFileExclude = ['*.so']
 let g:Lf_DefaultExternalTool = 'ag'
-let g:Lf_RootMarkers = ['.project','.svn','.git','.hg']
+let g:Lf_RootMarkers = ['.project','.svn','.git','.hg','pom.xml','package.json']
 "let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 let g:Lf_StlSeparator = { 'left': '►', 'right': '◄', 'font': '' }
 
