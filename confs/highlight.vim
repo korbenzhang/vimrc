@@ -12,6 +12,6 @@ hi PmenuThumb ctermbg=8 ctermfg=2 guibg=Black guifg=White
 hi CursorLine ctermbg=7 ctermfg=0 guibg=LightGray guifg=NONE
 
 " TabLine
-hi TabLineSel ctermfg=15 ctermbg=NONE
-hi LeaderTab guifg=#666666 ctermfg=5
+hi TabLineSel ctermfg=15 ctermbg=1 guibg=Red guifg=white
+hi LeaderTab guifg=Black guibg=LightGray ctermfg=1 ctermbg=7
 
