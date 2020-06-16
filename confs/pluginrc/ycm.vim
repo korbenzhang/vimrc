@@ -15,7 +15,7 @@ Plug 'Valloric/YouCompleteMe'
 "let g:ycm_show_diagnostics_ui = 0
 
 
-let g:ycm_gopls_binary_path = "gopls"
+let g:ycm_gopls_binary_path = "/uhome/go/bin/gopls"
 
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
