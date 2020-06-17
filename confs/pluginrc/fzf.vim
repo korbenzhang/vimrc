@@ -1,12 +1,13 @@
 
 " open file 
-if has("win32")
-	Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf' }
-else
-	Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
-endif
+"if has("win32")
+	"Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf' }
+"else
+	"Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
+"endif
 
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 let g:fzf_history_dir = '$HOME/.local/share/fzf-history'
 
