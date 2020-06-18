@@ -9,13 +9,14 @@ endif
 let g:vimrc#completer="Valloric/YouCompleteMe"
 
 Plug 'Valloric/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
 
 " run syntastic's checkers for c, cpp, objc, and objcpp
 " default is 1
 "let g:ycm_show_diagnostics_ui = 0
 
 
-let g:ycm_gopls_binary_path = "/uhome/go/bin/gopls"
+let g:ycm_gopls_binary_path = "gopls"
 
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
