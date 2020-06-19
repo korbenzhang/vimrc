@@ -230,3 +230,5 @@ let g:sql_type_default = 'mysql'
 let g:vim_json_syntax_conceal = 0
 
 set backupcopy=yes
+
+set updatetime=100
