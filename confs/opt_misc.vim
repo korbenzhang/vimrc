@@ -231,9 +231,5 @@ let g:vim_json_syntax_conceal = 0
 
 set backupcopy=yes
 
-<<<<<<< HEAD
 set updatetime=100
-=======
 set laststatus=0
-
->>>>>>> 0d4a6d3104b3af06bf95da8d0366e30eec680ca9
