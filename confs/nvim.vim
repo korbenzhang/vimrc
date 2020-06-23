@@ -11,7 +11,7 @@ set clipboard+=unnamedplus
 
 func! NvimGuiFont()
 	if has("nvim")
-		let g:Guifont="DejaVu Sans Mono:h20"
+		let g:Guifont="DejaVu Sans Mono:h15"
 		call GuiFont(g:Guifont)
 	endif
 endfunc
@@ -19,7 +19,7 @@ command! NvimGuiFont call NvimGuiFont()
 
 func! NvimMonaco()
 	if has("nvim")
-		let g:Guifont="Monaco:h20"
+		let g:Guifont="Monaco:h15"
 		call GuiFont(g:Guifont)
 	endif
 endfunc
