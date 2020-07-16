@@ -94,6 +94,9 @@ highlight PMenuSel ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black
 set completeopt=menu,menuone
 
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
+"nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+nnoremap <F12> :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinition<CR>
