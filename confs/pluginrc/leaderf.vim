@@ -32,7 +32,7 @@ let g:Lf_WildIgnore = {
 	\}
 
 " key map
-noremap! <f1> :LeaderfFile<cr>
+map <f1> :LeaderfFile<cr>
 map <leader>p :LeaderfSelf<cr>
 map <c-p> :LeaderfSelf<cr>
 

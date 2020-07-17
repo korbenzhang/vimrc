@@ -93,11 +93,11 @@ highlight PMenuSel ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black
 
 set completeopt=menu,menuone
 
-map! <leader>gl :YcmCompleter GoToDeclaration<CR>
-map! <leader>gd :YcmCompleter GoToDefinition<CR>
-"map! <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-"map! <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <leader>gl :YcmCompleter GoToDeclaration<CR>
+map <leader>gd :YcmCompleter GoToDefinition<CR>
+"map <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"map <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-map! <F12> :YcmCompleter GoToDefinition<CR>
-map! <C-]> :YcmCompleter GoToDefinition<CR>
-map! <leader>gg :YcmCompleter GoToDefinition<CR>
+map <F12> :YcmCompleter GoToDefinition<CR>
+map <C-]> :YcmCompleter GoToDefinition<CR>
+map <leader>gg :YcmCompleter GoToDefinition<CR>
