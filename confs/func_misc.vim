@@ -238,7 +238,7 @@ fun! RunSQLLine()
 		let line = Trim(line)
 	endif
 	let line = Trim(line)
-	execute '! mysql -udbu -p'. $MYSQLPW .' -hdb.mabetle.com dbc  -e "'.line.'"'
+	execute '! mysql -udbu -p'. $MYSQLPW .' -hdb.mabetle.com tiger  -e "'.line.'"'
 endfun
 command! -bar -narg=0 RunSQLLine  call RunSQLLine()
 
@@ -266,7 +266,7 @@ fun! SudoRunSQLLine()
 		let line = Trim(line)
 	endif
 	let line = Trim(line)
-	execute '! sudo mysql dbc  -e "'.line.'"'
+	execute '! sudo mysql tiger  -e "'.line.'"'
 endfun
 command! -bar -narg=0 SudoRunSQLLine  call SudoRunSQLLine()
 
@@ -349,7 +349,7 @@ func! RunFile(prefix)
 	elseif &filetype == 'java'
 		exec s:prefix.'java %'
 	elseif	&filetype == 'sql'
-		exec s:prefix.'mysql -udbu -p'. $MYSQLPW . ' -hdb.mabetle.com dbc < %'
+		exec s:prefix.'mysql -udbu -p'. $MYSQLPW . ' -hdb.mabetle.com tiger < %'
 	elseif &filetype == 'ts' || &filetype == 'typescript'
 		exec s:prefix.'ts-node %'
 	elseif &filetype == 'js' || &filetype == 'javascript'
