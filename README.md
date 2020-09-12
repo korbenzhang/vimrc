@@ -1,9 +1,12 @@
-Korben Vim Configs
+Vim Configs
 ==================
 
-Vim configs. Using [Vundle](https://github.com/gmarik/Vundle.vim.git) to manage Vim plugins.
+Personal vim config repo.
 
-It works fine in linux, windows, msys, both Vim GUI and terminal version.
+Feathers
+--------
+* Light: Startup very quickly.
+* Easy: easy to add plugins.
 
 Install
 -----
@@ -12,28 +15,26 @@ Install
 
 	git clone https://github.com/korbenzhang/vimrc.git ~/.vim
 
-	cp -f ~/.vim/_vimrc ~/.vimrc
+
+  # for windows
+	cp -f ~/.vim/_vimrc ~/_vimrc
 
 ```
 
+## install some plugins.
+
 Startup vim and run `:PluginInstall`
-
-
-Feathers
---------
-
-* Startup very quickly.
-* Install vundle automatically.
-* Make swap and backup dir automatically.
-* Golang support.
-* More feathers to be found when using it.
 
 Dependencies
 ------------
 
+### ctags 
+
+
 ### gotags
 
-Golang code need `gotags`
+
+Golang need `gotags`
 
 You can install gotags with this command if you have install `go`.
 
@@ -47,6 +48,6 @@ You can install gotags with this command if you have install `go`.
 TODO
 ----
 
-Not test for Cygiwn, MacOS.
+Not test for MacOS.
 
 
